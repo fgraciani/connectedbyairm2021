@@ -48,7 +48,7 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
     #definition = fixm.get_fixm_class_definition(info_concept['Information Concept'])
     #soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(definition))
     
-    f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + concept["Information Concept"] + ".html","w+")
+    f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + info_concept["Information Concept"] + ".html","w+")
     f.write(soup.prettify())
     f.close()
 
