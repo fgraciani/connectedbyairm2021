@@ -308,7 +308,7 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     new_tr.insert(2,td_dc_name)
   else:
     td_dc_name = soup.new_tag("td")
-    text = '-'
+    td_dc_name.string = '-'
     new_tr.insert(2,td_dc_name)
 
   if mapping_entry["Concept Definition"] != "":
@@ -316,10 +316,15 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     td_def.string = str(mapping_entry["Concept Definition"])
     new_tr.insert(3,td_def)
 
-  if mapping_entry["Data Concept's Basic Type"] != "":
+  if mapping_entry["Data Concept's Basic Type"] != "missing data":
     td_dc_type = soup.new_tag("td")
     parts = str(mapping_entry["Data Concept's Basic Type"]).split(":")
     clean_type = parts[-1]
     td_dc_type.string = clean_type
     new_tr.insert(4,td_dc_type)
+  else:
+    td_dc_type = soup.new_tag("td")
+    td_dc_type.string = '-'
+    new_tr.insert(4,td_dc_type)
+
   return new_tr
