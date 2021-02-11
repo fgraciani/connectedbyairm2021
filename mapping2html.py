@@ -296,14 +296,19 @@ def create_index_table_row(mapping_entry, mapping_metadata):
   td_ic_name.string = str(mapping_entry["Information Concept"])
   new_tr.insert(1,td_ic_name)
 
-  if mapping_entry["Data Concept"] != "":
+  if mapping_entry["Data Concept"] != "missing data":
     td_dc_name = soup.new_tag("td")
     text = mapping_entry["Data Concept"]
     new_link = soup.new_tag("a")
+    print(str(mapping_entry["Information Concept"])+"."+str(mapping_entry["Data Concept"]))
     new_link['href'] = mapping_metadata["url_name"] + "/" + mapping_entry["Information Concept"] + ".html" + "#" + mapping_entry["Data Concept"]
     new_link['target'] = "_blank"
     new_link.string = text
     td_dc_name.insert(1,new_link)
+    new_tr.insert(2,td_dc_name)
+  else:
+    td_dc_name = soup.new_tag("td")
+    text = '-'
     new_tr.insert(2,td_dc_name)
 
   if mapping_entry["Concept Definition"] != "":
