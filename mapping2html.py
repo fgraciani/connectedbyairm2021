@@ -4,8 +4,6 @@ def create_mapping_index_page (mapping_file_pathname, template):
   Keyword arguments:
     mapping_file_pathname -- string defining the location and name of the mapping e.g. data/xlsx/mapping FIXM 4.2.0.xlsx
     template -- string defining the location and name of the html template e.g. data/html/templates/concept-list-template.html
-    settings -- dictionary capturing the following settings:
-      "include_types": True -- boolean indicating if the html export shall include type information.
   """
 
   import mapping
@@ -54,9 +52,52 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
 
     soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(info_concept['Concept Definition']))
     
+    data_concepts = mapping.get_data_concepts(info_concept['Information Concept'])
+    insert_position=0
+    for data_concept in data_concepts:
+      if data_concept["Data Concept"] != 'missing data':
+        new_table_row = create_properties_table_row(data_concept)
+        soup.find(id="DATA_CONCEPTS_LIST").insert(insert_position,new_table_row)
+      insert_position += 1
+
     f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + info_concept["Information Concept"] + ".html","w+")
     f.write(soup.prettify())
     f.close()
+
+def create_properties_table_row(data_concept):
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup("<b></b>", 'lxml')
+  new_tr = soup.new_tag("tr")
+
+  td_dc_name = soup.new_tag("td")
+  new_link = soup.new_tag("a")
+  new_link['href'] = "#"+data_concept["Data Concept"]
+  new_link.string = data_concept["Data Concept"]
+  td_dc_name.insert(1,new_link)
+  new_tr.insert(1,td_dc_name)
+  
+  td_def = soup.new_tag("td")
+  if data_concept["Definition"] != "missing data":
+    td_def.string = str(data_concept["Definition"])
+  else:
+    td_def.string = '-'
+  new_tr.insert(2,td_def)
+  
+  td_type = soup.new_tag("td")
+  if data_concept["Type"] != "missing data":
+    if data_concept["Type"] != "enum value":
+      new_link = soup.new_tag("a")
+      new_link['href'] = str(data_concept["Type"])+".html"
+      new_link['target'] = "_blank"
+      new_link.string = str(data_concept["Type"])
+      td_type.insert(1,new_link)
+    else:
+      td_type.string = str(data_concept["Type"])
+  else:
+    td_type.string = '-'
+  new_tr.insert(3,td_type)
+  
+  return new_tr
 
 def create_mapping_item_pages (mapping_file_pathname, template, settings):
   import mapping

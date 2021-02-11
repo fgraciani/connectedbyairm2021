@@ -27,3 +27,16 @@ class Mapping:
     else:
       return results.to_dict('records')
 
+  def get_data_concepts(self, info_concept):
+      dataframe = self.dataframe.copy()
+      #dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
+      #TO DO Update list of tags dataframe = dataframe.drop(["Data Concept", "Definition", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
+      filter = dataframe["Data Concept"] == info_concept
+      dataframe.sort_values("Data Concept", inplace = True)
+      dataframe.where(filter, inplace = True) 
+      results = dataframe.dropna(how='all')      
+      
+      if dataframe.empty:
+        return None
+      else:
+        return results.to_dict('records')
