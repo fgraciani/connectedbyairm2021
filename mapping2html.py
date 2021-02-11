@@ -14,7 +14,7 @@ def create_mapping_index_page (mapping_file_pathname, template):
   mapping_dict = mapping.dictionary
 
   import utils
-  utils.create_directory("docs/developers/" + mapping_metadata["url_name"])
+  utils.create_directory("docs/airm/developers/" + mapping_metadata["url_name"])
   soup = utils.create_html_soup(template)
    
   soup.title.string = mapping_metadata["name"] + " | Semantic Correspondences | AIRM.aero"

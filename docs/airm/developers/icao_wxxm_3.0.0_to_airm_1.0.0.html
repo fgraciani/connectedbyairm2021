@@ -1,0 +1,4960 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   ICAO WXXM 3.0.0 to AIRM 1.0.0 | Semantic Correspondences | AIRM.aero
+  </title>
+  <link href="../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../assets/css/codewrap.css" rel="stylesheet"/>
+  <link href="../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../developers/semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           MAPPING_NAME_BC
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container" style="padding-right: 0px;padding-left: 0px;">
+     <div class="block-heading" style="padding-top: 24px;">
+      <div class="block-heading" style="padding-top: 26px;">
+       <h2 class="text-info" style="color: rgb(143,170,220);">
+        MAPPING_NAME_H2
+       </h2>
+       <div>
+       </div>
+       <p>
+        Use the search field to filter. Click on Information or Data concepts to see their semantic correspondence to the AIRM.
+        <br/>
+       </p>
+      </div>
+      <div class="row align-items-center">
+       <div class="col-md-12 col-lg-12 col-xl-12">
+        <div class="table-responsive text-left" id="mapping">
+         <table class="table" id="example">
+          <thead>
+           <tr>
+            <th>
+             Information Concept
+            </th>
+            <th>
+             Data Concept
+            </th>
+            <th>
+             Definition
+            </th>
+            <th>
+             Type
+            </th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeAirTemperatureForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of air temperature forecast conditions typically reported together at an aerodrome, including the minimum and maximum anticipated air temperatures and when they occur. AerodromeAirTemperatureForecast is only reported on base conditions on a TAF, not change forecasts.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WindObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WindObservedOrEstimated.html#variableWindDirection" target="_blank">
+              variableWindDirection
+             </a>
+            </td>
+            <td>
+             When true, indicates that the wind direction is variable.  Wind direction should not be reported
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WindObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WindObservedOrEstimated.html#windSpeed" target="_blank">
+              windSpeed
+             </a>
+            </td>
+            <td>
+             Wind speed within the layer.  Unit of measure shall be given in m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WindObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WindObservedOrEstimated.html#windDirection" target="_blank">
+              windDirection
+             </a>
+            </td>
+            <td>
+             Wind direction within the layer.  It shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+            </td>
+            <td>
+             Angle
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WindObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WindObservedOrEstimated.html#verticalLayer" target="_blank">
+              verticalLayer
+             </a>
+            </td>
+            <td>
+             The vertical layer in terms of flight levels in which wind is provided.
+            </td>
+            <td>
+             AirspaceLayer
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WindObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WindObservedOrEstimated.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Wind information within a vertical layer to be provided when volcanic ash is not identifiable from satellite data.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             WeatherCausingVisibilityReduction
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/WeatherCausingVisibilityReduction.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A weather condition reducing visibility, such as dust, rain or volcanic ash. See ICAO Annex 3/ WMO No. 49-2 Appendix 6 Section 2.1.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMETPositionCollection.html#volcanoId" target="_blank">
+              volcanoId
+             </a>
+            </td>
+            <td>
+             The ID of the relevant erupting volcano
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMETPositionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Position collection for volcanic ash SIGMETs
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMETEvolvingConditionCollection.html#volcanoId" target="_blank">
+              volcanoId
+             </a>
+            </td>
+            <td>
+             The ID of the relevant erupting volcano
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMETEvolvingConditionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Evolving condition collection for volcanic ash SIGMETs
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMET.html#volcanicAshMovedToFIR" target="_blank">
+              volcanicAshMovedToFIR
+             </a>
+            </td>
+            <td>
+             The FIR to which volcanic ash has moved.  Reported only on SIGMET cancellation reports
+            </td>
+            <td>
+             Airspace
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMET.html#eruptingVolcano" target="_blank">
+              eruptingVolcano
+             </a>
+            </td>
+            <td>
+             The volcano that is erupting - required in all cases other than cancellations
+            </td>
+            <td>
+             Volcano
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshSIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshSIGMET.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A SIGMET that reports the presence of volcanic ash conditions hazardous to flight.  This extends the base SIGMET type by including additional information necessary for volcanoes and volcanic ash.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#ashCloud" target="_blank">
+              ashCloud
+             </a>
+            </td>
+            <td>
+             Information on the volcanic ash cloud.
+            </td>
+            <td>
+             VolcanicAshCloudObservedOrEstimated
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#wind" target="_blank">
+              wind
+             </a>
+            </td>
+            <td>
+             Wind information to be provided when volcanic ash is not identifiable from satellite data.
+            </td>
+            <td>
+             WindObservedOrEstimated
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#status" target="_blank">
+              status
+             </a>
+            </td>
+            <td>
+             Volcanic ash observation (or estimation) status.
+            </td>
+            <td>
+             VolcanicAshObservedOrEstimatedStatus
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#isEstimated" target="_blank">
+              isEstimated
+             </a>
+            </td>
+            <td>
+             Indicates whether the characteristics of the phenomenon is observed (empty or false) or estimated (true).
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The day and time (in UTC) of observation (or estimation) of volcanic ash
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshObservedOrEstimatedConditions.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Observed (or estimated) conditions of volcanic ash clouds
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshForecastConditions.html#ashCloud" target="_blank">
+              ashCloud
+             </a>
+            </td>
+            <td>
+             Information on the volcanic ash cloud.
+            </td>
+            <td>
+             VolcanicAshCloudForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshForecastConditions.html#status" target="_blank">
+              status
+             </a>
+            </td>
+            <td>
+             The status of volcanic ash cloud forecast.
+            </td>
+            <td>
+             VolcanicAshCloudForecastStatus
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshForecastConditions.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The day and time (in UTC) of forecast of volcanic ash
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshForecastConditions.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Forecast conditions of volcanic ash clouds
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudObservedOrEstimated.html#speedOfMotion" target="_blank">
+              speedOfMotion
+             </a>
+            </td>
+            <td>
+             The speed of motion of the ash cloud.  Speed of movement of ash cloud shall be given in either km/h" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudObservedOrEstimated.html#directionOfMotion" target="_blank">
+              directionOfMotion
+             </a>
+            </td>
+            <td>
+             The direction of movement of the ash cloud.   Direction of movement of the ash cloud is moving to shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+            </td>
+            <td>
+             Angle
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudObservedOrEstimated.html#ashCloudExtent" target="_blank">
+              ashCloudExtent
+             </a>
+            </td>
+            <td>
+             The horizontal and vertical extent of the ash cloud.
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudObservedOrEstimated
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudObservedOrEstimated.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An observed or estimated volcanic ash cloud, including a horizontal and vertical extent, as well as the speed and direction of motion
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudForecast.html#ashCloudExtent" target="_blank">
+              ashCloudExtent
+             </a>
+            </td>
+            <td>
+             The horizontal and vertical extent of the ash cloud.
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshCloudForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshCloudForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A forecast volcanic ash cloud, including a horizontal and vertical extent.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#nextAdvisoryTime" target="_blank">
+              nextAdvisoryTime
+             </a>
+            </td>
+            <td>
+             The time at which the next advisory will be issued Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#remarks" target="_blank">
+              remarks
+             </a>
+            </td>
+            <td>
+             Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#forecast" target="_blank">
+              forecast
+             </a>
+            </td>
+            <td>
+             The forecast conditions of volcanic ash clouds.
+            </td>
+            <td>
+             VolcanicAshForecastConditions
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#observation" target="_blank">
+              observation
+             </a>
+            </td>
+            <td>
+             The observed (or estimated) conditions of volcanic ash clouds.
+            </td>
+            <td>
+             VolcanicAshObservedOrEstimatedConditions
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#eruptionDetails" target="_blank">
+              eruptionDetails
+             </a>
+            </td>
+            <td>
+             Eruption details (excluding date/time of eruption(s)).
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#colourCode" target="_blank">
+              colourCode
+             </a>
+            </td>
+            <td>
+             The aviation colour code
+            </td>
+            <td>
+             AviationColourCode
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#informationSource" target="_blank">
+              informationSource
+             </a>
+            </td>
+            <td>
+             Information source - described in free text
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#advisoryNumber" target="_blank">
+              advisoryNumber
+             </a>
+            </td>
+            <td>
+             Advisory number: year in full and message number (separate sequence for each volcano)
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#summitElevation" target="_blank">
+              summitElevation
+             </a>
+            </td>
+            <td>
+             Elevation of a summit. Summit elevation shall be reported either in meters (m") or feet ("[ft_i]")."
+            </td>
+            <td>
+             LengthWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#stateOrRegion" target="_blank">
+              stateOrRegion
+             </a>
+            </td>
+            <td>
+             State, or region if ash is not reported over a State
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#volcano" target="_blank">
+              volcano
+             </a>
+            </td>
+            <td>
+             The erupting volcano that is the source of volcanic ash
+            </td>
+            <td>
+             EruptingVolcano
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#issuingVolcanicAshAdvisoryCentre" target="_blank">
+              issuingVolcanicAshAdvisoryCentre
+             </a>
+            </td>
+            <td>
+             The issuing VAAC
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VolcanicAshAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VolcanicAshAdvisory.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An advisory of volcanic ash conditions of significance to aviation as represented in ICAO Annex 3 / WMO No. 49-2.  Volcanic ash advisories are issued by volcanic ash advisory centres (VAACs)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             VelocityWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/VelocityWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable Velocity quantity.  Unlike the base Velocity measure, references to this type may be nil and may include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETPositionCollection.html#tropicalCycloneId" target="_blank">
+              tropicalCycloneId
+             </a>
+            </td>
+            <td>
+             The ID of the relevant tropical cyclone
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETPositionCollection.html#tropicalCyclonePosition" target="_blank">
+              tropicalCyclonePosition
+             </a>
+            </td>
+            <td>
+             The position of a tropical cyclone
+            </td>
+            <td>
+             GM_Point
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETPositionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Position collection for tropical cyclone SIGMETs
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETEvolvingConditionCollection.html#tropicalCycloneId" target="_blank">
+              tropicalCycloneId
+             </a>
+            </td>
+            <td>
+             The ID of the relevant tropical cyclone
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETEvolvingConditionCollection.html#tropicalCyclonePosition" target="_blank">
+              tropicalCyclonePosition
+             </a>
+            </td>
+            <td>
+             The position of a tropical cyclone
+            </td>
+            <td>
+             GM_Point
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMETEvolvingConditionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Evolving condition collection for tropical cyclone SIGMETs
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMET.html#tropicalCyclone" target="_blank">
+              tropicalCyclone
+             </a>
+            </td>
+            <td>
+             The tropical cyclone being reported in this SIGMET, required in all cases other than cancellations. When reporting the tropical cyclone name, 'NN' may be used if the tropical cyclone is unnamed
+            </td>
+            <td>
+             TropicalCyclone
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneSIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneSIGMET.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A SIGMET that reports the presence of a tropical cyclone conditions.  This extends the base SIGMET type by including additional information necessary for tropical cyclones.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#maximumSurfaceWindSpeed" target="_blank">
+              maximumSurfaceWindSpeed
+             </a>
+            </td>
+            <td>
+             The maximum 10-minute mean surface wind speed near the centre of the tropical cyclone which shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#centralPressure" target="_blank">
+              centralPressure
+             </a>
+            </td>
+            <td>
+             The central pressure of the tropical cyclone.  Central pressure of cyclone shall be provided in hectoPascals (hPa).
+            </td>
+            <td>
+             Measure
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#movementSpeed" target="_blank">
+              movementSpeed
+             </a>
+            </td>
+            <td>
+             The movement speed observed.  Only reported when the tropical cyclone is moving at least 6 km/hour or 3 knots.  Speed of movement shall be provided in either two units of measures: km/h" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#movementDirection" target="_blank">
+              movementDirection
+             </a>
+            </td>
+            <td>
+             The movement direction observed.  Only reported when the tropical cyclone is moving at least 6 km/hour or 3 knots. Direction of movement shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+            </td>
+            <td>
+             Angle
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#movement" target="_blank">
+              movement
+             </a>
+            </td>
+            <td>
+             The movement observed for the tropical cyclone
+            </td>
+            <td>
+             TropicalCycloneMovement
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#cumulonimbusCloudLocation" target="_blank">
+              cumulonimbusCloudLocation
+             </a>
+            </td>
+            <td>
+             Location of cumulonimbus cloud
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#tropicalCyclonePosition" target="_blank">
+              tropicalCyclonePosition
+             </a>
+            </td>
+            <td>
+             The tropical cyclone position
+            </td>
+            <td>
+             GM_Point
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneObservedConditions.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Observed conditions of a tropical cyclone
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneForecastConditions.html#maximumSurfaceWindSpeed" target="_blank">
+              maximumSurfaceWindSpeed
+             </a>
+            </td>
+            <td>
+             The maximum 10-minute mean surface wind speed near the centre of the tropical cyclone which shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneForecastConditions.html#tropicalCyclonePosition" target="_blank">
+              tropicalCyclonePosition
+             </a>
+            </td>
+            <td>
+             The tropical cyclone position
+            </td>
+            <td>
+             GM_Point
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneForecastConditions.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneForecastConditions
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneForecastConditions.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Forecast conditions of a tropical cyclone
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#nextAdvisoryTime" target="_blank">
+              nextAdvisoryTime
+             </a>
+            </td>
+            <td>
+             The time at which the next advisory is expected to be issued. Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#remarks" target="_blank">
+              remarks
+             </a>
+            </td>
+            <td>
+             Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#forecast" target="_blank">
+              forecast
+             </a>
+            </td>
+            <td>
+             The forecast conditions of the tropical cyclone at given time intervals.
+            </td>
+            <td>
+             TropicalCycloneForecastConditions
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#observation" target="_blank">
+              observation
+             </a>
+            </td>
+            <td>
+             The observed conditions of the tropical cyclone
+            </td>
+            <td>
+             TropicalCycloneObservedConditions
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#advisoryNumber" target="_blank">
+              advisoryNumber
+             </a>
+            </td>
+            <td>
+             Advisory number: year in full and message number (separate sequence for each cyclone)
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#tropicalCycloneName" target="_blank">
+              tropicalCycloneName
+             </a>
+            </td>
+            <td>
+             The tropical cyclone name.  If the tropical cyclone is unnamed, 'NN' may be used
+            </td>
+            <td>
+             TropicalCyclone
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#issuingTropicalCycloneAdvisoryCentre" target="_blank">
+              issuingTropicalCycloneAdvisoryCentre
+             </a>
+            </td>
+            <td>
+             The issuing TCAC
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this advisory was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TropicalCycloneAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TropicalCycloneAdvisory.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An advisory of tropical cyclone conditions of significance to aviation as represented in ICAO Annex 3 / WMO No. 49-2.  Tropical cyclone advisories are issued by tropical cyclone advisory centres (TCACs)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#isCancelReport" target="_blank">
+              isCancelReport
+             </a>
+            </td>
+            <td>
+             Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#changeForecast" target="_blank">
+              changeForecast
+             </a>
+            </td>
+            <td>
+             Forecast that modifies the base forecast.  While there is no maximum number of forecasts, this should normally not exceed five in number. ICAO Annex 3 / WMO No. 49-2: Section 1.5: The number of change and probability groups should be kept to a minimum and should not normally exceed five groups"."
+            </td>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#baseForecast" target="_blank">
+              baseForecast
+             </a>
+            </td>
+            <td>
+             The prevailing conditions.  Mandatory in all cases except missing or cancelled reports
+            </td>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#cancelledReportValidPeriod" target="_blank">
+              cancelledReportValidPeriod
+             </a>
+            </td>
+            <td>
+             The valid time period for the previously cancelled report
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#validPeriod" target="_blank">
+              validPeriod
+             </a>
+            </td>
+            <td>
+             The time frame at which this report is valid.  All forecast elements should be valid within this period
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#aerodrome" target="_blank">
+              aerodrome
+             </a>
+            </td>
+            <td>
+             The aerodrome location for this report
+            </td>
+            <td>
+             AirportHeliport
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued.  Note that this should be identical to the resultTime of each MeteorologicalAerodromeForecast, whose results are made available at the same time as this report.  TAF reports have an issueTime to assist in discovery and to provide unambiguous semantics at the report level.
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             TAF
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/TAF.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An Aerodrome Forecast (TAF) report is a routine aerodrome forecast intended for distribution beyond an aerodrome.  TAF reports report base forecast conditions, and modifications to those conditions throughout the valid period. TAF reports include similar information to a METAR/SPECI trend forecast. However, TAF forecast information includes additional detail. Aerodromes can issue both METAR/SPECI and TAF reports on a routine basis, but TAFs are not issued by every METAR-reporting aerodrome. The issuance of a new forecast by a meteorological office, such as a TAF, cancels any forecast of the same type previously issued for the same place and for the same period of validity or part thereof. Prevailing conditions and forecast changes differ in that the prevailing conditions can include temperatures, base conditions do not include a change indicator, and that forecast changes may report no significant weather (NSW). Rather than have two class hierarchies, constraints are present ensuring that each (base and forecast conditions) only include relevant information
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             StringWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/StringWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable string quantity.  References to this type may be nil and may include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SPECI
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SPECI.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A special (i.e., non-routine) observation made at an aerodrome as needed. SPECI observations are made (and distributed) in accordance with criteria established by the meteorological authority, in consultation with the appropriate ATS authority, operators and others concerned. The information contained in METAR and SPECI is identical. SPECI is issued when conditions merit a non-routine report on conditions at an aerodrome. SPECI reports are used for dissemination beyond the aerodrome of origin (mainly intended for flight planning, VOLMET broadcasts and D-VOLMET) unless METAR are issued at half-hourly intervals. SPECI is issued following the resumption of the issuance of METAR, as necessary, at aerodromes that are not operational throughout 24 hours in accordance with ICAO Annex 3 Section 4.3.1. See ICAO Annex 3 / WMO No. 49-2 Table A3-2
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherRegion
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherRegion.html#locationIndicator" target="_blank">
+              locationIndicator
+             </a>
+            </td>
+            <td>
+             The geographic area code, such as high northern latitudes
+            </td>
+            <td>
+             SpaceWeatherLocation
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherRegion
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherRegion.html#location" target="_blank">
+              location
+             </a>
+            </td>
+            <td>
+             The geographic location at which space weather phenomena occur
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherRegion
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherRegion.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             missing data
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherPhenomena
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherPhenomena.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             missing data
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherLocation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherLocation.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             missing data
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAnalysis
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAnalysis.html#timeIndicator" target="_blank">
+              timeIndicator
+             </a>
+            </td>
+            <td>
+             Indicator of observed or forecast conditions
+            </td>
+            <td>
+             TimeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAnalysis
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAnalysis.html#region" target="_blank">
+              region
+             </a>
+            </td>
+            <td>
+             missing data
+            </td>
+            <td>
+             SpaceWeatherRegion
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAnalysis
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAnalysis.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAnalysis
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAnalysis.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Observed or forecast space weather phenomena
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#nextAdvisoryTime" target="_blank">
+              nextAdvisoryTime
+             </a>
+            </td>
+            <td>
+             The time at which the next advisory will be issued Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#remarks" target="_blank">
+              remarks
+             </a>
+            </td>
+            <td>
+             Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#analysis" target="_blank">
+              analysis
+             </a>
+            </td>
+            <td>
+             Observed and forecast space weather information.  Analyses should be reported in the order in which they occur, starting with the initial observed/forecast conditions and proceeding through each subsequent forecast to the end of the period
+            </td>
+            <td>
+             SpaceWeatherAnalysis
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#phenomenon" target="_blank">
+              phenomenon
+             </a>
+            </td>
+            <td>
+             The space weather phenomenon, such as radiation or satellite communication
+            </td>
+            <td>
+             SpaceWeatherPhenomena
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#replacedAdvisoryNumber" target="_blank">
+              replacedAdvisoryNumber
+             </a>
+            </td>
+            <td>
+             The number of the advisory being replaced.  Example 2018/1""
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#advisoryNumber" target="_blank">
+              advisoryNumber
+             </a>
+            </td>
+            <td>
+             Advisory number: four digit year and unique message number.  Example 2018/1""
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#issuingSpaceWeatherCentre" target="_blank">
+              issuingSpaceWeatherCentre
+             </a>
+            </td>
+            <td>
+             The issuing space weather centre (SWXC)
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SpaceWeatherAdvisory
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SpaceWeatherAdvisory.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An advisory of space weather conditions of significance to aviation as represented in ICAO Annex 3 / WMO No. 49-2.  Volcanic ash advisories are issued by space weather centres (SWXCs)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPositionCollection.html#member" target="_blank">
+              member
+             </a>
+            </td>
+            <td>
+             The members of this collection
+            </td>
+            <td>
+             SIGMETPosition
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPositionCollection.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPositionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPositionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A collection of SIGMETPositions, each representing a location where meteorological conditions exist.  All members of this collection are of type SIGMETPosition.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPosition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPosition.html#approximateLocation" target="_blank">
+              approximateLocation
+             </a>
+            </td>
+            <td>
+             Indicator of whether the location of phenomena is approximate. If not reported locations are not approximate
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPosition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPosition.html#geometry" target="_blank">
+              geometry
+             </a>
+            </td>
+            <td>
+             The geographic region affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in Annex 3: a boundary with a base and top, a TC centre position, and a VA line with a width
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETPosition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETPosition.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Conditions that indicate the presence of a specific SIGMET phenomenon such as volcanic ash or a thunderstorm.  Used to represent the forecast positions of SIGMET phenomena. TC TOP (ABV and BLW) conditions are represented by the vertical component of the geometry.  For example: CB TOP FL500 is represented as a missing lowerLimit and an upperLimit of 500FL. In cases where the position covers an entire FIR or CTA, (ENTIRE CTA or ENTIRE FIR" from ICAO Annex 3 / WMO No. 49-2), the geometry should be an xlink to the AirspaceVolume under geometryComponent of issuingAirTrafficServicesRegion."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingConditionCollection.html#member" target="_blank">
+              member
+             </a>
+            </td>
+            <td>
+             The members of this collection
+            </td>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingConditionCollection.html#timeIndicator" target="_blank">
+              timeIndicator
+             </a>
+            </td>
+            <td>
+             Indication whether the information is observed and expected to continue, or forecast
+            </td>
+            <td>
+             TimeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingConditionCollection.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingConditionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A collection of SIGMETEvolvingConditions, each representing a location where SIGMET observed or forecast conditions exist.  All members of this collection are of type SIGMETEvolvingCondition.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#approximateLocation" target="_blank">
+              approximateLocation
+             </a>
+            </td>
+            <td>
+             Indicator of whether the location of phenomena is approximate. If not reported locations are not approximate
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#intensityChange" target="_blank">
+              intensityChange
+             </a>
+            </td>
+            <td>
+             The expected change in intensity for the reported meteorological condition (e.g., intensifying, weakening, or no change) determined at the time of SIGMET analysis based on the current state of the meteorological condition
+            </td>
+            <td>
+             ExpectedIntensityChange
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#speedOfMotion" target="_blank">
+              speedOfMotion
+             </a>
+            </td>
+            <td>
+             The expected speed of movement of a meteorological condition. When no movement is expected, this will have a value of 0 and directionOfMotion will have a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason. speedOfMotion can be provided in either two units of measures: km/h" or "[kn_i]" (knots). "
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#directionOfMotion" target="_blank">
+              directionOfMotion
+             </a>
+            </td>
+            <td>
+             This element refers to the expected direction of movement which the phenomenon is moving towards, .e.g, moving east". When no movement is expected, this is a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason and the speedOfMotion will be 0. This element value is given in degrees from true North. Plane angle unit of measure (uom) is "deg". "
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#geometry" target="_blank">
+              geometry
+             </a>
+            </td>
+            <td>
+             The expected geographic region(s) affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in ICAO Annex 3 / WMO No. 49-2: a boundary with a base and top, a TC centre position, and a VA line with a width
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMETEvolvingCondition.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Conditions that indicate the presence of a specific SIGMET phenomenon such as volcanic ash or a thunderstorm, along with expected changes to the phenomenon such as intensity, speed, and direction.  These conditions are reported with OBS/FCST conditions on all SIGMET types. TC TOP (ABV and BLW) conditions are represented by the vertical component of the geometry.  For example: CB TOP FL500 is represented as a missing lowerLimit and an upperLimit of 500FL. In cases where the position covers an entire FIR or CTA, (ENTIRE CTA or ENTIRE FIR" from ICAO Annex 3 / WMO No. 49-2), the geometry should be an xlink to the AirspaceVolume under geometryComponent of issuingAirTrafficServicesRegion."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#isCancelReport" target="_blank">
+              isCancelReport
+             </a>
+            </td>
+            <td>
+             Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#forecastPositionAnalysis" target="_blank">
+              forecastPositionAnalysis
+             </a>
+            </td>
+            <td>
+             A forecast of the phenomenon at the end of the valid period.  This is modeled by SIGMETPosition for individual area of the phenomenon and aggregated into a single SIGMETPositionCollection as a result to forecastPositionAnalysis.
+            </td>
+            <td>
+             Any
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#analysis" target="_blank">
+              analysis
+             </a>
+            </td>
+            <td>
+             A SIGMET report may include a phenomenon covering more than one area within the FIR/UIR/CTA.  This translates into observed and forecast conditions for each of these reported areas.  All combinations of observations and forecasts of meteorological conditions, including changing conditions, are represented by their own SIGMETEvolvingCondition. Each analysis has a single SIGMETEvolvingConditionCollection as its result.
+            </td>
+            <td>
+             Any
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#phenomenon" target="_blank">
+              phenomenon
+             </a>
+            </td>
+            <td>
+             The reported phenomenon, such as thunderstorm, tropical cyclone, icing, mountain wave, etc. The expected end of occurrence of volcanic ash (NO VA EXP") is indicated with a missing SIGMET phenomenon with a nil reason of nothingOfOperationalSignificance"
+            </td>
+            <td>
+             AeronauticalSignificantWeatherPhenomenon
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#cancelledReportValidPeriod" target="_blank">
+              cancelledReportValidPeriod
+             </a>
+            </td>
+            <td>
+             The valid period of a previous SIGMET that is cancelled by this SIGMET.  Mandatory when this is a cancellation report, must be missing otherwise
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#cancelledReportSequenceNumber" target="_blank">
+              cancelledReportSequenceNumber
+             </a>
+            </td>
+            <td>
+             The sequence number of a previous SIGMET that is cancelled by this SIGMET.  Mandatory when this is a cancellation report, must be missing otherwise Examples: YUDD SIGMET 2 VALID ... YUDD SIGMET A3 VALID ...
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#validPeriod" target="_blank">
+              validPeriod
+             </a>
+            </td>
+            <td>
+             The valid period for the entire report covering all observations and forecast conditions.  Each observation/forecast phenomenon includes its own temporal description for the described meteorological conditions, which is represented as phenomenonTime. For example, an issued tropical cyclone SIGMET may be valid from 1600 UTC to 2200 UTC with an observed position at 1600 UTC and a forecast position of the centre of the tropical cyclone at 2200 UTC.  In this case the SIGMET validPeriod would be 1600 UTC to 2200 UTC, the analysis phenomenonTime would be 1600 UTC, and the forecastPositionAnalysis phenomenonTime would be 2200 UTC.
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#sequenceNumber" target="_blank">
+              sequenceNumber
+             </a>
+            </td>
+            <td>
+             The sequence number of this message.  For example: 5", "A3", or "2""
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#issuingAirTrafficServicesRegion" target="_blank">
+              issuingAirTrafficServicesRegion
+             </a>
+            </td>
+            <td>
+             The ATS region (FIR, UIR, CTA, or FIR/UIR)
+            </td>
+            <td>
+             Airspace
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#originatingMeteorologicalWatchOffice" target="_blank">
+              originatingMeteorologicalWatchOffice
+             </a>
+            </td>
+            <td>
+             MWO originating this report
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#issuingAirTrafficServicesUnit" target="_blank">
+              issuingAirTrafficServicesUnit
+             </a>
+            </td>
+            <td>
+             The ATS unit serving the FIR or CTA to which the SIGMET refers ICAO Annex 3 / WMO No. 49-2: A6-1: Location indicator of FIR/CTA""
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SIGMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SIGMET.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A SIGMET (significant meteorological) report. SIGMETs report the occurrence and/or expected occurrence of specified en-route weather phenomena which may affect the safety of aircraft operations, and of the development of those phenomena over time. The SIGMET report class represents the base SIGMET types that may be reported such as squall lines, thunderstorms, dust storms, turbulence, etc. Tropical cyclone and volcanic ash SIGMET reports are subclasses of SIGMET due to their ability to report additional information, including volcano/tropical cyclone identification and forecast position(s). SIGMETs may report either observed or forecast hazardous conditions. Additionally, a forecast position may be reported.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SigConvectiveCloudType
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SigConvectiveCloudType.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Genus of cloud of operational significance to aviation: significant convective clouds only. - Cumulonimbus - Towering cumulus This CodeList is specifically defined for aviation purposes, as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 012 Cloud type"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             SeaSurfaceState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/SeaSurfaceState.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Categorical assessment of sea surface state (or other large open body of water) based on height of waves. Height in metres : Category - 0 metres : Calm (glassy) - 0-0.1 metres : Calm (rippled) - 0.1-0.5 metres : Smooth - 0.5-1.25 metres : Slight - 1.25-2.5 metres : Moderate - 2.5-4 metres : Rough - 4-6 metres : Very rough - 6-9 metres : High - 9-14 metres : Very high - &gt;14 metres : Phenomenal See WMO No. 306 Vol I.1 code table 3700 State of the sea" and WMO No. 306 Vol I.2 FM 94 BUFR code table 0 22 061 "State of the sea"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             RunwayFrictionCoefficient
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/RunwayFrictionCoefficient.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Extent of runway surface that is contaminated (covered)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             RunwayDeposits
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/RunwayDeposits.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Type of deposit on a runway. See WMO No. 306 Vol I.1 code table 0919 and WMO No. 306 Vol I.2 FM 94 BUFR code table 0 20 086 Runway deposits"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             RunwayContamination
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/RunwayContamination.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Extent of runway surface that is contaminated (covered)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translationFailedTAC" target="_blank">
+              translationFailedTAC
+             </a>
+            </td>
+            <td>
+             The full, original TAC that could not be translated.  When translation fails only the report type (i.e, SIGMET or METAR), translation information and other basic report metadata should be provided.  In this case no translated content will be included other than the original TAC.  Translation is considered to have failed when either not all of the TAC could be understood by the translation software or not all of the mandatory TAC content could be found.  Permissible usage may be set as normal and TAC that failed translation may still be used for operational purposes, but under no circumstances should partially translated content be distributed or marked as operational
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translationTime" target="_blank">
+              translationTime
+             </a>
+            </td>
+            <td>
+             The time at which translation was performed from TAC to XML
+            </td>
+            <td>
+             DateTime
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translationCentreName" target="_blank">
+              translationCentreName
+             </a>
+            </td>
+            <td>
+             The name of the translation centre which performed translation from TAC to XML
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translationCentreDesignator" target="_blank">
+              translationCentreDesignator
+             </a>
+            </td>
+            <td>
+             The ICAO designator of the centre which performed translation from TAC to XML
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translatedBulletinReceptionTime" target="_blank">
+              translatedBulletinReceptionTime
+             </a>
+            </td>
+            <td>
+             The time at which the translated TAC bulletin was received by the translation centre
+            </td>
+            <td>
+             DateTime
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#translatedBulletinID" target="_blank">
+              translatedBulletinID
+             </a>
+            </td>
+            <td>
+             The TAC bulletin ID that was translated, of the form 'TTAAiiCCCYYGGgg'
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#permissibleUsageSupplementary" target="_blank">
+              permissibleUsageSupplementary
+             </a>
+            </td>
+            <td>
+             Additional human-readable descriptive information regarding the permissible usage.  Only populated when the permissible usage is non-operational
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#permissibleUsageReason" target="_blank">
+              permissibleUsageReason
+             </a>
+            </td>
+            <td>
+             The permissible usage reason of this report. Only populated when the permissible usage is non-operational
+            </td>
+            <td>
+             PermissibleUsageReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#permissibleUsage" target="_blank">
+              permissibleUsage
+             </a>
+            </td>
+            <td>
+             The permissible usage of this report (operational or non-operational)
+            </td>
+            <td>
+             PermissibleUsage
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#reportStatus" target="_blank">
+              reportStatus
+             </a>
+            </td>
+            <td>
+             The issuance status of the report.
+            </td>
+            <td>
+             ReportStatus
+            </td>
+           </tr>
+           <tr>
+            <td>
+             Report
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/Report.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             The base type for all reports, including information that is common across all report types
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#cloud" target="_blank">
+              cloud
+             </a>
+            </td>
+            <td>
+             Forecast of cloud.
+            </td>
+            <td>
+             AerodromeCloudForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#weather" target="_blank">
+              weather
+             </a>
+            </td>
+            <td>
+             Forecast of weather phenomena.
+            </td>
+            <td>
+             AerodromeForecastWeather
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#surfaceWind" target="_blank">
+              surfaceWind
+             </a>
+            </td>
+            <td>
+             Forecast of surface wind.
+            </td>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#cloudAndVisibilityOK" target="_blank">
+              cloudAndVisibilityOK
+             </a>
+            </td>
+            <td>
+             When true, indicates that the following conditions occur simultaneously at the time of forecast (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#changeIndicator" target="_blank">
+              changeIndicator
+             </a>
+            </td>
+            <td>
+             The change indicator for this trend forecast - becoming, temporary conditions, or no significant change
+            </td>
+            <td>
+             ForecastChangeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#prevailingVisibilityOperator" target="_blank">
+              prevailingVisibilityOperator
+             </a>
+            </td>
+            <td>
+             The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#prevailingVisibility" target="_blank">
+              prevailingVisibility
+             </a>
+            </td>
+            <td>
+             The prevailing horizontal visibility reported in a trend forecast. Prevailing horizontal visibility shall be reported in meters (m")."
+            </td>
+            <td>
+             Distance
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#timeIndicator" target="_blank">
+              timeIndicator
+             </a>
+            </td>
+            <td>
+             The human-readable time indicator for this trend forecast.  This should match the time period or time instant reported in the phenomenon time
+            </td>
+            <td>
+             TrendForecastTimeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeTrendForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Meteorological conditions for trend forecasting at an aerodrome.  This class is also related but not identical to MeteorologicalAerodromeForecast which is reported on a TAF - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF. When no clouds of operational significance or no weather of operational significance is predicted, the NothingOfOperationalSignificance nilReason should be used for the cloud or presentWeather association.  When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason should be used for the cloud association.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#automatedStation" target="_blank">
+              automatedStation
+             </a>
+            </td>
+            <td>
+             When true, this report was reported by an automated station.
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#trendForecast" target="_blank">
+              trendForecast
+             </a>
+            </td>
+            <td>
+             The process that results in a trend forecast.  When no change is expected to occur during a forecast period (NOSIG") this is indicated by a single missing trend forecast with a nil reason of noSignificantChange"
+            </td>
+            <td>
+             MeteorologicalAerodromeTrendForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#observation" target="_blank">
+              observation
+             </a>
+            </td>
+            <td>
+             The observation which resulted in the current meteorological conditions at an aerodrome
+            </td>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#observationTime" target="_blank">
+              observationTime
+             </a>
+            </td>
+            <td>
+             The time at which phenomena were observed.  This may differ from the times reported for forecast conditions
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#aerodrome" target="_blank">
+              aerodrome
+             </a>
+            </td>
+            <td>
+             The aerodrome location for this report
+            </td>
+            <td>
+             AirportHeliport
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservationReport
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservationReport.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A report of observed and trend forecast weather phenomenon from the surface near an aerodrome.  This is a shared superclass for METAR and SPECI reports, which have identical reported information.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#runwayState" target="_blank">
+              runwayState
+             </a>
+            </td>
+            <td>
+             When runways are affected by snow, slush, or other contaminants, a runway state report for each runway in use is required.
+There is no maximum number of runway states that can be reported.  This may be changed in a future amendment.
+            </td>
+            <td>
+             AerodromeRunwayState
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#rvr" target="_blank">
+              rvr
+             </a>
+            </td>
+            <td>
+             RVR conditions are required if horizontal visibility or RVR is less than 1500 meters, up to a maximum of four runways
+            </td>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#recentWeather" target="_blank">
+              recentWeather
+             </a>
+            </td>
+            <td>
+             Recent weather is one of the recent weather phenomena to be reported as supplementary information.
+            </td>
+            <td>
+             AerodromeRecentWeather
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#seaCondition" target="_blank">
+              seaCondition
+             </a>
+            </td>
+            <td>
+             Sea surface temperature and state of the sea or significant wave height are recent weather phenomena to be reported as supplementary information.
+            </td>
+            <td>
+             AerodromeSeaCondition
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#windShear" target="_blank">
+              windShear
+             </a>
+            </td>
+            <td>
+             Wind shear is one of the recent weather phenomena to be reported as supplementary information.
+            </td>
+            <td>
+             AerodromeWindShear
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#surfaceWind" target="_blank">
+              surfaceWind
+             </a>
+            </td>
+            <td>
+             Representative surface wind observations.
+            </td>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#presentWeather" target="_blank">
+              presentWeather
+             </a>
+            </td>
+            <td>
+             When observed, between one and three present weather conditions
+When present weather cannot be observed by the automatic observing system due to a temporary failure of the system/sensor (//") the present weather is missing with a nil reason of notObservab"
+            </td>
+            <td>
+             AerodromePresentWeather
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#cloud" target="_blank">
+              cloud
+             </a>
+            </td>
+            <td>
+             When no clouds are detected by the automatic observing system, it should be indicated by a missing cloud group with a nil reason of notDetectedByAutoSystem (NCD" from TAC).
+            </td>
+            <td>
+             AerodromeCloud
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#cloudAndVisibilityOK" target="_blank">
+              cloudAndVisibilityOK
+             </a>
+            </td>
+            <td>
+             When true, indicates that the following conditions occur simultaneously at the time of observation (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#qnh" target="_blank">
+              qnh
+             </a>
+            </td>
+            <td>
+             The observed QNH altimeter setting. Altitude setting (also known as QNH) is defined as barometric pressure adjusted to sea level. It is a pressure setting used by pilots, air traffic control (ATC), and low frequency weather beacons to refer to the barometric setting which, when set on an aircraft's altimeter, will cause the altimeter to read altitude above mean sea level within a certain defined region. Measured altimeter setting shall be given in hectoPascals (hPa")."
+            </td>
+            <td>
+             MeasureWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#dewpointTemperature" target="_blank">
+              dewpointTemperature
+             </a>
+            </td>
+            <td>
+             The observed dew point temperature.  This is the temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur. Measured dew-point temperature shall be given in degrees Celsius (Cel")."
+            </td>
+            <td>
+             MeasureWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#airTemperature" target="_blank">
+              airTemperature
+             </a>
+            </td>
+            <td>
+             The observed air temperature.  This is the temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation. Measured air temperature shall be given in degrees Celsius (Cel")."
+            </td>
+            <td>
+             MeasureWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeObservation
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeObservation.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Meteorological conditions observed at an aerodrome. When no clouds of operational significance or no weather of operational significance is observed, the NothingOfOperationalSignificance nilReason is used for the cloud or presentWeather association. When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason is used for the cloud association.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#surfaceWind" target="_blank">
+              surfaceWind
+             </a>
+            </td>
+            <td>
+             Forecast of surface wind.
+            </td>
+            <td>
+             AerodromeSurfaceWindForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#temperature" target="_blank">
+              temperature
+             </a>
+            </td>
+            <td>
+             Forecast of temperature.
+            </td>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#cloud" target="_blank">
+              cloud
+             </a>
+            </td>
+            <td>
+             Forecast of cloud.
+            </td>
+            <td>
+             AerodromeCloudForecast
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#weather" target="_blank">
+              weather
+             </a>
+            </td>
+            <td>
+             Forecast of weather phenomena.
+            </td>
+            <td>
+             AerodromeForecastWeather
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#cloudAndVisibilityOK" target="_blank">
+              cloudAndVisibilityOK
+             </a>
+            </td>
+            <td>
+             When true, indicates that the following conditions occur simultaneously at the time of forecast (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#changeIndicator" target="_blank">
+              changeIndicator
+             </a>
+            </td>
+            <td>
+             The type of change being reported (FROM, BECOMING,  TEMPORARY, etc.). A change indicator is required for all MeteorologicalAerodromeForecasts excepting reported base conditions.
+            </td>
+            <td>
+             AerodromeForecastChangeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#prevailingVisibilityOperator" target="_blank">
+              prevailingVisibilityOperator
+             </a>
+            </td>
+            <td>
+             The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#prevailingVisibility" target="_blank">
+              prevailingVisibility
+             </a>
+            </td>
+            <td>
+             The prevailing horizontal visibility, mandatory except when ceiling and visibility is reported as OK Prevailing horizontal visibility shall be reported in meters (m")."
+            </td>
+            <td>
+             Distance
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which the reported phenomena or change of phenomena occur.  For change indicators of FROM, PROB 30/40, and TEMPO this is the period of time at which reported meteorological conditions occur.  For BECOMING conditions this represents the time over which conditions are changing.  This is equivalent to how time information is reported in the TAC codes
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeteorologicalAerodromeForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeteorologicalAerodromeForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Meteorological conditions forecast at an aerodrome.  This class is also related but not identical to MeteorologicalAerodromeTrendForecast, which is reported on a METAR/SPECI - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF. When no clouds of operational significance or no weather of operational significance is predicted, the nothingOfOperationalSignificance nilReason should be used for the cloud or presentWeather association. Note that the TAC representations for FM", "TL", and "AT" are represented by the phenomenonTime on the change forecast (MeteorologicalAerodromeForecast):     FM and TL - a phenomenonTime with a TimePeriod (start is FM and end is TL)     TL - a phenomenonTime with a TimePeriod (start is beginning of forecast validity and end is TL)     FM - a phenomenonTime with a TimePeriod (start is FM and end is end of forecast validity)     AT - a phenomenonTime with a TimeInstant"
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             METAR
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/METAR.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A routine observation made at an aerodrome throughout the day.  METAR observations are made (and distributed) at intervals of one hour or, if so determined by regional air navigation agreement, at intervals of one half-hour. The information contained in METAR and SPECI is identical. SPECI is issued when conditions merit a non-routine report on conditions at an aerodrome. METARs are a routine report produced for dissemination beyond the aerodrome of origin, and are mainly intended for flight planning, VOLMET broadcasts and D-VOLMET. See ICAO Annex 3 / WMO No. 49-2 Table A3-2
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             MeasureWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/MeasureWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable Measure quantity.  Unlike the base measure, references to this type may be nil and may include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             LengthWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/LengthWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable Length quantity.  Unlike the base Length measure, references to this type may be nil and include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             DistanceWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/DistanceWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable Distance quantity.  Unlike the base Distance measure, references to this type may be nil and may include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             CloudLayer
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/CloudLayer.html#cloudType" target="_blank">
+              cloudType
+             </a>
+            </td>
+            <td>
+             The observed significant cloud types: cumulonimbus or towering cumulus
+            </td>
+            <td>
+             SigConvectiveCloudType
+            </td>
+           </tr>
+           <tr>
+            <td>
+             CloudLayer
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/CloudLayer.html#base" target="_blank">
+              base
+             </a>
+            </td>
+            <td>
+             For a given cloud or cloud layer, height of the lowest level in the atmosphere at which the air contains a perceptible quantity of cloud particles. Measured cloud bases shall be reported in meters (m") or feet ("[ft_i]")."
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             CloudLayer
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/CloudLayer.html#amount" target="_blank">
+              amount
+             </a>
+            </td>
+            <td>
+             The observed cloud amount
+            </td>
+            <td>
+             CloudAmountReportedAtAerodrome
+            </td>
+           </tr>
+           <tr>
+            <td>
+             CloudLayer
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/CloudLayer.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A cloud layer, including a cloud amount, cloud base and cloud type.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             CloudAmountReportedAtAerodrome
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/CloudAmountReportedAtAerodrome.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Amount of cloud - assessed by category: - Sky clear (0 oktas) - Few (1 - 2 oktas) - Scattered (3 - 4 oktas) - Broken (5 - 7 oktas) - Overcast (8 oktas) This CodeList is specifically defined for aviation purposes, as defined in WMO No. 49-2. A superset of cloud-amount categories are defined in WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 008 Cloud distribution for aviation"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AviationColourCode
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AviationColourCode.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A CodeList representing the values for aviation colour codes specified in ICAO Annex 3 / WMO No. 49-2, such as RED, ORANGE, YELLOW, and GREEN
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AngleWithNilReason
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AngleWithNilReason.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A nillable Angle quantity.  Unlike the base Angle measure, references to this type may be nil and may include a nilReason
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingConditionCollection.html#member" target="_blank">
+              member
+             </a>
+            </td>
+            <td>
+             The members of this collection.
+            </td>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingConditionCollection.html#timeIndicator" target="_blank">
+              timeIndicator
+             </a>
+            </td>
+            <td>
+             Indication whether the information is observed and expected to continue, or forecast
+            </td>
+            <td>
+             TimeIndicator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingConditionCollection.html#phenomenonTime" target="_blank">
+              phenomenonTime
+             </a>
+            </td>
+            <td>
+             The time at which meteorological phenomena occur
+            </td>
+            <td>
+             TM_Object
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingConditionCollection
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingConditionCollection.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A collection of AIRMETEvolvingConditions, each representing a location where AIRMET observed or forecast conditions exist.  All members of this collection are of type AIRMETEvolvingCondition.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#approximateLocation" target="_blank">
+              approximateLocation
+             </a>
+            </td>
+            <td>
+             Indicator of whether the location of phenomena is approximate. If not reported locations are not approximate
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#surfaceWindSpeed" target="_blank">
+              surfaceWindSpeed
+             </a>
+            </td>
+            <td>
+             The widespread surface wind speed.  Only used with SFC WIND AIRMETs. Surface wind speed unit of measure shall be given as m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#surfaceWindDirection" target="_blank">
+              surfaceWindDirection
+             </a>
+            </td>
+            <td>
+             The widespread surface wind direction.  Only used with SFC WIND AIRMETs. Unit of measure shall be given as deg" in degrees from true North.  A true north wind is indicated with a direction of 360."
+            </td>
+            <td>
+             Angle
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#surfaceVisibilityCause" target="_blank">
+              surfaceVisibilityCause
+             </a>
+            </td>
+            <td>
+             The weather condition(s) causing reduced visibility.
+            </td>
+            <td>
+             WeatherCausingVisibilityReduction
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#surfaceVisibility" target="_blank">
+              surfaceVisibility
+             </a>
+            </td>
+            <td>
+             The surface visibility.  Only used with SFC VIS AIRMETs. Horizontal surface visibility unit of measure shall be given as m" (metre). ICAO Annex 3 / WMO No. 49-2: Appendix 6 Section 2.1"
+            </td>
+            <td>
+             Distance
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#cloudTopReference" target="_blank">
+              cloudTopReference
+             </a>
+            </td>
+            <td>
+             The reference surface used for the value of the cloud base. For example, Mean Sea Level, Ground, standard pressure,  etc..
+            </td>
+            <td>
+             CodeVerticalReferenceBaseType
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#cloudTop" target="_blank">
+              cloudTop
+             </a>
+            </td>
+            <td>
+             The cloud top of reported clouds.  Only used with an AIRMET reporting cloud phenomenon.  Height of cloud top shall be given in either m" (metres) or "[ft_i]" (feet). Cloud base and top may differ from but should be within the AIRMET base and top which are reported in airspace upper and lower limits."
+            </td>
+            <td>
+             Distance
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#cloudBaseReference" target="_blank">
+              cloudBaseReference
+             </a>
+            </td>
+            <td>
+             The reference surface used for the value of the cloud base. For example, Mean Sea Level, Ground, standard pressure,  etc..
+            </td>
+            <td>
+             CodeVerticalReferenceBaseType
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#cloudBase" target="_blank">
+              cloudBase
+             </a>
+            </td>
+            <td>
+             The cloud base of reported clouds.  Only used with an AIRMET reporting cloud phenomenon.  Height of cloud base shall be given in either m" (metres) or "[ft_i]" (feet). Cloud base and top may differ from but should be within the AIRMET base and top which are reported in airspace upper and lower limits."
+            </td>
+            <td>
+             Distance
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#intensityChange" target="_blank">
+              intensityChange
+             </a>
+            </td>
+            <td>
+             The expected change in intensity for the reported meteorological condition (e.g., intensifying, weakening, or no change) determined at the time of AIRMET analysis based on the current state of the meteorological condition
+            </td>
+            <td>
+             AIRMETExpectedIntensityChange
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#speedOfMotion" target="_blank">
+              speedOfMotion
+             </a>
+            </td>
+            <td>
+             The expected speed of movement of a meteorological condition. When no movement is expected, this will have a value of 0 and directionOfMotion will have a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason. Speed of movement shall be given in either km/h" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#directionOfMotion" target="_blank">
+              directionOfMotion
+             </a>
+            </td>
+            <td>
+             The expected direction of movement of a meteorological condition. When no movement is expected, this is a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason and the speedOfMotion will be 0.  Direction of motion to shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#geometry" target="_blank">
+              geometry
+             </a>
+            </td>
+            <td>
+             The expected geographic region(s) affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in ICAO Annex 3 / WMO No. 49-2: a boundary with a base and top, a TC centre position, and a VA line with a width
+            </td>
+            <td>
+             AirspaceVolume
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMETEvolvingCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMETEvolvingCondition.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Conditions that indicate the presence of a specific AIRMET phenomenon such as mountain obscuration or a thunderstorm, along with expected changes to the phenomenon such as intensity, speed, and direction.  These conditions are reported with OBS/FCST conditions on all AIRMET types. TC TOP (ABV and BLW) conditions are represented by the vertical component of the geometry.  For example: CB TOP FL500 is represented as a missing lowerLimit and an upperLimit of 500FL.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#isCancelReport" target="_blank">
+              isCancelReport
+             </a>
+            </td>
+            <td>
+             Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#analysis" target="_blank">
+              analysis
+             </a>
+            </td>
+            <td>
+             AIRMETs may include the same phenomenon covering more than one area within the FIR/UIR/CTA, as well as observed and forecast conditions for each of these reported areas.  AIRMETs may include a single set of observed and/or forecast conditions at a particular time, which is represented  as a single analysis with a single AIRMETEvolvingConditionCollection as its result.
+            </td>
+            <td>
+             AIRMETEvolvingConditionCollection
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#phenomenon" target="_blank">
+              phenomenon
+             </a>
+            </td>
+            <td>
+             The reported phenomenon, such as thunderstorm, tropical cyclone, icing, mountain wave, etc.
+            </td>
+            <td>
+             AeronauticalAreaWeatherPhenomenon
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#cancelledReportValidPeriod" target="_blank">
+              cancelledReportValidPeriod
+             </a>
+            </td>
+            <td>
+             The valid period of a previous AIRMET that is cancelled by this AIRMET.  Mandatory when this is a cancellation report, must be missing otherwise
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#cancelledReportSequenceNumber" target="_blank">
+              cancelledReportSequenceNumber
+             </a>
+            </td>
+            <td>
+             The sequence number of a previous AIRMET that is cancelled by this AIRMET.  Mandatory when this is a cancellation report, must be missing otherwise Examples: YUDD AIRMET 2 VALID ... YUDD AIRMET A3 VALID ...
+            </td>
+            <td>
+             CharacterString
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#validPeriod" target="_blank">
+              validPeriod
+             </a>
+            </td>
+            <td>
+             The valid period for the entire report, including all observations and forecast conditions.  Each observation/forecast phenomenon includes its own period of validity for described meteorological conditions, which is represented as the O&amp;M Observation validTime.
+            </td>
+            <td>
+             TM_Period
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#sequenceNumber" target="_blank">
+              sequenceNumber
+             </a>
+            </td>
+            <td>
+             The sequence number of this message.  For example: 5", "A3", or "2""
+            </td>
+            <td>
+             StringWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#issuingAirTrafficServicesRegion" target="_blank">
+              issuingAirTrafficServicesRegion
+             </a>
+            </td>
+            <td>
+             The ATS region (FIR, UIR, CTA, or FIR/UIR)
+            </td>
+            <td>
+             Airspace
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#originatingMeteorologicalWatchOffice" target="_blank">
+              originatingMeteorologicalWatchOffice
+             </a>
+            </td>
+            <td>
+             MWO originating this report
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#issuingAirTrafficServicesUnit" target="_blank">
+              issuingAirTrafficServicesUnit
+             </a>
+            </td>
+            <td>
+             The ATS unit serving the FIR or CTA to which the AIRMET refers.  ICAO Annex 3 / WMO No. 49-2: A6-1: Location indicator of FIR/CTA""
+            </td>
+            <td>
+             Unit
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#issueTime" target="_blank">
+              issueTime
+             </a>
+            </td>
+            <td>
+             The time at which this report was issued
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AIRMET
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AIRMET.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An AIRMET (significant meteorological) report. AIRMETs report the occurrence and/or expected occurrence of specified en-route weather phenomena which may affect the safety of aircraft operations, and of the development of those phenomena over time. The AIRMET report class represents the base AIRMET types that may be reported such as squall lines, thunderstorms, dust storms, turbulence, etc. AIRMETs may report either observed or forecast hazardous conditions.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AeronauticalSignificantWeatherPhenomenon
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AeronauticalSignificantWeatherPhenomenon.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Weather phenomenon of significance to aviation operations; used in SIGMET and AIRMET reports. The set of permitted options are defined in ICAO Annex 3 / WMO No. 49-2 C.3.1 sub-clause 1.1.4
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AeronauticalAreaWeatherPhenomenon
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AeronauticalAreaWeatherPhenomenon.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Weather phenomenon of significance to aviation operations; used in AIRMET reports. The set of permitted options are defined in ICAO Annex 3 / WMO No. 49-2 C.3.1 sub-clause 1.1.4
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeWindShear
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeWindShear.html#allRunways" target="_blank">
+              allRunways
+             </a>
+            </td>
+            <td>
+             When true, all runways are observed to have wind shear
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeWindShear
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeWindShear.html#runway" target="_blank">
+              runway
+             </a>
+            </td>
+            <td>
+             The specific runway(s) affected by wind shear at this aerodrome. No specific runways are reported when all runways are affected by wind shear
+            </td>
+            <td>
+             RunwayDirection
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeWindShear
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeWindShear.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of wind shear conditions typically reported together at an aerodrome, including the set of affected runways.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#windGustSpeedOperator" target="_blank">
+              windGustSpeedOperator
+             </a>
+            </td>
+            <td>
+             Indication that the wind gust speed is above or below the reported value.  To report a wind gust speed of at least 49 meters per second, wind gust speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind gust speed is an exact value with identical semantics to other measured quantities."
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#windGustSpeed" target="_blank">
+              windGustSpeed
+             </a>
+            </td>
+            <td>
+             Forecast variations from the mean wind speed (gusts). Wind gusts shall be provided in either two units of measures: m/s" or "[kn_i]" (knot). "
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#meanWindSpeedOperator" target="_blank">
+              meanWindSpeedOperator
+             </a>
+            </td>
+            <td>
+             Indication that the mean wind speed is above or below the reported value.  To report a wind speed of at least 49 meters per second, wind speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind speed is an exact value with identical semantics to other measured quantities."
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#meanWindSpeed" target="_blank">
+              meanWindSpeed
+             </a>
+            </td>
+            <td>
+             The forecast average wind speed. Wind speeds shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             Velocity
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#meanWindDirection" target="_blank">
+              meanWindDirection
+             </a>
+            </td>
+            <td>
+             The forecast average wind direction from which wind is blowing. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0."
+            </td>
+            <td>
+             Angle
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindTrendForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindTrendForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A trend forecast of surface wind conditions at an aerodrome.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindForecast.html#variableWindDirection" target="_blank">
+              variableWindDirection
+             </a>
+            </td>
+            <td>
+             Indicates variable wind direction.  Cannot be reported with a mean wind direction
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWindForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWindForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             A forecast of wind conditions at an aerodrome. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0. Wind speeds and gusts, if present, shall be provided in either two units of measures: "m/s" or "[kn_i]" (knot). This extends AerodromeSurfaceWindTrendForecast to allow for a variable wind direction to be reported.  This class differs from a aerodrome wind observation in that the observations may include a min/max directional variability.  This class only carries a true/false indication that it will be variable. "
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#variableWindDirection" target="_blank">
+              variableWindDirection
+             </a>
+            </td>
+            <td>
+             When true, indicates that the wind direction is variable.  A wind direction value may still be reported
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#extremeCounterClockwiseWindDirection" target="_blank">
+              extremeCounterClockwiseWindDirection
+             </a>
+            </td>
+            <td>
+             The extreme counter-clockwise direction from which the wind has varied, inclusive. This corresponds to the dndndn part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#extremeClockwiseWindDirection" target="_blank">
+              extremeClockwiseWindDirection
+             </a>
+            </td>
+            <td>
+             The extreme clockwise direction from which the wind has varied, inclusive. This corresponds to the dxdxdx part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#windGustSpeedOperator" target="_blank">
+              windGustSpeedOperator
+             </a>
+            </td>
+            <td>
+             Indication that the wind gust speed is above or below the reported value.  To report a wind gust speed of at least 49 meters per second, wind gust speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind gust speed is an exact value with identical semantics to other measured quantities."
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#windGustSpeed" target="_blank">
+              windGustSpeed
+             </a>
+            </td>
+            <td>
+             Variations from the mean wind speed (gusts) during the past 10 minutes. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2c Wind gusts shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             VelocityWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#meanWindSpeedOperator" target="_blank">
+              meanWindSpeedOperator
+             </a>
+            </td>
+            <td>
+             Indication that the mean wind speed is above or below the reported value.  To report a wind speed of at least 49 meters per second, wind speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind speed is an exact value with identical semantics to other measured quantities."
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#meanWindSpeed" target="_blank">
+              meanWindSpeed
+             </a>
+            </td>
+            <td>
+             The average observed wind speed over the past ten minutes ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2a Wind speeds shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+            </td>
+            <td>
+             VelocityWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#meanWindDirection" target="_blank">
+              meanWindDirection
+             </a>
+            </td>
+            <td>
+             The observed average wind direction from which the wind is blowing over the past ten minutes.  Not reported when winds are variable. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0."
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSurfaceWind
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSurfaceWind.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of surface wind conditions typically reported together at an aerodrome, including wind direction information, wind speed, and wind gusts.
+
+Wind direction is reported according to ICAO Annex 3 / WMO No. 49-2 Section 4.1.5.2b:
+"variations from the mean wind direction during the past 10 minutes is reported as follows, if the total variation is 60 or more:
+1) when the total variation is 60 or more and less than 180 and the wind speed is 1.5 m/s (3 kt) or more, such directional variations are reported as the two extreme directions between which the surface wind has varied;
+2) when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction is reported as variable with no mean wind direction; or
+3) when the total variation is 180 or more, the wind direction is reported as variable with no mean wind direction"
+
+Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is "deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0. Wind speeds and gusts, if present, shall be provided in either two units of measures: "m/s" or "[kn_i]" (knot)
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSeaCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSeaCondition.html#seaState" target="_blank">
+              seaState
+             </a>
+            </td>
+            <td>
+             The state of the sea observed by aeronautical meteorological stations established on offshore structures in support of helicopter operations ICAO Annex 3 / WMO No. 49-2: Section 4.8.1.5a WMO 306: Table 3700
+            </td>
+            <td>
+             SeaSurfaceState
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSeaCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSeaCondition.html#significantWaveHeight" target="_blank">
+              significantWaveHeight
+             </a>
+            </td>
+            <td>
+             The significant wave height observed. Significant wave height shall be reported in meters (m")."
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSeaCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSeaCondition.html#seaSurfaceTemperature" target="_blank">
+              seaSurfaceTemperature
+             </a>
+            </td>
+            <td>
+             The sea-surface temperature observed by aeronautical meteorological stations established on offshore structures in support of helicopter operations. The term sea surface temperature is generally meant to be representative of the upper few meters of the ocean as opposed to the skin temperature, which is the temperature of the upper few centimeters. Temperatures shall be reported in degrees Celsius (Cel"). ICAO Annex 3 / WMO No. 49-2: Section 4.8.1.5a"
+            </td>
+            <td>
+             MeasureWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeSeaCondition
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeSeaCondition.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of sea state conditions typically reported together at an aerodrome.  This includes information on sea-surface temperature and either the state of the sea or significant wave height from aeronautical meteorological stations established on offshore structures in support of helicopter operations
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayVisualRange.html#pastTendency" target="_blank">
+              pastTendency
+             </a>
+            </td>
+            <td>
+             The runway visual range tendency (up, down, none). If the runway visual range values during the 10-minute period have shown a distinct tendency, such that the mean during the first 5 minutes varies by 100 m or more from the mean during the second 5 minutes of the period, this should be indicated. When the variation of the runway visual range values shows an upward or downward tendency, this should be indicated by Up" or "Down", respectively. In circumstances when actual fluctuations during the 10-minute period show no distinct tendency, this should be indicated using "No Change?. When indications of tendency are not available, no information should be reported ICAO Annex 3 / WMO No. 49: Table A3-2 Note 9 Section 4.3.6.6a"
+            </td>
+            <td>
+             VisualRangeTendency
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayVisualRange.html#meanRVROperator" target="_blank">
+              meanRVROperator
+             </a>
+            </td>
+            <td>
+             The reported relational operator for the mean RVR. When reported, this operator is reported in conjunction with mean RVR. To report a mean RVR of at least 2000 metres, mean RVR is reported as 2000 metres and the operator is reported as above".  To report a mean RVR of less than 50 metres, mean RVR is reported as 50 metres and the operator is reported as "below".  When no operator is reported, mean RVR represents an exact value with identical semantics to other measured quantities"
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayVisualRange.html#meanRVR" target="_blank">
+              meanRVR
+             </a>
+            </td>
+            <td>
+             The mean recent runway visual range value observed. This mean represents the 10 minute average for observed RVR except when the 10-minute period immediately preceding the observation includes a marked discontinuity in runway visual range values, only those values occurring after the discontinuity is used for obtaining mean values. Mean runway visual range distance shall be reported in meters (m"). To report a mean RVR of at least 2000 meters, mean RVR is reported as 2000 meters and the operator is reported as "above" Annex 3: Table A3-2 "RVR/RVR" Section 4.3.6.6"
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayVisualRange.html#runway" target="_blank">
+              runway
+             </a>
+            </td>
+            <td>
+             The runway to which reported runway visual range information applies
+            </td>
+            <td>
+             RunwayDirection
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayVisualRange
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayVisualRange.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of runway visual range conditions for a single runway, typically reported together at an aerodrome
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#fromPreviousReport" target="_blank">
+              fromPreviousReport
+             </a>
+            </td>
+            <td>
+             When true, indicates a new runway state report is not available in time for dissemination of the METAR message and the previous runway state report is being repeated
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#cleared" target="_blank">
+              cleared
+             </a>
+            </td>
+            <td>
+             Indicates that reported runway has been cleared of meteorological deposits, such as snow. ICAO Annex 3 / WMO No. 49-2: CLRD" Section 4.8.1.5, Table A3-2 "State of the runway""
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#allRunways" target="_blank">
+              allRunways
+             </a>
+            </td>
+            <td>
+             When true, indicates the reported conditions apply to all runways
+            </td>
+            <td>
+             Boolean
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#estimatedSurfaceFrictionOrBrakingAction" target="_blank">
+              estimatedSurfaceFrictionOrBrakingAction
+             </a>
+            </td>
+            <td>
+             The estimated surface friction or braking action for the affected runway.  When braking conditions are not reported and/or the runway is not operational estimatedSurfaceFrictionOrBrakingAction will not be reported. WMO 306: Table 0366
+            </td>
+            <td>
+             RunwayFrictionCoefficient
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#depthOfDeposit" target="_blank">
+              depthOfDeposit
+             </a>
+            </td>
+            <td>
+             Depth of deposit on the surface of the runway. Measured depth of deposit shall be given in millimeters (mm"). See WMO No. 306 WMO Code table 1079."
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#contamination" target="_blank">
+              contamination
+             </a>
+            </td>
+            <td>
+             Proportion of runway surface that is contaminated - usually expressed as a percentage of the total runway area. WMO reporting procedures require that contamination is reported in the following categories: - less than 10%; - between 11% and 25%; - between 26% and 50%; and - more than 50%. See WMO No. 306: - WMO Code table 0519 - BUFR Code table 0 20 087
+            </td>
+            <td>
+             RunwayContamination
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#depositType" target="_blank">
+              depositType
+             </a>
+            </td>
+            <td>
+             The type of runway deposit, such as damp conditions, wet snow, or ice. WMO 306: Table 0919
+            </td>
+            <td>
+             RunwayDeposits
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#runway" target="_blank">
+              runway
+             </a>
+            </td>
+            <td>
+             The runway to which the conditions apply.  The runway may be missing in cases where all runways are closed due to snow
+            </td>
+            <td>
+             RunwayDirection
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRunwayState
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRunwayState.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of runway conditions typically reported together at an aerodrome, including the runway contamination, friction, and deposits.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeRecentWeather
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeRecentWeather.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Weather phenomenon of operational significance to aviation observed during the period since the last routine report, or last hour, whichever is shorter, but not at the time of observation. Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2. This CodeList is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 Significant weather phenomena"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromePresentWeather
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromePresentWeather.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             The present weather observed at, or in near vicinity of, an aerodrome. Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2. This CodeList is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 Significant weather phenomena"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeHorizontalVisibility
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeHorizontalVisibility.html#minimumVisibilityDirection" target="_blank">
+              minimumVisibilityDirection
+             </a>
+            </td>
+            <td>
+             The direction of the minimum visibility relative to the reporting station.  This is optional in cases where minimum visibility is reported but the visibility is fluctuating rapidly.  Minimum visibility is reported in cardinal and inter-cardinal directions (N, NE, E, SE, S, SW, W, and NW) Direction of minimum visibility shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+            </td>
+            <td>
+             AngleWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeHorizontalVisibility
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeHorizontalVisibility.html#minimumVisibility" target="_blank">
+              minimumVisibility
+             </a>
+            </td>
+            <td>
+             The minimum observed visibility. Measured minimum visibility shall be reported in meters (m") only. ICAO Annex 3 / WMO No. 49-2 Section 4.2.4.4a: "When the visibility is not the same in different directions and a) when the lowest visibility is different from the prevailing visibility, and   1) less than 1500 m or   2) less than 50 percent of the prevailing visibility and less than 5000 m; the lowest visibility observed should also be reported and,when possible, its general direction in relation to the aerodrome reference point indicated by reference to one of the eight points of the compass. If the lowest visibility is observed in more than one direction, then the most operationally significant direction should be reported; and
+b) when the visibility is fluctuating rapidly, and the prevailing visibility cannot be determined, only the lowest visibility
+should be reported, with no indication of direction
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeHorizontalVisibility
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeHorizontalVisibility.html#prevailingVisibilityOperator" target="_blank">
+              prevailingVisibilityOperator
+             </a>
+            </td>
+            <td>
+             The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
+            </td>
+            <td>
+             RelationalOperator
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeHorizontalVisibility
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeHorizontalVisibility.html#prevailingVisibility" target="_blank">
+              prevailingVisibility
+             </a>
+            </td>
+            <td>
+             The reported prevailing horizontal visibility at the surface that is representative of the aerodrome. Measured prevailing horizontal visibility shall be reported in meters (m") only. The greatest visibility value, observed in accordance with the definition of "visibility", which is reached within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors. Note: This value may be assessed by human observation and/or instrumented systems. When instruments are installed, they are used to obtain the best estimate of the prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the prevailing visibility operator is reported as "above". ICAO Annex 3 / WMO No. 49-2: Section 4.2.4.4b"
+            </td>
+            <td>
+             DistanceWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeHorizontalVisibility
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeHorizontalVisibility.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of horizontal visibility conditions typically reported together at an aerodrome, including the prevailing visibility and minimum visibility. Direction of minimum visibility shall be given in degrees from true North. Plane angle unit of measure (uom) is deg". Measured prevailing and minimum horizontal visibility, if present, shall be reported in meters ("m") only."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeForecastWeather
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeForecastWeather.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             AerodromeForecastWeather enables the forecast weather at an aerodrome to be reported. Only a specific set of weather phenomenon are reported within aviation meteorology as defined in Regulation ICAO Annex 3 / WMO No. 49-2. This CodeList is specifically defined for aviation purposes as defined in WMO No. 49-2. A superset of definitions are defined in WMO No. 306 Vol I.1 code-table 4678 Significant weather phenomena"."
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloudForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloudForecast.html#layer" target="_blank">
+              layer
+             </a>
+            </td>
+            <td>
+             Description of individual layer of cloud.
+            </td>
+            <td>
+             CloudLayer
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloudForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloudForecast.html#verticalVisibility" target="_blank">
+              verticalVisibility
+             </a>
+            </td>
+            <td>
+             The vertical visibility.  Vertical visibility is defined as the vertical visual range into an obscuring medium. Vertical visibility shall be reported either in meters (m") or feet ("[ft_i]"). "
+            </td>
+            <td>
+             LengthWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloudForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloudForecast.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             Forecast cloud conditions, including predicted vertical visibility and cloud layers. A single vertical visibility may be reported, but cannot be reported with cloud layers.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloud
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloud.html#layer" target="_blank">
+              layer
+             </a>
+            </td>
+            <td>
+             missing data
+            </td>
+            <td>
+             CloudLayer
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloud
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloud.html#verticalVisibility" target="_blank">
+              verticalVisibility
+             </a>
+            </td>
+            <td>
+             The reported vertical visibility.  Vertical visibility is defined as the vertical visual range into an obscuring medium. Measured vertical visibility shall be reported in either two units of measures: meters (m") or feet ("[ft_i]"). Note: vertical visibility is only reported in aviation-specific WMO Code-forms (FM-15 METAR, FM-16 SPECI and FM-51 TAF) thus prevailing visibility is considered to be an aviation-specific quantity. When the sky is obscured and the value of the vertical visibility cannot be determined by the automatic observing system due to a temporary failure of the system/sensor ("VV///") the vertical visibility is missing with a nil reason of notObservable"
+            </td>
+            <td>
+             LengthWithNilReason
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeCloud
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeCloud.html#missing data" target="_blank">
+              missing data
+             </a>
+            </td>
+            <td>
+             An aggregation of observed cloud conditions typically reported together at an aerodrome, including cloud types, cloud layers, and vertical visibility.
+            </td>
+            <td>
+             missing data
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeAirTemperatureForecast.html#minimumAirTemperatureTime" target="_blank">
+              minimumAirTemperatureTime
+             </a>
+            </td>
+            <td>
+             The time of occurrence of the minimum air temperature.  This must be within the period of the phenomenon time for this forecast record ICAO Annex 3 / WMO No. 49-2: TN""
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeAirTemperatureForecast.html#minimumAirTemperature" target="_blank">
+              minimumAirTemperature
+             </a>
+            </td>
+            <td>
+             The minimum air temperature expressed in degrees Celsius (Cel") ICAO Annex 3 / WMO No. 49-2: "TN""
+            </td>
+            <td>
+             Measure
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeAirTemperatureForecast.html#maximumAirTemperatureTime" target="_blank">
+              maximumAirTemperatureTime
+             </a>
+            </td>
+            <td>
+             The time of occurrence of the maximum air temperature.  This must be within the period of the phenomenon time for this forecast record ICAO Annex 3 / WMO No. 49-2: TX""
+            </td>
+            <td>
+             TM_Instant
+            </td>
+           </tr>
+           <tr>
+            <td>
+             AerodromeAirTemperatureForecast
+            </td>
+            <td>
+             <a href="icao_wxxm_3.0.0_to_airm_1.0.0/AerodromeAirTemperatureForecast.html#maximumAirTemperature" target="_blank">
+              maximumAirTemperature
+             </a>
+            </td>
+            <td>
+             The maximum air temperature expressed in degrees Celsius (Cel") ICAO Annex 3 / WMO No. 49-2: "TX""
+            </td>
+            <td>
+             Measure
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../developers.html">
+     <img src="../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../assets/js/bs-init.js">
+  </script>
+  <script src="../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../assets/js/theme.js">
+  </script>
+  <script src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="../assets/js/datatables.js">
+  </script>
+  <script src="../assets/js/ie.js">
+  </script>
+  <script src="../assets/js/smooth.js">
+  </script>
+  <script src="../assets/js/toast.js">
+  </script>
+  <script src="../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

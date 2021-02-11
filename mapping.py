@@ -9,9 +9,9 @@ class Mapping:
   dataframe = None
      
   def __init__(self, mapping_file_pathname):
-    self.dataframe = pd.read_excel(r''+mapping_file_pathname, sheet_name='semantic correspondences')
+    self.dataframe = pd.read_excel(r''+mapping_file_pathname, sheet_name='semantic correspondences', engine='openpyxl')
     self.dataframe.fillna("missing data", inplace = True)
-    self.dictionary = dataframe.to_dict('records')
+    self.dictionary = self.dataframe.to_dict('records')
   
   def get_information_concepts():
     return None
