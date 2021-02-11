@@ -27,13 +27,6 @@ def create_mapping_index_page (mapping_file_pathname, template):
   f.write(soup.prettify())
   f.close()
 
-def print_information_concepts(mapping_file_pathname):
-  import mapping
-  mapping = mapping.Mapping(mapping_file_pathname)
-  information_concepts = mapping.get_information_concepts()
-  for concept in information_concepts:
-    print(concept["Information Concept"])
-
 def dummy_create_mapping_item_pages (mapping_file_pathname, template):
   import mapping
   mapping = mapping.Mapping(mapping_file_pathname)
@@ -41,10 +34,19 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
 
   information_concepts = mapping.get_information_concepts()
   
-  for concept in information_concepts:
-    print(concept["Information Concept"])
+  for info_concept in information_concepts:
+    print(info_concept["Information Concept"])
     import utils
     soup = utils.create_html_soup(template)
+
+    soup.title.string = str(info_concept['Information Concept']) + " - " + mapping_metadata["name"] + " | AIRM.aero"
+    soup.find(text="INFO_CONCEPT_NAME_BC").replace_with(str(info_concept['Information Concept']))
+    h2 = soup.new_tag("h2")
+    h2.string = str(info_concept['Information Concept'])
+    soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+    
+    #definition = fixm.get_fixm_class_definition(info_concept['Information Concept'])
+    #soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(definition))
     
     f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + concept["Information Concept"] + ".html","w+")
     f.write(soup.prettify())
