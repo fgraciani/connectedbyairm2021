@@ -1,0 +1,25 @@
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*border-right: 1px solid #eee;*/
+  width: 350px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.page-footer.dark {
+  z-index: 1000;
+}
+
+.nav.nav-tabs.text-right.text-secondary.shadow.col-sm-3.col-md-2.d-none.d-sm-block.sidebar {
+  z-index: 10;
+}
+

@@ -1,0 +1,3296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AIRM API - Developers | AIRM.aero</title>
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="523x412" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/airm-custom.css">
+    <link rel="stylesheet" href="../assets/css/beta.css">
+    <link rel="stylesheet" href="../assets/css/Brands.css">
+    <link rel="stylesheet" href="../assets/css/codewrap.css">
+    <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/agate.min.css">
+    <link rel="stylesheet" href="../assets/css/scroll.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/smoothproducts.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="../developers.html"><img style="height: 33px;" src="../assets/img/Picture2-black.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item item"><a class="nav-link" href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="advanced-search.html">AIRM Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../community.html">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../documentation.html">DOCS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">&nbsp;</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: rgb(143,170,220);" href="../developers.html">Developers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav nav-tabs text-right text-secondary shadow col-sm-3 col-md-2 d-none d-sm-block sidebar" style="padding-left: 25px;padding-right: 21px;background: rgb(51,51,51);max-width: 18%;border-style: none;">
+        <li class="nav-item text-white-50" style="padding-top: 140px;">
+            <h4 class="text-right text-white-50" style="padding-right: 14px;">API</h4>
+        </li>
+        <li class="nav-item text-secondary"><a class="nav-link text-light" href="#intro"><strong>Introduction</strong></a></li>
+        <li class="nav-item text-white-50">
+            <hr style="color: rgb(127,147,153);">
+            <h4 class="text-uppercase text-right text-white-50" style="padding-right: 14px;">Concepts</h4>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="#terms"><strong>Terms</strong></a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#abbreviations"><strong>Abbreviations</strong></a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#conceptual-model"><strong>Conceptual Model</strong></a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#logical-model"><strong>Logical Model</strong></a></li>
+        <li class="nav-item text-white-50">
+            <hr style="color: rgb(127,147,153);border-style: solid;">
+            <h4 class="text-uppercase text-right text-white-50" style="padding-right: 14px;">Search</h4>
+        </li>
+        <li class="nav-item"><a class="nav-link text-light" href="#basic-search"><strong>Basic Search</strong></a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#advanced-search"><strong>Advanced Search</strong></a></li>
+    </ul>
+    <main class="page" style="padding-top: 80px;margin-left: 250px;max-width: 80%;">
+        <section class="clean-block features">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info" style="color: rgb(143,170,220);">AIRM API</h2>
+                    <div></div>
+                    <p>Connect your software with the AIRM API to retrieve terms, definitions, URNs and much more.&nbsp;<br></p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center" style="text-align: center;">
+                        <div class="getting-started-info">
+                            <p class="text-center">&nbsp;</p>
+                        </div>
+                        <div class="getting-started-info"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row" id="intro">
+                            <div class="col-12">
+                                <h2>Introduction</h2>
+                                <p>The AIRM API is organised around <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">REST</a>. Our API has predictable resource-oriented URLs, returns <a href="http://www.json.org/">JSON-encoded</a> responses, and uses standard HTTP response codes, authentication, and verbs.<br></p>
+                                <p>The API is organised in two categories: concepts API and search API.</p>
+                                <h4>Concepts API</h4>
+                                <p>The API for concepts lets the user retrieve items from any of the&nbsp;<a href="http://airm.bss.design/documentation/airm-components.html">AIRM Components</a>. Use the concepts API to retrieve AIRM concepts by name or urn.</p>
+                                <h4>Search API</h4>
+                                <p>The API for search provides access to the search capabilities available on the AIRM.aero website. Use the search API to find AIRM concepts using keywords and filters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="terms">
+                            <div class="col-12">
+                                <h2>Terms</h2>
+                                <p>The REST API for Terms (Contextual Model)</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/terms</code></h3>
+                                <p>Retrieves a term from the Contextual Model matching que parameters provided in the request.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">name </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The term's name.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">urn</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The&nbsp;term's&nbsp;urn.<br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">name=aircraft</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/terms?name=aircraft" -H "accept: application/json"
+</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/terms?name=aircraft
+</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>[
+  {
+    "id": 2539,
+    "name": "Aircraft",
+    "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Aircraft",
+    "description": "Any machine that can derive support in the atmosphere from the reactions of the air other than the reactions of the air against the earth's surface.",
+    "sources": [
+      "ICAO"
+    ],
+    "status": "Approved",
+    "version": "1.0.0",
+    "abbreviation": null,
+    "synonyms": []
+  }
+]
+</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Mon18 Jan 2021 12:40:04 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding 
+</code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="abbreviations">
+                            <div class="col-12">
+                                <h2>Abbreviations</h2>
+                                <p>The REST API for Abbreviations (Contextual Model)</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/abbreviations</code></h3>
+                                <p>Retrieves an abbreviation from the Contextual Model matching que parameters provided in the request.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">name </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The abbreviation's name.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">urn</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The&nbsp;abbreviation's&nbsp;urn.<br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">name=CDM</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/abbreviations?name=CDM" -H "accept: application/json"
+</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/abbreviations?name=CDM
+</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>[
+  {
+    "id": 1735,
+    "name": "CDM",
+    "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:CDM",
+    "description": "Collaborative Decision Making",
+    "sources": [
+      "SESAR"
+    ],
+    "status": "Approved",
+    "version": "1.0.0"
+  }
+]
+</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Mon18 Jan 2021 13:47:30 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding  
+</code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="conceptual-model">
+                            <div class="col-12">
+                                <h2>Conceptual Model</h2>
+                                <p>The REST API for the Conceptual Model</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/conceptual-models</code></h3>
+                                <p>Retrieves a concept from the Conceptual Model matching que parameters provided in the request.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">name </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The concept's name.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">urn</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The&nbsp;concept's&nbsp;urn.<br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">name=WakeTurbulenceCategory</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/conceptual-models?name=WakeTurbulenceCategory" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/conceptual-models?name=WakeTurbulenceCategory</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>[
+  {
+    "id": 1559,
+    "name": "WakeTurbulenceCategory",
+    "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Aircraft:WakeTurbulenceCategory",
+    "description": "A grouping of aircraft according to the effect of the rotating air mass created behind the wing tips.",
+    "sources": [
+      "ICAO Doc 4444"
+    ],
+    "status": "Approved",
+    "version": "1.0.0",
+    "synonyms": [],
+    "properties": [],
+    "propertiesType": [],
+    "associations": [
+      {
+        "id": 1683,
+        "name": null,
+        "cmType": 1838,
+        "cmId": 1559,
+        "cmTypeName": "FFICEInformation"
+      }
+    ],
+    "associationsType": []
+  }
+]</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 09:46:08 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding</code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="logical-model">
+                            <div class="col-12">
+                                <h2>Logical Model</h2>
+                                <p>The REST API for the Logical Model</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/logical-models</code></h3>
+                                <p>Retrieves a concept from the Logical Model matching que parameters provided in the request.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">name </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The concept's name.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">urn</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The&nbsp;concept's&nbsp;urn.<br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">name=CodeRouteType<br></code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/logical-models?name=CodeRouteType" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/logical-models?name=CodeRouteType</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>[
+  {
+    "id": 1157,
+    "name": "CodeRouteType",
+    "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType",
+    "description": "A code indicating the route classification.",
+    "sources": [
+      "EUROCONTROL-FAA AIXM v.5.1"
+    ],
+    "status": "Approved",
+    "version": "1.0.0",
+    "toDisplay": false,
+    "synonyms": [],
+    "parentId": null,
+    "parentIds": [],
+    "properties": [
+      {
+        "id": 7821,
+        "name": "ATS_ROUTE",
+        "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@ATS_ROUTE",
+        "description": "A specified route designed for channelling the flow of traffic as necessary for the provision of air traffic services.",
+        "type": null,
+        "typeName": null,
+        "primitiveType": null,
+        "sources": null,
+        "termsInDefinition": [],
+        "cardinality": {
+          "lower": 0,
+          "upper": 1
+        }
+      },
+      {
+        "id": 7822,
+        "name": "NAT",
+        "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@NAT",
+        "description": "A route between Europe and North America whose exact location changes daily according to weather and traffic demands.",
+        "type": null,
+        "typeName": null,
+        "primitiveType": null,
+        "sources": null,
+        "termsInDefinition": [],
+        "cardinality": {
+          "lower": 0,
+          "upper": 1
+        }
+      },
+      {
+        "id": 7823,
+        "name": "OCEANIC_TRACK",
+        "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@OCEANIC_TRACK",
+        "description": "A route that is part of an Organised Track System established for an oceanic area.",
+        "type": null,
+        "typeName": null,
+        "primitiveType": null,
+        "sources": null,
+        "termsInDefinition": [],
+        "cardinality": {
+          "lower": 0,
+          "upper": 1
+        }
+      }
+    ]
+  }
+]</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 09:51:38 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding </code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="basic-search">
+                            <div class="col-12">
+                                <h2>Basic Search</h2>
+                                <p>The REST API for searching the Contextual Model and Conceptual Model.</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/dictionary-items</code></h3>
+                                <p>Retrieves a list of concepts, terms and abbreviations from the Contextual Model and Conceptual Model matching que parameters provided in the request. Results are paginated.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">predicate </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The search text.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">page</code>&nbsp;<span class="badge badge-secondary text-monospace">(integer)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The result's page. The first page is <code class="text-muted">page=1</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">predicate=cdm page=1<br></code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/dictionary-items/ABBREVIATION/1735" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/dictionary-items/ABBREVIATION/1735</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>{
+  "id": 1735,
+  "name": "CDM",
+  "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:CDM",
+  "description": "Collaborative Decision Making",
+  "sources": [
+    "SESAR"
+  ],
+  "status": "Approved",
+  "version": "1.0.0",
+  "termsInDefinition": [],
+  "synonyms": [],
+  "abbreviation": null,
+  "associations": [],
+  "parent": null,
+  "properties": [],
+  "entityType": "ABBREVIATION",
+  "parents": [],
+  "directParents": [],
+  "parentProperties": [],
+  "externalLink": null
+}</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 12:45:49 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding </code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/dictionary-items/{type}/{id}</code></h3>
+                                <p>Retrieves a known item from the Contextual Model or Conceptual Model.&nbsp;<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-info text-monospace">optional</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">id </code><span class="badge badge-secondary text-monospace">(integer)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The API id for the item. Note: this is not the URN.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">type</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The type of the item. Values:&nbsp;<code class="text-muted">TERM</code>, <code class="text-muted">ABBREVIATION</code>&nbsp;and&nbsp;<code class="text-muted">CONCEPTUAL_MODEL</code>.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">predicate=cdm page=1<br></code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/dictionary-items?predicate=cdm&page=1" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/dictionary-items?predicate=cdm&page=1</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>{
+  "items": [
+    {
+      "id": 1735,
+      "name": "CDM",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:CDM",
+      "description": "Collaborative Decision Making",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "ABBREVIATION",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 1634,
+      "name": "A-CDM",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:A-CDM",
+      "description": "Airport Collaborative Decision Making",
+      "sources": [
+        "EU/EC COMMISSION IMPLEMENTING REGULATION (EU) No 716/2014"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "ABBREVIATION",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 2508,
+      "name": "ACDMIrregularity",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:ACDMIrregularity",
+      "description": "An irregularity which normally requires one or more partners to make a manual intervention to resolve the irregularity.",
+      "sources": [
+        "EUROCONTROL A-CDM Implementation manual"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [
+        {
+          "role": "triggers",
+          "typeName": "AirportCDMAlert"
+        },
+        {
+          "role": "occurs at",
+          "typeName": "Aerodrome"
+        },
+        {
+          "role": "concerns",
+          "typeName": "Flight"
+        },
+        {
+          "role": "is described by",
+          "typeName": "ACDMIrregularityType"
+        }
+      ],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": "ACDMIrregularity"
+    },
+    {
+      "id": 2509,
+      "name": "ACDMIrregularityType",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:AerodromeOperations:Turnaround:ACDMIrregularityType",
+      "description": "Element from the configuration that describes the kind of irregularity that can be raised for A-CDM.",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Proposed",
+      "version": "1.0.0",
+      "termsInDefinition": [],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 2667,
+      "name": "AirportCDMAlert",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:InformationServicesProducts:AirportCDMInformationProduct:AirportCDMAlert",
+      "description": "A system generated message which alerts the Airport CDM Partners of an irregularity and which normally requires one or more partners to make a manual intervention to resolve the irregularity.",
+      "sources": [
+        "EUROCONTROL A-CDM Implementation manual"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 3195,
+          "type": "TERM",
+          "name": "Message",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A communication sent from one location to another and comprising an integral number of fields.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Message",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3877,
+          "type": "TERM",
+          "name": "system",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "the aggregation of airborne and ground-based constituents, as well as space-based equipment, that provides support for air navigation services for all phases of flight",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:system",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC REGULATION (EC) No 549/2004"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 2003,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "DME",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Ultra High Frequency (UHF) ground equipment that is used in conjunction with airborne equipment to determine distance between the airborne and ground equipment.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:BaseInfrastructure:NavigationInfrastructure:DME",
+          "synonyms": [
+            "Distance Measuring Equipment"
+          ],
+          "properties": [],
+          "sources": [
+            "EUROCONTROL-FAA AIXM v.5.1"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3012,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Alert",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Indication of an actual or potential hazardous situation that requires particular attention or action.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:OrganisationRoleAndService:Alert",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [
+        {
+          "role": null,
+          "typeName": "ACDMIrregularity"
+        }
+      ],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 1856,
+      "name": "MCDM",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:MCDM",
+      "description": "Measure Collaborative Decision Making",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "ABBREVIATION",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 2620,
+      "name": "MCDMCoordination",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:MCDMCoordination",
+      "description": "Coordination, in the context of Measure Collaborative Decision Making, for an ATFM measure or an action on a flight.",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Proposed",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 2102,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Flight",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The operation of an aircraft which, in the case of a manned aircraft, takes place between the time any person boards the aircraft with the intention of flight until such time as all such persons have disembarked, or in the case of an unmanned aircraft, takes place between the time the aircraft is ready to move with the purpose of flight until such time as it comes to rest at the end of the flight and the primary propulsion system is shut down.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Flight:Flight",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO Annex 13"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2595,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "ATFMMeasure",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The actions taken to perform air traffic flow management and capacity management.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:ATFMMeasure",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [
+        {
+          "role": "coordinates",
+          "typeName": "ShortTermATFCMMeasure"
+        },
+        {
+          "role": "between",
+          "typeName": "Organisation"
+        }
+      ],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": "MCDMCoordination"
+    },
+    {
+      "id": 2462,
+      "name": "DynamicMobileAreaType1",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirspaceInfrastructure:Airspace:DynamicMobileAreaType1",
+      "description": "An area with defined with lateral and vertical dimensions and time frame allocation needs at variable geographic location negotiated through CDM process.",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Proposed",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 2581,
+          "type": "TERM",
+          "name": "Allocation",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Distribution of frequencies, SSR codes, etc. to a State, unit or service. Distribution of 24-bit aircraft addresses to a State or common mark registering authority.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Allocation",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2064,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Time",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A finite extent or stretch of continued existence, as the interval separating two successive events or actions, or the period during which an action, condition, or state continues; a finite portion of time (in its infinite sense).",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Common:Temporal:Time",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "Oxford English Dictionary"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2288,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Sand",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A material consisting of comminuted fragments and water-worn particles of rocks (mainly silicious) finer than those of which gravel is composed.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Meteorology:Sand",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "Oxford English Dictionary"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2419,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Location",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "An office or other premises at which the organization is located. ",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:OrganisationRoleAndService:Location",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "W3C Organization Ontology"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": {
+        "id": 1761,
+        "type": "ABBREVIATION",
+        "name": "DMA1",
+        "relatedSuggestions": [],
+        "version": "DMA1",
+        "abbreviation": null,
+        "description": "Dynamic Mobile Area Type 1",
+        "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:DMA1",
+        "synonyms": [],
+        "properties": [],
+        "sources": [
+          "SESAR"
+        ],
+        "pluralNames": [],
+        "propertiesUrn": [],
+        "packageName": "SUPPLEMENTS"
+      },
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 2670,
+      "name": "EarlyDeparturePlanningInformation",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:InformationServicesProducts:AirportCDMInformationProduct:EarlyDeparturePlanningInformation",
+      "description": "Departure Planning Information message which notifies the ETOT 2 to 3 hours before off-block time. The main purpose of the E-DPI is to confirm that the flight is going to occur, thus eliminating ghost and duplicated flights. Before an E-DPI is sent, it is required that the Airport CDM Platform matches the flight plan and airport slot. ",
+      "sources": [
+        "EUROCONTROL A-CDM Implementation manual"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 2981,
+          "type": "TERM",
+          "name": "Flight plan",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Specified information provided to air traffic services units, relative to an intended flight or portion of a flight of an aircraft.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Flight_plan",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3001,
+          "type": "TERM",
+          "name": "Format",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The process of translating, arranging, packing, and compressing a selected set of data for distribution to a specific target system.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Format",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3195,
+          "type": "TERM",
+          "name": "Message",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A communication sent from one location to another and comprising an integral number of fields.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Message",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3875,
+          "type": "TERM",
+          "name": "slot",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "the permission given by a coordinator in accordance with this Regulation to use the full range of airport infrastructure necessary to operate an air service at a coordinated airport on a specific date and time for the purpose of landing or take-off as allocated by a coordinator in accordance with this Regulation",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:slot",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC COUNCIL REGULATION (EEC) No 95/93"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 1675,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "AirportSlot",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The scheduled time of arrival or departure available for allocation by, or as allocated by, a coordinator for an aircraft movement on a specific date at a coordinated airport. For scheduling purposes, the slot is the scheduled time of arrival or departure at the terminal, not the time of landing or take-off from the runway. An allocated slot will take account of all the coordination parameters at the airport e.g. runway(s), taxiways, aircraft parking stands, gates, terminal capacity (e.g. check-in and baggage delivery), environmental constraints e.g. night restrictions etc.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:AerodromeOperations:AirportSlotManagement:AirportSlot",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "IATA Worldwide Scheduling Guidelines, 21st Edition"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 1840,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "FlightPlan",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Specified information provided to air traffic services units, relative to an intended flight or portion of a flight of an aircraft.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:InformationServicesProducts:FlightInformationProduct:FlightPlan",
+          "synonyms": [
+            "ICAO Flight Plan",
+            " ATC Flight Plan",
+            "ICAO Flight Plan",
+            " ATC Flight Plan"
+          ],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2064,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Time",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A finite extent or stretch of continued existence, as the interval separating two successive events or actions, or the period during which an action, condition, or state continues; a finite portion of time (in its infinite sense).",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Common:Temporal:Time",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "Oxford English Dictionary"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2102,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Flight",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The operation of an aircraft which, in the case of a manned aircraft, takes place between the time any person boards the aircraft with the intention of flight until such time as all such persons have disembarked, or in the case of an unmanned aircraft, takes place between the time the aircraft is ready to move with the purpose of flight until such time as it comes to rest at the end of the flight and the primary propulsion system is shut down.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Flight:Flight",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO Annex 13"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2169,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "OffBlock",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The departure of the aircraft from its parking position.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Flight:FlightEvent:OffBlock",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EUROCONTROL ATM Lexicon"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2172,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "OffBlockTime",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "Time at which the aircraft departs from its parking position.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Flight:FlightEvent:OffBlockTime",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2669,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "DeparturePlanningInformation",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": {
+            "id": 1767,
+            "type": "ABBREVIATION",
+            "name": "DPI",
+            "relatedSuggestions": [],
+            "version": "1.0.0",
+            "abbreviation": null,
+            "description": "Departure Planning Information",
+            "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:DPI",
+            "synonyms": [],
+            "properties": [],
+            "sources": [
+              "SESAR"
+            ],
+            "pluralNames": [],
+            "propertiesUrn": [],
+            "packageName": "SUPPLEMENTS"
+          },
+          "description": "Message which supplies the Network Operations with flight data related updates. The DPI messages contain accurate Estimated Take-Off Times (ETOT), Target Take-Off Times (TTOT), Taxi Times and Standard Instrument Departures (SID) information. Subsequent DPI messages work as updates to previously sent information, containing progressively more accurate information. The automated transmission of the DPI messages is triggered by system events derived from the Milestone Approach processes at the airport. Each DPI message relates to a single flight only. The Network Operations processes the DPI messages received and if necessary, the CTOT is re-calculated (improved or deteriorated). A Flight Update Message (FUM, see below) is sent by the Network Operations to the flight's next destination airport.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:InformationServicesProducts:AirportCDMInformationProduct:DeparturePlanningInformation",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EUROCONTROL A-CDM Implementation manual"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": {
+        "id": 1771,
+        "type": "ABBREVIATION",
+        "name": "E-DPI",
+        "relatedSuggestions": [],
+        "version": "E-DPI",
+        "abbreviation": null,
+        "description": "Early Departure Planning Information",
+        "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:E-DPI",
+        "synonyms": [],
+        "properties": [],
+        "sources": [
+          "EUROCONTROL ATM Lexicon"
+        ],
+        "pluralNames": [],
+        "propertiesUrn": [],
+        "packageName": "SUPPLEMENTS"
+      },
+      "associations": [],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    },
+    {
+      "id": 2992,
+      "name": "EuropeanNetworkManager",
+      "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:NetworkOperator:EuropeanNetworkManager",
+      "description": "The Network Manager acts as catalyst and facilitator for an efficient overall network management by all ATM stakeholders. The Network Manager role will be enabling, facilitating and promoting the Network Operations Plan, providing a framework to allow Local/Sub-regional Network Manager and Airspace Users actors to share information (Network View), to coordinate (CDM) and to prepare scenarios to be used at network level when necessary.",
+      "sources": [
+        "SESAR"
+      ],
+      "status": "Proposed",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 3001,
+          "type": "TERM",
+          "name": "Format",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The process of translating, arranging, packing, and compressing a selected set of data for distribution to a specific target system.",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Format",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3271,
+          "type": "TERM",
+          "name": "Operation",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "An activity or group of activities which are subject to the same or similar hazards and which require a set of equipment to be specified, or the achievement and maintenance of a set of pilot competencies, to eliminate or mitigate the risk of such hazards.\r\n",
+          "urn": "urn:aero:airm:1.0.0:ContextualModel:ATMBusinessTerms:Operation",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 3790,
+          "type": "TERM",
+          "name": "Network Manager",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "the body established under Article 6 of Regulation (EC) No 551/2004 to perform the duties provided for in that Article and this Regulation",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:Network_Manager",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC COMMISSION REGULATION (EU) No 677/2011"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 3791,
+          "type": "TERM",
+          "name": "Network Operations Plan",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "the plan developed by the Network Manager in coordination with the operational stakeholders to organise its operational activities in the short and medium term in accordance with the guiding principles of the Network Strategic Plan. For the European route network design (ERND)-specific part of the Network Operations Plan, it includes the European Route Network Improvement Plan",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:Network_Operations_Plan",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC COMMISSION REGULATION (EU) No 677/2011"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 3792,
+          "type": "TERM",
+          "name": "Network Operations Plan",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": {
+            "id": 1885,
+            "type": "ABBREVIATION",
+            "name": "NOP",
+            "relatedSuggestions": [],
+            "version": "1.0.0",
+            "abbreviation": null,
+            "description": "Network Operations Plan",
+            "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:Abbreviations:NOP",
+            "synonyms": [],
+            "properties": [],
+            "sources": [
+              "SESAR"
+            ],
+            "pluralNames": [],
+            "propertiesUrn": [],
+            "packageName": "SUPPLEMENTS"
+          },
+          "description": "the plan, including its supporting tools, developed by the Network Manager in coordination with the operational stakeholders to organise its operational activities in the short and medium term in accordance with the guiding principles of the Network Strategic Plan. For the European route network design- specific part of the Network Operations Plan, it includes the European Route Network Improvement Plan",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:Network_Operations_Plan",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC COMMISSION IMPLEMENTING REGULATION (EU) No 716/2014"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 3826,
+          "type": "TERM",
+          "name": "airspace users",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "operators of aircraft operated as general air traffic",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ContextualModel:ATMBusinessTerms:EU:airspace_users",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EU/EC REGULATION (EC) No 549/2004"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 1565,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Airspace",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A defined three dimensional region of space relevant to air traffic.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:AirspaceInfrastructure:Airspace:Airspace",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "EUROCONTROL-FAA AIXM v.5.1"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2223,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Level",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": {
+            "id": 1494,
+            "type": "ABBREVIATION",
+            "name": "LVL",
+            "relatedSuggestions": [],
+            "version": "1.0.0",
+            "abbreviation": null,
+            "description": "Level",
+            "urn": "urn:aero:airm:1.0.0:ContextualModel:Abbreviations:LVL",
+            "synonyms": [],
+            "properties": [],
+            "sources": [
+              "ICAO"
+            ],
+            "pluralNames": [],
+            "propertiesUrn": [],
+            "packageName": "MAIN"
+          },
+          "description": "A generic term relating to the vertical position of an aircraft in flight and meaning variously, height, altitude or flight level.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Flight:Movement:Level",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO Annex 1",
+            "ICAO Annex 11",
+            "ICAO Annex 2",
+            "ICAO Annex 3",
+            "ICAO Annex 4"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2384,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "AirspaceUser",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A generic term designating an organization operating aircraft and its pilots, the flight operations centres (FOC) responsible for the strategic planning of a flight and the entity responsible for the execution of a flight which is traditionally a flight deck.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:Organisation:AirspaceUser",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "ICAO Doc 9965"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2422,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "Role",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The role of an agent in an Organization. This describes the abstract role, any specific instance is modeled using \"membership\". \r\n\r\nNotice that the notion of \"role\" combines the concepts of an agent \"holding\" the role and an organization \"defining\" and legally \"owning\" it.",
+          "urn": "urn:aero:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:OrganisationRoleAndService:Role",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "W3C Organization Ontology"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 2688,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "NetworkOperationsPlan",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A set of information and actions derived and reached collaboratively both relevant to, and serving as a reference for, the management of the Pan-European network in different timeframes for all ATM stakeholders, which includes, but is not limited to, targets, objectives, how to achieve them, anticipated impact. The NOP has a dynamic and rolling lifecycle starting in the planning phases and is progressively updated up to and including the execution and post-operations phases.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:AirTrafficOperations:InformationServicesProducts:DCBInformationProduct:NetworkOperationsPlan",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 2995,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "NetworkManagement",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "DCB activities and the traffic demand forecast and plan. It is also involved in the airspace management and crisis activities.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:NetworkOperator:NetworkManagement",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        },
+        {
+          "id": 2997,
+          "type": "CONCEPTUAL_MODEL",
+          "name": "NetworkManager",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The organization responsible for enabling the optimum use of airspace and ensure that Airspace Users can operate preferred trajectories while allowing maximum access to airspaces and air navigation services.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:ConceptualModel:Subjects:Stakeholders:NetworkOperator:NetworkManager",
+          "synonyms": [],
+          "properties": [],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [],
+          "packageName": "SUPPLEMENTS"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [
+        {
+          "role": "operates within",
+          "typeName": "EuropeanATMNetwork"
+        }
+      ],
+      "parent": null,
+      "properties": [],
+      "entityType": "CONCEPTUAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    }
+  ],
+  "currentPage": 1,
+  "pageCount": 1,
+  "totalItems": 15,
+  "itemsPerPage": 10
+}</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 10:28:06 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding </code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                    </div>
+                    <div class="col-12">
+                        <div class="row" id="advanced-search">
+                            <div class="col-12">
+                                <h2>Advanced Search</h2>
+                                <p>The REST API for searching the Contextual Model, Conceptual Model and Logical Model.</p>
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/advanced</code></h3>
+                                <p>Retrieves a list of concepts, terms and abbreviations from the Contextual Model, Conceptual Model and Logical Model matching que parameters provided in the request. Results are paginated.<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">page</code>&nbsp;<span class="badge badge-secondary text-monospace">(integer)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The result's page. The first page is <code class="text-muted">page=1</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">predicate </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The search text.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">strict </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Sets the strictness of the results. Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">type </code><span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for selecting the target model. Values:&nbsp;<code class="text-muted">ALL_MODELS</code>,&nbsp;<code class="text-muted">TERM</code>, <code class="text-muted">ABBREVIATION</code>,&nbsp;<code class="text-muted">CONCEPTUAL_MODEL</code>&nbsp;and&nbsp;<code class="text-muted">LOGICAL_MODEL</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">useClassFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for including the&nbsp;<em>class&nbsp;</em>in the search scope. Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">useDefinitionFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for including the item&nbsp;<em>definition&nbsp;</em>in the search scope. Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">useNameFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for including the item&nbsp;<em>name&nbsp;</em>in the search scope.&nbsp;Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">usePropertiesFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for including the p<em>roperties&nbsp;</em>in the search scope.&nbsp;Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">useSupplementFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for including the s<em>upplements&nbsp;</em>in the search scope. Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">useUrnFilter </code><span class="badge badge-secondary text-monospace">(boolean)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>Scope filter for selecting the <em>URN&nbsp;</em>as the target of the search. Values:&nbsp;<code class="text-muted">true</code>&nbsp;and&nbsp;<code class="text-muted">false</code>.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The AIRM version.<br></p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">page=1 predicate=CodeRouteType strict=true type=ALL_MODELS useClassFilter=true useDefinitionFilter=false useNameFilter=true usePropertiesFilter=false useSupplementFilter=false useUrnFilter=false version=1.0.0<br></code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/advanced?page=1&predicate=CodeRouteType&strict=true&type=ALL_MODELS&useClassFilter=true&useNameFilter=true&version=1.0.0" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/advanced?page=1&predicate=CodeRouteType&strict=true&type=ALL_MODELS&useClassFilter=true&useNameFilter=true&version=1.0.0</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>{
+  "items": [
+    {
+      "id": 1157,
+      "name": "CodeRouteType",
+      "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType",
+      "description": "A code indicating the route classification.",
+      "sources": [
+        "EUROCONTROL-FAA AIXM v.5.1"
+      ],
+      "status": "Approved",
+      "version": "1.0.0",
+      "termsInDefinition": [
+        {
+          "id": 1193,
+          "type": "LOGICAL_MODEL",
+          "name": "Route",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+          "synonyms": [
+            "Enroute ATS Route",
+            "Enroute ATS Route"
+          ],
+          "properties": [
+            {
+              "key": "routeSegment",
+              "value": "A route segment which forms a part of the route."
+            },
+            {
+              "key": "airspace",
+              "value": "The airspace which protects the route"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "The organisation that normally generates activity on the military training route."
+            },
+            {
+              "key": "designatorNumber",
+              "value": "The number of the route designator.\r\n"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+            },
+            {
+              "key": "flightRule",
+              "value": "Indication of the flight rules to be observed by aircraft."
+            },
+            {
+              "key": "internationalUse",
+              "value": "yA code indicating if the route segment is international or domestic."
+            },
+            {
+              "key": "locationDesignator",
+              "value": "A description of the area in which the designated route is situated."
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "The type of military training activity for which the route has been designed."
+            },
+            {
+              "key": "militaryUse",
+              "value": "Indication whether the route is for exclusive use by military aircraft."
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+            },
+            {
+              "key": "name",
+              "value": "The name by which the route is known."
+            },
+            {
+              "key": "type",
+              "value": "The classification of the route."
+            }
+          ],
+          "sources": [
+            "DGIWG"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "routeSegment",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+            },
+            {
+              "key": "airspace",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+            },
+            {
+              "key": "designatorNumber",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+            },
+            {
+              "key": "flightRule",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+            },
+            {
+              "key": "internationalUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+            },
+            {
+              "key": "locationDesignator",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+            },
+            {
+              "key": "militaryUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+            },
+            {
+              "key": "type",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+            }
+          ],
+          "packageName": "MAIN"
+        }
+      ],
+      "synonyms": [],
+      "abbreviation": null,
+      "associations": [],
+      "parent": null,
+      "properties": [
+        {
+          "id": 7821,
+          "name": "ATS_ROUTE",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@ATS_ROUTE",
+          "description": "A specified route designed for channelling the flow of traffic as necessary for the provision of air traffic services.",
+          "type": null,
+          "typeName": null,
+          "primitiveType": null,
+          "sources": null,
+          "termsInDefinition": [
+            {
+              "id": 1193,
+              "type": "LOGICAL_MODEL",
+              "name": "Route",
+              "relatedSuggestions": [],
+              "version": "1.0.0",
+              "abbreviation": null,
+              "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+              "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+              "synonyms": [
+                "Enroute ATS Route",
+                "Enroute ATS Route"
+              ],
+              "properties": [
+                {
+                  "key": "routeSegment",
+                  "value": "A route segment which forms a part of the route."
+                },
+                {
+                  "key": "airspace",
+                  "value": "The airspace which protects the route"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "The organisation that normally generates activity on the military training route."
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "The number of the route designator.\r\n"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+                },
+                {
+                  "key": "flightRule",
+                  "value": "Indication of the flight rules to be observed by aircraft."
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "yA code indicating if the route segment is international or domestic."
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "A description of the area in which the designated route is situated."
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "The type of military training activity for which the route has been designed."
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "Indication whether the route is for exclusive use by military aircraft."
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+                },
+                {
+                  "key": "name",
+                  "value": "The name by which the route is known."
+                },
+                {
+                  "key": "type",
+                  "value": "The classification of the route."
+                }
+              ],
+              "sources": [
+                "DGIWG"
+              ],
+              "pluralNames": [],
+              "propertiesUrn": [
+                {
+                  "key": "routeSegment",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+                },
+                {
+                  "key": "airspace",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+                },
+                {
+                  "key": "flightRule",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+                },
+                {
+                  "key": "name",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+                },
+                {
+                  "key": "type",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+                }
+              ],
+              "packageName": "MAIN"
+            },
+            {
+              "id": 1707,
+              "type": "LOGICAL_MODEL",
+              "name": "Service",
+              "relatedSuggestions": [],
+              "version": "1.0.0",
+              "abbreviation": null,
+              "description": "The provision of tangible goods, information, instructions or guidance.",
+              "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service",
+              "synonyms": [],
+              "properties": [
+                {
+                  "key": "serviceProvider",
+                  "value": "The unit that provides the service."
+                },
+                {
+                  "key": "radioCommunication",
+                  "value": "The radio frequency on which the service is provided."
+                },
+                {
+                  "key": "callSign",
+                  "value": "The callsign of the unit providing the service."
+                },
+                {
+                  "key": "groundCommunication",
+                  "value": "The point of contact on the ground for the service."
+                },
+                {
+                  "key": "availability",
+                  "value": "The operational status of the service."
+                },
+                {
+                  "key": "flightOperations",
+                  "value": "The destination (arriving, departing, etc.) of the flights for which the information is provided.\r\n"
+                },
+                {
+                  "key": "isCompliantICAO",
+                  "value": "A code indicating whether the service is compliant with the ICAO standards and recommended practices specified for this type of service."
+                },
+                {
+                  "key": "name",
+                  "value": "A free text name by which the service is identified.\r\n"
+                },
+                {
+                  "key": "rank",
+                  "value": "The order of priority of the service, such as \"primary\" or \"alternate\".\r\n"
+                }
+              ],
+              "sources": [
+                "EUROCONTROL-FAA AIXM v.5.1"
+              ],
+              "pluralNames": [],
+              "propertiesUrn": [
+                {
+                  "key": "serviceProvider",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@serviceProvider"
+                },
+                {
+                  "key": "radioCommunication",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@radioCommunication"
+                },
+                {
+                  "key": "callSign",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@callSign"
+                },
+                {
+                  "key": "groundCommunication",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@groundCommunication"
+                },
+                {
+                  "key": "availability",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@availability"
+                },
+                {
+                  "key": "flightOperations",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@flightOperations"
+                },
+                {
+                  "key": "isCompliantICAO",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@isCompliantICAO"
+                },
+                {
+                  "key": "name",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@name"
+                },
+                {
+                  "key": "rank",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@rank"
+                }
+              ],
+              "packageName": "MAIN"
+            },
+            {
+              "id": 1842,
+              "type": "LOGICAL_MODEL",
+              "name": "Flow",
+              "relatedSuggestions": [],
+              "version": "1.0.0",
+              "abbreviation": null,
+              "description": "A pattern of traffic catching flights by origin, destination and crossings.",
+              "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow",
+              "synonyms": [],
+              "properties": [
+                {
+                  "key": "downstreamFlowElement",
+                  "value": "Flow element downstream from the reference location."
+                },
+                {
+                  "key": "upstreamFlowElement",
+                  "value": "Flow element upstream from the reference location."
+                },
+                {
+                  "key": "designator",
+                  "value": "The designator of the stream condition."
+                },
+                {
+                  "key": "name",
+                  "value": "Textual name.\r\n"
+                }
+              ],
+              "sources": [
+                "SESAR"
+              ],
+              "pluralNames": [],
+              "propertiesUrn": [
+                {
+                  "key": "downstreamFlowElement",
+                  "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@downstreamFlowElement"
+                },
+                {
+                  "key": "upstreamFlowElement",
+                  "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@upstreamFlowElement"
+                },
+                {
+                  "key": "designator",
+                  "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@designator"
+                },
+                {
+                  "key": "name",
+                  "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@name"
+                }
+              ],
+              "packageName": "SUPPLEMENTS"
+            }
+          ],
+          "cardinality": {
+            "lower": 0,
+            "upper": 1
+          }
+        },
+        {
+          "id": 7822,
+          "name": "NAT",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@NAT",
+          "description": "A route between Europe and North America whose exact location changes daily according to weather and traffic demands.",
+          "type": null,
+          "typeName": null,
+          "primitiveType": null,
+          "sources": null,
+          "termsInDefinition": [
+            {
+              "id": 1193,
+              "type": "LOGICAL_MODEL",
+              "name": "Route",
+              "relatedSuggestions": [],
+              "version": "1.0.0",
+              "abbreviation": null,
+              "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+              "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+              "synonyms": [
+                "Enroute ATS Route",
+                "Enroute ATS Route"
+              ],
+              "properties": [
+                {
+                  "key": "routeSegment",
+                  "value": "A route segment which forms a part of the route."
+                },
+                {
+                  "key": "airspace",
+                  "value": "The airspace which protects the route"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "The organisation that normally generates activity on the military training route."
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "The number of the route designator.\r\n"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+                },
+                {
+                  "key": "flightRule",
+                  "value": "Indication of the flight rules to be observed by aircraft."
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "yA code indicating if the route segment is international or domestic."
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "A description of the area in which the designated route is situated."
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "The type of military training activity for which the route has been designed."
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "Indication whether the route is for exclusive use by military aircraft."
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+                },
+                {
+                  "key": "name",
+                  "value": "The name by which the route is known."
+                },
+                {
+                  "key": "type",
+                  "value": "The classification of the route."
+                }
+              ],
+              "sources": [
+                "DGIWG"
+              ],
+              "pluralNames": [],
+              "propertiesUrn": [
+                {
+                  "key": "routeSegment",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+                },
+                {
+                  "key": "airspace",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+                },
+                {
+                  "key": "flightRule",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+                },
+                {
+                  "key": "name",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+                },
+                {
+                  "key": "type",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+                }
+              ],
+              "packageName": "MAIN"
+            }
+          ],
+          "cardinality": {
+            "lower": 0,
+            "upper": 1
+          }
+        },
+        {
+          "id": 7823,
+          "name": "OCEANIC_TRACK",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@OCEANIC_TRACK",
+          "description": "A route that is part of an Organised Track System established for an oceanic area.",
+          "type": null,
+          "typeName": null,
+          "primitiveType": null,
+          "sources": null,
+          "termsInDefinition": [
+            {
+              "id": 1193,
+              "type": "LOGICAL_MODEL",
+              "name": "Route",
+              "relatedSuggestions": [],
+              "version": "1.0.0",
+              "abbreviation": null,
+              "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+              "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+              "synonyms": [
+                "Enroute ATS Route",
+                "Enroute ATS Route"
+              ],
+              "properties": [
+                {
+                  "key": "routeSegment",
+                  "value": "A route segment which forms a part of the route."
+                },
+                {
+                  "key": "airspace",
+                  "value": "The airspace which protects the route"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "The organisation that normally generates activity on the military training route."
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "The number of the route designator.\r\n"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+                },
+                {
+                  "key": "flightRule",
+                  "value": "Indication of the flight rules to be observed by aircraft."
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "yA code indicating if the route segment is international or domestic."
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "A description of the area in which the designated route is situated."
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "The type of military training activity for which the route has been designed."
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "Indication whether the route is for exclusive use by military aircraft."
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+                },
+                {
+                  "key": "name",
+                  "value": "The name by which the route is known."
+                },
+                {
+                  "key": "type",
+                  "value": "The classification of the route."
+                }
+              ],
+              "sources": [
+                "DGIWG"
+              ],
+              "pluralNames": [],
+              "propertiesUrn": [
+                {
+                  "key": "routeSegment",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+                },
+                {
+                  "key": "airspace",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+                },
+                {
+                  "key": "userOrganisation",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+                },
+                {
+                  "key": "designatorNumber",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+                },
+                {
+                  "key": "designatorPrefix",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+                },
+                {
+                  "key": "designatorSecondLetter",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+                },
+                {
+                  "key": "flightRule",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+                },
+                {
+                  "key": "internationalUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+                },
+                {
+                  "key": "locationDesignator",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+                },
+                {
+                  "key": "militaryTrainingType",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+                },
+                {
+                  "key": "militaryUse",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+                },
+                {
+                  "key": "multipleIdentifier",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+                },
+                {
+                  "key": "name",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+                },
+                {
+                  "key": "type",
+                  "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+                }
+              ],
+              "packageName": "MAIN"
+            }
+          ],
+          "cardinality": {
+            "lower": 0,
+            "upper": 1
+          }
+        }
+      ],
+      "entityType": "LOGICAL_MODEL",
+      "parents": [],
+      "directParents": [],
+      "parentProperties": [],
+      "externalLink": null
+    }
+  ],
+  "currentPage": 1,
+  "pageCount": 0,
+  "totalItems": 1,
+  "itemsPerPage": 10
+}</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 13:07:41 GMT 
+page: 1 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h3><span class="badge badge-dark">GET</span><code class="text-muted">&nbsp;/advanced/{type}/{id}</code></h3>
+                                <p>Retrieves a known item from the Contextual Model, Conceptual Model or Logical Model.&nbsp;<br></p>
+                                <h4>Parameters:</h4>
+                                <div style="padding-left: 17px;padding-top: 2px;">
+                                    <h5><code class="text-dark">version</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The AIRM version. For example&nbsp;<code class="text-muted">version=1.0.0</code><br></p>
+                                    <hr>
+                                    <h5><code class="text-dark">id </code><span class="badge badge-secondary text-monospace">(integer)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The API id for the item. Note: this is not the URN.</p>
+                                    <hr>
+                                    <h5><code class="text-dark">type</code>&nbsp;<span class="badge badge-secondary text-monospace">(string)</span>&nbsp;<span class="badge badge-success text-monospace">required</span></h5>
+                                    <p>The type of the item. Values:&nbsp;<code class="text-muted">ALL_MODELS</code>,&nbsp;<code class="text-muted">TERM</code>, <code class="text-muted">ABBREVIATION</code>,&nbsp;<code class="text-muted">CONCEPTUAL_MODEL</code>&nbsp;and&nbsp;<code class="text-muted">LOGICAL_MODEL</code>.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Request example:&nbsp;<code class="text-muted">version=1.0.0 id=1157 type=LOGICAL_MODEL<br></code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Curl</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>curl -X GET "https://api.airm.aero/advanced/LOGICAL_MODEL/1157?version=1.0.0" -H "accept: application/json"</code></pre></div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Request URL</h5>
+                                    </header>
+                                    <div class="card-body"><pre class="apache"><code>https://api.airm.aero/advanced/LOGICAL_MODEL/1157?version=1.0.0
+</code></pre></div>
+                                </div>
+                            </div>
+                            <div class="col-6" style="margin-top: 11px;">
+                                <h4>Response&nbsp;<code class="text-muted">code=200</code></h4>
+                                <div class="card border rounded" style="background: rgb(51,51,51);margin-bottom: 7px;">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response body</h5>
+                                    </header>
+                                    <div class="card-body">
+                                        <div class="scrollable" style="overflow-y: auto;max-height: 300px;"><pre><code>{
+  "id": 1157,
+  "name": "CodeRouteType",
+  "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType",
+  "description": "A code indicating the route classification.",
+  "sources": [
+    "EUROCONTROL-FAA AIXM v.5.1"
+  ],
+  "status": "Approved",
+  "version": "1.0.0",
+  "termsInDefinition": [
+    {
+      "id": 1193,
+      "type": "LOGICAL_MODEL",
+      "name": "Route",
+      "relatedSuggestions": [],
+      "version": "1.0.0",
+      "abbreviation": null,
+      "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+      "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+      "synonyms": [
+        "Enroute ATS Route",
+        "Enroute ATS Route"
+      ],
+      "properties": [
+        {
+          "key": "routeSegment",
+          "value": "A route segment which forms a part of the route."
+        },
+        {
+          "key": "airspace",
+          "value": "The airspace which protects the route"
+        },
+        {
+          "key": "userOrganisation",
+          "value": "The organisation that normally generates activity on the military training route."
+        },
+        {
+          "key": "designatorNumber",
+          "value": "The number of the route designator.\r\n"
+        },
+        {
+          "key": "designatorPrefix",
+          "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+        },
+        {
+          "key": "designatorSecondLetter",
+          "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+        },
+        {
+          "key": "flightRule",
+          "value": "Indication of the flight rules to be observed by aircraft."
+        },
+        {
+          "key": "internationalUse",
+          "value": "yA code indicating if the route segment is international or domestic."
+        },
+        {
+          "key": "locationDesignator",
+          "value": "A description of the area in which the designated route is situated."
+        },
+        {
+          "key": "militaryTrainingType",
+          "value": "The type of military training activity for which the route has been designed."
+        },
+        {
+          "key": "militaryUse",
+          "value": "Indication whether the route is for exclusive use by military aircraft."
+        },
+        {
+          "key": "multipleIdentifier",
+          "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+        },
+        {
+          "key": "name",
+          "value": "The name by which the route is known."
+        },
+        {
+          "key": "type",
+          "value": "The classification of the route."
+        }
+      ],
+      "sources": [
+        "DGIWG"
+      ],
+      "pluralNames": [],
+      "propertiesUrn": [
+        {
+          "key": "routeSegment",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+        },
+        {
+          "key": "airspace",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+        },
+        {
+          "key": "userOrganisation",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+        },
+        {
+          "key": "designatorNumber",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+        },
+        {
+          "key": "designatorPrefix",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+        },
+        {
+          "key": "designatorSecondLetter",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+        },
+        {
+          "key": "flightRule",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+        },
+        {
+          "key": "internationalUse",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+        },
+        {
+          "key": "locationDesignator",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+        },
+        {
+          "key": "militaryTrainingType",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+        },
+        {
+          "key": "militaryUse",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+        },
+        {
+          "key": "multipleIdentifier",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+        },
+        {
+          "key": "name",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+        },
+        {
+          "key": "type",
+          "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+        }
+      ],
+      "packageName": "MAIN"
+    }
+  ],
+  "synonyms": [],
+  "abbreviation": null,
+  "associations": [],
+  "parent": null,
+  "properties": [
+    {
+      "id": 7821,
+      "name": "ATS_ROUTE",
+      "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@ATS_ROUTE",
+      "description": "A specified route designed for channelling the flow of traffic as necessary for the provision of air traffic services.",
+      "type": null,
+      "typeName": null,
+      "primitiveType": null,
+      "sources": null,
+      "termsInDefinition": [
+        {
+          "id": 1193,
+          "type": "LOGICAL_MODEL",
+          "name": "Route",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+          "synonyms": [
+            "Enroute ATS Route",
+            "Enroute ATS Route"
+          ],
+          "properties": [
+            {
+              "key": "routeSegment",
+              "value": "A route segment which forms a part of the route."
+            },
+            {
+              "key": "airspace",
+              "value": "The airspace which protects the route"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "The organisation that normally generates activity on the military training route."
+            },
+            {
+              "key": "designatorNumber",
+              "value": "The number of the route designator.\r\n"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+            },
+            {
+              "key": "flightRule",
+              "value": "Indication of the flight rules to be observed by aircraft."
+            },
+            {
+              "key": "internationalUse",
+              "value": "yA code indicating if the route segment is international or domestic."
+            },
+            {
+              "key": "locationDesignator",
+              "value": "A description of the area in which the designated route is situated."
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "The type of military training activity for which the route has been designed."
+            },
+            {
+              "key": "militaryUse",
+              "value": "Indication whether the route is for exclusive use by military aircraft."
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+            },
+            {
+              "key": "name",
+              "value": "The name by which the route is known."
+            },
+            {
+              "key": "type",
+              "value": "The classification of the route."
+            }
+          ],
+          "sources": [
+            "DGIWG"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "routeSegment",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+            },
+            {
+              "key": "airspace",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+            },
+            {
+              "key": "designatorNumber",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+            },
+            {
+              "key": "flightRule",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+            },
+            {
+              "key": "internationalUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+            },
+            {
+              "key": "locationDesignator",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+            },
+            {
+              "key": "militaryUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+            },
+            {
+              "key": "type",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+            }
+          ],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 1707,
+          "type": "LOGICAL_MODEL",
+          "name": "Service",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "The provision of tangible goods, information, instructions or guidance.",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service",
+          "synonyms": [],
+          "properties": [
+            {
+              "key": "serviceProvider",
+              "value": "The unit that provides the service."
+            },
+            {
+              "key": "radioCommunication",
+              "value": "The radio frequency on which the service is provided."
+            },
+            {
+              "key": "callSign",
+              "value": "The callsign of the unit providing the service."
+            },
+            {
+              "key": "groundCommunication",
+              "value": "The point of contact on the ground for the service."
+            },
+            {
+              "key": "availability",
+              "value": "The operational status of the service."
+            },
+            {
+              "key": "flightOperations",
+              "value": "The destination (arriving, departing, etc.) of the flights for which the information is provided.\r\n"
+            },
+            {
+              "key": "isCompliantICAO",
+              "value": "A code indicating whether the service is compliant with the ICAO standards and recommended practices specified for this type of service."
+            },
+            {
+              "key": "name",
+              "value": "A free text name by which the service is identified.\r\n"
+            },
+            {
+              "key": "rank",
+              "value": "The order of priority of the service, such as \"primary\" or \"alternate\".\r\n"
+            }
+          ],
+          "sources": [
+            "EUROCONTROL-FAA AIXM v.5.1"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "serviceProvider",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@serviceProvider"
+            },
+            {
+              "key": "radioCommunication",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@radioCommunication"
+            },
+            {
+              "key": "callSign",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@callSign"
+            },
+            {
+              "key": "groundCommunication",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@groundCommunication"
+            },
+            {
+              "key": "availability",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@availability"
+            },
+            {
+              "key": "flightOperations",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@flightOperations"
+            },
+            {
+              "key": "isCompliantICAO",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@isCompliantICAO"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@name"
+            },
+            {
+              "key": "rank",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@rank"
+            }
+          ],
+          "packageName": "MAIN"
+        },
+        {
+          "id": 1842,
+          "type": "LOGICAL_MODEL",
+          "name": "Flow",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A pattern of traffic catching flights by origin, destination and crossings.",
+          "urn": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow",
+          "synonyms": [],
+          "properties": [
+            {
+              "key": "downstreamFlowElement",
+              "value": "Flow element downstream from the reference location."
+            },
+            {
+              "key": "upstreamFlowElement",
+              "value": "Flow element upstream from the reference location."
+            },
+            {
+              "key": "designator",
+              "value": "The designator of the stream condition."
+            },
+            {
+              "key": "name",
+              "value": "Textual name.\r\n"
+            }
+          ],
+          "sources": [
+            "SESAR"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "downstreamFlowElement",
+              "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@downstreamFlowElement"
+            },
+            {
+              "key": "upstreamFlowElement",
+              "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@upstreamFlowElement"
+            },
+            {
+              "key": "designator",
+              "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@designator"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:Flow@name"
+            }
+          ],
+          "packageName": "SUPPLEMENTS"
+        }
+      ],
+      "cardinality": {
+        "lower": 0,
+        "upper": 1
+      }
+    },
+    {
+      "id": 7822,
+      "name": "NAT",
+      "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@NAT",
+      "description": "A route between Europe and North America whose exact location changes daily according to weather and traffic demands.",
+      "type": null,
+      "typeName": null,
+      "primitiveType": null,
+      "sources": null,
+      "termsInDefinition": [
+        {
+          "id": 1193,
+          "type": "LOGICAL_MODEL",
+          "name": "Route",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+          "synonyms": [
+            "Enroute ATS Route",
+            "Enroute ATS Route"
+          ],
+          "properties": [
+            {
+              "key": "routeSegment",
+              "value": "A route segment which forms a part of the route."
+            },
+            {
+              "key": "airspace",
+              "value": "The airspace which protects the route"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "The organisation that normally generates activity on the military training route."
+            },
+            {
+              "key": "designatorNumber",
+              "value": "The number of the route designator.\r\n"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+            },
+            {
+              "key": "flightRule",
+              "value": "Indication of the flight rules to be observed by aircraft."
+            },
+            {
+              "key": "internationalUse",
+              "value": "yA code indicating if the route segment is international or domestic."
+            },
+            {
+              "key": "locationDesignator",
+              "value": "A description of the area in which the designated route is situated."
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "The type of military training activity for which the route has been designed."
+            },
+            {
+              "key": "militaryUse",
+              "value": "Indication whether the route is for exclusive use by military aircraft."
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+            },
+            {
+              "key": "name",
+              "value": "The name by which the route is known."
+            },
+            {
+              "key": "type",
+              "value": "The classification of the route."
+            }
+          ],
+          "sources": [
+            "DGIWG"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "routeSegment",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+            },
+            {
+              "key": "airspace",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+            },
+            {
+              "key": "designatorNumber",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+            },
+            {
+              "key": "flightRule",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+            },
+            {
+              "key": "internationalUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+            },
+            {
+              "key": "locationDesignator",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+            },
+            {
+              "key": "militaryUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+            },
+            {
+              "key": "type",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+            }
+          ],
+          "packageName": "MAIN"
+        }
+      ],
+      "cardinality": {
+        "lower": 0,
+        "upper": 1
+      }
+    },
+    {
+      "id": 7823,
+      "name": "OCEANIC_TRACK",
+      "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:Codelists:CodeRouteType@OCEANIC_TRACK",
+      "description": "A route that is part of an Organised Track System established for an oceanic area.",
+      "type": null,
+      "typeName": null,
+      "primitiveType": null,
+      "sources": null,
+      "termsInDefinition": [
+        {
+          "id": 1193,
+          "type": "LOGICAL_MODEL",
+          "name": "Route",
+          "relatedSuggestions": [],
+          "version": "1.0.0",
+          "abbreviation": null,
+          "description": "A specified route designed for channeling the flow of traffic as necessary for the provision of air traffic service (ATS) from the end of the take-off and initial climb phase to the commencement of the approach and landing phase.",
+          "urn": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route",
+          "synonyms": [
+            "Enroute ATS Route",
+            "Enroute ATS Route"
+          ],
+          "properties": [
+            {
+              "key": "routeSegment",
+              "value": "A route segment which forms a part of the route."
+            },
+            {
+              "key": "airspace",
+              "value": "The airspace which protects the route"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "The organisation that normally generates activity on the military training route."
+            },
+            {
+              "key": "designatorNumber",
+              "value": "The number of the route designator.\r\n"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "A prefix for the route designator, indicating whether the route is upper ATS, reserved for helicopters or reserved for supersonic flights.\r\n"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "The letter of the route designator, which may have special significance with regard to the route usage limitations, depending on the region."
+            },
+            {
+              "key": "flightRule",
+              "value": "Indication of the flight rules to be observed by aircraft."
+            },
+            {
+              "key": "internationalUse",
+              "value": "yA code indicating if the route segment is international or domestic."
+            },
+            {
+              "key": "locationDesignator",
+              "value": "A description of the area in which the designated route is situated."
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "The type of military training activity for which the route has been designed."
+            },
+            {
+              "key": "militaryUse",
+              "value": "Indication whether the route is for exclusive use by military aircraft."
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "A suffix for the route designator, indicating alternates for homonymous routes."
+            },
+            {
+              "key": "name",
+              "value": "The name by which the route is known."
+            },
+            {
+              "key": "type",
+              "value": "The classification of the route."
+            }
+          ],
+          "sources": [
+            "DGIWG"
+          ],
+          "pluralNames": [],
+          "propertiesUrn": [
+            {
+              "key": "routeSegment",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@routeSegment"
+            },
+            {
+              "key": "airspace",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@airspace"
+            },
+            {
+              "key": "userOrganisation",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@userOrganisation"
+            },
+            {
+              "key": "designatorNumber",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorNumber"
+            },
+            {
+              "key": "designatorPrefix",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorPrefix"
+            },
+            {
+              "key": "designatorSecondLetter",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@designatorSecondLetter"
+            },
+            {
+              "key": "flightRule",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@flightRule"
+            },
+            {
+              "key": "internationalUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@internationalUse"
+            },
+            {
+              "key": "locationDesignator",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@locationDesignator"
+            },
+            {
+              "key": "militaryTrainingType",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryTrainingType"
+            },
+            {
+              "key": "militaryUse",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@militaryUse"
+            },
+            {
+              "key": "multipleIdentifier",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@multipleIdentifier"
+            },
+            {
+              "key": "name",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@name"
+            },
+            {
+              "key": "type",
+              "value": "urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Route@type"
+            }
+          ],
+          "packageName": "MAIN"
+        }
+      ],
+      "cardinality": {
+        "lower": 0,
+        "upper": 1
+      }
+    }
+  ],
+  "entityType": "LOGICAL_MODEL",
+  "parents": [],
+  "directParents": [],
+  "parentProperties": [],
+  "externalLink": null
+}</code></pre></div>
+                                    </div>
+                                </div>
+                                <div class="card border rounded" style="background: rgb(51,51,51);">
+                                    <header class="card-header" style="background: rgb(52,58,64);">
+                                        <h5 style="margin-bottom: 0px;color: rgb(213,222,238);">Response headers</h5>
+                                    </header>
+                                    <div class="card-body"><pre><code>content-encoding: gzip 
+content-type: application/json 
+date: Tue02 Feb 2021 13:27:28 GMT 
+transfer-encoding: chunked 
+vary: accept-encoding,origin,access-control-request-headers,access-control-request-method,accept-encoding</code></pre></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row" style="margin-left: 231px;">
+                <div class="col col-sm-3">
+                    <h5>Get Started</h5>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#start">Start using the AIRM</a></li>
+                        <li><a href="../developers/downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="../community.html">AIRM Community</a></li>
+                        <li><a href="../documentation/airm-change-management.html">AIRM CCB</a></li>
+                        <li><a href="../contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../documentation.html">AIRM Docs</a></li>
+                        <li><a href="https://www.cookiesandyou.com/">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col col-sm-3">
+                    <h5>AIRM Viewer</h5>
+                    <ul>
+                        <li><a href="../viewer.html">Home</a></li>
+                        <li><a href="viewer/1.0.0/contextual-model-terms.html">Terms</a></li>
+                        <li><a href="viewer/1.0.0/contextual-model-abbreviations.html">Abbreviations</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p style="font-size: 11px;"><a href="https://www.eurocontrol.int/"><br>©&nbsp;2019 EUROCONTROL<br><br></a></p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/smart-forms.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/tooltips.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="../assets/js/smoothproducts.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script src="../assets/js/ie.js"></script>
+    <script src="../assets/js/smooth.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/highlight-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script src="../assets/js/navbarfix.js"></script>
+</body>
+
+</html>
