@@ -18,6 +18,8 @@ def create_mapping_index_page (mapping_file_pathname, template):
   soup = utils.create_html_soup(template)
    
   soup.title.string = mapping_metadata["name"] + " | Semantic Correspondences | AIRM.aero"
+  soup.find(text="MAPPING_NAME_BC").replace_with(mapping_metadata["name"])
+  soup.find(text="MAPPING_NAME_H2").replace_with(mapping_metadata["name"])
 
   for record in mapping_dict:
     new_table_row = create_index_table_row(record, mapping_metadata)
