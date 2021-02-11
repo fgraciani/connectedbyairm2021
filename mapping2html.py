@@ -47,8 +47,7 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
     h2.string = str(info_concept['Information Concept'])
     soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
     
-    #definition = fixm.get_fixm_class_definition(info_concept['Information Concept'])
-    #soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(definition))
+    soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(info_concept['Concept Definition']))
     
     f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + info_concept["Information Concept"] + ".html","w+")
     f.write(soup.prettify())
@@ -338,9 +337,13 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     td_dc_name.string = '-'
     new_tr.insert(2,td_dc_name)
 
-  if mapping_entry["Concept Definition"] != "":
+  if mapping_entry["Concept Definition"] != "missing data":
     td_def = soup.new_tag("td")
     td_def.string = str(mapping_entry["Concept Definition"])
+    new_tr.insert(3,td_def)
+  else:
+    td_def = soup.new_tag("td")
+    td_def.string = '-'
     new_tr.insert(3,td_def)
 
   if mapping_entry["Data Concept's Basic Type"] != "missing data":

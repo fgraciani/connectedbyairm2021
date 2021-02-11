@@ -15,11 +15,15 @@ class Mapping:
   
   def get_information_concepts(self):
     dataframe = self.dataframe.copy()
-    dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
+    #dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
     #TO DO Update list of tags dataframe = dataframe.drop(["Data Concept", "Definition", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
+    filter = dataframe["Data Concept"]=="missing data"
+    dataframe.sort_values("Information Concept", inplace = True)
+    dataframe.where(filter, inplace = True) 
+    results = dataframe.dropna(how='all')      
     
     if dataframe.empty:
       return None
     else:
-      return dataframe.to_dict('records')
+      return results.to_dict('records')
 
