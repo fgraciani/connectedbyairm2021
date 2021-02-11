@@ -1,18 +1,17 @@
 import pandas as pd
 
 class Mapping:
-  metadata = {}
-  dictionary = {}
-  fixm_mapping_dataframe = pd.read_excel (r'data/xlsx/mapping FIXM 4.2.0.xlsx', sheet_name='semantic correspondences')
-  fixm_definitions_dataframe = pd.read_excel (r'data/xlsx/FIXM classes.xlsx', sheet_name='FIXM Core 4.2.0')
-  #classes = pd.Dataframe() #TO DO load in init
-  #properties = pd.Dataframe() #TO DO load in init
+  metadata = {
+      "name": "ICAO WXXM 3.0.0 to AIRM 1.0.0",
+      "url_name": "icao_wxxm_3.0.0_to_airm_1.0.0"
+  }
+  dictionary = None
+  dataframe = None
      
   def __init__(self, mapping_file_pathname):
-    self.fixm_mapping_dataframe.fillna("missing data", inplace = True)
-    self.fixm_definitions_dataframe.fillna("missing data", inplace = True)
-    #self.classes.fillna("missing data", inplace = True)
-    #self.properties.fillna("missing data", inplace = True)
+    self.dataframe = pd.read_excel(r''+mapping_file_pathname, sheet_name='semantic correspondences')
+    self.dataframe.fillna("missing data", inplace = True)
+    self.dictionary = dataframe.to_dict('records')
   
   def get_information_concepts():
     return None

@@ -1,4 +1,4 @@
-def create_mapping_index_page (mapping_file_pathname, template, settings):
+def create_mapping_index_page (mapping_file_pathname, template):
   """Creates an index html page for a mapping. e.g. http://airm.aero/developers/fixm-4.2.0-to-airm-1.0.0.html
 
   Keyword arguments:
@@ -23,7 +23,7 @@ def create_mapping_index_page (mapping_file_pathname, template, settings):
     new_table_row = create_index_table_row(record, mapping_metadata)
     soup.find('tbody').insert(1,new_table_row)
 
-  f = open("docs/developers/" + mapping_metadata["url_name"] + ".html","w+")
+  f = open("docs/airm/developers/" + mapping_metadata["url_name"] + ".html","w+")
   f.write(soup.prettify())
   f.close()
 
@@ -306,14 +306,14 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     td_dc_name.insert(1,new_link)
     new_tr.insert(2,td_dc_name)
 
-  if mapping_entry["Definition"] != "":
+  if mapping_entry["Concept Definition"] != "":
     td_def = soup.new_tag("td")
-    td_def.string = str(mapping_entry["Definition"])
+    td_def.string = str(mapping_entry["Concept Definition"])
     new_tr.insert(3,td_def)
 
-  if mapping_entry["Type"] != "":
+  if mapping_entry["Data Concept's Basic Type"] != "":
     td_dc_type = soup.new_tag("td")
-    parts = str(mapping_entry["Type"]).split(":")
+    parts = str(mapping_entry["Data Concept's Basic Type"]).split(":")
     clean_type = parts[-1]
     td_dc_type.string = clean_type
     new_tr.insert(4,td_dc_type)
