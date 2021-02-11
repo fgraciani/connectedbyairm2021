@@ -17,7 +17,7 @@ def create_mapping_index_page (mapping_file_pathname, template, settings):
   utils.create_directory("docs/developers/" + mapping_metadata["url_name"])
   soup = utils.create_html_soup(template)
    
-  soup.title.string = mapping_metadata["name"] + " | AIRM.aero"
+  soup.title.string = mapping_metadata["name"] + " | Semantic Correspondences | AIRM.aero"
 
   for record in mapping_dict:
     new_table_row = create_index_table_row(record, mapping_metadata)
