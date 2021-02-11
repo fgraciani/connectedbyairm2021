@@ -47,6 +47,11 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
     h2.string = str(info_concept['Information Concept'])
     soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
     
+    code = soup.new_tag("code")
+    code.string = info_concept['Concept Identifier']
+    code["class"] = "text-secondary"
+    soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+
     soup.find(text="INFO_CONCEPT_DEFINITION").replace_with(str(info_concept['Concept Definition']))
     
     f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + info_concept["Information Concept"] + ".html","w+")
