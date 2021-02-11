@@ -13,24 +13,13 @@ class Mapping:
     self.dataframe.fillna("missing data", inplace = True)
     self.dictionary = self.dataframe.to_dict('records')
   
-  def get_information_concepts():
-    return None
+  def get_information_concepts(self):
+    dataframe = self.dataframe.copy()
+    dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
+    #TO DO Update list of tags dataframe = dataframe.drop(["Data Concept", "Definition", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
     
-  def create_dictionary():
-    """
-    import fixm
-    fixm = fixm.Fixm()
-    fixm_mapping_dict = fixm.fixm_mapping_dataframe.to_dict('records')
-    """
-    return None
+    if dataframe.empty:
+      return None
+    else:
+      return dataframe.to_dict('records')
 
-  def create_metadata(mapping_file_pathname):
-    """
-    mapping_metadata["name"] = "FIXM 4.2.0 to AIRM 1.0.0"
-    mapping_metadata["url_name"] = "fixm-4.2.0-to-airm-1.0.0"
-    """
-    metadata = {
-      "name": "FIXM 4.2.0 to AIRM 1.0.0",
-      "url_name": "fixm-4.2.0-to-airm-1.0.0"
-    }
-    return metadata

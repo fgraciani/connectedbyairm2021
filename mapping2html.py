@@ -27,6 +27,29 @@ def create_mapping_index_page (mapping_file_pathname, template):
   f.write(soup.prettify())
   f.close()
 
+def print_information_concepts(mapping_file_pathname):
+  import mapping
+  mapping = mapping.Mapping(mapping_file_pathname)
+  information_concepts = mapping.get_information_concepts()
+  for concept in information_concepts:
+    print(concept["Information Concept"])
+
+def dummy_create_mapping_item_pages (mapping_file_pathname, template):
+  import mapping
+  mapping = mapping.Mapping(mapping_file_pathname)
+  mapping_metadata = mapping.metadata
+
+  information_concepts = mapping.get_information_concepts()
+  
+  for concept in information_concepts:
+    print(concept["Information Concept"])
+    import utils
+    soup = utils.create_html_soup(template)
+    
+    f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + concept["Information Concept"] + ".html","w+")
+    f.write(soup.prettify())
+    f.close()
+
 def create_mapping_item_pages (mapping_file_pathname, template, settings):
   import mapping
   mapping = mapping.Mapping(mapping_file_pathname)
