@@ -164,6 +164,126 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#advisoryNumber">
+                 advisoryNumber
+                </a>
+               </td>
+               <td>
+                Advisory number: four digit year and unique message number.  Example 2018/1""
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#analysis">
+                 analysis
+                </a>
+               </td>
+               <td>
+                Observed and forecast space weather information.  Analyses should be reported in the order in which they occur, starting with the initial observed/forecast conditions and proceeding through each subsequent forecast to the end of the period
+               </td>
+               <td>
+                <a href="SpaceWeatherAnalysis.html" target="_blank">
+                 SpaceWeatherAnalysis
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this report was issued
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingSpaceWeatherCentre">
+                 issuingSpaceWeatherCentre
+                </a>
+               </td>
+               <td>
+                The issuing space weather centre (SWXC)
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nextAdvisoryTime">
+                 nextAdvisoryTime
+                </a>
+               </td>
+               <td>
+                The time at which the next advisory will be issued Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phenomenon">
+                 phenomenon
+                </a>
+               </td>
+               <td>
+                The space weather phenomenon, such as radiation or satellite communication
+               </td>
+               <td>
+                <a href="SpaceWeatherPhenomena.html" target="_blank">
+                 SpaceWeatherPhenomena
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#remarks">
+                 remarks
+                </a>
+               </td>
+               <td>
+                Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#replacedAdvisoryNumber">
+                 replacedAdvisoryNumber
+                </a>
+               </td>
+               <td>
+                The number of the advisory being replaced.  Example 2018/1""
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

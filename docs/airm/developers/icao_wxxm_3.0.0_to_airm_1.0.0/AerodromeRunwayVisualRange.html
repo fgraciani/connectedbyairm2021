@@ -164,6 +164,66 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#meanRVR">
+                 meanRVR
+                </a>
+               </td>
+               <td>
+                The mean recent runway visual range value observed. This mean represents the 10 minute average for observed RVR except when the 10-minute period immediately preceding the observation includes a marked discontinuity in runway visual range values, only those values occurring after the discontinuity is used for obtaining mean values. Mean runway visual range distance shall be reported in meters (m"). To report a mean RVR of at least 2000 meters, mean RVR is reported as 2000 meters and the operator is reported as "above" Annex 3: Table A3-2 "RVR/RVR" Section 4.3.6.6"
+               </td>
+               <td>
+                <a href="DistanceWithNilReason.html" target="_blank">
+                 DistanceWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanRVROperator">
+                 meanRVROperator
+                </a>
+               </td>
+               <td>
+                The reported relational operator for the mean RVR. When reported, this operator is reported in conjunction with mean RVR. To report a mean RVR of at least 2000 metres, mean RVR is reported as 2000 metres and the operator is reported as above".  To report a mean RVR of less than 50 metres, mean RVR is reported as 50 metres and the operator is reported as "below".  When no operator is reported, mean RVR represents an exact value with identical semantics to other measured quantities"
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#pastTendency">
+                 pastTendency
+                </a>
+               </td>
+               <td>
+                The runway visual range tendency (up, down, none). If the runway visual range values during the 10-minute period have shown a distinct tendency, such that the mean during the first 5 minutes varies by 100 m or more from the mean during the second 5 minutes of the period, this should be indicated. When the variation of the runway visual range values shows an upward or downward tendency, this should be indicated by Up" or "Down", respectively. In circumstances when actual fluctuations during the 10-minute period show no distinct tendency, this should be indicated using "No Change?. When indications of tendency are not available, no information should be reported ICAO Annex 3 / WMO No. 49: Table A3-2 Note 9 Section 4.3.6.6a"
+               </td>
+               <td>
+                <a href="VisualRangeTendency.html" target="_blank">
+                 VisualRangeTendency
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runway">
+                 runway
+                </a>
+               </td>
+               <td>
+                The runway to which reported runway visual range information applies
+               </td>
+               <td>
+                <a href="RunwayDirection.html" target="_blank">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

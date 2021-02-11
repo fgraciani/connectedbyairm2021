@@ -164,6 +164,141 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#changeIndicator">
+                 changeIndicator
+                </a>
+               </td>
+               <td>
+                The type of change being reported (FROM, BECOMING,  TEMPORARY, etc.). A change indicator is required for all MeteorologicalAerodromeForecasts excepting reported base conditions.
+               </td>
+               <td>
+                <a href="AerodromeForecastChangeIndicator.html" target="_blank">
+                 AerodromeForecastChangeIndicator
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloud">
+                 cloud
+                </a>
+               </td>
+               <td>
+                Forecast of cloud.
+               </td>
+               <td>
+                <a href="AerodromeCloudForecast.html" target="_blank">
+                 AerodromeCloudForecast
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudAndVisibilityOK">
+                 cloudAndVisibilityOK
+                </a>
+               </td>
+               <td>
+                When true, indicates that the following conditions occur simultaneously at the time of forecast (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phenomenonTime">
+                 phenomenonTime
+                </a>
+               </td>
+               <td>
+                The time at which the reported phenomena or change of phenomena occur.  For change indicators of FROM, PROB 30/40, and TEMPO this is the period of time at which reported meteorological conditions occur.  For BECOMING conditions this represents the time over which conditions are changing.  This is equivalent to how time information is reported in the TAC codes
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#prevailingVisibility">
+                 prevailingVisibility
+                </a>
+               </td>
+               <td>
+                The prevailing horizontal visibility, mandatory except when ceiling and visibility is reported as OK Prevailing horizontal visibility shall be reported in meters (m")."
+               </td>
+               <td>
+                <a href="Distance.html" target="_blank">
+                 Distance
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#prevailingVisibilityOperator">
+                 prevailingVisibilityOperator
+                </a>
+               </td>
+               <td>
+                The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceWind">
+                 surfaceWind
+                </a>
+               </td>
+               <td>
+                Forecast of surface wind.
+               </td>
+               <td>
+                <a href="AerodromeSurfaceWindForecast.html" target="_blank">
+                 AerodromeSurfaceWindForecast
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#temperature">
+                 temperature
+                </a>
+               </td>
+               <td>
+                Forecast of temperature.
+               </td>
+               <td>
+                <a href="AerodromeAirTemperatureForecast.html" target="_blank">
+                 AerodromeAirTemperatureForecast
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#weather">
+                 weather
+                </a>
+               </td>
+               <td>
+                Forecast of weather phenomena.
+               </td>
+               <td>
+                <a href="AerodromeForecastWeather.html" target="_blank">
+                 AerodromeForecastWeather
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

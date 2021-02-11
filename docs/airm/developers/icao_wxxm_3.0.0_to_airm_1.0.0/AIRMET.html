@@ -164,6 +164,171 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#analysis">
+                 analysis
+                </a>
+               </td>
+               <td>
+                AIRMETs may include the same phenomenon covering more than one area within the FIR/UIR/CTA, as well as observed and forecast conditions for each of these reported areas.  AIRMETs may include a single set of observed and/or forecast conditions at a particular time, which is represented  as a single analysis with a single AIRMETEvolvingConditionCollection as its result.
+               </td>
+               <td>
+                <a href="AIRMETEvolvingConditionCollection.html" target="_blank">
+                 AIRMETEvolvingConditionCollection
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cancelledReportSequenceNumber">
+                 cancelledReportSequenceNumber
+                </a>
+               </td>
+               <td>
+                The sequence number of a previous AIRMET that is cancelled by this AIRMET.  Mandatory when this is a cancellation report, must be missing otherwise Examples: YUDD AIRMET 2 VALID ... YUDD AIRMET A3 VALID ...
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cancelledReportValidPeriod">
+                 cancelledReportValidPeriod
+                </a>
+               </td>
+               <td>
+                The valid period of a previous AIRMET that is cancelled by this AIRMET.  Mandatory when this is a cancellation report, must be missing otherwise
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCancelReport">
+                 isCancelReport
+                </a>
+               </td>
+               <td>
+                Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this report was issued
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingAirTrafficServicesRegion">
+                 issuingAirTrafficServicesRegion
+                </a>
+               </td>
+               <td>
+                The ATS region (FIR, UIR, CTA, or FIR/UIR)
+               </td>
+               <td>
+                <a href="Airspace.html" target="_blank">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingAirTrafficServicesUnit">
+                 issuingAirTrafficServicesUnit
+                </a>
+               </td>
+               <td>
+                The ATS unit serving the FIR or CTA to which the AIRMET refers.  ICAO Annex 3 / WMO No. 49-2: A6-1: Location indicator of FIR/CTA""
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#originatingMeteorologicalWatchOffice">
+                 originatingMeteorologicalWatchOffice
+                </a>
+               </td>
+               <td>
+                MWO originating this report
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phenomenon">
+                 phenomenon
+                </a>
+               </td>
+               <td>
+                The reported phenomenon, such as thunderstorm, tropical cyclone, icing, mountain wave, etc.
+               </td>
+               <td>
+                <a href="AeronauticalAreaWeatherPhenomenon.html" target="_blank">
+                 AeronauticalAreaWeatherPhenomenon
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sequenceNumber">
+                 sequenceNumber
+                </a>
+               </td>
+               <td>
+                The sequence number of this message.  For example: 5", "A3", or "2""
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#validPeriod">
+                 validPeriod
+                </a>
+               </td>
+               <td>
+                The valid period for the entire report, including all observations and forecast conditions.  Each observation/forecast phenomenon includes its own period of validity for described meteorological conditions, which is represented as the O&amp;M Observation validTime.
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

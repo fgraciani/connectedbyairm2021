@@ -164,6 +164,156 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#permissibleUsage">
+                 permissibleUsage
+                </a>
+               </td>
+               <td>
+                The permissible usage of this report (operational or non-operational)
+               </td>
+               <td>
+                <a href="PermissibleUsage.html" target="_blank">
+                 PermissibleUsage
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#permissibleUsageReason">
+                 permissibleUsageReason
+                </a>
+               </td>
+               <td>
+                The permissible usage reason of this report. Only populated when the permissible usage is non-operational
+               </td>
+               <td>
+                <a href="PermissibleUsageReason.html" target="_blank">
+                 PermissibleUsageReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#permissibleUsageSupplementary">
+                 permissibleUsageSupplementary
+                </a>
+               </td>
+               <td>
+                Additional human-readable descriptive information regarding the permissible usage.  Only populated when the permissible usage is non-operational
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reportStatus">
+                 reportStatus
+                </a>
+               </td>
+               <td>
+                The issuance status of the report.
+               </td>
+               <td>
+                <a href="ReportStatus.html" target="_blank">
+                 ReportStatus
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translatedBulletinID">
+                 translatedBulletinID
+                </a>
+               </td>
+               <td>
+                The TAC bulletin ID that was translated, of the form 'TTAAiiCCCYYGGgg'
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translatedBulletinReceptionTime">
+                 translatedBulletinReceptionTime
+                </a>
+               </td>
+               <td>
+                The time at which the translated TAC bulletin was received by the translation centre
+               </td>
+               <td>
+                <a href="DateTime.html" target="_blank">
+                 DateTime
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translationCentreDesignator">
+                 translationCentreDesignator
+                </a>
+               </td>
+               <td>
+                The ICAO designator of the centre which performed translation from TAC to XML
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translationCentreName">
+                 translationCentreName
+                </a>
+               </td>
+               <td>
+                The name of the translation centre which performed translation from TAC to XML
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translationFailedTAC">
+                 translationFailedTAC
+                </a>
+               </td>
+               <td>
+                The full, original TAC that could not be translated.  When translation fails only the report type (i.e, SIGMET or METAR), translation information and other basic report metadata should be provided.  In this case no translated content will be included other than the original TAC.  Translation is considered to have failed when either not all of the TAC could be understood by the translation software or not all of the mandatory TAC content could be found.  Permissible usage may be set as normal and TAC that failed translation may still be used for operational purposes, but under no circumstances should partially translated content be distributed or marked as operational
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#translationTime">
+                 translationTime
+                </a>
+               </td>
+               <td>
+                The time at which translation was performed from TAC to XML
+               </td>
+               <td>
+                <a href="DateTime.html" target="_blank">
+                 DateTime
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

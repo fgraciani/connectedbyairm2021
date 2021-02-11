@@ -164,6 +164,111 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aerodrome">
+                 aerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome location for this report
+               </td>
+               <td>
+                <a href="AirportHeliport.html" target="_blank">
+                 AirportHeliport
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#baseForecast">
+                 baseForecast
+                </a>
+               </td>
+               <td>
+                The prevailing conditions.  Mandatory in all cases except missing or cancelled reports
+               </td>
+               <td>
+                <a href="MeteorologicalAerodromeForecast.html" target="_blank">
+                 MeteorologicalAerodromeForecast
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cancelledReportValidPeriod">
+                 cancelledReportValidPeriod
+                </a>
+               </td>
+               <td>
+                The valid time period for the previously cancelled report
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#changeForecast">
+                 changeForecast
+                </a>
+               </td>
+               <td>
+                Forecast that modifies the base forecast.  While there is no maximum number of forecasts, this should normally not exceed five in number. ICAO Annex 3 / WMO No. 49-2: Section 1.5: The number of change and probability groups should be kept to a minimum and should not normally exceed five groups"."
+               </td>
+               <td>
+                <a href="MeteorologicalAerodromeForecast.html" target="_blank">
+                 MeteorologicalAerodromeForecast
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCancelReport">
+                 isCancelReport
+                </a>
+               </td>
+               <td>
+                Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this report was issued.  Note that this should be identical to the resultTime of each MeteorologicalAerodromeForecast, whose results are made available at the same time as this report.  TAF reports have an issueTime to assist in discovery and to provide unambiguous semantics at the report level.
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#validPeriod">
+                 validPeriod
+                </a>
+               </td>
+               <td>
+                The time frame at which this report is valid.  All forecast elements should be valid within this period
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

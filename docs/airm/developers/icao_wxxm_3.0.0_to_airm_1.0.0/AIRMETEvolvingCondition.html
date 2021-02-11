@@ -164,6 +164,201 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#approximateLocation">
+                 approximateLocation
+                </a>
+               </td>
+               <td>
+                Indicator of whether the location of phenomena is approximate. If not reported locations are not approximate
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudBase">
+                 cloudBase
+                </a>
+               </td>
+               <td>
+                The cloud base of reported clouds.  Only used with an AIRMET reporting cloud phenomenon.  Height of cloud base shall be given in either m" (metres) or "[ft_i]" (feet). Cloud base and top may differ from but should be within the AIRMET base and top which are reported in airspace upper and lower limits."
+               </td>
+               <td>
+                <a href="Distance.html" target="_blank">
+                 Distance
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudBaseReference">
+                 cloudBaseReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the cloud base. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="CodeVerticalReferenceBaseType.html" target="_blank">
+                 CodeVerticalReferenceBaseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudTop">
+                 cloudTop
+                </a>
+               </td>
+               <td>
+                The cloud top of reported clouds.  Only used with an AIRMET reporting cloud phenomenon.  Height of cloud top shall be given in either m" (metres) or "[ft_i]" (feet). Cloud base and top may differ from but should be within the AIRMET base and top which are reported in airspace upper and lower limits."
+               </td>
+               <td>
+                <a href="Distance.html" target="_blank">
+                 Distance
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudTopReference">
+                 cloudTopReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the cloud base. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="CodeVerticalReferenceBaseType.html" target="_blank">
+                 CodeVerticalReferenceBaseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#directionOfMotion">
+                 directionOfMotion
+                </a>
+               </td>
+               <td>
+                The expected direction of movement of a meteorological condition. When no movement is expected, this is a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason and the speedOfMotion will be 0.  Direction of motion to shall be given in degrees from true North. Plane angle unit of measure (uom) is deg"."
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#geometry">
+                 geometry
+                </a>
+               </td>
+               <td>
+                The expected geographic region(s) affected by the reported phenomenon at a particular time (thunderstorms, volcanic ash, etc.).  This geometry covers all combinations of phenomenon historically reported in ICAO Annex 3 / WMO No. 49-2: a boundary with a base and top, a TC centre position, and a VA line with a width
+               </td>
+               <td>
+                <a href="AirspaceVolume.html" target="_blank">
+                 AirspaceVolume
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#intensityChange">
+                 intensityChange
+                </a>
+               </td>
+               <td>
+                The expected change in intensity for the reported meteorological condition (e.g., intensifying, weakening, or no change) determined at the time of AIRMET analysis based on the current state of the meteorological condition
+               </td>
+               <td>
+                <a href="AIRMETExpectedIntensityChange.html" target="_blank">
+                 AIRMETExpectedIntensityChange
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#speedOfMotion">
+                 speedOfMotion
+                </a>
+               </td>
+               <td>
+                The expected speed of movement of a meteorological condition. When no movement is expected, this will have a value of 0 and directionOfMotion will have a http://www.opengis.net/def/nil/OGC/0/inapplicable nilReason. Speed of movement shall be given in either km/h" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="Velocity.html" target="_blank">
+                 Velocity
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceVisibility">
+                 surfaceVisibility
+                </a>
+               </td>
+               <td>
+                The surface visibility.  Only used with SFC VIS AIRMETs. Horizontal surface visibility unit of measure shall be given as m" (metre). ICAO Annex 3 / WMO No. 49-2: Appendix 6 Section 2.1"
+               </td>
+               <td>
+                <a href="Distance.html" target="_blank">
+                 Distance
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceVisibilityCause">
+                 surfaceVisibilityCause
+                </a>
+               </td>
+               <td>
+                The weather condition(s) causing reduced visibility.
+               </td>
+               <td>
+                <a href="WeatherCausingVisibilityReduction.html" target="_blank">
+                 WeatherCausingVisibilityReduction
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceWindDirection">
+                 surfaceWindDirection
+                </a>
+               </td>
+               <td>
+                The widespread surface wind direction.  Only used with SFC WIND AIRMETs. Unit of measure shall be given as deg" in degrees from true North.  A true north wind is indicated with a direction of 360."
+               </td>
+               <td>
+                <a href="Angle.html" target="_blank">
+                 Angle
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceWindSpeed">
+                 surfaceWindSpeed
+                </a>
+               </td>
+               <td>
+                The widespread surface wind speed.  Only used with SFC WIND AIRMETs. Surface wind speed unit of measure shall be given as m/s" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="Velocity.html" target="_blank">
+                 Velocity
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

@@ -164,6 +164,126 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#advisoryNumber">
+                 advisoryNumber
+                </a>
+               </td>
+               <td>
+                Advisory number: year in full and message number (separate sequence for each cyclone)
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#forecast">
+                 forecast
+                </a>
+               </td>
+               <td>
+                The forecast conditions of the tropical cyclone at given time intervals.
+               </td>
+               <td>
+                <a href="TropicalCycloneForecastConditions.html" target="_blank">
+                 TropicalCycloneForecastConditions
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this advisory was issued
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingTropicalCycloneAdvisoryCentre">
+                 issuingTropicalCycloneAdvisoryCentre
+                </a>
+               </td>
+               <td>
+                The issuing TCAC
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nextAdvisoryTime">
+                 nextAdvisoryTime
+                </a>
+               </td>
+               <td>
+                The time at which the next advisory is expected to be issued. Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#observation">
+                 observation
+                </a>
+               </td>
+               <td>
+                The observed conditions of the tropical cyclone
+               </td>
+               <td>
+                <a href="TropicalCycloneObservedConditions.html" target="_blank">
+                 TropicalCycloneObservedConditions
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#remarks">
+                 remarks
+                </a>
+               </td>
+               <td>
+                Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tropicalCycloneName">
+                 tropicalCycloneName
+                </a>
+               </td>
+               <td>
+                The tropical cyclone name.  If the tropical cyclone is unnamed, 'NN' may be used
+               </td>
+               <td>
+                <a href="TropicalCyclone.html" target="_blank">
+                 TropicalCyclone
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

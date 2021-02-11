@@ -31,7 +31,7 @@ class Mapping:
       dataframe = self.dataframe.copy()
       #dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
       #TO DO Update list of tags dataframe = dataframe.drop(["Data Concept", "Definition", "Type", "Semantic Correspondence", "Additional Traces", "Rationale", "Notes"], axis=1)
-      filter = dataframe["Data Concept"] == info_concept
+      filter = dataframe["Information Concept"] == info_concept
       dataframe.sort_values("Data Concept", inplace = True)
       dataframe.where(filter, inplace = True) 
       results = dataframe.dropna(how='all')      

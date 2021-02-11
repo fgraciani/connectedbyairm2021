@@ -172,6 +172,126 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#extremeClockwiseWindDirection">
+                 extremeClockwiseWindDirection
+                </a>
+               </td>
+               <td>
+                The extreme clockwise direction from which the wind has varied, inclusive. This corresponds to the dxdxdx part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extremeCounterClockwiseWindDirection">
+                 extremeCounterClockwiseWindDirection
+                </a>
+               </td>
+               <td>
+                The extreme counter-clockwise direction from which the wind has varied, inclusive. This corresponds to the dndndn part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindDirection">
+                 meanWindDirection
+                </a>
+               </td>
+               <td>
+                The observed average wind direction from which the wind is blowing over the past ten minutes.  Not reported when winds are variable. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0."
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindSpeed">
+                 meanWindSpeed
+                </a>
+               </td>
+               <td>
+                The average observed wind speed over the past ten minutes ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2a Wind speeds shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="VelocityWithNilReason.html" target="_blank">
+                 VelocityWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindSpeedOperator">
+                 meanWindSpeedOperator
+                </a>
+               </td>
+               <td>
+                Indication that the mean wind speed is above or below the reported value.  To report a wind speed of at least 49 meters per second, wind speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind speed is an exact value with identical semantics to other measured quantities."
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#variableWindDirection">
+                 variableWindDirection
+                </a>
+               </td>
+               <td>
+                When true, indicates that the wind direction is variable.  A wind direction value may still be reported
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windGustSpeed">
+                 windGustSpeed
+                </a>
+               </td>
+               <td>
+                Variations from the mean wind speed (gusts) during the past 10 minutes. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2c Wind gusts shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="VelocityWithNilReason.html" target="_blank">
+                 VelocityWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windGustSpeedOperator">
+                 windGustSpeedOperator
+                </a>
+               </td>
+               <td>
+                Indication that the wind gust speed is above or below the reported value.  To report a wind gust speed of at least 49 meters per second, wind gust speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind gust speed is an exact value with identical semantics to other measured quantities."
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

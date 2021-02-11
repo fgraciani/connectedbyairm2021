@@ -164,6 +164,126 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#allRunways">
+                 allRunways
+                </a>
+               </td>
+               <td>
+                When true, indicates the reported conditions apply to all runways
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cleared">
+                 cleared
+                </a>
+               </td>
+               <td>
+                Indicates that reported runway has been cleared of meteorological deposits, such as snow. ICAO Annex 3 / WMO No. 49-2: CLRD" Section 4.8.1.5, Table A3-2 "State of the runway""
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contamination">
+                 contamination
+                </a>
+               </td>
+               <td>
+                Proportion of runway surface that is contaminated - usually expressed as a percentage of the total runway area. WMO reporting procedures require that contamination is reported in the following categories: - less than 10%; - between 11% and 25%; - between 26% and 50%; and - more than 50%. See WMO No. 306: - WMO Code table 0519 - BUFR Code table 0 20 087
+               </td>
+               <td>
+                <a href="RunwayContamination.html" target="_blank">
+                 RunwayContamination
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#depositType">
+                 depositType
+                </a>
+               </td>
+               <td>
+                The type of runway deposit, such as damp conditions, wet snow, or ice. WMO 306: Table 0919
+               </td>
+               <td>
+                <a href="RunwayDeposits.html" target="_blank">
+                 RunwayDeposits
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#depthOfDeposit">
+                 depthOfDeposit
+                </a>
+               </td>
+               <td>
+                Depth of deposit on the surface of the runway. Measured depth of deposit shall be given in millimeters (mm"). See WMO No. 306 WMO Code table 1079."
+               </td>
+               <td>
+                <a href="DistanceWithNilReason.html" target="_blank">
+                 DistanceWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#estimatedSurfaceFrictionOrBrakingAction">
+                 estimatedSurfaceFrictionOrBrakingAction
+                </a>
+               </td>
+               <td>
+                The estimated surface friction or braking action for the affected runway.  When braking conditions are not reported and/or the runway is not operational estimatedSurfaceFrictionOrBrakingAction will not be reported. WMO 306: Table 0366
+               </td>
+               <td>
+                <a href="RunwayFrictionCoefficient.html" target="_blank">
+                 RunwayFrictionCoefficient
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fromPreviousReport">
+                 fromPreviousReport
+                </a>
+               </td>
+               <td>
+                When true, indicates a new runway state report is not available in time for dissemination of the METAR message and the previous runway state report is being repeated
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runway">
+                 runway
+                </a>
+               </td>
+               <td>
+                The runway to which the conditions apply.  The runway may be missing in cases where all runways are closed due to snow
+               </td>
+               <td>
+                <a href="RunwayDirection.html" target="_blank">
+                 RunwayDirection
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

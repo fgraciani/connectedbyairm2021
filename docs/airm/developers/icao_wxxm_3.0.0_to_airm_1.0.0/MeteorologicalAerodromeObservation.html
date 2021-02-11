@@ -164,6 +164,188 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#airTemperature">
+                 airTemperature
+                </a>
+               </td>
+               <td>
+                The observed air temperature.  This is the temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation. Measured air temperature shall be given in degrees Celsius (Cel")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloud">
+                 cloud
+                </a>
+               </td>
+               <td>
+                When no clouds are detected by the automatic observing system, it should be indicated by a missing cloud group with a nil reason of notDetectedByAutoSystem (NCD" from TAC).
+               </td>
+               <td>
+                <a href="AerodromeCloud.html" target="_blank">
+                 AerodromeCloud
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudAndVisibilityOK">
+                 cloudAndVisibilityOK
+                </a>
+               </td>
+               <td>
+                When true, indicates that the following conditions occur simultaneously at the time of observation (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dewpointTemperature">
+                 dewpointTemperature
+                </a>
+               </td>
+               <td>
+                The observed dew point temperature.  This is the temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur. Measured dew-point temperature shall be given in degrees Celsius (Cel")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#presentWeather">
+                 presentWeather
+                </a>
+               </td>
+               <td>
+                When observed, between one and three present weather conditions
+When present weather cannot be observed by the automatic observing system due to a temporary failure of the system/sensor (//") the present weather is missing with a nil reason of notObservab"
+               </td>
+               <td>
+                <a href="AerodromePresentWeather.html" target="_blank">
+                 AerodromePresentWeather
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#qnh">
+                 qnh
+                </a>
+               </td>
+               <td>
+                The observed QNH altimeter setting. Altitude setting (also known as QNH) is defined as barometric pressure adjusted to sea level. It is a pressure setting used by pilots, air traffic control (ATC), and low frequency weather beacons to refer to the barometric setting which, when set on an aircraft's altimeter, will cause the altimeter to read altitude above mean sea level within a certain defined region. Measured altimeter setting shall be given in hectoPascals (hPa")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#recentWeather">
+                 recentWeather
+                </a>
+               </td>
+               <td>
+                Recent weather is one of the recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeRecentWeather.html" target="_blank">
+                 AerodromeRecentWeather
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayState">
+                 runwayState
+                </a>
+               </td>
+               <td>
+                When runways are affected by snow, slush, or other contaminants, a runway state report for each runway in use is required.
+There is no maximum number of runway states that can be reported.  This may be changed in a future amendment.
+               </td>
+               <td>
+                <a href="AerodromeRunwayState.html" target="_blank">
+                 AerodromeRunwayState
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rvr">
+                 rvr
+                </a>
+               </td>
+               <td>
+                RVR conditions are required if horizontal visibility or RVR is less than 1500 meters, up to a maximum of four runways
+               </td>
+               <td>
+                <a href="AerodromeRunwayVisualRange.html" target="_blank">
+                 AerodromeRunwayVisualRange
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#seaCondition">
+                 seaCondition
+                </a>
+               </td>
+               <td>
+                Sea surface temperature and state of the sea or significant wave height are recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeSeaCondition.html" target="_blank">
+                 AerodromeSeaCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceWind">
+                 surfaceWind
+                </a>
+               </td>
+               <td>
+                Representative surface wind observations.
+               </td>
+               <td>
+                <a href="AerodromeSurfaceWind.html" target="_blank">
+                 AerodromeSurfaceWind
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windShear">
+                 windShear
+                </a>
+               </td>
+               <td>
+                Wind shear is one of the recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeWindShear.html" target="_blank">
+                 AerodromeWindShear
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>

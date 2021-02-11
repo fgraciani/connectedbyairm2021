@@ -164,6 +164,186 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#analysis">
+                 analysis
+                </a>
+               </td>
+               <td>
+                A SIGMET report may include a phenomenon covering more than one area within the FIR/UIR/CTA.  This translates into observed and forecast conditions for each of these reported areas.  All combinations of observations and forecasts of meteorological conditions, including changing conditions, are represented by their own SIGMETEvolvingCondition. Each analysis has a single SIGMETEvolvingConditionCollection as its result.
+               </td>
+               <td>
+                <a href="Any.html" target="_blank">
+                 Any
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cancelledReportSequenceNumber">
+                 cancelledReportSequenceNumber
+                </a>
+               </td>
+               <td>
+                The sequence number of a previous SIGMET that is cancelled by this SIGMET.  Mandatory when this is a cancellation report, must be missing otherwise Examples: YUDD SIGMET 2 VALID ... YUDD SIGMET A3 VALID ...
+               </td>
+               <td>
+                <a href="CharacterString.html" target="_blank">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cancelledReportValidPeriod">
+                 cancelledReportValidPeriod
+                </a>
+               </td>
+               <td>
+                The valid period of a previous SIGMET that is cancelled by this SIGMET.  Mandatory when this is a cancellation report, must be missing otherwise
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#forecastPositionAnalysis">
+                 forecastPositionAnalysis
+                </a>
+               </td>
+               <td>
+                A forecast of the phenomenon at the end of the valid period.  This is modeled by SIGMETPosition for individual area of the phenomenon and aggregated into a single SIGMETPositionCollection as a result to forecastPositionAnalysis.
+               </td>
+               <td>
+                <a href="Any.html" target="_blank">
+                 Any
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCancelReport">
+                 isCancelReport
+                </a>
+               </td>
+               <td>
+                Indicates whether the report is a 'CANCELLATION' report (true) which cancels a previously issued report or not (false or empty).
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this report was issued
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingAirTrafficServicesRegion">
+                 issuingAirTrafficServicesRegion
+                </a>
+               </td>
+               <td>
+                The ATS region (FIR, UIR, CTA, or FIR/UIR)
+               </td>
+               <td>
+                <a href="Airspace.html" target="_blank">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingAirTrafficServicesUnit">
+                 issuingAirTrafficServicesUnit
+                </a>
+               </td>
+               <td>
+                The ATS unit serving the FIR or CTA to which the SIGMET refers ICAO Annex 3 / WMO No. 49-2: A6-1: Location indicator of FIR/CTA""
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#originatingMeteorologicalWatchOffice">
+                 originatingMeteorologicalWatchOffice
+                </a>
+               </td>
+               <td>
+                MWO originating this report
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#phenomenon">
+                 phenomenon
+                </a>
+               </td>
+               <td>
+                The reported phenomenon, such as thunderstorm, tropical cyclone, icing, mountain wave, etc. The expected end of occurrence of volcanic ash (NO VA EXP") is indicated with a missing SIGMET phenomenon with a nil reason of nothingOfOperationalSignificance"
+               </td>
+               <td>
+                <a href="AeronauticalSignificantWeatherPhenomenon.html" target="_blank">
+                 AeronauticalSignificantWeatherPhenomenon
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#sequenceNumber">
+                 sequenceNumber
+                </a>
+               </td>
+               <td>
+                The sequence number of this message.  For example: 5", "A3", or "2""
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#validPeriod">
+                 validPeriod
+                </a>
+               </td>
+               <td>
+                The valid period for the entire report covering all observations and forecast conditions.  Each observation/forecast phenomenon includes its own temporal description for the described meteorological conditions, which is represented as phenomenonTime. For example, an issued tropical cyclone SIGMET may be valid from 1600 UTC to 2200 UTC with an observed position at 1600 UTC and a forecast position of the centre of the tropical cyclone at 2200 UTC.  In this case the SIGMET validPeriod would be 1600 UTC to 2200 UTC, the analysis phenomenonTime would be 1600 UTC, and the forecastPositionAnalysis phenomenonTime would be 2200 UTC.
+               </td>
+               <td>
+                <a href="TM_Period.html" target="_blank">
+                 TM_Period
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
