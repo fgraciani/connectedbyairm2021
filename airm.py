@@ -6,6 +6,6 @@ class Airm:
     concept = {
       "name" : "testName",
       "definition" : "testDefinition",
-      "url"  : "testURL"
+      "url"  : "http://airm.aero/viewer/1.0.0/logical-model/testURL"
     }
     return concept
