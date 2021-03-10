@@ -194,13 +194,11 @@ def create_semantic_correspondence_table(data_concept):
   sc_thead.insert(1,tr)
   sc_table.insert(1,sc_thead)
   tbody = soup.new_tag("tbody")
-  if str(data_concept['AIRM Concept Identifier']) == "missing data":
-    pass
-  else:
+  insert_position=0
+  if str(data_concept['AIRM Concept Identifier']) != "missing data":
     import airm
     airm = airm.Airm()
     urns = str(data_concept['AIRM Concept Identifier']).split('\n')
-    insert_position=0
     for urn in urns:
       airm_concept = airm.get_concept(urn)
       tr = soup.new_tag("tr")
@@ -216,7 +214,25 @@ def create_semantic_correspondence_table(data_concept):
       tr.insert(2,td)
       tbody.insert(insert_position,tr)
       insert_position+=1
-
+  if str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']) != "missing data":
+    import airm
+    airm = airm.Airm()
+    parts = str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']).split('\n')
+    for case in parts:
+      airm_concept = airm.get_concept(case)
+      tr = soup.new_tag("tr")
+      td = soup.new_tag("td")
+      a = soup.new_tag("a")
+      a['href'] = relativise_url(airm_concept['url'])
+      a['target'] = "_blank"
+      a.string = airm_concept['name']
+      td.insert(1,a)
+      tr.insert(1,td)
+      td = soup.new_tag("td")
+      td.string = airm_concept['definition']
+      tr.insert(2,td)
+      tbody.insert(insert_position,tr)
+      insert_position+=1
   sc_table.insert(2,tbody)
 
   return sc_table
