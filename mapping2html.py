@@ -140,22 +140,7 @@ def create_property_detail_div(data_concept):
 
   sc_div = soup.new_tag("div")
   sc_div["class"] = "table-responsive"
-  sc_table = soup.new_tag("table")
-  sc_table["class"] = "table"
-  sc_thead = soup.new_tag("thead")
-  tr = soup.new_tag("tr")
-  th = soup.new_tag("th")
-  th.string = "AIRM Concept"
-  tr.insert(1,th)
-  th = soup.new_tag("th")
-  th.string = "Definition"
-  tr.insert(2,th)
-  sc_thead.insert(1,tr)
-  sc_table.insert(1,sc_thead)
-  tbody = soup.new_tag("tbody")
-  # to be complete
-  sc_table.insert(2,tbody)
-  sc_div.insert(1,sc_table)
+  sc_div.insert(1,create_semantic_correspondence_table(data_concept))
   property_div.insert(4,sc_div)
 
   if str(data_concept["Rationale"]) != "missing data":
@@ -192,6 +177,48 @@ def create_property_detail_div(data_concept):
   property_div.insert(9,top_link_p)
 
   return property_div
+
+def create_semantic_correspondence_table(data_concept):
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup("<b></b>", 'lxml')
+  sc_table = soup.new_tag("table")
+  sc_table["class"] = "table"
+  sc_thead = soup.new_tag("thead")
+  tr = soup.new_tag("tr")
+  th = soup.new_tag("th")
+  th.string = "AIRM Concept"
+  tr.insert(1,th)
+  th = soup.new_tag("th")
+  th.string = "Definition"
+  tr.insert(2,th)
+  sc_thead.insert(1,tr)
+  sc_table.insert(1,sc_thead)
+  tbody = soup.new_tag("tbody")
+  if str(data_concept['AIRM Concept Identifier']) == "missing data":
+    pass
+  else:
+    import airm
+    airm = airm.Airm()
+    urns = str(data_concept['AIRM Concept Identifier']).split('\n')
+    insert_position=0
+    for urn in urns:
+      airm_concept = airm.get_concept(urn)
+      tr = soup.new_tag("tr")
+      td = soup.new_tag("td")
+      a = soup.new_tag("a")
+      a['href'] = relativise_url(airm_concept['url'])
+      a['target'] = "_blank"
+      a.string = airm_concept['name']
+      td.insert(1,a)
+      td = soup.new_tag("td")
+      td.string = airm_concept['definition']
+      tr.insert(2,td)
+      tbody.insert(insert_position,tr)
+      insert_position+=1
+
+  sc_table.insert(2,tbody)
+
+  return sc_table
 
 def create_mapping_item_pages (mapping_file_pathname, template, settings):
   import mapping
@@ -508,3 +535,7 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     new_tr.insert(4,td_dc_type)
 
   return new_tr
+
+def relativise_url(url):
+  relative_url = url.replace("http://airm.aero/","../../")
+  return relative_url
