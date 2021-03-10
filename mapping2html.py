@@ -40,6 +40,7 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
     soup = utils.create_html_soup(template)
 
     soup.title.string = str(info_concept['Information Concept']) + " - " + mapping_metadata["name"] + " | AIRM.aero"
+    #soup.find(text="MAPPING_NAME_BC").replace_with(str(...)) Need to link back
     soup.find(text="INFO_CONCEPT_NAME_BC").replace_with(str(info_concept['Information Concept']))
     h2 = soup.new_tag("h2")
     h2.string = str(info_concept['Information Concept'])
@@ -58,6 +59,13 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
       if data_concept["Data Concept"] != 'missing data':
         new_table_row = create_properties_table_row(data_concept)
         soup.find(id="DATA_CONCEPTS_LIST").insert(insert_position,new_table_row)
+      insert_position += 1
+    insert_position=0
+
+    for data_concept in data_concepts:
+      if data_concept["Data Concept"] != 'missing data':
+        new_div = create_property_detail_div(data_concept)
+        soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
       insert_position += 1
 
     f= open("docs/airm/developers/" + mapping_metadata["url_name"]+ "/" + info_concept["Information Concept"] + ".html","w+")
@@ -98,6 +106,92 @@ def create_properties_table_row(data_concept):
   new_tr.insert(3,td_type)
   
   return new_tr
+
+def create_property_detail_div(data_concept):
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup("<b></b>", 'lxml')
+  property_div = soup.new_tag("div")
+  property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+                  
+  h3 = soup.new_tag("h3")
+  h3.string = str(data_concept["Data Concept"])
+  h3["id"] = str(data_concept["Data Concept"])
+  h3["style"] = "padding-top: 120px; margin-top: -120px;"
+  property_div.insert(0,h3)
+
+  code = soup.new_tag("code")
+  identifier = data_concept['Concept Identifier']
+  code.string = identifier
+  code["class"] = "text-secondary"
+  property_div.insert(1,code)
+
+  p = soup.new_tag("p")
+  definition = str(data_concept["Concept Definition"])
+  definition = definition.replace("Definition: ","")
+  p.string = definition
+  br = soup.new_tag("br")
+  p.insert(2,br)
+  property_div.insert(2,p)
+
+  sc_h5 = soup.new_tag("h5")
+  sc_h5.string = "Semantic Correspondence"
+  sc_h5['style'] = "margin-top: 40px;"
+  property_div.insert(3,sc_h5)
+
+  sc_div = soup.new_tag("div")
+  sc_div["class"] = "table-responsive"
+  sc_table = soup.new_tag("table")
+  sc_table["class"] = "table"
+  sc_thead = soup.new_tag("thead")
+  tr = soup.new_tag("tr")
+  th = soup.new_tag("th")
+  th.string = "AIRM Concept"
+  tr.insert(1,th)
+  th = soup.new_tag("th")
+  th.string = "Definition"
+  tr.insert(2,th)
+  sc_thead.insert(1,tr)
+  sc_table.insert(1,sc_thead)
+  tbody = soup.new_tag("tbody")
+  # to be complete
+  sc_table.insert(2,tbody)
+  sc_div.insert(1,sc_table)
+  property_div.insert(4,sc_div)
+
+  if str(data_concept["Rationale"]) != "missing data":
+    h5 = soup.new_tag("h5")
+    h5.string = "Rationale"
+    property_div.insert(5,h5)
+
+    p = soup.new_tag("p")
+    p.string = str(data_concept["Rationale"])
+    print('Rationale:'+str(data_concept["Rationale"]))
+    property_div.insert(6,p)
+
+  if str(data_concept["Notes"]) != "missing data":
+    notes_h5 = soup.new_tag("h5")
+    notes_h5.string = "Notes"
+    property_div.insert(7,notes_h5)
+
+    p = soup.new_tag("p")
+    p.string = str(data_concept["Notes"])
+    print('Notes:'+str(data_concept["Notes"]))
+    property_div.insert(8,p)
+
+  top_link_p = soup.new_tag("p")
+  new_link = soup.new_tag("a")
+  new_link['href'] = "#top"
+  new_icon = soup.new_tag("i")
+  new_icon['class'] = "fa fa-arrow-circle-up"
+  new_icon["data-toggle"] = "tooltip"
+  new_icon["data-placement"] = "left"
+  new_icon["title"] = "Top of page"
+  new_link.insert(1,new_icon)
+  top_link_p.insert(1,new_link)
+  top_link_p['class'] =   "text-right"
+  property_div.insert(9,top_link_p)
+
+  return property_div
 
 def create_mapping_item_pages (mapping_file_pathname, template, settings):
   import mapping
