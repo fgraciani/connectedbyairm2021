@@ -210,6 +210,7 @@ def create_semantic_correspondence_table(data_concept):
       a['target'] = "_blank"
       a.string = airm_concept['name']
       td.insert(1,a)
+      tr.insert(1,td)
       td = soup.new_tag("td")
       td.string = airm_concept['definition']
       tr.insert(2,td)
