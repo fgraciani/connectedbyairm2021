@@ -92,15 +92,15 @@ def create_properties_table_row(data_concept):
   new_tr.insert(2,td_def)
   
   td_type = soup.new_tag("td")
-  if data_concept["Data Concept's Basic Type"] != "missing data":
-    if data_concept["Data Concept's Basic Type"] != "enum value":
+  if data_concept["Data Concept Type"] != "missing data":
+    if data_concept["Data Concept Type"] != "enum value":
       new_link = soup.new_tag("a")
-      new_link['href'] = str(data_concept["Data Concept's Basic Type"])+".html"
+      new_link['href'] = str(data_concept["Data Concept Type"])+".html"
       new_link['target'] = "_blank"
-      new_link.string = str(data_concept["Data Concept's Basic Type"])
+      new_link.string = str(data_concept["Data Concept Type"])
       td_type.insert(1,new_link)
     else:
-      td_type.string = str(data_concept["Data Concept's Basic Type"])
+      td_type.string = str(data_concept["Data Concept Type"])
   else:
     td_type.string = '-'
   new_tr.insert(3,td_type)
@@ -540,9 +540,9 @@ def create_index_table_row(mapping_entry, mapping_metadata):
     td_def.string = '-'
     new_tr.insert(3,td_def)
 
-  if mapping_entry["Data Concept's Basic Type"] != "missing data":
+  if mapping_entry["Data Concept Type"] != "missing data":
     td_dc_type = soup.new_tag("td")
-    parts = str(mapping_entry["Data Concept's Basic Type"]).split(":")
+    parts = str(mapping_entry["Data Concept Type"]).split(":")
     clean_type = parts[-1]
     td_dc_type.string = clean_type
     new_tr.insert(4,td_dc_type)

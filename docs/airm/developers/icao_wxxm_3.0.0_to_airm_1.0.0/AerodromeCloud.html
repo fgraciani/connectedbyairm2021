@@ -171,7 +171,9 @@
                 </a>
                </td>
                <td>
-                -
+                The observed cloud groups, up to four may be included.
+
+When cumulonimbus clouds or towering cumulus clouds are detected by the automatic observing system and the cloud amount and the height of cloud base cannot be observed ("//////") this is indicated by a missing cloud layer with a nil reason of either notObservable if the value could not be observed due to a sensor or system failure, or notDetectedByAutoSystem if the automated system is working properly but did not observe any values
                </td>
                <td>
                 <a href="CloudLayer.html" target="_blank">
@@ -208,7 +210,9 @@
               AerodromeCloud.layer
              </code>
              <p>
-              missing data
+              The observed cloud groups, up to four may be included.
+
+When cumulonimbus clouds or towering cumulus clouds are detected by the automatic observing system and the cloud amount and the height of cloud base cannot be observed ("//////") this is indicated by a missing cloud layer with a nil reason of either notObservable if the value could not be observed due to a sensor or system failure, or notDetectedByAutoSystem if the automated system is working properly but did not observe any values
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -229,17 +233,23 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#cloudCondition" target="_blank">
-                   AerodromeCondition.cloudCondition
+                  <a href="../../viewer/1.0.0/logical-model/WeatherPhenomenon.html#element" target="_blank">
+                   WeatherPhenomenon.element
                   </a>
                  </td>
                  <td>
-                  The cloud conditions at the aerodrome.
+                  A phenomenon which forms an element of this phenomenon.
                  </td>
                 </tr>
                </tbody>
               </table>
              </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              In AIRM, weather phenomenon can be divided into elements
+             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">

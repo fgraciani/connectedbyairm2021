@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   VolcanicAshCloudForecast - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+   VisualRangeTendency - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
   </title>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -68,7 +68,7 @@
         <li class="breadcrumb-item">
          <a id="BC_INFO_CONCEPT_NAME">
           <span>
-           VolcanicAshCloudForecast
+           VisualRangeTendency
           </span>
          </a>
         </li>
@@ -139,14 +139,14 @@
           <div class="col text-justify">
            <div id="INFO_CONCEPT_NAME">
             <h2>
-             VolcanicAshCloudForecast
+             VisualRangeTendency
             </h2>
             <code class="text-secondary">
-             VolcanicAshCloudForecast
+             VisualRangeTendency
             </code>
            </div>
            <p>
-            A forecast volcanic ash cloud, including a horizontal and vertical extent.
+            The tendency of visual range (e.g., upward, downward).  Defined for the purposes of aviation meteorology reporting of the visual range on runways (WMO No. 49-2). If the [runway] visual range (RVR) values during the 10-minute period preceding the nominal observation time show a distinct upward or downward tendency such that the mean during the first five minutes varies by 100 metres or more from the mean in the second five minutes of the period, an UPWARD [U] or DOWNWARD [D] tendency is recorded. When no distinct change in RVR is observed, NO CHANGE [N] is recorded. When it is not possible to determine the tendency, MISSING VALUE is recorded. See WMO No. 306 Vol I.2 FM 94 BUFR code-table 0 20 018 Tendency of runway visual range"."
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -166,17 +166,54 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#ashCloudExtent">
-                 ashCloudExtent
+                <a href="#DOWNWARD">
+                 DOWNWARD
                 </a>
                </td>
                <td>
-                The horizontal and vertical extent of the ash cloud.
+                Downward (decreasing) tendency
                </td>
                <td>
-                <a href="AirspaceVolume.html" target="_blank">
-                 AirspaceVolume
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MISSING_VALUE">
+                 MISSING_VALUE
                 </a>
+               </td>
+               <td>
+                Missing value
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NO_CHANGE">
+                 NO_CHANGE
+                </a>
+               </td>
+               <td>
+                No distinct change
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UPWARD">
+                 UPWARD
+                </a>
+               </td>
+               <td>
+                Upward (increasing) tendency
+               </td>
+               <td>
+                -
                </td>
               </tr>
              </tbody>
@@ -186,14 +223,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="ashCloudExtent" style="padding-top: 120px; margin-top: -120px;">
-              ashCloudExtent
+             <h3 id="DOWNWARD" style="padding-top: 120px; margin-top: -120px;">
+              DOWNWARD
              </h3>
              <code class="text-secondary">
-              VolcanicAshCloudForecast.ashCloudExtent
+              VisualRangeTendency.DOWNWARD
              </code>
              <p>
-              The horizontal and vertical extent of the ash cloud.
+              Downward (decreasing) tendency
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -214,17 +251,176 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#surfaceExtent" target="_blank">
-                   GeoEnabledEntity.surfaceExtent
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
                   </a>
                  </td>
                  <td>
-                  The geometry of the entity expressed as a surface or area described by a closed line.
+                  A change request is required on the AIRM.
                  </td>
                 </tr>
                </tbody>
               </table>
              </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              if used by a property that will be in a CR
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="MISSING_VALUE" style="padding-top: 120px; margin-top: -120px;">
+              MISSING_VALUE
+             </h3>
+             <code class="text-secondary">
+              VisualRangeTendency.MISSING_VALUE
+             </code>
+             <p>
+              Missing value
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              if used by a property that will be in a CR
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="NO_CHANGE" style="padding-top: 120px; margin-top: -120px;">
+              NO_CHANGE
+             </h3>
+             <code class="text-secondary">
+              VisualRangeTendency.NO_CHANGE
+             </code>
+             <p>
+              No distinct change
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="UPWARD" style="padding-top: 120px; margin-top: -120px;">
+              UPWARD
+             </h3>
+             <code class="text-secondary">
+              VisualRangeTendency.UPWARD
+             </code>
+             <p>
+              Upward (increasing) tendency
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              we have CodeConvectionCellTopVariationType specifically for convection cells, maybe we can make the Types more generic.
+             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">

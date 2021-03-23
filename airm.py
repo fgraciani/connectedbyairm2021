@@ -74,7 +74,7 @@ class Airm:
         "definition" : "This concept is considered as out of the scope of the AIRM.",
         "url"  : "http://airm.aero/developers/airm-out-of-scope.html"
       }
-    elif urn == "CR":
+    elif urn == "changeRequest":
       concept = {
         "name" : "Change request",
         "definition" : "A change request is required on the AIRM.",
