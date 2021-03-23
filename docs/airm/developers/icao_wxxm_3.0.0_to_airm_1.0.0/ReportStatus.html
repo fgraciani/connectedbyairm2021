@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   VolcanicAshCloudForecast - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+   ReportStatus - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
   </title>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -68,7 +68,7 @@
         <li class="breadcrumb-item">
          <a id="BC_INFO_CONCEPT_NAME">
           <span>
-           VolcanicAshCloudForecast
+           ReportStatus
           </span>
          </a>
         </li>
@@ -139,14 +139,14 @@
           <div class="col text-justify">
            <div id="INFO_CONCEPT_NAME">
             <h2>
-             VolcanicAshCloudForecast
+             ReportStatus
             </h2>
             <code class="text-secondary">
-             VolcanicAshCloudForecast
+             ReportStatus
             </code>
            </div>
            <p>
-            A forecast volcanic ash cloud, including a horizontal and vertical extent.
+            This indicates the issuance status of the report, including: NORMAL: The report is issued for the first time AMENDMENT: The report is an amendment to a previously issued report CORRECTION: The report is a correction to a previously issued report
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -166,17 +166,41 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#ashCloudExtent">
-                 ashCloudExtent
+                <a href="#AMENDMENT">
+                 AMENDMENT
                 </a>
                </td>
                <td>
-                The horizontal and vertical extent of the ash cloud.
+                The report is an amendment to a previously issued report.
                </td>
                <td>
-                <a href="AirspaceVolume.html" target="_blank">
-                 AirspaceVolume
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CORRECTION">
+                 CORRECTION
                 </a>
+               </td>
+               <td>
+                The report is a correction to a previously issued report.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NORMAL">
+                 NORMAL
+                </a>
+               </td>
+               <td>
+                The first issuance of a report.
+               </td>
+               <td>
+                -
                </td>
               </tr>
              </tbody>
@@ -186,14 +210,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="ashCloudExtent" style="padding-top: 120px; margin-top: -120px;">
-              ashCloudExtent
+             <h3 id="AMENDMENT" style="padding-top: 120px; margin-top: -120px;">
+              AMENDMENT
              </h3>
              <code class="text-secondary">
-              VolcanicAshCloudForecast.ashCloudExtent
+              ReportStatus.AMENDMENT
              </code>
              <p>
-              The horizontal and vertical extent of the ash cloud.
+              The report is an amendment to a previously issued report.
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -214,12 +238,106 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#surfaceExtent" target="_blank">
-                   GeoEnabledEntity.surfaceExtent
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
                   </a>
                  </td>
                  <td>
-                  The geometry of the entity expressed as a surface or area described by a closed line.
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="CORRECTION" style="padding-top: 120px; margin-top: -120px;">
+              CORRECTION
+             </h3>
+             <code class="text-secondary">
+              ReportStatus.CORRECTION
+             </code>
+             <p>
+              The report is a correction to a previously issued report.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="NORMAL" style="padding-top: 120px; margin-top: -120px;">
+              NORMAL
+             </h3>
+             <code class="text-secondary">
+              ReportStatus.NORMAL
+             </code>
+             <p>
+              The first issuance of a report.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
                  </td>
                 </tr>
                </tbody>

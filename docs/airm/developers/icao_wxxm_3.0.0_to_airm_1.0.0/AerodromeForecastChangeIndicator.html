@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   MeteorologicalAerodromeForecast - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+   AerodromeForecastChangeIndicator - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
   </title>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -68,7 +68,7 @@
         <li class="breadcrumb-item">
          <a id="BC_INFO_CONCEPT_NAME">
           <span>
-           MeteorologicalAerodromeForecast
+           AerodromeForecastChangeIndicator
           </span>
          </a>
         </li>
@@ -139,14 +139,14 @@
           <div class="col text-justify">
            <div id="INFO_CONCEPT_NAME">
             <h2>
-             MeteorologicalAerodromeForecast
+             AerodromeForecastChangeIndicator
             </h2>
             <code class="text-secondary">
-             MeteorologicalAerodromeForecast
+             AerodromeForecastChangeIndicator
             </code>
            </div>
            <p>
-            Meteorological conditions forecast at an aerodrome.  This class is also related but not identical to MeteorologicalAerodromeTrendForecast, which is reported on a METAR/SPECI - conditions reported in trend forecasts in METAR/SPECI differ from forecast groups in a TAF. When no clouds of operational significance or no weather of operational significance is predicted, the nothingOfOperationalSignificance nilReason should be used for the cloud or presentWeather association. Note that the TAC representations for FM", "TL", and "AT" are represented by the phenomenonTime on the change forecast (MeteorologicalAerodromeForecast):     FM and TL - a phenomenonTime with a TimePeriod (start is FM and end is TL)     TL - a phenomenonTime with a TimePeriod (start is beginning of forecast validity and end is TL)     FM - a phenomenonTime with a TimePeriod (start is FM and end is end of forecast validity)     AT - a phenomenonTime with a TimeInstant"
+            The forecast change indicator type, including temporary, permanent, or probable conditions.  This is an extension of ForecastChangeIndicator that includes report-specific entries, and in particular the 30 and 40% probability conditions. Note that the TAC representations for FM", "TL", and "AT" are represented by the phenomenonTime on the change forecast (MeteorologicalAerodromeForecast):     FM and TL - a phenomenonTime with a TimePeriod (start is FM and end is TL)     TL - a phenomenonTime with a TimePeriod (start is beginning of forecast validity and end is TL)     FM - a phenomenonTime with a TimePeriod (start is FM and end is end of forecast validity)     AT - a phenomenonTime with a TimeInstant"
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -166,137 +166,93 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#changeIndicator">
-                 changeIndicator
+                <a href="#BECOMING">
+                 BECOMING
                 </a>
                </td>
                <td>
-                The type of change being reported (FROM, BECOMING,  TEMPORARY, etc.). A change indicator is required for all MeteorologicalAerodromeForecasts excepting reported base conditions.
+                Conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period.  The time period should normally not exceed 2 hours but in any case should not exceed 4 hours. ICAO Annex 3 / WMO No. 49-2: BECMG" "
                </td>
                <td>
-                <a href="AerodromeForecastChangeIndicator.html" target="_blank">
-                 AerodromeForecastChangeIndicator
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#cloud">
-                 cloud
+                <a href="#FROM">
+                 FROM
                 </a>
                </td>
                <td>
-                Forecast of cloud.
+                One set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions. Conditions in a FROM group supersede conditions in earlier groups. ICAO Annex 3 / WMO No. 49-2: FM""
                </td>
                <td>
-                <a href="AerodromeCloudForecast.html" target="_blank">
-                 AerodromeCloudForecast
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#cloudAndVisibilityOK">
-                 cloudAndVisibilityOK
+                <a href="#PROBABILITY_30">
+                 PROBABILITY_30
                 </a>
                </td>
                <td>
-                When true, indicates that the following conditions occur simultaneously at the time of forecast (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+                A 30% probability of occurrence of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB30""
                </td>
                <td>
-                <a href="Boolean.html" target="_blank">
-                 Boolean
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#phenomenonTime">
-                 phenomenonTime
+                <a href="#PROBABILITY_30_TEMPORARY_FLUCTUATIONS">
+                 PROBABILITY_30_TEMPORARY_FLUCTUATIONS
                 </a>
                </td>
                <td>
-                The time at which the reported phenomena or change of phenomena occur.  For change indicators of FROM, PROB 30/40, and TEMPO this is the period of time at which reported meteorological conditions occur.  For BECOMING conditions this represents the time over which conditions are changing.  This is equivalent to how time information is reported in the TAC codes
+                A 30% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB30 TEMPO""
                </td>
                <td>
-                <a href="TM_Period.html" target="_blank">
-                 TM_Period
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#prevailingVisibility">
-                 prevailingVisibility
+                <a href="#PROBABILITY_40">
+                 PROBABILITY_40
                 </a>
                </td>
                <td>
-                The prevailing horizontal visibility, mandatory except when ceiling and visibility is reported as OK Prevailing horizontal visibility shall be reported in meters (m")."
+                A 40% probability of occurrence of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB40""
                </td>
                <td>
-                <a href="Distance.html" target="_blank">
-                 Distance
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#prevailingVisibilityOperator">
-                 prevailingVisibilityOperator
+                <a href="#PROBABILITY_40_TEMPORARY_FLUCTUATIONS">
+                 PROBABILITY_40_TEMPORARY_FLUCTUATIONS
                 </a>
                </td>
                <td>
-                The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
+                A 40% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB40 TEMPO""
                </td>
                <td>
-                <a href="RelationalOperator.html" target="_blank">
-                 RelationalOperator
-                </a>
+                -
                </td>
               </tr>
               <tr>
                <td>
-                <a href="#surfaceWind">
-                 surfaceWind
+                <a href="#TEMPORARY_FLUCTUATIONS">
+                 TEMPORARY_FLUCTUATIONS
                 </a>
                </td>
                <td>
-                Forecast of surface wind.
+                Expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur. ICAO Annex 3 / WMO No. 49-2: TEMPO""
                </td>
                <td>
-                <a href="AerodromeSurfaceWindForecast.html" target="_blank">
-                 AerodromeSurfaceWindForecast
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#temperature">
-                 temperature
-                </a>
-               </td>
-               <td>
-                Forecast of temperature.
-               </td>
-               <td>
-                <a href="AerodromeAirTemperatureForecast.html" target="_blank">
-                 AerodromeAirTemperatureForecast
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#weather">
-                 weather
-                </a>
-               </td>
-               <td>
-                Forecast of weather phenomena.
-               </td>
-               <td>
-                <a href="AerodromeForecastWeather.html" target="_blank">
-                 AerodromeForecastWeather
-                </a>
+                -
                </td>
               </tr>
              </tbody>
@@ -306,14 +262,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="changeIndicator" style="padding-top: 120px; margin-top: -120px;">
-              changeIndicator
+             <h3 id="BECOMING" style="padding-top: 120px; margin-top: -120px;">
+              BECOMING
              </h3>
              <code class="text-secondary">
-              MeteorologicalAerodromeForecast.changeIndicator
+              AerodromeForecastChangeIndicator.BECOMING
              </code>
              <p>
-              The type of change being reported (FROM, BECOMING,  TEMPORARY, etc.). A change indicator is required for all MeteorologicalAerodromeForecasts excepting reported base conditions.
+              Conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period.  The time period should normally not exceed 2 hours but in any case should not exceed 4 hours. ICAO Annex 3 / WMO No. 49-2: BECMG" "
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -334,12 +290,12 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#changeIndicator" target="_blank">
-                   WeatherCondition.changeIndicator
+                  <a href="../../viewer/1.0.0/logical-model/CodeChangeIndicatorType.html#BECMG" target="_blank">
+                   CodeChangeIndicatorType.BECMG
                   </a>
                  </td>
                  <td>
-                  Indication about the type of meteorological conditions changes.
+                  A code used to describe changes where the meteorological conditions are expected to reach or pass through specified threshold values at a regular or irregular rate and at an unspecified time during the time period.
                  </td>
                 </tr>
                </tbody>
@@ -353,118 +309,14 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="cloud" style="padding-top: 120px; margin-top: -120px;">
-              cloud
+             <h3 id="FROM" style="padding-top: 120px; margin-top: -120px;">
+              FROM
              </h3>
              <code class="text-secondary">
-              MeteorologicalAerodromeForecast.cloud
+              AerodromeForecastChangeIndicator.FROM
              </code>
              <p>
-              Forecast of cloud.
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
-                   WeatherCondition.phenomenon
-                  </a>
-                 </td>
-                 <td>
-                  The phenomenon of relevance for the weather condition.
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/Cloud" target="_blank">
-                   Cloud
-                  </a>
-                 </td>
-                 <td>
-                  A hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended in the free air and usually not touching the ground. It may also include larger particles of liquid water or ice and non-aqueous liquid or solid particles such as those present in fumes, smoke and dust.
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="cloudAndVisibilityOK" style="padding-top: 120px; margin-top: -120px;">
-              cloudAndVisibilityOK
-             </h3>
-             <code class="text-secondary">
-              MeteorologicalAerodromeForecast.cloudAndVisibilityOK
-             </code>
-             <p>
-              When true, indicates that the following conditions occur simultaneously at the time of forecast (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#cavok" target="_blank">
-                   AerodromeCondition.cavok
-                  </a>
-                 </td>
-                 <td>
-                  Visibility, cloud and present weather better than prescribed values or conditions.
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="phenomenonTime" style="padding-top: 120px; margin-top: -120px;">
-              phenomenonTime
-             </h3>
-             <code class="text-secondary">
-              MeteorologicalAerodromeForecast.phenomenonTime
-             </code>
-             <p>
-              The time at which the reported phenomena or change of phenomena occur.  For change indicators of FROM, PROB 30/40, and TEMPO this is the period of time at which reported meteorological conditions occur.  For BECOMING conditions this represents the time over which conditions are changing.  This is equivalent to how time information is reported in the TAC codes
+              One set of prevailing weather conditions is expected to change significantly and more or less completely to a different set of conditions. Conditions in a FROM group supersede conditions in earlier groups. ICAO Annex 3 / WMO No. 49-2: FM""
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -504,14 +356,14 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="prevailingVisibility" style="padding-top: 120px; margin-top: -120px;">
-              prevailingVisibility
+             <h3 id="PROBABILITY_30" style="padding-top: 120px; margin-top: -120px;">
+              PROBABILITY_30
              </h3>
              <code class="text-secondary">
-              MeteorologicalAerodromeForecast.prevailingVisibility
+              AerodromeForecastChangeIndicator.PROBABILITY_30
              </code>
              <p>
-              The prevailing horizontal visibility, mandatory except when ceiling and visibility is reported as OK Prevailing horizontal visibility shall be reported in meters (m")."
+              A 30% probability of occurrence of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB30""
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -532,111 +384,7 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/HorizontalVisibility.html#prevailingVisibility" target="_blank">
-                   HorizontalVisibility.prevailingVisibility
-                  </a>
-                 </td>
-                 <td>
-                  The greatest visibility value, observed in accordance with the definition of visibility", which is reached within at least half the horizon circle or within at least half of the surface of the aerodrome. These areas could comprise contiguous or non-contiguous sectors."
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="prevailingVisibilityOperator" style="padding-top: 120px; margin-top: -120px;">
-              prevailingVisibilityOperator
-             </h3>
-             <code class="text-secondary">
-              MeteorologicalAerodromeForecast.prevailingVisibilityOperator
-             </code>
-             <p>
-              The reported relational operator for the prevailing horizontal visibility.  When reported, this operator is reported in conjunction with prevailing visibility. To report a prevailing visibility of at least 10000 meters, prevailing visibility is reported as 10000 meters and the operator is reported as above". When no operator is reported, prevailing visibility represents an exact value with identical semantics to other measured quantities"
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/RunwayVisualRange.html#rvrValueInterpretation" target="_blank">
-                   RunwayVisualRange.rvrValueInterpretation
-                  </a>
-                 </td>
-                 <td>
-                  The relational operator that can be used for interpreting the RVR value, for instance in order to express a mean RVR of at least 2000 meters (ABOVE 2000 meters).
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="surfaceWind" style="padding-top: 120px; margin-top: -120px;">
-              surfaceWind
-             </h3>
-             <code class="text-secondary">
-              MeteorologicalAerodromeForecast.surfaceWind
-             </code>
-             <p>
-              Forecast of surface wind.
-              <br/>
-             </p>
-             <h5 style="margin-top: 40px;">
-              Semantic Correspondence
-             </h5>
-             <div class="table-responsive">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  AIRM Concept
-                 </th>
-                 <th>
-                  Definition
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
-                   WeatherCondition.phenomenon
-                  </a>
-                 </td>
-                 <td>
-                  The phenomenon of relevance for the weather condition.
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <a href="../../viewer/1.0.0/logical-model/not-found" target="_blank">
+                  <a href="../../viewer/not-found" target="_blank">
                    Not found
                   </a>
                  </td>
@@ -655,14 +403,14 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="temperature" style="padding-top: 120px; margin-top: -120px;">
-              temperature
+             <h3 id="PROBABILITY_30_TEMPORARY_FLUCTUATIONS" style="padding-top: 120px; margin-top: -120px;">
+              PROBABILITY_30_TEMPORARY_FLUCTUATIONS
              </h3>
              <code class="text-secondary">
-              MeteorologicalAerodromeForecast.temperature
+              AerodromeForecastChangeIndicator.PROBABILITY_30_TEMPORARY_FLUCTUATIONS
              </code>
              <p>
-              Forecast of temperature.
+              A 30% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB30 TEMPO""
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -683,23 +431,17 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
-                   Out of scope
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
                   </a>
                  </td>
                  <td>
-                  This concept is considered as out of the scope of the AIRM.
+                  The provided URN does not exist.
                  </td>
                 </tr>
                </tbody>
               </table>
              </div>
-             <h5>
-              Notes
-             </h5>
-             <p>
-              AIRM: Check the various temperatures on AviationCondition
-             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
@@ -708,14 +450,14 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="weather" style="padding-top: 120px; margin-top: -120px;">
-              weather
+             <h3 id="PROBABILITY_40" style="padding-top: 120px; margin-top: -120px;">
+              PROBABILITY_40
              </h3>
              <code class="text-secondary">
-              MeteorologicalAerodromeForecast.weather
+              AerodromeForecastChangeIndicator.PROBABILITY_40
              </code>
              <p>
-              Forecast of weather phenomena.
+              A 40% probability of occurrence of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB40""
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -736,12 +478,106 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
-                   WeatherCondition.phenomenon
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
                   </a>
                  </td>
                  <td>
-                  The phenomenon of relevance for the weather condition.
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="PROBABILITY_40_TEMPORARY_FLUCTUATIONS" style="padding-top: 120px; margin-top: -120px;">
+              PROBABILITY_40_TEMPORARY_FLUCTUATIONS
+             </h3>
+             <code class="text-secondary">
+              AerodromeForecastChangeIndicator.PROBABILITY_40_TEMPORARY_FLUCTUATIONS
+             </code>
+             <p>
+              A 40% probability of occurrence of temporary conditions of an alternative value of a forecast element or elements. ICAO Annex 3 / WMO No. 49-2: PROB40 TEMPO""
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="TEMPORARY_FLUCTUATIONS" style="padding-top: 120px; margin-top: -120px;">
+              TEMPORARY_FLUCTUATIONS
+             </h3>
+             <code class="text-secondary">
+              AerodromeForecastChangeIndicator.TEMPORARY_FLUCTUATIONS
+             </code>
+             <p>
+              Expected temporary fluctuations to meteorological conditions which reach or pass specified threshold criteria and last for a period of less than one hour in each instance and in the aggregate cover less than half of the forecast period during which the fluctuations are expected to occur. ICAO Annex 3 / WMO No. 49-2: TEMPO""
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeChangeIndicatorType.html#TEMPO" target="_blank">
+                   CodeChangeIndicatorType.TEMPO
+                  </a>
+                 </td>
+                 <td>
+                  A code used to describe expected frequent or infrequent temporary fluctuations in the meteorological conditions which reach or pass specified threshold values and last for a period of less than one hour in each instance and, in the aggregate, cover less than one-half of the forecast period during which the fluctuations are expected to occur.
                  </td>
                 </tr>
                </tbody>

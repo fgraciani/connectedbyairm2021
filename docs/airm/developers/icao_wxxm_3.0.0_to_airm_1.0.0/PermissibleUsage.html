@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
   <title>
-   VolcanicAshCloudForecast - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+   PermissibleUsage - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
   </title>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
   <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
@@ -68,7 +68,7 @@
         <li class="breadcrumb-item">
          <a id="BC_INFO_CONCEPT_NAME">
           <span>
-           VolcanicAshCloudForecast
+           PermissibleUsage
           </span>
          </a>
         </li>
@@ -139,14 +139,14 @@
           <div class="col text-justify">
            <div id="INFO_CONCEPT_NAME">
             <h2>
-             VolcanicAshCloudForecast
+             PermissibleUsage
             </h2>
             <code class="text-secondary">
-             VolcanicAshCloudForecast
+             PermissibleUsage
             </code>
            </div>
            <p>
-            A forecast volcanic ash cloud, including a horizontal and vertical extent.
+            PermissibleUsage defines the restricted set of permitted usages of data
            </p>
            <div class="table-responsive">
             <table class="table">
@@ -166,17 +166,28 @@
              <tbody id="DATA_CONCEPTS_LIST">
               <tr>
                <td>
-                <a href="#ashCloudExtent">
-                 ashCloudExtent
+                <a href="#NON-OPERATIONAL">
+                 NON-OPERATIONAL
                 </a>
                </td>
                <td>
-                The horizontal and vertical extent of the ash cloud.
+                Data should not be used for operational purposes, but may be used for other purposes
                </td>
                <td>
-                <a href="AirspaceVolume.html" target="_blank">
-                 AirspaceVolume
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OPERATIONAL">
+                 OPERATIONAL
                 </a>
+               </td>
+               <td>
+                Data may be used for operational purposes
+               </td>
+               <td>
+                -
                </td>
               </tr>
              </tbody>
@@ -186,14 +197,14 @@
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="ashCloudExtent" style="padding-top: 120px; margin-top: -120px;">
-              ashCloudExtent
+             <h3 id="NON-OPERATIONAL" style="padding-top: 120px; margin-top: -120px;">
+              NON-OPERATIONAL
              </h3>
              <code class="text-secondary">
-              VolcanicAshCloudForecast.ashCloudExtent
+              PermissibleUsage.NON-OPERATIONAL
              </code>
              <p>
-              The horizontal and vertical extent of the ash cloud.
+              Data should not be used for operational purposes, but may be used for other purposes
               <br/>
              </p>
              <h5 style="margin-top: 40px;">
@@ -214,17 +225,76 @@
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#surfaceExtent" target="_blank">
-                   GeoEnabledEntity.surfaceExtent
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
                   </a>
                  </td>
                  <td>
-                  The geometry of the entity expressed as a surface or area described by a closed line.
+                  This concept is considered as out of the scope of the AIRM.
                  </td>
                 </tr>
                </tbody>
               </table>
              </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              process?
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 id="OPERATIONAL" style="padding-top: 120px; margin-top: -120px;">
+              OPERATIONAL
+             </h3>
+             <code class="text-secondary">
+              PermissibleUsage.OPERATIONAL
+             </code>
+             <p>
+              Data may be used for operational purposes
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              process?
+             </p>
              <p class="text-right">
               <a href="#top">
                <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
