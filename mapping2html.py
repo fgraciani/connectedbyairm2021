@@ -216,6 +216,30 @@ def create_semantic_correspondence_table(data_concept):
         tr.insert(2,td)
         tbody.insert(insert_position,tr)
         insert_position+=1
+  if str(data_concept['Additional traces']) != "missing data":
+    import airm
+    airm = airm.Airm()
+    urns = str(data_concept['Additional traces']).split('\n')
+    for urn in urns:
+      if urn != '':
+        airm_concept = airm.get_concept(urn)
+        tr = soup.new_tag("tr")
+        td = soup.new_tag("td")
+        spam = soup.new_tag("spam")
+        spam["class"] = "badge badge-secondary"
+        spam.string ="Additional trace"
+        td.insert(1,spam)
+        a = soup.new_tag("a")
+        a['href'] = relativise_url(airm_concept['url'])
+        a['target'] = "_blank"
+        a.string = airm_concept['name']
+        td.insert(2,a)
+        tr.insert(1,td)
+        td = soup.new_tag("td")
+        td.string = airm_concept['definition']
+        tr.insert(2,td)
+        tbody.insert(insert_position,tr)
+        insert_position+=1
   if str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']) != "missing data":
     import airm
     airm = airm.Airm()
