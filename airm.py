@@ -98,7 +98,7 @@ def urn_to_url(urn):
   if "urn:" in urn:
     urn_parts = urn.split(':')
     if ":ses:" in urn:
-      supplement = "european-supplement"
+      supplement = "european-supplement/"
     else:
       supplement = ''
 
@@ -119,6 +119,6 @@ def urn_to_url(urn):
       page = urn_parts[-1]
       target = ''
       
-    return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+'/'+page+target
+    return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+page+target
   else: 
     return "http://airm.aero/viewer/not-found"
