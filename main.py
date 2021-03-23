@@ -1,3 +1,3 @@
 import menu
-#menu.test()
+menu.test()
 menu.main_menu()
