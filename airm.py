@@ -13,7 +13,6 @@ class Airm:
   not_found_counter = 0
   
   def __init__(self):
-    print("init")
     self.contextual_abbreviations.fillna("missing data", inplace = True)
     self.contextual_terms.fillna("missing data", inplace = True)
     self.conceptual_concepts.fillna("missing data", inplace = True)
@@ -35,30 +34,22 @@ class Airm:
     if "urn:" in urn:#if valid_urn(urn):
       if "ContextualModel" in urn:
         dataframe = self.contextual_terms.copy()
-        print("dataframe loaded")
       elif "ConceptualModel" in urn:
         if "ses:eurocontrol" in urn:
           dataframe = self.conceptual_supp_concepts.copy()
-          print("dataframe loaded")
         else:
           dataframe = self.conceptual_concepts.copy()
-          print("dataframe loaded")
       elif "LogicalModel" in urn:
         if "ses:eurocontrol" in urn:
           dataframe = self.logical_supp_concepts.copy()
-          print("dataframe loaded")
         else:
           dataframe = self.logical_concepts.copy()
-          print("dataframe loaded")
 
       #Search block:
       filter = dataframe["urn"]==urn
       dataframe.sort_values("urn", inplace = True)
       dataframe.where(filter, inplace = True) 
-      results = dataframe.dropna(how='all')   
-      
-      print("Results: ")#REMOVE WHEN WORKING
-      print(results)#REMOVE WHEN WORKING
+      results = dataframe.dropna(how='all')  
 
       if results.empty:
         self.not_found_counter += 1
@@ -68,8 +59,12 @@ class Airm:
           "url"  : "http://airm.aero/viewer/1.0.0/logical-model/not-found"
         }
       else: 
+        if '@' in urn:
+          name = results["class name"].iloc[0]+'.'+results["property name"].iloc[0]
+        else:
+          name = results["class name"].iloc[0]
         concept = {
-          "name" : results["name"].iloc[0],
+          "name" : name,
           "definition" : results["definition"].iloc[0],
           "url"  : urn_to_url(urn)
         }
@@ -103,7 +98,7 @@ def urn_to_url(urn):
   if "urn:" in urn:
     urn_parts = urn.split(':')
     if ":ses:" in urn:
-      supplement = "european-supplement"
+      supplement = "european-supplement/"
     else:
       supplement = ''
 
@@ -124,6 +119,6 @@ def urn_to_url(urn):
       page = urn_parts[-1]
       target = ''
       
-    return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+'/'+page+target
+    return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+page+target
   else: 
     return "http://airm.aero/viewer/not-found"
