@@ -40,7 +40,8 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
     soup = utils.create_html_soup(template)
 
     soup.title.string = str(info_concept['Information Concept']) + " - " + mapping_metadata["name"] + " | AIRM.aero"
-    #soup.find(text="MAPPING_NAME_BC").replace_with(str(...)) Need to link back
+    soup.find(text="MAPPING_NAME_BC").replace_with(str(mapping_metadata["name"])) 
+    soup.find(id="MAPPING_NAME_BC")["href"]="../"+mapping_metadata["url_name"] + ".html"
     soup.find(text="INFO_CONCEPT_NAME_BC").replace_with(str(info_concept['Information Concept']))
     h2 = soup.new_tag("h2")
     h2.string = str(info_concept['Information Concept'])
@@ -255,7 +256,8 @@ def create_mapping_item_pages (mapping_file_pathname, template, settings):
       soup = utils.create_html_soup(template)
       
       soup.title.string = str(info_concept['Information Concept']) + " - " + mapping_metadata["name"] + " | AIRM.aero"
-  
+
+
       soup.find(text="INFORMATION_CONCEPT_NAME_BC").replace_with(str(info_concept['Information Concept']))
 
       h2 = soup.new_tag("h2")
