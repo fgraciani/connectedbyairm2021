@@ -161,7 +161,7 @@ def create_property_detail_div(data_concept):
 
     p = soup.new_tag("p")
     p.string = str(data_concept["Notes"])
-    print('Notes:'+str(data_concept["Notes"]))
+    #print('Notes:'+str(data_concept["Notes"]))
     property_div.insert(8,p)
 
   top_link_p = soup.new_tag("p")
@@ -201,39 +201,41 @@ def create_semantic_correspondence_table(data_concept):
     airm = airm.Airm()
     urns = str(data_concept['AIRM Concept Identifier']).split('\n')
     for urn in urns:
-      airm_concept = airm.get_concept(urn)
-      tr = soup.new_tag("tr")
-      td = soup.new_tag("td")
-      a = soup.new_tag("a")
-      a['href'] = relativise_url(airm_concept['url'])
-      a['target'] = "_blank"
-      a.string = airm_concept['name']
-      td.insert(1,a)
-      tr.insert(1,td)
-      td = soup.new_tag("td")
-      td.string = airm_concept['definition']
-      tr.insert(2,td)
-      tbody.insert(insert_position,tr)
-      insert_position+=1
+      if urn != '':
+        airm_concept = airm.get_concept(urn)
+        tr = soup.new_tag("tr")
+        td = soup.new_tag("td")
+        a = soup.new_tag("a")
+        a['href'] = relativise_url(airm_concept['url'])
+        a['target'] = "_blank"
+        a.string = airm_concept['name']
+        td.insert(1,a)
+        tr.insert(1,td)
+        td = soup.new_tag("td")
+        td.string = airm_concept['definition']
+        tr.insert(2,td)
+        tbody.insert(insert_position,tr)
+        insert_position+=1
   if str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']) != "missing data":
     import airm
     airm = airm.Airm()
     parts = str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']).split('\n')
     for case in parts:
-      airm_concept = airm.get_concept(case)
-      tr = soup.new_tag("tr")
-      td = soup.new_tag("td")
-      a = soup.new_tag("a")
-      a['href'] = relativise_url(airm_concept['url'])
-      a['target'] = "_blank"
-      a.string = airm_concept['name']
-      td.insert(1,a)
-      tr.insert(1,td)
-      td = soup.new_tag("td")
-      td.string = airm_concept['definition']
-      tr.insert(2,td)
-      tbody.insert(insert_position,tr)
-      insert_position+=1
+      if case != '':
+        airm_concept = airm.get_concept(case)
+        tr = soup.new_tag("tr")
+        td = soup.new_tag("td")
+        a = soup.new_tag("a")
+        a['href'] = relativise_url(airm_concept['url'])
+        a['target'] = "_blank"
+        a.string = airm_concept['name']
+        td.insert(1,a)
+        tr.insert(1,td)
+        td = soup.new_tag("td")
+        td.string = airm_concept['definition']
+        tr.insert(2,td)
+        tbody.insert(insert_position,tr)
+        insert_position+=1
   sc_table.insert(2,tbody)
 
   return sc_table

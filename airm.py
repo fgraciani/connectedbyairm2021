@@ -31,6 +31,9 @@ class Airm:
     self.logical_supp_concepts.columns =    ["supplement","stereotype","class name","property name", "type","type urn", "definition", "synonyms", "abbreviation", "urn",  "parent", "parent urn", "source"]
 
   def get_concept(self, urn):
+    urn = urn.replace(' ','')
+    if urn == "":
+      print("! empty urn")
     if "urn:" in urn:#if valid_urn(urn):
       if "ContextualModel" in urn:
         dataframe = self.contextual_terms.copy()
@@ -52,11 +55,11 @@ class Airm:
       results = dataframe.dropna(how='all')  
 
       if results.empty:
-        self.not_found_counter += 1
+        print("! URN not found in AIRM: "+urn)
         concept = {
           "name" : "Not found",
           "definition" : "The provided URN does not exist.",
-          "url"  : "http://airm.aero/viewer/1.0.0/logical-model/not-found"
+          "url"  : "http://airm.aero/viewer/not-found"
         }
       else: 
         if '@' in urn:
@@ -80,13 +83,14 @@ class Airm:
         "definition" : "A change request is required on the AIRM.",
         "url"  : "http://airm.aero/developers/airm-change-request.html"
       }
-    elif urn == "Not Established":
+    elif urn.lower() == "notestablished":
       concept = {
         "name" : "Not Established",
         "definition" : "Semantic correspondence has not been established for this concept.",
         "url"  : "http://airm.aero/developers/airm-change-request.html"
       }
     else:
+      print("! URN not valid: "+urn)
       concept = {
         "name" : "Not found",
         "definition" : "The provided URN does not exist.",

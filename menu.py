@@ -7,6 +7,8 @@ def test(): #See https://github.com/Mckinsey666/bullet for improvements
     print('')
     print("2: Test airm.get_concept(urn)")
     print('')
+    print("99: main menu")
+    print('')
     choice = input ("Please make a choice: ")
     print('')
 
@@ -22,7 +24,9 @@ def test(): #See https://github.com/Mckinsey666/bullet for improvements
         import airm
         airm = airm.Airm()
         print(airm.get_concept(urn))
-        test()   
+        test()  
+    elif choice == "99":
+        main_menu()   
 
 def main_menu():
   choice ='0'
@@ -48,3 +52,4 @@ def main_menu():
         mapping2html.dummy_create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v2.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
         main_menu()   
+ 
