@@ -216,10 +216,10 @@ def create_semantic_correspondence_table(data_concept):
         tr.insert(2,td)
         tbody.insert(insert_position,tr)
         insert_position+=1
-  if str(data_concept['Additional traces']) != "missing data":
+  if str(data_concept['Additional Traces']) != "missing data":
     import airm
     airm = airm.Airm()
-    urns = str(data_concept['Additional traces']).split('\n')
+    urns = str(data_concept['Additional Traces']).split('\n')
     for urn in urns:
       if urn != '':
         airm_concept = airm.get_concept(urn)
