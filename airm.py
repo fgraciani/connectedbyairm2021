@@ -68,8 +68,12 @@ class Airm:
           "url"  : "http://airm.aero/viewer/1.0.0/logical-model/not-found"
         }
       else: 
+        if '@' in urn:
+          name = results["class name"].iloc[0]+'.'+results["property name"].iloc[0]
+        else:
+          name = results["class name"].iloc[0]
         concept = {
-          "name" : results["name"].iloc[0],
+          "name" : name,
           "definition" : results["definition"].iloc[0],
           "url"  : urn_to_url(urn)
         }
