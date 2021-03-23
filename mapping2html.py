@@ -227,6 +227,9 @@ def create_semantic_correspondence_table(data_concept):
         td = soup.new_tag("td")
         spam = soup.new_tag("spam")
         spam["class"] = "badge badge-secondary"
+        spam["data-toggle"] = "tooltip" 
+        spam["data-placement"] = "bottom" 
+        spam["title"] = "Additional traces to clarify the mapping of narrower concepts"
         spam.string ="Additional trace"
         td.insert(1,spam)
         a = soup.new_tag("a")
