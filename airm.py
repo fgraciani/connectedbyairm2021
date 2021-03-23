@@ -13,7 +13,6 @@ class Airm:
   not_found_counter = 0
   
   def __init__(self):
-    print("init")
     self.contextual_abbreviations.fillna("missing data", inplace = True)
     self.contextual_terms.fillna("missing data", inplace = True)
     self.conceptual_concepts.fillna("missing data", inplace = True)
@@ -35,30 +34,22 @@ class Airm:
     if "urn:" in urn:#if valid_urn(urn):
       if "ContextualModel" in urn:
         dataframe = self.contextual_terms.copy()
-        print("dataframe loaded")
       elif "ConceptualModel" in urn:
         if "ses:eurocontrol" in urn:
           dataframe = self.conceptual_supp_concepts.copy()
-          print("dataframe loaded")
         else:
           dataframe = self.conceptual_concepts.copy()
-          print("dataframe loaded")
       elif "LogicalModel" in urn:
         if "ses:eurocontrol" in urn:
           dataframe = self.logical_supp_concepts.copy()
-          print("dataframe loaded")
         else:
           dataframe = self.logical_concepts.copy()
-          print("dataframe loaded")
 
       #Search block:
       filter = dataframe["urn"]==urn
       dataframe.sort_values("urn", inplace = True)
       dataframe.where(filter, inplace = True) 
-      results = dataframe.dropna(how='all')   
-      
-      print("Results: ")#REMOVE WHEN WORKING
-      print(results)#REMOVE WHEN WORKING
+      results = dataframe.dropna(how='all')  
 
       if results.empty:
         self.not_found_counter += 1
