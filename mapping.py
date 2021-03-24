@@ -26,7 +26,9 @@ class Mapping:
     self.metadata["notes"] = sheet['B8'].value
     self.metadata["name"] = self.metadata["information_definition"]+" to AIRM "+self.metadata["airm_version"]
     self.metadata["url_name"] = self.metadata["name"].lower().replace(" ", "-")
-    print(self.metadata)
+    print("Mapping:\t\tname: "+self.metadata["name"])
+    print(        "\t\turl_name: "+self.metadata["url_name"])
+    print(        "\t\tnotes: "+self.metadata["notes"])
 
   def get_information_concepts(self):
     dataframe = self.dataframe.copy()

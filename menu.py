@@ -33,6 +33,7 @@ def main_menu():
   """Print the main menu and wait for a selection."""
   choice ='0'
   while choice =='0':
+    print('')
     print("Menu: ")
     print('')
     print("1: create_mapping_index_page icao_wxxm_3.0.0")
