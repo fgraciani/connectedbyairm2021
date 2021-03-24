@@ -50,7 +50,7 @@ def calculate_name_for_airm_urn(urn):
   return name
 
 def create_directory(path):
-  """Creates a directory with path/name provided by path.
+  """Create a directory with path/name provided by path.
 
   Keyword arguments:
     path -- string defining the location and name of the new directory
@@ -64,7 +64,8 @@ def create_directory(path):
       print ("Successfully created the directory %s " % path)
 
 def create_html_soup(template):
-  """
+  """Create a soup variable from a html template.
+
   Keyword arguments:
     template -- string defining the location and name of the template e.g. data/html/templates/concept-list-template.html
   """

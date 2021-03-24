@@ -2,8 +2,11 @@ import pandas as pd
 
 class Mapping:
   metadata = {
-      "name": "ICAO WXXM 3.0.0 to AIRM 1.0.0",
-      "url_name": "icao_wxxm_3.0.0_to_airm_1.0.0"
+      "name": "",
+      "url_name": "",
+      "information_definition": "",
+      "airm_version": "",
+      "notes": ""
   }
   dictionary = None
   dataframe = None
@@ -12,7 +15,19 @@ class Mapping:
     self.dataframe = pd.read_excel(r''+mapping_file_pathname, sheet_name='semantic correspondences', engine='openpyxl')
     self.dataframe.fillna("missing data", inplace = True)
     self.dictionary = self.dataframe.to_dict('records')
-  
+    self.load_metadata(mapping_file_pathname)
+
+  def load_metadata(self, mapping_file_pathname):
+    from openpyxl import load_workbook
+    wb = load_workbook(filename = mapping_file_pathname)
+    sheet = wb['report']
+    self.metadata["information_definition"] = sheet['B2'].value
+    self.metadata["airm_version"] = sheet['B4'].value
+    self.metadata["notes"] = sheet['B8'].value
+    self.metadata["name"] = self.metadata["information_definition"]+" to AIRM "+self.metadata["airm_version"]
+    self.metadata["url_name"] = self.metadata["name"].lower().replace(" ", "_")
+    print(self.metadata)
+
   def get_information_concepts(self):
     dataframe = self.dataframe.copy()
     #dataframe = dataframe.drop_duplicates(subset='Information Concept', keep="last")
