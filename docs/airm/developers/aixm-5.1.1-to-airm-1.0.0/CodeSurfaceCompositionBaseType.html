@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeSurfaceCompositionBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeSurfaceCompositionBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeSurfaceCompositionBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeSurfaceCompositionBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ASPH">
+                 ASPH
+                </a>
+               </td>
+               <td>
+                Asphalt.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ASPH_GRASS">
+                 ASPH_GRASS
+                </a>
+               </td>
+               <td>
+                Asphalt and grass.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BITUM">
+                 BITUM
+                </a>
+               </td>
+               <td>
+                Bituminous tar or asphalt and/or oil or bitumen bound, mix-in-place surfaces (often referred to as "earth cement").  [note: A bituminous tar or asphalt surface is prepared by digging up the surface, mixing the material with bitumen or oil binder, and surfacing the surface with the resulting mixture. Bitumen is the family name for tar which is derived from coal, or asphalt which is derived from oil. .]
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BRICK">
+                 BRICK
+                </a>
+               </td>
+               <td>
+                Brick.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CLAY">
+                 CLAY
+                </a>
+               </td>
+               <td>
+                Clay.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CONC">
+                 CONC
+                </a>
+               </td>
+               <td>
+                Concrete.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CONC_ASPH">
+                 CONC_ASPH
+                </a>
+               </td>
+               <td>
+                Concrete and asphalt.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CONC_GRS">
+                 CONC_GRS
+                </a>
+               </td>
+               <td>
+                Concrete and grass.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CORAL">
+                 CORAL
+                </a>
+               </td>
+               <td>
+                Coral.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EARTH">
+                 EARTH
+                </a>
+               </td>
+               <td>
+                Earth (in general).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GRASS">
+                 GRASS
+                </a>
+               </td>
+               <td>
+                Grass including portions of turf or bare earth.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GRAVEL">
+                 GRAVEL
+                </a>
+               </td>
+               <td>
+                Gravel.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ICE">
+                 ICE
+                </a>
+               </td>
+               <td>
+                Ice.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LATERITE">
+                 LATERITE
+                </a>
+               </td>
+               <td>
+                Laterite - a high iron clay formed in tropical areas.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MACADAM">
+                 MACADAM
+                </a>
+               </td>
+               <td>
+                A macadam or tarmac surface consisting of water-bound crushed rock.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MATS">
+                 MATS
+                </a>
+               </td>
+               <td>
+                Landing mat portable system usually made of aluminium.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MEMBRANE">
+                 MEMBRANE
+                </a>
+               </td>
+               <td>
+                A protective laminate usually made of rubber.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#METAL">
+                 METAL
+                </a>
+               </td>
+               <td>
+                Metal - steel, aluminium.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NON_BITUM_MIX">
+                 NON_BITUM_MIX
+                </a>
+               </td>
+               <td>
+                Non Bituminous mix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PIERCED_STEEL">
+                 PIERCED_STEEL
+                </a>
+               </td>
+               <td>
+                Pierced steel planking.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SAND">
+                 SAND
+                </a>
+               </td>
+               <td>
+                Sand.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SNOW">
+                 SNOW
+                </a>
+               </td>
+               <td>
+                Snow.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#STONE">
+                 STONE
+                </a>
+               </td>
+               <td>
+                Stone.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WATER">
+                 WATER
+                </a>
+               </td>
+               <td>
+                Water.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WOOD">
+                 WOOD
+                </a>
+               </td>
+               <td>
+                Wood.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeSurfaceCompositionBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeSurfaceCompositionBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ASPH" style="padding-top: 120px; margin-top: -120px;">
+              ASPH
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.ASPH
+             </code>
+             <p>
+              Asphalt.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#ASPHALT" target="_blank">
+                   CodeSurfaceCompositionType.ASPHALT
+                  </a>
+                 </td>
+                 <td>
+                  Asphalt.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ASPH_GRASS" style="padding-top: 120px; margin-top: -120px;">
+              ASPH_GRASS
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.ASPH_GRASS
+             </code>
+             <p>
+              Asphalt and grass.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#ASPHALT_AND_GRASS" target="_blank">
+                   CodeSurfaceCompositionType.ASPHALT_AND_GRASS
+                  </a>
+                 </td>
+                 <td>
+                  Asphalt and grass.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BITUM" style="padding-top: 120px; margin-top: -120px;">
+              BITUM
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.BITUM
+             </code>
+             <p>
+              Bituminous tar or asphalt and/or oil or bitumen bound, mix-in-place surfaces (often referred to as "earth cement").  [note: A bituminous tar or asphalt surface is prepared by digging up the surface, mixing the material with bitumen or oil binder, and surfacing the surface with the resulting mixture. Bitumen is the family name for tar which is derived from coal, or asphalt which is derived from oil. .]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#BITUMINOUS_MIX" target="_blank">
+                   CodeSurfaceCompositionType.BITUMINOUS_MIX
+                  </a>
+                 </td>
+                 <td>
+                  Bituminous tar or asphalt and/or oil or bitumen bound, mix-in-place surfaces (often referred to as earth cement")."
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BRICK" style="padding-top: 120px; margin-top: -120px;">
+              BRICK
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.BRICK
+             </code>
+             <p>
+              Brick.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#BRICK" target="_blank">
+                   CodeSurfaceCompositionType.BRICK
+                  </a>
+                 </td>
+                 <td>
+                  Brick.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CLAY" style="padding-top: 120px; margin-top: -120px;">
+              CLAY
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.CLAY
+             </code>
+             <p>
+              Clay.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#CLAY" target="_blank">
+                   CodeSurfaceCompositionType.CLAY
+                  </a>
+                 </td>
+                 <td>
+                  Clay.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CONC" style="padding-top: 120px; margin-top: -120px;">
+              CONC
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.CONC
+             </code>
+             <p>
+              Concrete.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#CONC" target="_blank">
+                   CodeSurfaceCompositionType.CONC
+                  </a>
+                 </td>
+                 <td>
+                  Concrete.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CONC_ASPH" style="padding-top: 120px; margin-top: -120px;">
+              CONC_ASPH
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.CONC_ASPH
+             </code>
+             <p>
+              Concrete and asphalt.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#CONCRETE_AND_ASPHALT" target="_blank">
+                   CodeSurfaceCompositionType.CONCRETE_AND_ASPHALT
+                  </a>
+                 </td>
+                 <td>
+                  Concrete and asphalt.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CONC_GRS" style="padding-top: 120px; margin-top: -120px;">
+              CONC_GRS
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.CONC_GRS
+             </code>
+             <p>
+              Concrete and grass.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#CONCRETE_AND_GRASS" target="_blank">
+                   CodeSurfaceCompositionType.CONCRETE_AND_GRASS
+                  </a>
+                 </td>
+                 <td>
+                  Concrete and grass.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CORAL" style="padding-top: 120px; margin-top: -120px;">
+              CORAL
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.CORAL
+             </code>
+             <p>
+              Coral.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#CORAL" target="_blank">
+                   CodeSurfaceCompositionType.CORAL
+                  </a>
+                 </td>
+                 <td>
+                  Coral.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="EARTH" style="padding-top: 120px; margin-top: -120px;">
+              EARTH
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.EARTH
+             </code>
+             <p>
+              Earth (in general).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#EARTH" target="_blank">
+                   CodeSurfaceCompositionType.EARTH
+                  </a>
+                 </td>
+                 <td>
+                  Earth (in general).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GRASS" style="padding-top: 120px; margin-top: -120px;">
+              GRASS
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.GRASS
+             </code>
+             <p>
+              Grass including portions of turf or bare earth.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#GRASS" target="_blank">
+                   CodeSurfaceCompositionType.GRASS
+                  </a>
+                 </td>
+                 <td>
+                  Grass including portions of turf or bare earth.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GRAVEL" style="padding-top: 120px; margin-top: -120px;">
+              GRAVEL
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.GRAVEL
+             </code>
+             <p>
+              Gravel.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#GRAVEL" target="_blank">
+                   CodeSurfaceCompositionType.GRAVEL
+                  </a>
+                 </td>
+                 <td>
+                  Gravel.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ICE" style="padding-top: 120px; margin-top: -120px;">
+              ICE
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.ICE
+             </code>
+             <p>
+              Ice.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#ICE" target="_blank">
+                   CodeSurfaceCompositionType.ICE
+                  </a>
+                 </td>
+                 <td>
+                  Ice.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="LATERITE" style="padding-top: 120px; margin-top: -120px;">
+              LATERITE
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.LATERITE
+             </code>
+             <p>
+              Laterite - a high iron clay formed in tropical areas.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#LATERITE" target="_blank">
+                   CodeSurfaceCompositionType.LATERITE
+                  </a>
+                 </td>
+                 <td>
+                  Laterite - a high iron clay formed in tropical areas.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MACADAM" style="padding-top: 120px; margin-top: -120px;">
+              MACADAM
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.MACADAM
+             </code>
+             <p>
+              A macadam or tarmac surface consisting of water-bound crushed rock.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#MACADAM" target="_blank">
+                   CodeSurfaceCompositionType.MACADAM
+                  </a>
+                 </td>
+                 <td>
+                  A macadam or tarmac surface consisting of water-bound crushed rock.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MATS" style="padding-top: 120px; margin-top: -120px;">
+              MATS
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.MATS
+             </code>
+             <p>
+              Landing mat portable system usually made of aluminium.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#MATS" target="_blank">
+                   CodeSurfaceCompositionType.MATS
+                  </a>
+                 </td>
+                 <td>
+                  Landing mat portable system usually made of aluminium.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MEMBRANE" style="padding-top: 120px; margin-top: -120px;">
+              MEMBRANE
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.MEMBRANE
+             </code>
+             <p>
+              A protective laminate usually made of rubber.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#MEMBRANE" target="_blank">
+                   CodeSurfaceCompositionType.MEMBRANE
+                  </a>
+                 </td>
+                 <td>
+                  A protective laminate usually made of rubber.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="METAL" style="padding-top: 120px; margin-top: -120px;">
+              METAL
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.METAL
+             </code>
+             <p>
+              Metal - steel, aluminium.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#METAL" target="_blank">
+                   CodeSurfaceCompositionType.METAL
+                  </a>
+                 </td>
+                 <td>
+                  Metal - steel, aluminium.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NON_BITUM_MIX" style="padding-top: 120px; margin-top: -120px;">
+              NON_BITUM_MIX
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.NON_BITUM_MIX
+             </code>
+             <p>
+              Non Bituminous mix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#NON_BITUMINOUS_MIX" target="_blank">
+                   CodeSurfaceCompositionType.NON_BITUMINOUS_MIX
+                  </a>
+                 </td>
+                 <td>
+                  Non Bituminous mix.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.OTHER
+             </code>
+             <p>
+              Other.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PIERCED_STEEL" style="padding-top: 120px; margin-top: -120px;">
+              PIERCED_STEEL
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.PIERCED_STEEL
+             </code>
+             <p>
+              Pierced steel planking.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#PIERCED_STEEL_PLANKING" target="_blank">
+                   CodeSurfaceCompositionType.PIERCED_STEEL_PLANKING
+                  </a>
+                 </td>
+                 <td>
+                  Pierced steel planking.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SAND" style="padding-top: 120px; margin-top: -120px;">
+              SAND
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.SAND
+             </code>
+             <p>
+              Sand.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#SAND" target="_blank">
+                   CodeSurfaceCompositionType.SAND
+                  </a>
+                 </td>
+                 <td>
+                  Sand.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SNOW" style="padding-top: 120px; margin-top: -120px;">
+              SNOW
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.SNOW
+             </code>
+             <p>
+              Snow.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#SNOW" target="_blank">
+                   CodeSurfaceCompositionType.SNOW
+                  </a>
+                 </td>
+                 <td>
+                  Snow.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="STONE" style="padding-top: 120px; margin-top: -120px;">
+              STONE
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.STONE
+             </code>
+             <p>
+              Stone.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#STONE" target="_blank">
+                   CodeSurfaceCompositionType.STONE
+                  </a>
+                 </td>
+                 <td>
+                  Stone.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WATER" style="padding-top: 120px; margin-top: -120px;">
+              WATER
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.WATER
+             </code>
+             <p>
+              Water.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#WATER" target="_blank">
+                   CodeSurfaceCompositionType.WATER
+                  </a>
+                 </td>
+                 <td>
+                  Water.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WOOD" style="padding-top: 120px; margin-top: -120px;">
+              WOOD
+             </h4>
+             <code class="text-secondary">
+              CodeSurfaceCompositionBaseType.WOOD
+             </code>
+             <p>
+              Wood.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeSurfaceCompositionType.html#WOOD" target="_blank">
+                   CodeSurfaceCompositionType.WOOD
+                  </a>
+                 </td>
+                 <td>
+                  Wood.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

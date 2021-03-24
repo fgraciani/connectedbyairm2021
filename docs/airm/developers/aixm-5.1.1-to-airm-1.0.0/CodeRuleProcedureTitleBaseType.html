@@ -1,0 +1,2705 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeRuleProcedureTitleBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeRuleProcedureTitleBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeRuleProcedureTitleBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeRuleProcedureTitleBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ABBREVIATIONS_AIS_PUBLICATIONS">
+                 ABBREVIATIONS_AIS_PUBLICATIONS
+                </a>
+               </td>
+               <td>
+                A list of alphabetically arranged abbreviations used by the State in its AIP.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADDRESSING_FLIGHT_PLAN_MESSAGES">
+                 ADDRESSING_FLIGHT_PLAN_MESSAGES
+                </a>
+               </td>
+               <td>
+                Addresses allocated to flight plans, showing: category of flight (IFR, VFR or both), route and message address.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AERODROME_BIRD_CONCENTRATION">
+                 AERODROME_BIRD_CONCENTRATION
+                </a>
+               </td>
+               <td>
+                Indication of bird concentrations at the aerodrome.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AERODROME_FLIGHT_PROCEDURES">
+                 AERODROME_FLIGHT_PROCEDURES
+                </a>
+               </td>
+               <td>
+                The conditions and flight procedures, including radar and low visibility procedures at the aerodrome and associated equipment authorized for use under these conditions.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AERODROME_HELIPORT_AVAILABILITY">
+                 AERODROME_HELIPORT_AVAILABILITY
+                </a>
+               </td>
+               <td>
+                The general conditions of the State's designated authority responsible for aerodromes and heliports availability.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AERODROME_HELIPORT_CHARGES">
+                 AERODROME_HELIPORT_CHARGES
+                </a>
+               </td>
+               <td>
+                Type of charges which may be applicable at aerodromes/heliports.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS">
+                 AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS
+                </a>
+               </td>
+               <td>
+                Aircraft instruments, equipment and flight documents to be carried on aircraft.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIR_NAVIGATION_SERVICES_CHARGES">
+                 AIR_NAVIGATION_SERVICES_CHARGES
+                </a>
+               </td>
+               <td>
+                Charges which may be applicable to air navigation services provided for international use, approach control, route air navigation services.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIR_TRAFFIC_FLOW_MANAGEMENT">
+                 AIR_TRAFFIC_FLOW_MANAGEMENT
+                </a>
+               </td>
+               <td>
+                ATFM structure types of flow messages and procedures applicable for departing flights, flight plan requirements and slot allocations.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIR_TRAFFIC_INCIDENTS">
+                 AIR_TRAFFIC_INCIDENTS
+                </a>
+               </td>
+               <td>
+                Definition of air traffic incidents, use of the "Air Traffic Incident Reporting Form", reporting procedures and purpose of reporting and handling of the form.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ALTIMETER_SETTING_PROCEDURES">
+                 ALTIMETER_SETTING_PROCEDURES
+                </a>
+               </td>
+               <td>
+                Altimeter setting procedures in use, containing procedures applicable to operators and cruising levels.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATS_AIRSPACE_CLASSIFICATION">
+                 ATS_AIRSPACE_CLASSIFICATION
+                </a>
+               </td>
+               <td>
+                Description of ATS airspace classes as applied within the State.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATS_SURVEILLANCE_SERVICES_PROCEDURES">
+                 ATS_SURVEILLANCE_SERVICES_PROCEDURES
+                </a>
+               </td>
+               <td>
+                Primary radar services and procedures, secondary surveillance radar (SSR) operating procedures and automatic dependent surveillance - broadcast (ADS-B) coverage.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CUSTOMS_REQUIREMENTS">
+                 CUSTOMS_REQUIREMENTS
+                </a>
+               </td>
+               <td>
+                Customs formalities for passengers and crew.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES">
+                 DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES
+                </a>
+               </td>
+               <td>
+                Significant differences between national regulations and practices of the State and related ICAO provisions.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_TRANSIT_DEPARTURE_CARGO">
+                 ENTRY_TRANSIT_DEPARTURE_CARGO
+                </a>
+               </td>
+               <td>
+                Regulations concerning entry, transit and departure of cargo.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED">
+                 ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED
+                </a>
+               </td>
+               <td>
+                Rules and procedures governing the entry, transit and departure of non-scheduled flights.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT">
+                 ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT
+                </a>
+               </td>
+               <td>
+                Rules and procedures governing the entry, transit and departure of aircraft.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_TRANSIT_DEPARTURE_PRIVATE">
+                 ENTRY_TRANSIT_DEPARTURE_PRIVATE
+                </a>
+               </td>
+               <td>
+                Rules and procedures governing the entry, transit and departure of private flights.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_TRANSIT_DEPARTURE_SCHEDULED">
+                 ENTRY_TRANSIT_DEPARTURE_SCHEDULED
+                </a>
+               </td>
+               <td>
+                Rules and procedures governing the entry, transit and departure of scheduled flights.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FLIGHT_PLANNING">
+                 FLIGHT_PLANNING
+                </a>
+               </td>
+               <td>
+                Procedures for the submission of a flight plan  repetitive flight plan system  and changes to the submitted flight plan.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FLIGHT_RULES_GENERAL">
+                 FLIGHT_RULES_GENERAL
+                </a>
+               </td>
+               <td>
+                General flight rules as applied within the State.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HOLDING_APPROACH_DEPARTURE_PROCEDURES">
+                 HOLDING_APPROACH_DEPARTURE_PROCEDURES
+                </a>
+               </td>
+               <td>
+                The criteria on which holding, approach and departure procedures are established for arriving flights and departing flights from any aerodrome/heliport.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IMMIGRATION_REQUIREMENTS">
+                 IMMIGRATION_REQUIREMENTS
+                </a>
+               </td>
+               <td>
+                Immigration formalities for passengers and crew.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INSTRUMENT_FLIGHT_RULES">
+                 INSTRUMENT_FLIGHT_RULES
+                </a>
+               </td>
+               <td>
+                Instrument flight rules as applied within the State.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INTERCEPTION_CIVIL_AIRCRAFT">
+                 INTERCEPTION_CIVIL_AIRCRAFT
+                </a>
+               </td>
+               <td>
+                Interception procedures and visual signals to be used.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INTERNATIONAL_AGREEMENTS_CONVENTIONS">
+                 INTERNATIONAL_AGREEMENTS_CONVENTIONS
+                </a>
+               </td>
+               <td>
+                International agreements in which the State is part and which affect air navigation.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LOCAL_TRAFFIC_REGULATIONS">
+                 LOCAL_TRAFFIC_REGULATIONS
+                </a>
+               </td>
+               <td>
+                Standard routes for taxiing aircraft, parking regulations, school and training flights and similar but excluding flight procedures.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS">
+                 MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS
+                </a>
+               </td>
+               <td>
+                A table of units of measurement, calendar, time systems, geodetic reference system, EGM-96 and public holidays.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NATIONAL_REGULATIONS">
+                 NATIONAL_REGULATIONS
+                </a>
+               </td>
+               <td>
+                National regulations affecting air navigation.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NOISE_ABATEMENT_PROCEDURES">
+                 NOISE_ABATEMENT_PROCEDURES
+                </a>
+               </td>
+               <td>
+                Detailed description of noise abatement procedures established at the aerodrome.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PUBLIC_HEALTH_MEASURES_AIRCRAFT">
+                 PUBLIC_HEALTH_MEASURES_AIRCRAFT
+                </a>
+               </td>
+               <td>
+                Public health measures applied to arriving, departing or transit aircraft.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PUBLIC_HEALTH_MEASURES_PASSENGERS">
+                 PUBLIC_HEALTH_MEASURES_PASSENGERS
+                </a>
+               </td>
+               <td>
+                Public health measures applied to disembarking or departing passengers and crew.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#REGIONAL_SUPPLEMENTARY_PROCEDURES">
+                 REGIONAL_SUPPLEMENTARY_PROCEDURES
+                </a>
+               </td>
+               <td>
+                Regional supplementary procedures (SUPPS) affecting the entire area of State responsibility.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UNLAWFUL_INTERFERENCE">
+                 UNLAWFUL_INTERFERENCE
+                </a>
+               </td>
+               <td>
+                Procedures to be applied in case of unlawful interference.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VISUAL_FLIGHT_RULES">
+                 VISUAL_FLIGHT_RULES
+                </a>
+               </td>
+               <td>
+                Visual flight rules as applied within the State.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeRuleProcedureTitleBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeRuleProcedureTitleBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ABBREVIATIONS_AIS_PUBLICATIONS" style="padding-top: 120px; margin-top: -120px;">
+              ABBREVIATIONS_AIS_PUBLICATIONS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ABBREVIATIONS_AIS_PUBLICATIONS
+             </code>
+             <p>
+              A list of alphabetically arranged abbreviations used by the State in its AIP.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ABBREVIATIONS_AIS_PUBLICATIONS" target="_blank">
+                   CodeRuleProcedureTitleType.ABBREVIATIONS_AIS_PUBLICATIONS
+                  </a>
+                 </td>
+                 <td>
+                  A list of alphabetically arranged abbreviations used by the State in its AIP.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADDRESSING_FLIGHT_PLAN_MESSAGES" style="padding-top: 120px; margin-top: -120px;">
+              ADDRESSING_FLIGHT_PLAN_MESSAGES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ADDRESSING_FLIGHT_PLAN_MESSAGES
+             </code>
+             <p>
+              Addresses allocated to flight plans, showing: category of flight (IFR, VFR or both), route and message address.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ADDRESSING_FLIGHT_PLAN_MESSAGES" target="_blank">
+                   CodeRuleProcedureTitleType.ADDRESSING_FLIGHT_PLAN_MESSAGES
+                  </a>
+                 </td>
+                 <td>
+                  Addresses allocated to flight plans, showing: category of flight (IFR, VFR or both), route and message address.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AERODROME_BIRD_CONCENTRATION" style="padding-top: 120px; margin-top: -120px;">
+              AERODROME_BIRD_CONCENTRATION
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AERODROME_BIRD_CONCENTRATION
+             </code>
+             <p>
+              Indication of bird concentrations at the aerodrome.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AERODROME_BIRD_CONCENTRATION" target="_blank">
+                   CodeRuleProcedureTitleType.AERODROME_BIRD_CONCENTRATION
+                  </a>
+                 </td>
+                 <td>
+                  Indication of bird concentrations at the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AERODROME_FLIGHT_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              AERODROME_FLIGHT_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AERODROME_FLIGHT_PROCEDURES
+             </code>
+             <p>
+              The conditions and flight procedures, including radar and low visibility procedures at the aerodrome and associated equipment authorized for use under these conditions.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AERODROME_FLIGHT_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.AERODROME_FLIGHT_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  The conditions and flight procedures, including radar and low visibility procedures at the aerodrome and associated equipment authorized for use under these conditions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AERODROME_HELIPORT_AVAILABILITY" style="padding-top: 120px; margin-top: -120px;">
+              AERODROME_HELIPORT_AVAILABILITY
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AERODROME_HELIPORT_AVAILABILITY
+             </code>
+             <p>
+              The general conditions of the State's designated authority responsible for aerodromes and heliports availability.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AERODROME_HELIPORT_AVAILABILITY" target="_blank">
+                   CodeRuleProcedureTitleType.AERODROME_HELIPORT_AVAILABILITY
+                  </a>
+                 </td>
+                 <td>
+                  The general conditions of the State's designated authority responsible for aerodromes and heliports availability.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AERODROME_HELIPORT_CHARGES" style="padding-top: 120px; margin-top: -120px;">
+              AERODROME_HELIPORT_CHARGES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AERODROME_HELIPORT_CHARGES
+             </code>
+             <p>
+              Type of charges which may be applicable at aerodromes/heliports.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AERODROME_HELIPORT_CHARGES" target="_blank">
+                   CodeRuleProcedureTitleType.AERODROME_HELIPORT_CHARGES
+                  </a>
+                 </td>
+                 <td>
+                  Type of charges which may be applicable at aerodromes/heliports.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS" style="padding-top: 120px; margin-top: -120px;">
+              AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS
+             </code>
+             <p>
+              Aircraft instruments, equipment and flight documents to be carried on aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS" target="_blank">
+                   CodeRuleProcedureTitleType.AIRCRAFT_INSTRUMENTS_EQUIPMENT_FLIGHT_DOCUMENTS
+                  </a>
+                 </td>
+                 <td>
+                  Aircraft instruments, equipment and flight documents to be carried on aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIR_NAVIGATION_SERVICES_CHARGES" style="padding-top: 120px; margin-top: -120px;">
+              AIR_NAVIGATION_SERVICES_CHARGES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AIR_NAVIGATION_SERVICES_CHARGES
+             </code>
+             <p>
+              Charges which may be applicable to air navigation services provided for international use, approach control, route air navigation services.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AIR_NAVIGATION_SERVICES_CHARGES" target="_blank">
+                   CodeRuleProcedureTitleType.AIR_NAVIGATION_SERVICES_CHARGES
+                  </a>
+                 </td>
+                 <td>
+                  Charges which may be applicable to air navigation services provided for international use, approach control, route air navigation services.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIR_TRAFFIC_FLOW_MANAGEMENT" style="padding-top: 120px; margin-top: -120px;">
+              AIR_TRAFFIC_FLOW_MANAGEMENT
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AIR_TRAFFIC_FLOW_MANAGEMENT
+             </code>
+             <p>
+              ATFM structure types of flow messages and procedures applicable for departing flights, flight plan requirements and slot allocations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AIR_TRAFFIC_FLOW_MANAGEMENT" target="_blank">
+                   CodeRuleProcedureTitleType.AIR_TRAFFIC_FLOW_MANAGEMENT
+                  </a>
+                 </td>
+                 <td>
+                  ATFM structure types of flow messages and procedures applicable for departing flights, flight plan requirements and slot allocations.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIR_TRAFFIC_INCIDENTS" style="padding-top: 120px; margin-top: -120px;">
+              AIR_TRAFFIC_INCIDENTS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.AIR_TRAFFIC_INCIDENTS
+             </code>
+             <p>
+              Definition of air traffic incidents, use of the "Air Traffic Incident Reporting Form", reporting procedures and purpose of reporting and handling of the form.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#AIR_TRAFFIC_INCIDENTS" target="_blank">
+                   CodeRuleProcedureTitleType.AIR_TRAFFIC_INCIDENTS
+                  </a>
+                 </td>
+                 <td>
+                  Definition of air traffic incidents, use of the Air Traffic Incident Reporting Form", reporting procedures and purpose of reporting and handling of the form. "
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ALTIMETER_SETTING_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              ALTIMETER_SETTING_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ALTIMETER_SETTING_PROCEDURES
+             </code>
+             <p>
+              Altimeter setting procedures in use, containing procedures applicable to operators and cruising levels.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ALTIMETER_SETTING_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.ALTIMETER_SETTING_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  Altimeter setting procedures in use, containing procedures applicable to operators and cruising levels.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATS_AIRSPACE_CLASSIFICATION" style="padding-top: 120px; margin-top: -120px;">
+              ATS_AIRSPACE_CLASSIFICATION
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ATS_AIRSPACE_CLASSIFICATION
+             </code>
+             <p>
+              Description of ATS airspace classes as applied within the State.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ATS_AIRSPACE_CLASSIFICATION" target="_blank">
+                   CodeRuleProcedureTitleType.ATS_AIRSPACE_CLASSIFICATION
+                  </a>
+                 </td>
+                 <td>
+                  Description of ATS airspace classes as applied within the State.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATS_SURVEILLANCE_SERVICES_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              ATS_SURVEILLANCE_SERVICES_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ATS_SURVEILLANCE_SERVICES_PROCEDURES
+             </code>
+             <p>
+              Primary radar services and procedures, secondary surveillance radar (SSR) operating procedures and automatic dependent surveillance - broadcast (ADS-B) coverage.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ATS_SURVEILLANCE_SERVICES_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.ATS_SURVEILLANCE_SERVICES_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  Primary radar services and procedures, secondary surveillance radar (SSR) operating procedures and automatic dependent surveillance - broadcast (ADS-B) coverage.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CUSTOMS_REQUIREMENTS" style="padding-top: 120px; margin-top: -120px;">
+              CUSTOMS_REQUIREMENTS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.CUSTOMS_REQUIREMENTS
+             </code>
+             <p>
+              Customs formalities for passengers and crew.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#CUSTOMS_REQUIREMENTS" target="_blank">
+                   CodeRuleProcedureTitleType.CUSTOMS_REQUIREMENTS
+                  </a>
+                 </td>
+                 <td>
+                  Customs formalities for passengers and crew.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES
+             </code>
+             <p>
+              Significant differences between national regulations and practices of the State and related ICAO provisions.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.DIFFERENCES_ICAO_STANDARDS_RECOMMENDED_PRACTICES_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  Significant differences between national regulations and practices of the State and related ICAO provisions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_TRANSIT_DEPARTURE_CARGO" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_TRANSIT_DEPARTURE_CARGO
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ENTRY_TRANSIT_DEPARTURE_CARGO
+             </code>
+             <p>
+              Regulations concerning entry, transit and departure of cargo.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ENTRY_TRANSIT_DEPARTURE_CARGO" target="_blank">
+                   CodeRuleProcedureTitleType.ENTRY_TRANSIT_DEPARTURE_CARGO
+                  </a>
+                 </td>
+                 <td>
+                  Regulations concerning entry, transit and departure of cargo.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED
+             </code>
+             <p>
+              Rules and procedures governing the entry, transit and departure of non-scheduled flights.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED" target="_blank">
+                   CodeRuleProcedureTitleType.ENTRY_TRANSIT_DEPARTURE_NON_SCHEDULED
+                  </a>
+                 </td>
+                 <td>
+                  Rules and procedures governing the entry, transit and departure of non-scheduled flights.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT
+             </code>
+             <p>
+              Rules and procedures governing the entry, transit and departure of aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT" target="_blank">
+                   CodeRuleProcedureTitleType.ENTRY_TRANSIT_DEPARTURE_OF_AIRCRAFT
+                  </a>
+                 </td>
+                 <td>
+                  Rules and procedures governing the entry, transit and departure of aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_TRANSIT_DEPARTURE_PRIVATE" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_TRANSIT_DEPARTURE_PRIVATE
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ENTRY_TRANSIT_DEPARTURE_PRIVATE
+             </code>
+             <p>
+              Rules and procedures governing the entry, transit and departure of private flights.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ENTRY_TRANSIT_DEPARTURE_PRIVATE" target="_blank">
+                   CodeRuleProcedureTitleType.ENTRY_TRANSIT_DEPARTURE_PRIVATE
+                  </a>
+                 </td>
+                 <td>
+                  Rules and procedures governing the entry, transit and departure of private flights.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_TRANSIT_DEPARTURE_SCHEDULED" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_TRANSIT_DEPARTURE_SCHEDULED
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.ENTRY_TRANSIT_DEPARTURE_SCHEDULED
+             </code>
+             <p>
+              Rules and procedures governing the entry, transit and departure of scheduled flights.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#ENTRY_TRANSIT_DEPARTURE_SCHEDULED" target="_blank">
+                   CodeRuleProcedureTitleType.ENTRY_TRANSIT_DEPARTURE_SCHEDULED
+                  </a>
+                 </td>
+                 <td>
+                  Rules and procedures governing the entry, transit and departure of scheduled flights.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FLIGHT_PLANNING" style="padding-top: 120px; margin-top: -120px;">
+              FLIGHT_PLANNING
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.FLIGHT_PLANNING
+             </code>
+             <p>
+              Procedures for the submission of a flight plan  repetitive flight plan system  and changes to the submitted flight plan.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#FLIGHT_PLANNING" target="_blank">
+                   CodeRuleProcedureTitleType.FLIGHT_PLANNING
+                  </a>
+                 </td>
+                 <td>
+                  Procedures for the submission of a flight plan; repetitive flight plan system; and changes to the submitted flight plan.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FLIGHT_RULES_GENERAL" style="padding-top: 120px; margin-top: -120px;">
+              FLIGHT_RULES_GENERAL
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.FLIGHT_RULES_GENERAL
+             </code>
+             <p>
+              General flight rules as applied within the State.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#FLIGHT_RULES_GENERAL" target="_blank">
+                   CodeRuleProcedureTitleType.FLIGHT_RULES_GENERAL
+                  </a>
+                 </td>
+                 <td>
+                  General flight rules as applied within the State.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HOLDING_APPROACH_DEPARTURE_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              HOLDING_APPROACH_DEPARTURE_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.HOLDING_APPROACH_DEPARTURE_PROCEDURES
+             </code>
+             <p>
+              The criteria on which holding, approach and departure procedures are established for arriving flights and departing flights from any aerodrome/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#HOLDING_APPROACH_DEPARTURE_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.HOLDING_APPROACH_DEPARTURE_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  The criteria on which holding, approach and departure procedures are established for arriving flights and departing flights from any aerodrome/heliport.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="IMMIGRATION_REQUIREMENTS" style="padding-top: 120px; margin-top: -120px;">
+              IMMIGRATION_REQUIREMENTS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.IMMIGRATION_REQUIREMENTS
+             </code>
+             <p>
+              Immigration formalities for passengers and crew.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#IMMIGRATION_REQUIREMENTS" target="_blank">
+                   CodeRuleProcedureTitleType.IMMIGRATION_REQUIREMENTS
+                  </a>
+                 </td>
+                 <td>
+                  Immigration formalities for passengers and crew.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="INSTRUMENT_FLIGHT_RULES" style="padding-top: 120px; margin-top: -120px;">
+              INSTRUMENT_FLIGHT_RULES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.INSTRUMENT_FLIGHT_RULES
+             </code>
+             <p>
+              Instrument flight rules as applied within the State.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#INSTRUMENT_FLIGHT_RULES" target="_blank">
+                   CodeRuleProcedureTitleType.INSTRUMENT_FLIGHT_RULES
+                  </a>
+                 </td>
+                 <td>
+                  Instrument flight rules as applied within the State.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="INTERCEPTION_CIVIL_AIRCRAFT" style="padding-top: 120px; margin-top: -120px;">
+              INTERCEPTION_CIVIL_AIRCRAFT
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.INTERCEPTION_CIVIL_AIRCRAFT
+             </code>
+             <p>
+              Interception procedures and visual signals to be used.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#INTERCEPTION_CIVIL_AIRCRAFT" target="_blank">
+                   CodeRuleProcedureTitleType.INTERCEPTION_CIVIL_AIRCRAFT
+                  </a>
+                 </td>
+                 <td>
+                  Interception procedures and visual signals to be used.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="INTERNATIONAL_AGREEMENTS_CONVENTIONS" style="padding-top: 120px; margin-top: -120px;">
+              INTERNATIONAL_AGREEMENTS_CONVENTIONS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.INTERNATIONAL_AGREEMENTS_CONVENTIONS
+             </code>
+             <p>
+              International agreements in which the State is part and which affect air navigation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#INTERNATIONAL_AGREEMENTS_CONVENTIONS" target="_blank">
+                   CodeRuleProcedureTitleType.INTERNATIONAL_AGREEMENTS_CONVENTIONS
+                  </a>
+                 </td>
+                 <td>
+                  International agreements in which the State is part and which affect air navigation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="LOCAL_TRAFFIC_REGULATIONS" style="padding-top: 120px; margin-top: -120px;">
+              LOCAL_TRAFFIC_REGULATIONS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.LOCAL_TRAFFIC_REGULATIONS
+             </code>
+             <p>
+              Standard routes for taxiing aircraft, parking regulations, school and training flights and similar but excluding flight procedures.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#LOCAL_TRAFFIC_REGULATIONS" target="_blank">
+                   CodeRuleProcedureTitleType.LOCAL_TRAFFIC_REGULATIONS
+                  </a>
+                 </td>
+                 <td>
+                  Standard routes for taxiing aircraft, parking regulations, school and training flights and similar but excluding flight procedures.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS" style="padding-top: 120px; margin-top: -120px;">
+              MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS
+             </code>
+             <p>
+              A table of units of measurement, calendar, time systems, geodetic reference system, EGM-96 and public holidays.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS" target="_blank">
+                   CodeRuleProcedureTitleType.MEASURING_SYSTEM_AIRCRAFT_MARKINGS_HOLIDAYS
+                  </a>
+                 </td>
+                 <td>
+                  A table of units of measurement, calendar, time systems, geodetic reference system, EGM-96 and public holidays.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NATIONAL_REGULATIONS" style="padding-top: 120px; margin-top: -120px;">
+              NATIONAL_REGULATIONS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.NATIONAL_REGULATIONS
+             </code>
+             <p>
+              National regulations affecting air navigation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#NATIONAL_REGULATIONS" target="_blank">
+                   CodeRuleProcedureTitleType.NATIONAL_REGULATIONS
+                  </a>
+                 </td>
+                 <td>
+                  National regulations affecting air navigation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NOISE_ABATEMENT_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              NOISE_ABATEMENT_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.NOISE_ABATEMENT_PROCEDURES
+             </code>
+             <p>
+              Detailed description of noise abatement procedures established at the aerodrome.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#NOISE_ABATEMENT_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.NOISE_ABATEMENT_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  Detailed description of noise abatement procedures established at the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.OTHER
+             </code>
+             <p>
+              Other
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PUBLIC_HEALTH_MEASURES_AIRCRAFT" style="padding-top: 120px; margin-top: -120px;">
+              PUBLIC_HEALTH_MEASURES_AIRCRAFT
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.PUBLIC_HEALTH_MEASURES_AIRCRAFT
+             </code>
+             <p>
+              Public health measures applied to arriving, departing or transit aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#PUBLIC_HEALTH_MEASURES_AIRCRAFT" target="_blank">
+                   CodeRuleProcedureTitleType.PUBLIC_HEALTH_MEASURES_AIRCRAFT
+                  </a>
+                 </td>
+                 <td>
+                  Public health measures applied to arriving, departing or transit aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PUBLIC_HEALTH_MEASURES_PASSENGERS" style="padding-top: 120px; margin-top: -120px;">
+              PUBLIC_HEALTH_MEASURES_PASSENGERS
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.PUBLIC_HEALTH_MEASURES_PASSENGERS
+             </code>
+             <p>
+              Public health measures applied to disembarking or departing passengers and crew.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#PUBLIC_HEALTH_MEASURES_PASSENGERS" target="_blank">
+                   CodeRuleProcedureTitleType.PUBLIC_HEALTH_MEASURES_PASSENGERS
+                  </a>
+                 </td>
+                 <td>
+                  Public health measures applied to disembarking or departing passengers and crew.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="REGIONAL_SUPPLEMENTARY_PROCEDURES" style="padding-top: 120px; margin-top: -120px;">
+              REGIONAL_SUPPLEMENTARY_PROCEDURES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.REGIONAL_SUPPLEMENTARY_PROCEDURES
+             </code>
+             <p>
+              Regional supplementary procedures (SUPPS) affecting the entire area of State responsibility.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#REGIONAL_SUPPLEMENTARY_PROCEDURES" target="_blank">
+                   CodeRuleProcedureTitleType.REGIONAL_SUPPLEMENTARY_PROCEDURES
+                  </a>
+                 </td>
+                 <td>
+                  Regional supplementary procedures (SUPPS) affecting the entire area of State responsibility.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UNLAWFUL_INTERFERENCE" style="padding-top: 120px; margin-top: -120px;">
+              UNLAWFUL_INTERFERENCE
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.UNLAWFUL_INTERFERENCE
+             </code>
+             <p>
+              Procedures to be applied in case of unlawful interference.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#UNLAWFUL_INTERFERENCE" target="_blank">
+                   CodeRuleProcedureTitleType.UNLAWFUL_INTERFERENCE
+                  </a>
+                 </td>
+                 <td>
+                  Procedures to be applied in case of unlawful interference.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VISUAL_FLIGHT_RULES" style="padding-top: 120px; margin-top: -120px;">
+              VISUAL_FLIGHT_RULES
+             </h4>
+             <code class="text-secondary">
+              CodeRuleProcedureTitleBaseType.VISUAL_FLIGHT_RULES
+             </code>
+             <p>
+              Visual flight rules as applied within the State.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRuleProcedureTitleType.html#VISUAL_FLIGHT_RULES" target="_blank">
+                   CodeRuleProcedureTitleType.VISUAL_FLIGHT_RULES
+                  </a>
+                 </td>
+                 <td>
+                  Visual flight rules as applied within the State.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

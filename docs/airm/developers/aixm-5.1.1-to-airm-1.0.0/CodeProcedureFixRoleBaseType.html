@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeProcedureFixRoleBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeProcedureFixRoleBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeProcedureFixRoleBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeProcedureFixRoleBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#FAF">
+                 FAF
+                </a>
+               </td>
+               <td>
+                Final approach fix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FPAP">
+                 FPAP
+                </a>
+               </td>
+               <td>
+                Flight Path Alignment Point.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FROP">
+                 FROP
+                </a>
+               </td>
+               <td>
+                Final Rollout Point - Where a course change is required within the Final Approach Segment (FAS), the point that the aircraft rolls to a wings-level attitude aligned with the runway centreline extended is considered the FROP.&lt;/para&gt;&lt;para&gt; FROP is used in an RNP-SAAAR procedure when a turn is required in the final between the FAF and the threshold.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FTP">
+                 FTP
+                </a>
+               </td>
+               <td>
+                The Fictitious Threshold Point (FTP) is a point over which the final approach segment path passes at a relative height specified by the reference datum height (RDH). The FTP replaces the LTP when the final approach course is not aligned with the runway extended centre line or when the threshold is displaced from the actual runway threshold. For non-aligned approaches the FTP lies on the intersection of the perpendicular from the FAS to the runway threshold. The FTP elevation is the same as the actual runway threshold elevation.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IAF">
+                 IAF
+                </a>
+               </td>
+               <td>
+                Initial approach fix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IF">
+                 IF
+                </a>
+               </td>
+               <td>
+                Intermediate fix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IF_IAF">
+                 IF_IAF
+                </a>
+               </td>
+               <td>
+                Intermediate Fix or an Initial Approach Fix
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LTP">
+                 LTP
+                </a>
+               </td>
+               <td>
+                The Landing Threshold Point (LTP) is a point over which the glide path passes at a relative height specified by the reference datum height (RDH). The LTP is normally located at the intersection of the runway centre line and the threshold.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MAHF">
+                 MAHF
+                </a>
+               </td>
+               <td>
+                Missed approach holding fix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MAPT">
+                 MAPT
+                </a>
+               </td>
+               <td>
+                Missed approach point.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SDF">
+                 SDF
+                </a>
+               </td>
+               <td>
+                Step down fix.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TP">
+                 TP
+                </a>
+               </td>
+               <td>
+                Turn Point
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VDP">
+                 VDP
+                </a>
+               </td>
+               <td>
+                (FAA AIM) Visual descent point.   The VDP is a defined point on the final approach course of a non precision straight-in approach procedure from which normal descent from the MDA to the runway touchdown point may be commenced, provided visual reference required by 14 CFR Section 91.175(c)(3) is established.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeProcedureFixRoleBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeProcedureFixRoleBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FAF" style="padding-top: 120px; margin-top: -120px;">
+              FAF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.FAF
+             </code>
+             <p>
+              Final approach fix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#FINAL_APPROACH_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.FINAL_APPROACH_FIX
+                  </a>
+                 </td>
+                 <td>
+                  That fix or point of an instrument approach procedure where the final approach segment commences.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FPAP" style="padding-top: 120px; margin-top: -120px;">
+              FPAP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.FPAP
+             </code>
+             <p>
+              Flight Path Alignment Point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#FLIGHT_PATH_ALIGNMENT_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.FLIGHT_PATH_ALIGNMENT_POINT
+                  </a>
+                 </td>
+                 <td>
+                  A point in the same lateral plane as the LTP or FTP that is used to define the alignment of the final approach segment. For approaches aligned with the runway centreline, the FPAP is located at or beyond the opposite threshold of the runway. The delta length offset from the opposite threshold of the runway defines its location.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FROP" style="padding-top: 120px; margin-top: -120px;">
+              FROP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.FROP
+             </code>
+             <p>
+              Final Rollout Point - Where a course change is required within the Final Approach Segment (FAS), the point that the aircraft rolls to a wings-level attitude aligned with the runway centreline extended is considered the FROP.&lt;/para&gt;&lt;para&gt; FROP is used in an RNP-SAAAR procedure when a turn is required in the final between the FAF and the threshold.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#FINAL_ROLL_OUT_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.FINAL_ROLL_OUT_POINT
+                  </a>
+                 </td>
+                 <td>
+                  Where a course change is required within the Final Approach Segment (FAS), the point that the aircraft rolls to a wings-level attitude aligned with the runway centreline extended is considered the FROP.FROP is used in an RNP-SAAAR procedure when a turn is required in the final between the FAF and the threshold.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FTP" style="padding-top: 120px; margin-top: -120px;">
+              FTP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.FTP
+             </code>
+             <p>
+              The Fictitious Threshold Point (FTP) is a point over which the final approach segment path passes at a relative height specified by the reference datum height (RDH). The FTP replaces the LTP when the final approach course is not aligned with the runway extended centre line or when the threshold is displaced from the actual runway threshold. For non-aligned approaches the FTP lies on the intersection of the perpendicular from the FAS to the runway threshold. The FTP elevation is the same as the actual runway threshold elevation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#FICTITIOUS_THRESHOLD_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.FICTITIOUS_THRESHOLD_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The FTP is a point over which the final approach segment path passes at a relative height specified by the reference datum height. It is defined by the WGS-84 latitude, longitude and ellipsoid height. The FTP replaces the LTP when the final approach course is not aligned with the runway extended centreline or when the threshold is displaced from the actual runway threshold. For non-aligned approaches the FTP lies on the intersection of the perpendicular from the FAS to the runway threshold. The FTP elevation is the same as the actual runway threshold elevation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="IAF" style="padding-top: 120px; margin-top: -120px;">
+              IAF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.IAF
+             </code>
+             <p>
+              Initial approach fix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#INITIAL_APPROACH_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.INITIAL_APPROACH_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix that marks the beginning of the initial segment and the end of the arrival segment, if applicable.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="IF" style="padding-top: 120px; margin-top: -120px;">
+              IF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.IF
+             </code>
+             <p>
+              Intermediate fix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#INTERMEDIATE_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.INTERMEDIATE_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix that marks the end of an initial segment and the beginning of the intermediate segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="IF_IAF" style="padding-top: 120px; margin-top: -120px;">
+              IF_IAF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.IF_IAF
+             </code>
+             <p>
+              Intermediate Fix or an Initial Approach Fix
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#INITIAL_APPROACH_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.INITIAL_APPROACH_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix that marks the beginning of the initial segment and the end of the arrival segment, if applicable.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#INTERMEDIATE_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.INTERMEDIATE_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix that marks the end of an initial segment and the beginning of the intermediate segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="LTP" style="padding-top: 120px; margin-top: -120px;">
+              LTP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.LTP
+             </code>
+             <p>
+              The Landing Threshold Point (LTP) is a point over which the glide path passes at a relative height specified by the reference datum height (RDH). The LTP is normally located at the intersection of the runway centre line and the threshold.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MAHF" style="padding-top: 120px; margin-top: -120px;">
+              MAHF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.MAHF
+             </code>
+             <p>
+              Missed approach holding fix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#MISSED_APPROACH_HOLDING_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.MISSED_APPROACH_HOLDING_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix used in RNAV applications that marks the end of the missed approach segment and the centre point for the missed approach holding.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MAPT" style="padding-top: 120px; margin-top: -120px;">
+              MAPT
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.MAPT
+             </code>
+             <p>
+              Missed approach point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#MISSED_APPROACH_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.MISSED_APPROACH_POINT
+                  </a>
+                 </td>
+                 <td>
+                  That point in an instrument approach procedure at or before which the prescribed missed approach procedure must be initiated in order to ensure that the minimum obstacle clearance is not infringed.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.OTHER
+             </code>
+             <p>
+              Other.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SDF" style="padding-top: 120px; margin-top: -120px;">
+              SDF
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.SDF
+             </code>
+             <p>
+              Step down fix.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#STEP_DOWN_FIX" target="_blank">
+                   CodeInfrastructurePointUsageType.STEP_DOWN_FIX
+                  </a>
+                 </td>
+                 <td>
+                  A fix that is located on the final approach segment between the final approach fix and the missed approach point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TP" style="padding-top: 120px; margin-top: -120px;">
+              TP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.TP
+             </code>
+             <p>
+              Turn Point
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#TURN_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.TURN_POINT
+                  </a>
+                 </td>
+                 <td>
+                  Turn Point
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VDP" style="padding-top: 120px; margin-top: -120px;">
+              VDP
+             </h4>
+             <code class="text-secondary">
+              CodeProcedureFixRoleBaseType.VDP
+             </code>
+             <p>
+              (FAA AIM) Visual descent point.   The VDP is a defined point on the final approach course of a non precision straight-in approach procedure from which normal descent from the MDA to the runway touchdown point may be commenced, provided visual reference required by 14 CFR Section 91.175(c)(3) is established.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#VISUAL_DESCENT_POINT" target="_blank">
+                   CodeInfrastructurePointUsageType.VISUAL_DESCENT_POINT
+                  </a>
+                 </td>
+                 <td>
+                  A defined point on the final approach course of a non precision straight-in approach procedure from which normal descent from the MDA to the runway touchdown point may be commenced, provided visual reference required by 14 CFR Section 91.175(c)(3) is established.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

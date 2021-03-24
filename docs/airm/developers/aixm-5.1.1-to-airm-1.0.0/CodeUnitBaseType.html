@@ -1,0 +1,3263 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeUnitBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeUnitBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeUnitBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeUnitBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ACC">
+                 ACC
+                </a>
+               </td>
+               <td>
+                Area control centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADSU">
+                 ADSU
+                </a>
+               </td>
+               <td>
+                Automatic dependent surveillance unit.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADVC">
+                 ADVC
+                </a>
+               </td>
+               <td>
+                Advisory centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ALPS">
+                 ALPS
+                </a>
+               </td>
+               <td>
+                Alerting post.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AOF">
+                 AOF
+                </a>
+               </td>
+               <td>
+                Aeronautical information services office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#APP">
+                 APP
+                </a>
+               </td>
+               <td>
+                Approach control office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#APP_ARR">
+                 APP_ARR
+                </a>
+               </td>
+               <td>
+                Arrivals approach control office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#APP_DEP">
+                 APP_DEP
+                </a>
+               </td>
+               <td>
+                Departures approach control office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ARO">
+                 ARO
+                </a>
+               </td>
+               <td>
+                Aerodrome reporting office/ATS reporting office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ARTCC">
+                 ARTCC
+                </a>
+               </td>
+               <td>
+                Air route traffic control centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATCC">
+                 ATCC
+                </a>
+               </td>
+               <td>
+                Air traffic control centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATFMU">
+                 ATFMU
+                </a>
+               </td>
+               <td>
+                Air traffic flow management unit.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATMU">
+                 ATMU
+                </a>
+               </td>
+               <td>
+                Air traffic management unit.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATSU">
+                 ATSU
+                </a>
+               </td>
+               <td>
+                Air traffic services unit.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BOF">
+                 BOF
+                </a>
+               </td>
+               <td>
+                Briefing office (note: Note ICAO listed by nonetheless used.)
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BS">
+                 BS
+                </a>
+               </td>
+               <td>
+                Commercial broadcasting station.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#COM">
+                 COM
+                </a>
+               </td>
+               <td>
+                Communications office/centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FCST">
+                 FCST
+                </a>
+               </td>
+               <td>
+                Forecasting office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIC">
+                 FIC
+                </a>
+               </td>
+               <td>
+                Flight information centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FSS">
+                 FSS
+                </a>
+               </td>
+               <td>
+                Flight service station.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GCA">
+                 GCA
+                </a>
+               </td>
+               <td>
+                Ground controlled approach systems office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MET">
+                 MET
+                </a>
+               </td>
+               <td>
+                Meteorological office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MIL">
+                 MIL
+                </a>
+               </td>
+               <td>
+                Military station/unit (or military office in general).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MILOPS">
+                 MILOPS
+                </a>
+               </td>
+               <td>
+                Planning/briefing office for military flight operations.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MWO">
+                 MWO
+                </a>
+               </td>
+               <td>
+                Meteorological watch office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NOF">
+                 NOF
+                </a>
+               </td>
+               <td>
+                International NOTAM office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OAC">
+                 OAC
+                </a>
+               </td>
+               <td>
+                Ocean control centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PAR">
+                 PAR
+                </a>
+               </td>
+               <td>
+                Precision approach radar centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RAD">
+                 RAD
+                </a>
+               </td>
+               <td>
+                Radar unit/office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RAFC">
+                 RAFC
+                </a>
+               </td>
+               <td>
+                Regional area forecast centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RCC">
+                 RCC
+                </a>
+               </td>
+               <td>
+                Rescue co-ordination centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RSC">
+                 RSC
+                </a>
+               </td>
+               <td>
+                Rescue sub-centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SAR">
+                 SAR
+                </a>
+               </td>
+               <td>
+                Search and rescue centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SMC">
+                 SMC
+                </a>
+               </td>
+               <td>
+                Surface movement control office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SMR">
+                 SMR
+                </a>
+               </td>
+               <td>
+                Surface movement radar office.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SRA">
+                 SRA
+                </a>
+               </td>
+               <td>
+                Surveillance radar approach office/centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SSR">
+                 SSR
+                </a>
+               </td>
+               <td>
+                Secondary surveillance radar office/centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TAR">
+                 TAR
+                </a>
+               </td>
+               <td>
+                Terminal area surveillance radar office/centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TRACON">
+                 TRACON
+                </a>
+               </td>
+               <td>
+                Terminal radar approach control.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TWR">
+                 TWR
+                </a>
+               </td>
+               <td>
+                Aerodrome control tower.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UAC">
+                 UAC
+                </a>
+               </td>
+               <td>
+                Upper area control centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UDF">
+                 UDF
+                </a>
+               </td>
+               <td>
+                UHF direction finding station.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UIC">
+                 UIC
+                </a>
+               </td>
+               <td>
+                Upper information centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VDF">
+                 VDF
+                </a>
+               </td>
+               <td>
+                VHF direction finding station.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WAFC">
+                 WAFC
+                </a>
+               </td>
+               <td>
+                World area forecast centre.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeUnitBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeUnitBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ACC" style="padding-top: 120px; margin-top: -120px;">
+              ACC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ACC
+             </code>
+             <p>
+              Area control centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ACC" target="_blank">
+                   CodeUnitType.ACC
+                  </a>
+                 </td>
+                 <td>
+                  A unit established to provide air traffic control service to controlled flights in control areas under its jurisdiction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADSU" style="padding-top: 120px; margin-top: -120px;">
+              ADSU
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ADSU
+             </code>
+             <p>
+              Automatic dependent surveillance unit.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ADSU" target="_blank">
+                   CodeUnitType.ADSU
+                  </a>
+                 </td>
+                 <td>
+                  Automatic dependent surveillance unit.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADVC" style="padding-top: 120px; margin-top: -120px;">
+              ADVC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ADVC
+             </code>
+             <p>
+              Advisory centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ADVC" target="_blank">
+                   CodeUnitType.ADVC
+                  </a>
+                 </td>
+                 <td>
+                  Advisory centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ALPS" style="padding-top: 120px; margin-top: -120px;">
+              ALPS
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ALPS
+             </code>
+             <p>
+              Alerting post.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ALPS" target="_blank">
+                   CodeUnitType.ALPS
+                  </a>
+                 </td>
+                 <td>
+                  Any facility intended to serve as an intermediary between a person reporting an emergency and a rescue coordination centre or rescue subcentre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AOF" style="padding-top: 120px; margin-top: -120px;">
+              AOF
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.AOF
+             </code>
+             <p>
+              Aeronautical information services office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#AOF" target="_blank">
+                   CodeUnitType.AOF
+                  </a>
+                 </td>
+                 <td>
+                  Aeronautical information services office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="APP" style="padding-top: 120px; margin-top: -120px;">
+              APP
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.APP
+             </code>
+             <p>
+              Approach control office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#APP" target="_blank">
+                   CodeUnitType.APP
+                  </a>
+                 </td>
+                 <td>
+                  Approach control office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="APP_ARR" style="padding-top: 120px; margin-top: -120px;">
+              APP_ARR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.APP_ARR
+             </code>
+             <p>
+              Arrivals approach control office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#APP_ARR" target="_blank">
+                   CodeUnitType.APP_ARR
+                  </a>
+                 </td>
+                 <td>
+                  Arrivals approach control office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="APP_DEP" style="padding-top: 120px; margin-top: -120px;">
+              APP_DEP
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.APP_DEP
+             </code>
+             <p>
+              Departures approach control office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#APP_DEP" target="_blank">
+                   CodeUnitType.APP_DEP
+                  </a>
+                 </td>
+                 <td>
+                  Departures approach control office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ARO" style="padding-top: 120px; margin-top: -120px;">
+              ARO
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ARO
+             </code>
+             <p>
+              Aerodrome reporting office/ATS reporting office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ARO" target="_blank">
+                   CodeUnitType.ARO
+                  </a>
+                 </td>
+                 <td>
+                  Aerodrome reporting office/ATS reporting office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ARTCC" style="padding-top: 120px; margin-top: -120px;">
+              ARTCC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ARTCC
+             </code>
+             <p>
+              Air route traffic control centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ARTCC" target="_blank">
+                   CodeUnitType.ARTCC
+                  </a>
+                 </td>
+                 <td>
+                  Air route traffic control centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATCC" style="padding-top: 120px; margin-top: -120px;">
+              ATCC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ATCC
+             </code>
+             <p>
+              Air traffic control centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ATCC" target="_blank">
+                   CodeUnitType.ATCC
+                  </a>
+                 </td>
+                 <td>
+                  Air traffic control centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATFMU" style="padding-top: 120px; margin-top: -120px;">
+              ATFMU
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ATFMU
+             </code>
+             <p>
+              Air traffic flow management unit.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ATFMU" target="_blank">
+                   CodeUnitType.ATFMU
+                  </a>
+                 </td>
+                 <td>
+                  A unit in charge of providing Air Traffic Flow Management.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATMU" style="padding-top: 120px; margin-top: -120px;">
+              ATMU
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ATMU
+             </code>
+             <p>
+              Air traffic management unit.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ATMU" target="_blank">
+                   CodeUnitType.ATMU
+                  </a>
+                 </td>
+                 <td>
+                  Air traffic management unit.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATSU" style="padding-top: 120px; margin-top: -120px;">
+              ATSU
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.ATSU
+             </code>
+             <p>
+              Air traffic services unit.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#ATSU" target="_blank">
+                   CodeUnitType.ATSU
+                  </a>
+                 </td>
+                 <td>
+                  A generic term meaning variously, air traffic control unit, flight information centre or air traffic services reporting office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BOF" style="padding-top: 120px; margin-top: -120px;">
+              BOF
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.BOF
+             </code>
+             <p>
+              Briefing office (note: Note ICAO listed by nonetheless used.)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#BOF" target="_blank">
+                   CodeUnitType.BOF
+                  </a>
+                 </td>
+                 <td>
+                  Briefing office (note: Note ICAO listed by nonetheless used.)
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BS" style="padding-top: 120px; margin-top: -120px;">
+              BS
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.BS
+             </code>
+             <p>
+              Commercial broadcasting station.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#BS" target="_blank">
+                   CodeUnitType.BS
+                  </a>
+                 </td>
+                 <td>
+                  Commercial broadcasting station.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="COM" style="padding-top: 120px; margin-top: -120px;">
+              COM
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.COM
+             </code>
+             <p>
+              Communications office/centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#COM" target="_blank">
+                   CodeUnitType.COM
+                  </a>
+                 </td>
+                 <td>
+                  An aeronautical fixed station which relays or retransmits telecommunication traffic from (or to) a number of other aeronautical fixed stations directly connected to it.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FCST" style="padding-top: 120px; margin-top: -120px;">
+              FCST
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.FCST
+             </code>
+             <p>
+              Forecasting office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#FCST" target="_blank">
+                   CodeUnitType.FCST
+                  </a>
+                 </td>
+                 <td>
+                  Forecasting office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIC" style="padding-top: 120px; margin-top: -120px;">
+              FIC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.FIC
+             </code>
+             <p>
+              Flight information centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#FIC" target="_blank">
+                   CodeUnitType.FIC
+                  </a>
+                 </td>
+                 <td>
+                  A unit established to provide flight information service and alerting service.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FSS" style="padding-top: 120px; margin-top: -120px;">
+              FSS
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.FSS
+             </code>
+             <p>
+              Flight service station.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#FSS" target="_blank">
+                   CodeUnitType.FSS
+                  </a>
+                 </td>
+                 <td>
+                  Flight service station.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GCA" style="padding-top: 120px; margin-top: -120px;">
+              GCA
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.GCA
+             </code>
+             <p>
+              Ground controlled approach systems office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#GCA" target="_blank">
+                   CodeUnitType.GCA
+                  </a>
+                 </td>
+                 <td>
+                  Ground controlled approach systems office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MET" style="padding-top: 120px; margin-top: -120px;">
+              MET
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.MET
+             </code>
+             <p>
+              Meteorological office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#MET" target="_blank">
+                   CodeUnitType.MET
+                  </a>
+                 </td>
+                 <td>
+                  An office designated to provide meteorological service for international air navigation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MIL" style="padding-top: 120px; margin-top: -120px;">
+              MIL
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.MIL
+             </code>
+             <p>
+              Military station/unit (or military office in general).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#MILITARY" target="_blank">
+                   CodeUnitType.MILITARY
+                  </a>
+                 </td>
+                 <td>
+                  Military station/unit (or military office in general).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MILOPS" style="padding-top: 120px; margin-top: -120px;">
+              MILOPS
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.MILOPS
+             </code>
+             <p>
+              Planning/briefing office for military flight operations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#MILOPS" target="_blank">
+                   CodeUnitType.MILOPS
+                  </a>
+                 </td>
+                 <td>
+                  Planning/briefing office for military flight operations.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MWO" style="padding-top: 120px; margin-top: -120px;">
+              MWO
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.MWO
+             </code>
+             <p>
+              Meteorological watch office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#MWO" target="_blank">
+                   CodeUnitType.MWO
+                  </a>
+                 </td>
+                 <td>
+                  An office designated to provide information concerning the occurrence or expected occurrence of specified en-route weather and other phenomena in the atmosphere that may affect the safety of aircraft operations within its specified area of responsibility.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NOF" style="padding-top: 120px; margin-top: -120px;">
+              NOF
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.NOF
+             </code>
+             <p>
+              International NOTAM office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#NOF" target="_blank">
+                   CodeUnitType.NOF
+                  </a>
+                 </td>
+                 <td>
+                  An office designated by a State for the exchange of NOTAM internationally.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OAC" style="padding-top: 120px; margin-top: -120px;">
+              OAC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.OAC
+             </code>
+             <p>
+              Ocean control centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#OAC" target="_blank">
+                   CodeUnitType.OAC
+                  </a>
+                 </td>
+                 <td>
+                  Ocean control centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.OTHER
+             </code>
+             <p>
+              Other.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PAR" style="padding-top: 120px; margin-top: -120px;">
+              PAR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.PAR
+             </code>
+             <p>
+              Precision approach radar centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#PAR" target="_blank">
+                   CodeUnitType.PAR
+                  </a>
+                 </td>
+                 <td>
+                  Precision approach radar centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RAD" style="padding-top: 120px; margin-top: -120px;">
+              RAD
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.RAD
+             </code>
+             <p>
+              Radar unit/office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#RAD" target="_blank">
+                   CodeUnitType.RAD
+                  </a>
+                 </td>
+                 <td>
+                  Radar unit/office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RAFC" style="padding-top: 120px; margin-top: -120px;">
+              RAFC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.RAFC
+             </code>
+             <p>
+              Regional area forecast centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#RAFC" target="_blank">
+                   CodeUnitType.RAFC
+                  </a>
+                 </td>
+                 <td>
+                  Regional area forecast centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RCC" style="padding-top: 120px; margin-top: -120px;">
+              RCC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.RCC
+             </code>
+             <p>
+              Rescue co-ordination centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#RCC" target="_blank">
+                   CodeUnitType.RCC
+                  </a>
+                 </td>
+                 <td>
+                  A unit responsible for promoting efficient organization of search and rescue services and for coordinating the conduct of search and rescue operations within a search and rescue region.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RSC" style="padding-top: 120px; margin-top: -120px;">
+              RSC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.RSC
+             </code>
+             <p>
+              Rescue sub-centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#RSC" target="_blank">
+                   CodeUnitType.RSC
+                  </a>
+                 </td>
+                 <td>
+                  Rescue sub-centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SAR" style="padding-top: 120px; margin-top: -120px;">
+              SAR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.SAR
+             </code>
+             <p>
+              Search and rescue centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#SAR" target="_blank">
+                   CodeUnitType.SAR
+                  </a>
+                 </td>
+                 <td>
+                  Search and rescue centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SMC" style="padding-top: 120px; margin-top: -120px;">
+              SMC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.SMC
+             </code>
+             <p>
+              Surface movement control office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#SMC" target="_blank">
+                   CodeUnitType.SMC
+                  </a>
+                 </td>
+                 <td>
+                  Surface movement control office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SMR" style="padding-top: 120px; margin-top: -120px;">
+              SMR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.SMR
+             </code>
+             <p>
+              Surface movement radar office.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#SMR" target="_blank">
+                   CodeUnitType.SMR
+                  </a>
+                 </td>
+                 <td>
+                  Surface movement radar office.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SRA" style="padding-top: 120px; margin-top: -120px;">
+              SRA
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.SRA
+             </code>
+             <p>
+              Surveillance radar approach office/centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#SRA" target="_blank">
+                   CodeUnitType.SRA
+                  </a>
+                 </td>
+                 <td>
+                  Surveillance radar approach office/centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SSR" style="padding-top: 120px; margin-top: -120px;">
+              SSR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.SSR
+             </code>
+             <p>
+              Secondary surveillance radar office/centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#SSR" target="_blank">
+                   CodeUnitType.SSR
+                  </a>
+                 </td>
+                 <td>
+                  Secondary surveillance radar office/centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TAR" style="padding-top: 120px; margin-top: -120px;">
+              TAR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.TAR
+             </code>
+             <p>
+              Terminal area surveillance radar office/centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#TAR" target="_blank">
+                   CodeUnitType.TAR
+                  </a>
+                 </td>
+                 <td>
+                  Terminal area surveillance radar office/centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TRACON" style="padding-top: 120px; margin-top: -120px;">
+              TRACON
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.TRACON
+             </code>
+             <p>
+              Terminal radar approach control.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#TRACON" target="_blank">
+                   CodeUnitType.TRACON
+                  </a>
+                 </td>
+                 <td>
+                  Terminal radar approach control.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TWR" style="padding-top: 120px; margin-top: -120px;">
+              TWR
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.TWR
+             </code>
+             <p>
+              Aerodrome control tower.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#TWR" target="_blank">
+                   CodeUnitType.TWR
+                  </a>
+                 </td>
+                 <td>
+                  A unit established to provide air traffic control service to aerodrome traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UAC" style="padding-top: 120px; margin-top: -120px;">
+              UAC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.UAC
+             </code>
+             <p>
+              Upper area control centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#UAC" target="_blank">
+                   CodeUnitType.UAC
+                  </a>
+                 </td>
+                 <td>
+                  Upper area control centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UDF" style="padding-top: 120px; margin-top: -120px;">
+              UDF
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.UDF
+             </code>
+             <p>
+              UHF direction finding station.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#UDF" target="_blank">
+                   CodeUnitType.UDF
+                  </a>
+                 </td>
+                 <td>
+                  UHF direction finding station.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UIC" style="padding-top: 120px; margin-top: -120px;">
+              UIC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.UIC
+             </code>
+             <p>
+              Upper information centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#UIC" target="_blank">
+                   CodeUnitType.UIC
+                  </a>
+                 </td>
+                 <td>
+                  Upper information centre.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VDF" style="padding-top: 120px; margin-top: -120px;">
+              VDF
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.VDF
+             </code>
+             <p>
+              VHF direction finding station.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#VDF" target="_blank">
+                   CodeUnitType.VDF
+                  </a>
+                 </td>
+                 <td>
+                  VHF direction finding station.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WAFC" style="padding-top: 120px; margin-top: -120px;">
+              WAFC
+             </h4>
+             <code class="text-secondary">
+              CodeUnitBaseType.WAFC
+             </code>
+             <p>
+              World area forecast centre.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#WAFC" target="_blank">
+                   CodeUnitType.WAFC
+                  </a>
+                 </td>
+                 <td>
+                  A meteorological centre designated to prepare and issue significant weather forecasts and upper-air forecasts in digital form on a global basis direct to States by appropriate means as part of the aeronautical fixed service.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
