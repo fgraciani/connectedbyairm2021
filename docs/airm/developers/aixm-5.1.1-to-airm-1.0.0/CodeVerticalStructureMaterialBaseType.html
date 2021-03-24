@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeVerticalStructureMaterialBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeVerticalStructureMaterialBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeVerticalStructureMaterialBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeVerticalStructureMaterialBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ADOBE_BRICK">
+                 ADOBE_BRICK
+                </a>
+               </td>
+               <td>
+                Brick made of adobe clay and straw, dried in the sun rather than by oven firing (as are standard bricks).  Larger than standard bricks, adobe bricks require a type of clay that contains between 25 and 45 percent aluminium salts.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ALUMINIUM">
+                 ALUMINIUM
+                </a>
+               </td>
+               <td>
+                A light silvery ductile and malleable metal, not readily tarnished by air, which is a chemical element, atomic number 13. (Symbol Al)
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BRICK">
+                 BRICK
+                </a>
+               </td>
+               <td>
+                Clay kneaded, moulded, and baked or sun-dried, used as a building material.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CONCRETE">
+                 CONCRETE
+                </a>
+               </td>
+               <td>
+                A heavy-duty building material made from a mixture of broken stone or gravel, sand, cement and water, that forms a stonelike mass on hardening.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIBREGLASS">
+                 FIBREGLASS
+                </a>
+               </td>
+               <td>
+                Any material consisting of glass filaments woven into a textile or paper, or embedded in plastic, for use as a construction or insulation material.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GLASS">
+                 GLASS
+                </a>
+               </td>
+               <td>
+                A substance made by fusing soda and/or potash with other ingredients.  Usually transparent, lustrous, hard, and brittle.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IRON">
+                 IRON
+                </a>
+               </td>
+               <td>
+                A malleable, magnetic, readily oxidizable metal which is a chemical element of the transition series, atomic number 26. (Symbol Fe)  Occurs abundantly in certain ores and in meteorites, and is widely used, chiefly in alloys such as steel.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MASONRY">
+                 MASONRY
+                </a>
+               </td>
+               <td>
+                Building materials (for example: stone, brick, concrete, hollow-tile, concrete block, gypsum block, or other similar building units or materials and/or combination of the same) bonded together with mortar to form a structure (for example: a wall, a pier).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#METAL">
+                 METAL
+                </a>
+               </td>
+               <td>
+                Any of the class of substances that are characteristically lustrous, ductile, fusible, malleable solids and are good conductors of heat and electricity.  For example, gold, silver, copper, iron, lead, tin, and certain alloys (as brass and bronze).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MUD">
+                 MUD
+                </a>
+               </td>
+               <td>
+                Constructed principally from mud applied to a structural scaffold of plant material (for example: wooden posts).  Effective only in extremely dry climates and usually must be resurfaced on a regular basis (for example: yearly) otherwise the structure steadily disintegrates under the effect of weather.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PLANT">
+                 PLANT
+                </a>
+               </td>
+               <td>
+                Plant material (for example: straw and/or tall coarse grass), possibly also containing the slices of soil to which the plant material is attached.  For example, used in thatching or sodding a roof.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PRESTRESSED_CONCRETE">
+                 PRESTRESSED_CONCRETE
+                </a>
+               </td>
+               <td>
+                Reinforced concrete in which internal stresses have been introduced to reduce potential tensile stress in the concrete resulting from loads.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#REINFORCED_CONCRETE">
+                 REINFORCED_CONCRETE
+                </a>
+               </td>
+               <td>
+                Poured concrete containing steel bars or metal netting to increase its tensile strength.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SOD">
+                 SOD
+                </a>
+               </td>
+               <td>
+                A usually square or oblong piece or slice of earth together with the grass growing on it.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#STEEL">
+                 STEEL
+                </a>
+               </td>
+               <td>
+                Any of numerous artificially produced alloys of iron containing up to 3 per cent of other elements (including less than about 2.2 per cent carbon) and having great strength and malleability.  Able to be tempered to many different degrees of hardness.  Used for making tools, weapons, and/or machinery.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#STONE">
+                 STONE
+                </a>
+               </td>
+               <td>
+                Pieces of rock or mineral substance (other than metal) of definite form and size, usually artificially shaped, and used for some special purpose.  Used, for example, for building, for paving, or in the form of a block, slab, or pillar set up as  a memorial and/or a boundary-mark.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TREATED_TIMBER">
+                 TREATED_TIMBER
+                </a>
+               </td>
+               <td>
+                A timber that has been impregnated with chemicals (for example: creosote oil) to reduce damage from wood rot and/or insects.  Often used for the portions of a structure that are likely to be in ongoing contact with soil and/or water.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WOOD">
+                 WOOD
+                </a>
+               </td>
+               <td>
+                The hard, compact, fibrous substance of which the roots, trunks, and branches of trees and shrubs consist.  Consists largely of secondary xylem, which forms the strengthening and water-transporting tissue of the plant.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeVerticalStructureMaterialBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeVerticalStructureMaterialBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADOBE_BRICK" style="padding-top: 120px; margin-top: -120px;">
+              ADOBE_BRICK
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.ADOBE_BRICK
+             </code>
+             <p>
+              Brick made of adobe clay and straw, dried in the sun rather than by oven firing (as are standard bricks).  Larger than standard bricks, adobe bricks require a type of clay that contains between 25 and 45 percent aluminium salts.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#ADOBE_BRICK" target="_blank">
+                   CodeVerticalStructureMaterialType.ADOBE_BRICK
+                  </a>
+                 </td>
+                 <td>
+                  Brick made of adobe clay and straw, dried in the sun rather than by oven firing (as are standard bricks).  Larger than standard bricks, adobe bricks require a type of clay that contains between 25 and 45 percent aluminium salts.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ALUMINIUM" style="padding-top: 120px; margin-top: -120px;">
+              ALUMINIUM
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.ALUMINIUM
+             </code>
+             <p>
+              A light silvery ductile and malleable metal, not readily tarnished by air, which is a chemical element, atomic number 13. (Symbol Al)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#ALUMINIUM" target="_blank">
+                   CodeVerticalStructureMaterialType.ALUMINIUM
+                  </a>
+                 </td>
+                 <td>
+                  A light silvery ductile and malleable metal, not readily tarnished by air, which is a chemical element, atomic number 13. (Symbol Al)
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BRICK" style="padding-top: 120px; margin-top: -120px;">
+              BRICK
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.BRICK
+             </code>
+             <p>
+              Clay kneaded, moulded, and baked or sun-dried, used as a building material.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#BRICK" target="_blank">
+                   CodeVerticalStructureMaterialType.BRICK
+                  </a>
+                 </td>
+                 <td>
+                  Clay kneaded, moulded, and baked or sun-dried, used as a building material.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CONCRETE" style="padding-top: 120px; margin-top: -120px;">
+              CONCRETE
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.CONCRETE
+             </code>
+             <p>
+              A heavy-duty building material made from a mixture of broken stone or gravel, sand, cement and water, that forms a stonelike mass on hardening.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#CONCRETE" target="_blank">
+                   CodeVerticalStructureMaterialType.CONCRETE
+                  </a>
+                 </td>
+                 <td>
+                  A heavy-duty building material made from a mixture of broken stone or gravel, sand, cement and water, that forms a stone like mass on hardening.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIBREGLASS" style="padding-top: 120px; margin-top: -120px;">
+              FIBREGLASS
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.FIBREGLASS
+             </code>
+             <p>
+              Any material consisting of glass filaments woven into a textile or paper, or embedded in plastic, for use as a construction or insulation material.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#FIBREGLASS" target="_blank">
+                   CodeVerticalStructureMaterialType.FIBREGLASS
+                  </a>
+                 </td>
+                 <td>
+                  Any material consisting of glass filaments woven into a textile or paper, or embedded in plastic, for use as a construction or insulation material.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GLASS" style="padding-top: 120px; margin-top: -120px;">
+              GLASS
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.GLASS
+             </code>
+             <p>
+              A substance made by fusing soda and/or potash with other ingredients.  Usually transparent, lustrous, hard, and brittle.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#GLASS" target="_blank">
+                   CodeVerticalStructureMaterialType.GLASS
+                  </a>
+                 </td>
+                 <td>
+                  A substance made by fusing soda and/or potash with other ingredients.  Usually transparent, lustrous, hard, and brittle.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="IRON" style="padding-top: 120px; margin-top: -120px;">
+              IRON
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.IRON
+             </code>
+             <p>
+              A malleable, magnetic, readily oxidizable metal which is a chemical element of the transition series, atomic number 26. (Symbol Fe)  Occurs abundantly in certain ores and in meteorites, and is widely used, chiefly in alloys such as steel.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#IRON" target="_blank">
+                   CodeVerticalStructureMaterialType.IRON
+                  </a>
+                 </td>
+                 <td>
+                  A malleable, magnetic, readily oxidizable metal which is a chemical element of the transition series, atomic number 26. (Symbol Fe)  Occurs abundantly in certain ores and in meteorites, and is widely used, chiefly in alloys such as steel.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MASONRY" style="padding-top: 120px; margin-top: -120px;">
+              MASONRY
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.MASONRY
+             </code>
+             <p>
+              Building materials (for example: stone, brick, concrete, hollow-tile, concrete block, gypsum block, or other similar building units or materials and/or combination of the same) bonded together with mortar to form a structure (for example: a wall, a pier).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#MASONRY" target="_blank">
+                   CodeVerticalStructureMaterialType.MASONRY
+                  </a>
+                 </td>
+                 <td>
+                  Building materials (for example: stone, brick, concrete, hollow-tile, concrete block, gypsum block, or other similar building units or materials and/or combination of the same) bonded together with mortar to form a structure (for example: a wall, a pier).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="METAL" style="padding-top: 120px; margin-top: -120px;">
+              METAL
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.METAL
+             </code>
+             <p>
+              Any of the class of substances that are characteristically lustrous, ductile, fusible, malleable solids and are good conductors of heat and electricity.  For example, gold, silver, copper, iron, lead, tin, and certain alloys (as brass and bronze).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#METAL" target="_blank">
+                   CodeVerticalStructureMaterialType.METAL
+                  </a>
+                 </td>
+                 <td>
+                  Any of the class of substances that are characteristically lustrous, ductile, fusible, malleable solids and are good conductors of heat and electricity.  For example, gold, silver, copper, iron, lead, tin, and certain alloys (as brass and bronze).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MUD" style="padding-top: 120px; margin-top: -120px;">
+              MUD
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.MUD
+             </code>
+             <p>
+              Constructed principally from mud applied to a structural scaffold of plant material (for example: wooden posts).  Effective only in extremely dry climates and usually must be resurfaced on a regular basis (for example: yearly) otherwise the structure steadily disintegrates under the effect of weather.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#MUD" target="_blank">
+                   CodeVerticalStructureMaterialType.MUD
+                  </a>
+                 </td>
+                 <td>
+                  Constructed principally from mud applied to a structural scaffold of plant material (for example: wooden posts).  Effective only in extremely dry climates and usually must be resurfaced on a regular basis (for example: yearly) otherwise the structure steadily disintegrates under the effect of weather.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.OTHER
+             </code>
+             <p>
+              Other
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PLANT" style="padding-top: 120px; margin-top: -120px;">
+              PLANT
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.PLANT
+             </code>
+             <p>
+              Plant material (for example: straw and/or tall coarse grass), possibly also containing the slices of soil to which the plant material is attached.  For example, used in thatching or sodding a roof.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#PLANT" target="_blank">
+                   CodeVerticalStructureMaterialType.PLANT
+                  </a>
+                 </td>
+                 <td>
+                  Plant material (for example: straw and/or tall coarse grass), possibly also containing the slices of soil to which the plant material is attached.  For example, used in thatching or sodding a roof.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PRESTRESSED_CONCRETE" style="padding-top: 120px; margin-top: -120px;">
+              PRESTRESSED_CONCRETE
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.PRESTRESSED_CONCRETE
+             </code>
+             <p>
+              Reinforced concrete in which internal stresses have been introduced to reduce potential tensile stress in the concrete resulting from loads.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#PRESTRESSED_CONCRETE" target="_blank">
+                   CodeVerticalStructureMaterialType.PRESTRESSED_CONCRETE
+                  </a>
+                 </td>
+                 <td>
+                  Reinforced concrete in which internal stresses have been introduced to reduce potential tensile stress in the concrete resulting from loads.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="REINFORCED_CONCRETE" style="padding-top: 120px; margin-top: -120px;">
+              REINFORCED_CONCRETE
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.REINFORCED_CONCRETE
+             </code>
+             <p>
+              Poured concrete containing steel bars or metal netting to increase its tensile strength.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#REINFORCED_CONCRETE" target="_blank">
+                   CodeVerticalStructureMaterialType.REINFORCED_CONCRETE
+                  </a>
+                 </td>
+                 <td>
+                  Poured concrete containing steel bars or metal netting to increase its tensile strength.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SOD" style="padding-top: 120px; margin-top: -120px;">
+              SOD
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.SOD
+             </code>
+             <p>
+              A usually square or oblong piece or slice of earth together with the grass growing on it.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#SOD" target="_blank">
+                   CodeVerticalStructureMaterialType.SOD
+                  </a>
+                 </td>
+                 <td>
+                  A usually square or oblong piece or slice of earth together with the grass growing on it.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="STEEL" style="padding-top: 120px; margin-top: -120px;">
+              STEEL
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.STEEL
+             </code>
+             <p>
+              Any of numerous artificially produced alloys of iron containing up to 3 per cent of other elements (including less than about 2.2 per cent carbon) and having great strength and malleability.  Able to be tempered to many different degrees of hardness.  Used for making tools, weapons, and/or machinery.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#STEEL" target="_blank">
+                   CodeVerticalStructureMaterialType.STEEL
+                  </a>
+                 </td>
+                 <td>
+                  Any of numerous artificially produced alloys of iron containing up to 3 per cent of other elements (including less than about 2.2 per cent carbon) and having great strength and malleability.  Able to be tempered to many different degrees of hardness.  Used for making tools, weapons, and/or machinery.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="STONE" style="padding-top: 120px; margin-top: -120px;">
+              STONE
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.STONE
+             </code>
+             <p>
+              Pieces of rock or mineral substance (other than metal) of definite form and size, usually artificially shaped, and used for some special purpose.  Used, for example, for building, for paving, or in the form of a block, slab, or pillar set up as  a memorial and/or a boundary-mark.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#STONE" target="_blank">
+                   CodeVerticalStructureMaterialType.STONE
+                  </a>
+                 </td>
+                 <td>
+                  Pieces of rock or mineral substance (other than metal) of definite form and size, usually artificially shaped, and used for some special purpose.  Used, for example, for building, for paving, or in the form of a block, slab, or pillar set up as  a memorial and/or a boundary-mark.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TREATED_TIMBER" style="padding-top: 120px; margin-top: -120px;">
+              TREATED_TIMBER
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.TREATED_TIMBER
+             </code>
+             <p>
+              A timber that has been impregnated with chemicals (for example: creosote oil) to reduce damage from wood rot and/or insects.  Often used for the portions of a structure that are likely to be in ongoing contact with soil and/or water.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#TREATED_TIMBER" target="_blank">
+                   CodeVerticalStructureMaterialType.TREATED_TIMBER
+                  </a>
+                 </td>
+                 <td>
+                  A timber that has been impregnated with chemicals (for example: creosote oil) to reduce damage from wood rot and/or insects.  Often used for the portions of a structure that are likely to be in ongoing contact with soil and/or water.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WOOD" style="padding-top: 120px; margin-top: -120px;">
+              WOOD
+             </h4>
+             <code class="text-secondary">
+              CodeVerticalStructureMaterialBaseType.WOOD
+             </code>
+             <p>
+              The hard, compact, fibrous substance of which the roots, trunks, and branches of trees and shrubs consist.  Consists largely of secondary xylem, which forms the strengthening and water-transporting tissue of the plant.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeVerticalStructureMaterialType.html#WOOD" target="_blank">
+                   CodeVerticalStructureMaterialType.WOOD
+                  </a>
+                 </td>
+                 <td>
+                  The hard, compact, fibrous substance of which the roots, trunks, and branches of trees and shrubs consist.  Consists largely of secondary xylem, which forms the strengthening and water-transporting tissue of the plant.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

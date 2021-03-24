@@ -1,0 +1,3821 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeAirspaceActivityBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeAirspaceActivityBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeAirspaceActivityBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeAirspaceActivityBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ACCIDENT">
+                 ACCIDENT
+                </a>
+               </td>
+               <td>
+                Airspace needing a protective status due to an investigation of a flight catastrophe. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AD_TFC">
+                 AD_TFC
+                </a>
+               </td>
+               <td>
+                All traffic on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.(Annex11). Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AERIAL_WORK">
+                 AERIAL_WORK
+                </a>
+               </td>
+               <td>
+                Operations in which an aircraft is used for specialized services. Description: A type of special air traffic. Services such as agriculture, construction, photography, surveying, observation and patrol, search and rescue, aerial advertisement, etc. are examples.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AEROBATICS">
+                 AEROBATICS
+                </a>
+               </td>
+               <td>
+                The usage of unusual or artful flying manoeuvres for recreation, competition, or entertainment. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIRSHOW">
+                 AIRSHOW
+                </a>
+               </td>
+               <td>
+                A show at which aircraft are on view and featuring aerial displays. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIR_DROP">
+                 AIR_DROP
+                </a>
+               </td>
+               <td>
+                The dropping of troops, supplies, bombs, etc., from an aircraft. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AIR_GUN">
+                 AIR_GUN
+                </a>
+               </td>
+               <td>
+                The delivery of air to air or air to ground weapons for the destruction of a target. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ANTI_HAIL">
+                 ANTI_HAIL
+                </a>
+               </td>
+               <td>
+                The use of small rockets to protect crops by seeding clouds with small particles that prevent hailstorms from forming. Description: A type of hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ARTILLERY">
+                 ARTILLERY
+                </a>
+               </td>
+               <td>
+                The discharge of a projectile into the air for the destruction of a target. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATS">
+                 ATS
+                </a>
+               </td>
+               <td>
+                Custom specific flight information service, alerting service, air traffic advisory service, air traffic control service, area control service, approach control service, or airport control service is provided. Description: A type of procedure/service. This could be a service in the air or on the ground.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BALLOON">
+                 BALLOON
+                </a>
+               </td>
+               <td>
+                Flight activity involving a bag called the envelope that is capable of containing heated air, with a gondola or basket suspended beneath. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BIRD">
+                 BIRD
+                </a>
+               </td>
+               <td>
+                Bird hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BIRD_MIGRATION">
+                 BIRD_MIGRATION
+                </a>
+               </td>
+               <td>
+                A high number of bird species as they fly instinctual routes based on breeding or diverse environmental urges. Description: A type of hazard. For Example: Large scale movements of migrating birds occur during various months in the European-Mediterranean and UK areas. There are also large concentrations of nesting, breeding, and wintering birds, often numbering in the millions.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BLASTING">
+                 BLASTING
+                </a>
+               </td>
+               <td>
+                Controlled use of explosives to excavate or remove rock. Description: A type of hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CHEMICAL">
+                 CHEMICAL
+                </a>
+               </td>
+               <td>
+                A facility utilizing a chemical process for manufacturing. Description: A type of industrial hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CROP_DUSTING">
+                 CROP_DUSTING
+                </a>
+               </td>
+               <td>
+                Spraying crops with fertilizers, pesticides, and fungicides from an agricultural aircraft. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXERCISE">
+                 EXERCISE
+                </a>
+               </td>
+               <td>
+                Intercepting and destroying of hostile aircraft or conducting similar training activities. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FAUNA">
+                 FAUNA
+                </a>
+               </td>
+               <td>
+                The animals or animal life of a given area, habitat, or epoch which is easily and dangerously aroused by excessive aerial noise such as from an aircraft. Description: A type of protection. Examples include mink or turkey farms and zoos.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIREWORK">
+                 FIREWORK
+                </a>
+               </td>
+               <td>
+                Launching of pyrotechnic devices. Description: A type of hazard. .
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIRE_FIGHTING">
+                 FIRE_FIGHTING
+                </a>
+               </td>
+               <td>
+                Intense fire fighting activity involving chemical agents being laid down from fire fighting aircraft. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GAS">
+                 GAS
+                </a>
+               </td>
+               <td>
+                Pumping natural gas from the ground or converting gasoline into vapour. Description: A type of industrial hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GLIDING">
+                 GLIDING
+                </a>
+               </td>
+               <td>
+                Flying a non-power-driven heavier-than-air aircraft. Description: A type of special air traffic. (ICAO derived) A glider derives its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HANGGLIDING">
+                 HANGGLIDING
+                </a>
+               </td>
+               <td>
+                Recreational and competitive flying sport using a small glider from which the operator is suspended in a frame and which is controlled by movements of the body. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HELI_TFC">
+                 HELI_TFC
+                </a>
+               </td>
+               <td>
+                Helicopter or gyrocopter operations. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HI_LIGHT">
+                 HI_LIGHT
+                </a>
+               </td>
+               <td>
+                Non-navigational lights with high visibility potential. Description: A type of hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HI_RADIO">
+                 HI_RADIO
+                </a>
+               </td>
+               <td>
+                Electromagnetic fields produced by high intensity radio transmission. Description: A type of hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#JET_CLIMBING">
+                 JET_CLIMBING
+                </a>
+               </td>
+               <td>
+                Climb-out of jet aircraft via predefined and common tracks. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LASER">
+                 LASER
+                </a>
+               </td>
+               <td>
+                The emission of photons in a coherent beam by an optical source. Description: A type of hazard. Laser stands for Light Amplification by Stimulated Emission of Radiation. An example is a laser light show.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MILOPS">
+                 MILOPS
+                </a>
+               </td>
+               <td>
+                The execution of operations by the military. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MISSILES">
+                 MISSILES
+                </a>
+               </td>
+               <td>
+                The launch, transit, and targeting of guided missiles. Description: A type of military activity (usually). (NATO) A guided missile is an unmanned self-propelled vehicle whose trajectory or course, while in flight, is controlled.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NATURE">
+                 NATURE
+                </a>
+               </td>
+               <td>
+                Wildlife, flora, fauna or features of geological or other special interest which is reserved and managed for conservation. Description: A type of protection. This is given a protective status. This could provide special opportunities for study or research. For example, a national park. .
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NAVAL_EXER">
+                 NAVAL_EXER
+                </a>
+               </td>
+               <td>
+                Naval forces (for example: vessels or aircraft) conduct firing and/or munitions exercises. Description: Distinguished from areas where Naval forces conduct general operations and manoeuvres.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NO_NOISE">
+                 NO_NOISE
+                </a>
+               </td>
+               <td>
+                Airspace in which special procedures or other precautionary measures are established for reducing noise. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NUCLEAR">
+                 NUCLEAR
+                </a>
+               </td>
+               <td>
+                An installation which provides power, derived from fission or fusion of atomic nuclei. Description: A type of industrial hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OIL">
+                 OIL
+                </a>
+               </td>
+               <td>
+                An area in which oil occurs in quantities worthy of exploitation. Description: A type of industrial hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PARACHUTE">
+                 PARACHUTE
+                </a>
+               </td>
+               <td>
+                Exiting a flying aircraft by an individual using a parachute. Description: A type of special air traffic. A parachute is a soft fabric device used to slow the motion through the atmosphere by generating drag.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PARAGLIDER">
+                 PARAGLIDER
+                </a>
+               </td>
+               <td>
+                Recreational and competitive flying sport using a free-flying, foot launched aircraft. Description: A type of special air traffic. When paragliding, the pilot sits in a harness suspended below a fabric wing, whose shape is formed by the pressure of air entering vents in the front of the wing. It is known in some countries as parapenting.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#POPULATION">
+                 POPULATION
+                </a>
+               </td>
+               <td>
+                An area with a high concentration of inhabitants. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PROCEDURE">
+                 PROCEDURE
+                </a>
+               </td>
+               <td>
+                Special procedures established for use by operational personnel in execution of their flight. Description: A type of procedure/service. An overhead approach is an example of a special procedure.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RADIOSONDE">
+                 RADIOSONDE
+                </a>
+               </td>
+               <td>
+                The lifting of devices through the atmosphere, which are tied to a helium or hydrogen filled balloon. Description: A type of special air traffic. Radio probe and meteorological balloons are examples.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#REFINERY">
+                 REFINERY
+                </a>
+               </td>
+               <td>
+                A facility where petroleum and/or petroleum products are refined. Description: A type of industrial hazard.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#REFUEL">
+                 REFUEL
+                </a>
+               </td>
+               <td>
+                Transfer of fuel between aircraft in the air. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SHOOTING">
+                 SHOOTING
+                </a>
+               </td>
+               <td>
+                The discharge of a gun or bow to propel arrows, bullets, etc swiftly or violently direct and sharply in specified directions.  Description: A type of military activity (usually). This could be a shooting range or hunting area.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SPACE_FLIGHT">
+                 SPACE_FLIGHT
+                </a>
+               </td>
+               <td>
+                Vertical launch for space flight operations. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SPORT">
+                 SPORT
+                </a>
+               </td>
+               <td>
+                The competition or practice by an individual or a group to achieve the best aerial performance. Description: A type of special air traffic. This could be an air race or aerobatic training or competition.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TECHNICAL">
+                 TECHNICAL
+                </a>
+               </td>
+               <td>
+                Generic technical activity affecting air traffic. Description: A type of industrial hazard. .
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TOWING">
+                 TOWING
+                </a>
+               </td>
+               <td>
+                Drawing or pulling through the air a target for aerial shooting practice. Description: A type of military activity (usually).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TRAINING">
+                 TRAINING
+                </a>
+               </td>
+               <td>
+                Flights conducted for the purpose of training. Description: A type of special air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UAV">
+                 UAV
+                </a>
+               </td>
+               <td>
+                The operation of a powered, aerial vehicle that does not carry a human operator. Description: A type of special air traffic. (NATO derived) An Unmanned Aerial Vehicle uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ULM">
+                 ULM
+                </a>
+               </td>
+               <td>
+                Ultra light flights.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VIP">
+                 VIP
+                </a>
+               </td>
+               <td>
+                The presence of an individual of renowned status and considered as a very important person. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VIP_PRES">
+                 VIP_PRES
+                </a>
+               </td>
+               <td>
+                The presence of an individual with status of head of state. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VIP_VICE">
+                 VIP_VICE
+                </a>
+               </td>
+               <td>
+                The presence of an individual with status of Vice-Head of State. Description: A type of protection.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WATER_BLASTING">
+                 WATER_BLASTING
+                </a>
+               </td>
+               <td>
+                The action or an act of forcing out or emitting something suddenly underwater. Description: A type of hazard. Usually involving violence and noise.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeAirspaceActivityBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeAirspaceActivityBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ACCIDENT" style="padding-top: 120px; margin-top: -120px;">
+              ACCIDENT
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.ACCIDENT
+             </code>
+             <p>
+              Airspace needing a protective status due to an investigation of a flight catastrophe. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#ACCIDENT" target="_blank">
+                   CodeAirspaceActivityType.ACCIDENT
+                  </a>
+                 </td>
+                 <td>
+                  Airspace needing a protective status due to an investigation of a flight catastrophe. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AD_TFC" style="padding-top: 120px; margin-top: -120px;">
+              AD_TFC
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AD_TFC
+             </code>
+             <p>
+              All traffic on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.(Annex11). Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AD_TFC" target="_blank">
+                   CodeAirspaceActivityType.AD_TFC
+                  </a>
+                 </td>
+                 <td>
+                  All traffic on the manoeuvring area of an aerodrome and all aircraft flying in the vicinity of an aerodrome.(Annex11). Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AERIAL_WORK" style="padding-top: 120px; margin-top: -120px;">
+              AERIAL_WORK
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AERIAL_WORK
+             </code>
+             <p>
+              Operations in which an aircraft is used for specialized services. Description: A type of special air traffic. Services such as agriculture, construction, photography, surveying, observation and patrol, search and rescue, aerial advertisement, etc. are examples.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AERIAL_WORK" target="_blank">
+                   CodeAirspaceActivityType.AERIAL_WORK
+                  </a>
+                 </td>
+                 <td>
+                  Operations in which an aircraft is used for specialized services. Description: A type of special air traffic. Services such as agriculture, construction, photography, surveying, observation and patrol, search and rescue, aerial advertisement, etc. are examples.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AEROBATICS" style="padding-top: 120px; margin-top: -120px;">
+              AEROBATICS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AEROBATICS
+             </code>
+             <p>
+              The usage of unusual or artful flying manoeuvres for recreation, competition, or entertainment. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AEROBATICS" target="_blank">
+                   CodeAirspaceActivityType.AEROBATICS
+                  </a>
+                 </td>
+                 <td>
+                  The usage of unusual or artful flying manoeuvres for recreation, competition, or entertainment. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIRSHOW" style="padding-top: 120px; margin-top: -120px;">
+              AIRSHOW
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AIRSHOW
+             </code>
+             <p>
+              A show at which aircraft are on view and featuring aerial displays. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AIRSHOW" target="_blank">
+                   CodeAirspaceActivityType.AIRSHOW
+                  </a>
+                 </td>
+                 <td>
+                  A show at which aircraft are on view and featuring aerial displays. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIR_DROP" style="padding-top: 120px; margin-top: -120px;">
+              AIR_DROP
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AIR_DROP
+             </code>
+             <p>
+              The dropping of troops, supplies, bombs, etc., from an aircraft. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AIR_DROP" target="_blank">
+                   CodeAirspaceActivityType.AIR_DROP
+                  </a>
+                 </td>
+                 <td>
+                  The dropping of troops, supplies, bombs, etc., from an aircraft. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIR_GUN" style="padding-top: 120px; margin-top: -120px;">
+              AIR_GUN
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.AIR_GUN
+             </code>
+             <p>
+              The delivery of air to air or air to ground weapons for the destruction of a target. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#AIR_GUN" target="_blank">
+                   CodeAirspaceActivityType.AIR_GUN
+                  </a>
+                 </td>
+                 <td>
+                  The delivery of air to air or air to ground weapons for the destruction of a target. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ANTI_HAIL" style="padding-top: 120px; margin-top: -120px;">
+              ANTI_HAIL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.ANTI_HAIL
+             </code>
+             <p>
+              The use of small rockets to protect crops by seeding clouds with small particles that prevent hailstorms from forming. Description: A type of hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#ANTI_HAIL" target="_blank">
+                   CodeAirspaceActivityType.ANTI_HAIL
+                  </a>
+                 </td>
+                 <td>
+                  The use of small rockets to protect crops by seeding clouds with small particles that prevent hailstorms from forming. Description: A type of hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ARTILLERY" style="padding-top: 120px; margin-top: -120px;">
+              ARTILLERY
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.ARTILLERY
+             </code>
+             <p>
+              The discharge of a projectile into the air for the destruction of a target. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#ARTILLERY" target="_blank">
+                   CodeAirspaceActivityType.ARTILLERY
+                  </a>
+                 </td>
+                 <td>
+                  The discharge of a projectile into the air for the destruction of a target. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATS" style="padding-top: 120px; margin-top: -120px;">
+              ATS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.ATS
+             </code>
+             <p>
+              Custom specific flight information service, alerting service, air traffic advisory service, air traffic control service, area control service, approach control service, or airport control service is provided. Description: A type of procedure/service. This could be a service in the air or on the ground.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#ATS" target="_blank">
+                   CodeAirspaceActivityType.ATS
+                  </a>
+                 </td>
+                 <td>
+                  Custom specific flight information service, alerting service, air traffic advisory service, air traffic control service, area control service, approach control service, or airport control service is provided. Description: A type of procedure/service. This could be a service in the air or on the ground.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BALLOON" style="padding-top: 120px; margin-top: -120px;">
+              BALLOON
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.BALLOON
+             </code>
+             <p>
+              Flight activity involving a bag called the envelope that is capable of containing heated air, with a gondola or basket suspended beneath. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#BALLOON" target="_blank">
+                   CodeAirspaceActivityType.BALLOON
+                  </a>
+                 </td>
+                 <td>
+                  Flight activity involving a bag called the envelope that is capable of containing heated air, with a gondola or basket suspended beneath. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BIRD" style="padding-top: 120px; margin-top: -120px;">
+              BIRD
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.BIRD
+             </code>
+             <p>
+              Bird hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#BIRD" target="_blank">
+                   CodeAirspaceActivityType.BIRD
+                  </a>
+                 </td>
+                 <td>
+                  Bird hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BIRD_MIGRATION" style="padding-top: 120px; margin-top: -120px;">
+              BIRD_MIGRATION
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.BIRD_MIGRATION
+             </code>
+             <p>
+              A high number of bird species as they fly instinctual routes based on breeding or diverse environmental urges. Description: A type of hazard. For Example: Large scale movements of migrating birds occur during various months in the European-Mediterranean and UK areas. There are also large concentrations of nesting, breeding, and wintering birds, often numbering in the millions.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#BIRD_MIGRATION" target="_blank">
+                   CodeAirspaceActivityType.BIRD_MIGRATION
+                  </a>
+                 </td>
+                 <td>
+                  A high number of bird species as they fly instinctual routes based on breeding or diverse environmental urges. Description: A type of hazard. For Example: Large scale movements of migrating birds occur during various months in the European-Mediterranean and UK areas. There are also large concentrations of nesting, breeding, and wintering birds, often numbering in the millions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BLASTING" style="padding-top: 120px; margin-top: -120px;">
+              BLASTING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.BLASTING
+             </code>
+             <p>
+              Controlled use of explosives to excavate or remove rock. Description: A type of hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#BLASTING" target="_blank">
+                   CodeAirspaceActivityType.BLASTING
+                  </a>
+                 </td>
+                 <td>
+                  Controlled use of explosives to excavate or remove rock. Description: A type of hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CHEMICAL" style="padding-top: 120px; margin-top: -120px;">
+              CHEMICAL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.CHEMICAL
+             </code>
+             <p>
+              A facility utilizing a chemical process for manufacturing. Description: A type of industrial hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#CHEMICAL" target="_blank">
+                   CodeAirspaceActivityType.CHEMICAL
+                  </a>
+                 </td>
+                 <td>
+                  A facility utilizing a chemical process for manufacturing. Description: A type of industrial hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CROP_DUSTING" style="padding-top: 120px; margin-top: -120px;">
+              CROP_DUSTING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.CROP_DUSTING
+             </code>
+             <p>
+              Spraying crops with fertilizers, pesticides, and fungicides from an agricultural aircraft. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#CROP_DUSTING" target="_blank">
+                   CodeAirspaceActivityType.CROP_DUSTING
+                  </a>
+                 </td>
+                 <td>
+                  Spraying crops with fertilizers, pesticides, and fungicides from an agricultural aircraft. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="EXERCISE" style="padding-top: 120px; margin-top: -120px;">
+              EXERCISE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.EXERCISE
+             </code>
+             <p>
+              Intercepting and destroying of hostile aircraft or conducting similar training activities. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#EXERCISE" target="_blank">
+                   CodeAirspaceActivityType.EXERCISE
+                  </a>
+                 </td>
+                 <td>
+                  Intercepting and destroying of hostile aircraft or conducting similar training activities. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FAUNA" style="padding-top: 120px; margin-top: -120px;">
+              FAUNA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.FAUNA
+             </code>
+             <p>
+              The animals or animal life of a given area, habitat, or epoch which is easily and dangerously aroused by excessive aerial noise such as from an aircraft. Description: A type of protection. Examples include mink or turkey farms and zoos.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#FAUNA" target="_blank">
+                   CodeAirspaceActivityType.FAUNA
+                  </a>
+                 </td>
+                 <td>
+                  The animals or animal life of a given area, habitat, or epoch which is easily and dangerously aroused by excessive aerial noise such as from an aircraft. Description: A type of protection. Examples include mink or turkey farms and zoos.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIREWORK" style="padding-top: 120px; margin-top: -120px;">
+              FIREWORK
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.FIREWORK
+             </code>
+             <p>
+              Launching of pyrotechnic devices. Description: A type of hazard. .
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#FIREWORK" target="_blank">
+                   CodeAirspaceActivityType.FIREWORK
+                  </a>
+                 </td>
+                 <td>
+                  Launching of pyrotechnic devices. Description: A type of hazard. .
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIRE_FIGHTING" style="padding-top: 120px; margin-top: -120px;">
+              FIRE_FIGHTING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.FIRE_FIGHTING
+             </code>
+             <p>
+              Intense fire fighting activity involving chemical agents being laid down from fire fighting aircraft. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#FIRE_FIGHTING" target="_blank">
+                   CodeAirspaceActivityType.FIRE_FIGHTING
+                  </a>
+                 </td>
+                 <td>
+                  Intense fire fighting activity involving chemical agents being laid down from fire fighting aircraft. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GAS" style="padding-top: 120px; margin-top: -120px;">
+              GAS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.GAS
+             </code>
+             <p>
+              Pumping natural gas from the ground or converting gasoline into vapour. Description: A type of industrial hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#GAS" target="_blank">
+                   CodeAirspaceActivityType.GAS
+                  </a>
+                 </td>
+                 <td>
+                  Pumping natural gas from the ground or converting gasoline into vapour. Description: A type of industrial hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="GLIDING" style="padding-top: 120px; margin-top: -120px;">
+              GLIDING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.GLIDING
+             </code>
+             <p>
+              Flying a non-power-driven heavier-than-air aircraft. Description: A type of special air traffic. (ICAO derived) A glider derives its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#GLIDING" target="_blank">
+                   CodeAirspaceActivityType.GLIDING
+                  </a>
+                 </td>
+                 <td>
+                  Flying a non-power-driven heavier-than-air aircraft. Description: A type of special air traffic. (ICAO derived) A glider derives its lift in flight chiefly from aerodynamic reactions on surfaces which remain fixed under given conditions of flight.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HANGGLIDING" style="padding-top: 120px; margin-top: -120px;">
+              HANGGLIDING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.HANGGLIDING
+             </code>
+             <p>
+              Recreational and competitive flying sport using a small glider from which the operator is suspended in a frame and which is controlled by movements of the body. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#HANGGLIDING" target="_blank">
+                   CodeAirspaceActivityType.HANGGLIDING
+                  </a>
+                 </td>
+                 <td>
+                  Recreational and competitive flying sport using a small glider from which the operator is suspended in a frame and which is controlled by movements of the body. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HELI_TFC" style="padding-top: 120px; margin-top: -120px;">
+              HELI_TFC
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.HELI_TFC
+             </code>
+             <p>
+              Helicopter or gyrocopter operations. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#HELI_TFC" target="_blank">
+                   CodeAirspaceActivityType.HELI_TFC
+                  </a>
+                 </td>
+                 <td>
+                  Helicopter or gyrocopter operations. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HI_LIGHT" style="padding-top: 120px; margin-top: -120px;">
+              HI_LIGHT
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.HI_LIGHT
+             </code>
+             <p>
+              Non-navigational lights with high visibility potential. Description: A type of hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#HI_LIGHT" target="_blank">
+                   CodeAirspaceActivityType.HI_LIGHT
+                  </a>
+                 </td>
+                 <td>
+                  Non-navigational lights with high visibility potential. Description: A type of hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HI_RADIO" style="padding-top: 120px; margin-top: -120px;">
+              HI_RADIO
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.HI_RADIO
+             </code>
+             <p>
+              Electromagnetic fields produced by high intensity radio transmission. Description: A type of hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#HI_RADIO" target="_blank">
+                   CodeAirspaceActivityType.HI_RADIO
+                  </a>
+                 </td>
+                 <td>
+                  Electromagnetic fields produced by high intensity radio transmission. Description: A type of hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="JET_CLIMBING" style="padding-top: 120px; margin-top: -120px;">
+              JET_CLIMBING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.JET_CLIMBING
+             </code>
+             <p>
+              Climb-out of jet aircraft via predefined and common tracks. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#JET_CLIMBING" target="_blank">
+                   CodeAirspaceActivityType.JET_CLIMBING
+                  </a>
+                 </td>
+                 <td>
+                  Climb-out of jet aircraft via predefined and common tracks. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="LASER" style="padding-top: 120px; margin-top: -120px;">
+              LASER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.LASER
+             </code>
+             <p>
+              The emission of photons in a coherent beam by an optical source. Description: A type of hazard. Laser stands for Light Amplification by Stimulated Emission of Radiation. An example is a laser light show.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#LASER" target="_blank">
+                   CodeAirspaceActivityType.LASER
+                  </a>
+                 </td>
+                 <td>
+                  The emission of photons in a coherent beam by an optical source. Description: A type of hazard. Laser stands for Light Amplification by Stimulated Emission of Radiation. An example is a laser light show.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MILOPS" style="padding-top: 120px; margin-top: -120px;">
+              MILOPS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.MILOPS
+             </code>
+             <p>
+              The execution of operations by the military. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#MILOPS" target="_blank">
+                   CodeAirspaceActivityType.MILOPS
+                  </a>
+                 </td>
+                 <td>
+                  The execution of operations by the military. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MISSILES" style="padding-top: 120px; margin-top: -120px;">
+              MISSILES
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.MISSILES
+             </code>
+             <p>
+              The launch, transit, and targeting of guided missiles. Description: A type of military activity (usually). (NATO) A guided missile is an unmanned self-propelled vehicle whose trajectory or course, while in flight, is controlled.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#MISSILES" target="_blank">
+                   CodeAirspaceActivityType.MISSILES
+                  </a>
+                 </td>
+                 <td>
+                  The launch, transit, and targeting of guided missiles. Description: A type of military activity (usually). (NATO) A guided missile is an unmanned self-propelled vehicle whose trajectory or course, while in flight, is controlled.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NATURE" style="padding-top: 120px; margin-top: -120px;">
+              NATURE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.NATURE
+             </code>
+             <p>
+              Wildlife, flora, fauna or features of geological or other special interest which is reserved and managed for conservation. Description: A type of protection. This is given a protective status. This could provide special opportunities for study or research. For example, a national park. .
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#NATURE" target="_blank">
+                   CodeAirspaceActivityType.NATURE
+                  </a>
+                 </td>
+                 <td>
+                  Wildlife, flora, fauna or features of geological or other special interest which is reserved and managed for conservation. Description: A type of protection. This is given a protective status. This could provide special opportunities for study or research. For example, a national park. .
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NAVAL_EXER" style="padding-top: 120px; margin-top: -120px;">
+              NAVAL_EXER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.NAVAL_EXER
+             </code>
+             <p>
+              Naval forces (for example: vessels or aircraft) conduct firing and/or munitions exercises. Description: Distinguished from areas where Naval forces conduct general operations and manoeuvres.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#NAVAL_EXERCISE" target="_blank">
+                   CodeAirspaceActivityType.NAVAL_EXERCISE
+                  </a>
+                 </td>
+                 <td>
+                  Naval forces (for example: vessels or aircraft) conduct firing and/or munitions exercises. Description: Distinguished from areas where Naval forces conduct general operations and manoeuvres.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NO_NOISE" style="padding-top: 120px; margin-top: -120px;">
+              NO_NOISE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.NO_NOISE
+             </code>
+             <p>
+              Airspace in which special procedures or other precautionary measures are established for reducing noise. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#NO_NOISE" target="_blank">
+                   CodeAirspaceActivityType.NO_NOISE
+                  </a>
+                 </td>
+                 <td>
+                  Airspace in which special procedures or other precautionary measures are established for reducing noise. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NUCLEAR" style="padding-top: 120px; margin-top: -120px;">
+              NUCLEAR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.NUCLEAR
+             </code>
+             <p>
+              An installation which provides power, derived from fission or fusion of atomic nuclei. Description: A type of industrial hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#NUCLEAR" target="_blank">
+                   CodeAirspaceActivityType.NUCLEAR
+                  </a>
+                 </td>
+                 <td>
+                  An installation which provides power, derived from fission or fusion of atomic nuclei. Description: A type of industrial hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OIL" style="padding-top: 120px; margin-top: -120px;">
+              OIL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.OIL
+             </code>
+             <p>
+              An area in which oil occurs in quantities worthy of exploitation. Description: A type of industrial hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#OIL" target="_blank">
+                   CodeAirspaceActivityType.OIL
+                  </a>
+                 </td>
+                 <td>
+                  An area in which oil occurs in quantities worthy of exploitation. Description: A type of industrial hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.OTHER
+             </code>
+             <p>
+              Other
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PARACHUTE" style="padding-top: 120px; margin-top: -120px;">
+              PARACHUTE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.PARACHUTE
+             </code>
+             <p>
+              Exiting a flying aircraft by an individual using a parachute. Description: A type of special air traffic. A parachute is a soft fabric device used to slow the motion through the atmosphere by generating drag.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#PARACHUTE" target="_blank">
+                   CodeAirspaceActivityType.PARACHUTE
+                  </a>
+                 </td>
+                 <td>
+                  Exiting a flying aircraft by an individual using a parachute. Description: A type of special air traffic. A parachute is a soft fabric device used to slow the motion through the atmosphere by generating drag.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PARAGLIDER" style="padding-top: 120px; margin-top: -120px;">
+              PARAGLIDER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.PARAGLIDER
+             </code>
+             <p>
+              Recreational and competitive flying sport using a free-flying, foot launched aircraft. Description: A type of special air traffic. When paragliding, the pilot sits in a harness suspended below a fabric wing, whose shape is formed by the pressure of air entering vents in the front of the wing. It is known in some countries as parapenting.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#PARAGLIDER" target="_blank">
+                   CodeAirspaceActivityType.PARAGLIDER
+                  </a>
+                 </td>
+                 <td>
+                  Recreational and competitive flying sport using a free-flying, foot launched aircraft. Description: A type of special air traffic. When paragliding, the pilot sits in a harness suspended below a fabric wing, whose shape is formed by the pressure of air entering vents in the front of the wing. It is known in some countries as parapenting.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="POPULATION" style="padding-top: 120px; margin-top: -120px;">
+              POPULATION
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.POPULATION
+             </code>
+             <p>
+              An area with a high concentration of inhabitants. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#POPULATION" target="_blank">
+                   CodeAirspaceActivityType.POPULATION
+                  </a>
+                 </td>
+                 <td>
+                  An area with a high concentration of inhabitants. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PROCEDURE" style="padding-top: 120px; margin-top: -120px;">
+              PROCEDURE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.PROCEDURE
+             </code>
+             <p>
+              Special procedures established for use by operational personnel in execution of their flight. Description: A type of procedure/service. An overhead approach is an example of a special procedure.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#PROCEDURE" target="_blank">
+                   CodeAirspaceActivityType.PROCEDURE
+                  </a>
+                 </td>
+                 <td>
+                  Special procedures established for use by operational personnel in execution of their flight. Description: A type of procedure/service. An overhead approach is an example of a special procedure.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RADIOSONDE" style="padding-top: 120px; margin-top: -120px;">
+              RADIOSONDE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.RADIOSONDE
+             </code>
+             <p>
+              The lifting of devices through the atmosphere, which are tied to a helium or hydrogen filled balloon. Description: A type of special air traffic. Radio probe and meteorological balloons are examples.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#RADIOSONDE" target="_blank">
+                   CodeAirspaceActivityType.RADIOSONDE
+                  </a>
+                 </td>
+                 <td>
+                  The lifting of devices through the atmosphere, which are tied to a helium or hydrogen filled balloon. Description: A type of special air traffic. Radio probe and meteorological balloons are examples.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="REFINERY" style="padding-top: 120px; margin-top: -120px;">
+              REFINERY
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.REFINERY
+             </code>
+             <p>
+              A facility where petroleum and/or petroleum products are refined. Description: A type of industrial hazard.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#REFINERY" target="_blank">
+                   CodeAirspaceActivityType.REFINERY
+                  </a>
+                 </td>
+                 <td>
+                  A facility where petroleum and/or petroleum products are refined. Description: A type of industrial hazard.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="REFUEL" style="padding-top: 120px; margin-top: -120px;">
+              REFUEL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.REFUEL
+             </code>
+             <p>
+              Transfer of fuel between aircraft in the air. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#REFUEL" target="_blank">
+                   CodeAirspaceActivityType.REFUEL
+                  </a>
+                 </td>
+                 <td>
+                  Transfer of fuel between aircraft in the air. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SHOOTING" style="padding-top: 120px; margin-top: -120px;">
+              SHOOTING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.SHOOTING
+             </code>
+             <p>
+              The discharge of a gun or bow to propel arrows, bullets, etc swiftly or violently direct and sharply in specified directions.  Description: A type of military activity (usually). This could be a shooting range or hunting area.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#SHOOTING" target="_blank">
+                   CodeAirspaceActivityType.SHOOTING
+                  </a>
+                 </td>
+                 <td>
+                  The discharge of a gun or bow to propel arrows, bullets, etc swiftly or violently direct and sharply in specified directions.  Description: A type of military activity (usually). This could be a shooting range or hunting area.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SPACE_FLIGHT" style="padding-top: 120px; margin-top: -120px;">
+              SPACE_FLIGHT
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.SPACE_FLIGHT
+             </code>
+             <p>
+              Vertical launch for space flight operations. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#SPACE_FLIGHT" target="_blank">
+                   CodeAirspaceActivityType.SPACE_FLIGHT
+                  </a>
+                 </td>
+                 <td>
+                  Vertical launch for space flight operations. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SPORT" style="padding-top: 120px; margin-top: -120px;">
+              SPORT
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.SPORT
+             </code>
+             <p>
+              The competition or practice by an individual or a group to achieve the best aerial performance. Description: A type of special air traffic. This could be an air race or aerobatic training or competition.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#SPORT" target="_blank">
+                   CodeAirspaceActivityType.SPORT
+                  </a>
+                 </td>
+                 <td>
+                  The competition or practice by an individual or a group to achieve the best aerial performance. Description: A type of special air traffic. This could be an air race or aerobatic training or competition.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TECHNICAL" style="padding-top: 120px; margin-top: -120px;">
+              TECHNICAL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.TECHNICAL
+             </code>
+             <p>
+              Generic technical activity affecting air traffic. Description: A type of industrial hazard. .
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#TECHNICAL" target="_blank">
+                   CodeAirspaceActivityType.TECHNICAL
+                  </a>
+                 </td>
+                 <td>
+                  Generic technical activity affecting air traffic. Description: A type of industrial hazard. .
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TOWING" style="padding-top: 120px; margin-top: -120px;">
+              TOWING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.TOWING
+             </code>
+             <p>
+              Drawing or pulling through the air a target for aerial shooting practice. Description: A type of military activity (usually).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#TOWING" target="_blank">
+                   CodeAirspaceActivityType.TOWING
+                  </a>
+                 </td>
+                 <td>
+                  Drawing or pulling through the air a target for aerial shooting practice. Description: A type of military activity (usually).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TRAINING" style="padding-top: 120px; margin-top: -120px;">
+              TRAINING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.TRAINING
+             </code>
+             <p>
+              Flights conducted for the purpose of training. Description: A type of special air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#TRAINING" target="_blank">
+                   CodeAirspaceActivityType.TRAINING
+                  </a>
+                 </td>
+                 <td>
+                  Flights conducted for the purpose of training. Description: A type of special air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UAV" style="padding-top: 120px; margin-top: -120px;">
+              UAV
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.UAV
+             </code>
+             <p>
+              The operation of a powered, aerial vehicle that does not carry a human operator. Description: A type of special air traffic. (NATO derived) An Unmanned Aerial Vehicle uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#UAV" target="_blank">
+                   CodeAirspaceActivityType.UAV
+                  </a>
+                 </td>
+                 <td>
+                  The operation of a powered, aerial vehicle that does not carry a human operator. Description: A type of special air traffic. (NATO derived) An Unmanned Aerial Vehicle uses aerodynamic forces to provide vehicle lift, can fly autonomously or be piloted remotely, can be expendable or recoverable, and can carry a lethal or non-lethal payload.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ULM" style="padding-top: 120px; margin-top: -120px;">
+              ULM
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.ULM
+             </code>
+             <p>
+              Ultra light flights.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#ULM" target="_blank">
+                   CodeAirspaceActivityType.ULM
+                  </a>
+                 </td>
+                 <td>
+                  Ultra light flights.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VIP" style="padding-top: 120px; margin-top: -120px;">
+              VIP
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.VIP
+             </code>
+             <p>
+              The presence of an individual of renowned status and considered as a very important person. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#VIP" target="_blank">
+                   CodeAirspaceActivityType.VIP
+                  </a>
+                 </td>
+                 <td>
+                  The presence of an individual of renowned status and considered as a very important person. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VIP_PRES" style="padding-top: 120px; margin-top: -120px;">
+              VIP_PRES
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.VIP_PRES
+             </code>
+             <p>
+              The presence of an individual with status of head of state. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#VIP_PRES" target="_blank">
+                   CodeAirspaceActivityType.VIP_PRES
+                  </a>
+                 </td>
+                 <td>
+                  The presence of an individual with status of head of state. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VIP_VICE" style="padding-top: 120px; margin-top: -120px;">
+              VIP_VICE
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.VIP_VICE
+             </code>
+             <p>
+              The presence of an individual with status of Vice-Head of State. Description: A type of protection.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#VIP_VICE" target="_blank">
+                   CodeAirspaceActivityType.VIP_VICE
+                  </a>
+                 </td>
+                 <td>
+                  The presence of an individual with status of Vice-Head of State. Description: A type of protection.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WATER_BLASTING" style="padding-top: 120px; margin-top: -120px;">
+              WATER_BLASTING
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceActivityBaseType.WATER_BLASTING
+             </code>
+             <p>
+              The action or an act of forcing out or emitting something suddenly underwater. Description: A type of hazard. Usually involving violence and noise.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceActivityType.html#WATER_BLASTING" target="_blank">
+                   CodeAirspaceActivityType.WATER_BLASTING
+                  </a>
+                 </td>
+                 <td>
+                  The action or an act of forcing out or emitting something suddenly underwater. Description: A type of hazard. Usually involving violence and noise.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

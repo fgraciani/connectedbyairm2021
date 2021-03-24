@@ -1,0 +1,3263 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeAirspaceBaseType - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           CodeAirspaceBaseType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeAirspaceBaseType
+            </h2>
+            <code class="text-secondary">
+             CodeAirspaceBaseType
+            </code>
+           </div>
+           <p>
+            missing data
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#A">
+                 A
+                </a>
+               </td>
+               <td>
+                Alert area. Airspace which may contain a high volume of pilot training activities or unusual type of aerial activity, neither of which is hazardous to aircraft. Description: Non-ICAO Recognized. Mainly used in contiguous United States and its territories.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADIZ">
+                 ADIZ
+                </a>
+               </td>
+               <td>
+                Air Defence Identification Zone.  Special designated airspace of defined dimensions within which aircraft are required to comply with special identification and/or reporting procedures additional to those related to the provision of air traffic services (ATS). Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADV">
+                 ADV
+                </a>
+               </td>
+               <td>
+                Advisory Area.  An area of defined dimensions within which air traffic advisory service is available. Description: ICAO Recognized. Air traffic control service provides a much more complete service than air traffic advisory service  advisory areas and routes are therefore not established within controlled airspace, but air traffic advisory service may be provided below and above.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AMA">
+                 AMA
+                </a>
+               </td>
+               <td>
+                Minimum altitude area.  The lowest altitude to be used under instrument meteorological conditions (IMC) which will provide a minimum vertical clearance of 300 m (1 000 ft) or in designated mountainous terrain 600 m (2 000 ft) above all obstacles located in the area specified. Description: ICAO Recognized. Published by many States as rectangles of 1 x 1 degree on the ENR 6 charts. Note - In the exact calculation 984 feet can be used as an equivalent to 300 metres.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ASR">
+                 ASR
+                </a>
+               </td>
+               <td>
+                Altimeter setting region.  Airspace of defined dimensions within which standardized altimeter setting procedures apply. Description: Non-ICAO Recognized. For example, during flight the altimeter shall be set to the current altimeter setting of the nearest station along the route of flight.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATZ">
+                 ATZ
+                </a>
+               </td>
+               <td>
+                Airport Traffic Zone.  Airspace of defined dimensions established around an airport for the protection of airport traffic. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATZ_P">
+                 ATZ_P
+                </a>
+               </td>
+               <td>
+                Part of an airport traffic zone
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AWY">
+                 AWY
+                </a>
+               </td>
+               <td>
+                Airway (corridor).  A control area or portion thereof established in the form of a corridor.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CBA">
+                 CBA
+                </a>
+               </td>
+               <td>
+                Cross border area (FUA).  Airspace of defined dimensions, above the land areas or territorial waters of more than one state. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CLASS">
+                 CLASS
+                </a>
+               </td>
+               <td>
+                Airspace having a specified class.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CTA">
+                 CTA
+                </a>
+               </td>
+               <td>
+                Control area.  A controlled airspace extending upwards from a specified limit above the earth. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CTA_P">
+                 CTA_P
+                </a>
+               </td>
+               <td>
+                Part of a CTA.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CTR">
+                 CTR
+                </a>
+               </td>
+               <td>
+                Control zone.  A controlled airspace extending upwards from the surface of the earth to a specified upper limit. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CTR_P">
+                 CTR_P
+                </a>
+               </td>
+               <td>
+                Part of a CTR.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#D">
+                 D
+                </a>
+               </td>
+               <td>
+                Danger area.  Airspace of defined dimensions within which activities dangerous to the flight of aircraft may exist at specified times. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#D_OTHER">
+                 D_OTHER
+                </a>
+               </td>
+               <td>
+                Activities of dangerous nature (other than a danger area).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIR">
+                 FIR
+                </a>
+               </td>
+               <td>
+                Flight information region.  Airspace of defined dimensions within which flight information service and alerting service are provided. Description: ICAO Recognized. Might, for example, be used if service provided by more than one unit.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIR_P">
+                 FIR_P
+                </a>
+               </td>
+               <td>
+                Part of an FIR.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HTZ">
+                 HTZ
+                </a>
+               </td>
+               <td>
+                Helicopter traffic zone
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MTR">
+                 MTR
+                </a>
+               </td>
+               <td>
+                Military Training Route buffer.  A control area or portion thereof, established in the form of a corridor around a military training route in order to protect it from other traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NAS">
+                 NAS
+                </a>
+               </td>
+               <td>
+                National Airspace System. [note: The airspace within which a State provides Air Traffic Services is usually composed of:1) the territories over which the State has jurisdiction 2) those portions of the airspace over the high seas or in airspace of undetermined sovereignty where the provision of ATS are provided as determined by regional agreements. It can usually be determined by the UNION of FIRs (including, where appropriate, NO-FIRs) of the UNION of NAS-P. .]
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NAS_P">
+                 NAS_P
+                </a>
+               </td>
+               <td>
+                A part of a national airspace system
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NO_FIR">
+                 NO_FIR
+                </a>
+               </td>
+               <td>
+                Airspace for which not even an FIR is defined. [note: There are parts in the world for which there is neither an FIR nor any other airspace-type is defined. These airspaces will be marked as NO-FIR .]
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OCA">
+                 OCA
+                </a>
+               </td>
+               <td>
+                Oceanic control area.  A Control Area extending upwards in the upper airspace. Description: Non-ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OCA_P">
+                 OCA_P
+                </a>
+               </td>
+               <td>
+                Part of an OCA.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTA">
+                 OTA
+                </a>
+               </td>
+               <td>
+                Oceanic transition area.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OTHER">
+                 OTHER
+                </a>
+               </td>
+               <td>
+                Other
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#P">
+                 P
+                </a>
+               </td>
+               <td>
+                Prohibited area.  Airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is prohibited. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PART">
+                 PART
+                </a>
+               </td>
+               <td>
+                Part of an airspace (used in airspace aggregation).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#POLITICAL">
+                 POLITICAL
+                </a>
+               </td>
+               <td>
+                Political/administrative area.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PROTECT">
+                 PROTECT
+                </a>
+               </td>
+               <td>
+                Airspace protected from specific air traffic.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#R">
+                 R
+                </a>
+               </td>
+               <td>
+                Restricted area.  Airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is restricted in accordance with certain specified conditions. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RAS">
+                 RAS
+                </a>
+               </td>
+               <td>
+                Regulated airspace (not otherwise covered).
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RCA">
+                 RCA
+                </a>
+               </td>
+               <td>
+                Reduced co-ordination area (FUA).  Portion of airspace of defined dimensions within which general aviation traffic is permitted "off-route" without requiring general aviation traffic controllers to initiate co-ordination with OAT controllers. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SECTOR">
+                 SECTOR
+                </a>
+               </td>
+               <td>
+                Control sector.  A subdivision of a designated control area within which responsibility is assigned to one controller or to a small group of controllers. Description: ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SECTOR_C">
+                 SECTOR_C
+                </a>
+               </td>
+               <td>
+                Temporary consolidated (collapsed) sector.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TMA">
+                 TMA
+                </a>
+               </td>
+               <td>
+                Terminal control area.  Control area normally established at the confluence of ATS routes in the vicinity of one or more major aerodromes. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TMA_P">
+                 TMA_P
+                </a>
+               </td>
+               <td>
+                Part of a TMA.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TRA">
+                 TRA
+                </a>
+               </td>
+               <td>
+                Temporary reserved area (FUA).  Airspace of pre-defined dimensions within which activities require the reservation of airspace during a predetermined period of time. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TSA">
+                 TSA
+                </a>
+               </td>
+               <td>
+                Temporary segregated area (FUA).  Airspace of pre-defined dimensions within which activities require the reservation of airspace for the exclusive use of specific users during a predetermined period of time. Description: (NATO) An area in which there are special restrictive measures employed to prevent or minimize interference between friendly forces.  An area under military jurisdiction in which special security measures are employed to prevent unauthorized entry.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UADV">
+                 UADV
+                </a>
+               </td>
+               <td>
+                Upper Advisory Area.  An area of defined dimensions in upper airspace within which air traffic advisory service is available. Description: ICAO Recognized. Air traffic control service provides a much more complete service than air traffic advisory service  advisory areas and routes are therefore not established within controlled airspace, but air traffic advisory service may be provided below and above.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UIR">
+                 UIR
+                </a>
+               </td>
+               <td>
+                Upper flight information region.  An upper airspace of defined dimensions within which flight information service and alerting service are provided. Description: Non-ICAO Recognized. Each state determines its definition for upper airspace.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UIR_P">
+                 UIR_P
+                </a>
+               </td>
+               <td>
+                Part of a UIR. [note: Might, for example, be used if more than one unites provide service in different parts of a UIR .]
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UTA">
+                 UTA
+                </a>
+               </td>
+               <td>
+                Upper control area.  A Control Area extending upwards in the upper airspace. Description: Non-ICAO Recognized.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UTA_P">
+                 UTA_P
+                </a>
+               </td>
+               <td>
+                Part of a UTA.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#W">
+                 W
+                </a>
+               </td>
+               <td>
+                Warning area.  A non-regulatory airspace of defined dimensions designated over international waters that contains activity which may be hazardous to aircraft not participating in the activity. The purpose of such warning areas is to warn non participating pilots of the potential danger. Description: Non-ICAO Recognized. Mainly used in contiguous United States and its territories.
+               </td>
+               <td>
+                <a href="string.html" target="_blank">
+                 string
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CodeAirspaceBaseType" style="padding-top: 120px; margin-top: -120px;">
+              CodeAirspaceBaseType
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType
+             </code>
+             <p>
+              missing data
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="A" style="padding-top: 120px; margin-top: -120px;">
+              A
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.A
+             </code>
+             <p>
+              Alert area. Airspace which may contain a high volume of pilot training activities or unusual type of aerial activity, neither of which is hazardous to aircraft. Description: Non-ICAO Recognized. Mainly used in contiguous United States and its territories.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#A" target="_blank">
+                   CodeAirspaceType.A
+                  </a>
+                 </td>
+                 <td>
+                  Airspace which may contain a high volume of pilot training activities or unusual type of aerial activity, neither of which is hazardous to aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADIZ" style="padding-top: 120px; margin-top: -120px;">
+              ADIZ
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.ADIZ
+             </code>
+             <p>
+              Air Defence Identification Zone.  Special designated airspace of defined dimensions within which aircraft are required to comply with special identification and/or reporting procedures additional to those related to the provision of air traffic services (ATS). Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#ADIZ" target="_blank">
+                   CodeAirspaceType.ADIZ
+                  </a>
+                 </td>
+                 <td>
+                  Special designated airspace of defined dimensions within which aircraft are required to comply with special identification and/or reporting procedures additional to those related to the provision of air traffic services (ATS).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ADV" style="padding-top: 120px; margin-top: -120px;">
+              ADV
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.ADV
+             </code>
+             <p>
+              Advisory Area.  An area of defined dimensions within which air traffic advisory service is available. Description: ICAO Recognized. Air traffic control service provides a much more complete service than air traffic advisory service  advisory areas and routes are therefore not established within controlled airspace, but air traffic advisory service may be provided below and above.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#ADV" target="_blank">
+                   CodeAirspaceType.ADV
+                  </a>
+                 </td>
+                 <td>
+                  A designated area within a flight information region where air traffic advisory service is available.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AMA" style="padding-top: 120px; margin-top: -120px;">
+              AMA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.AMA
+             </code>
+             <p>
+              Minimum altitude area.  The lowest altitude to be used under instrument meteorological conditions (IMC) which will provide a minimum vertical clearance of 300 m (1 000 ft) or in designated mountainous terrain 600 m (2 000 ft) above all obstacles located in the area specified. Description: ICAO Recognized. Published by many States as rectangles of 1 x 1 degree on the ENR 6 charts. Note - In the exact calculation 984 feet can be used as an equivalent to 300 metres.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#AMA" target="_blank">
+                   CodeAirspaceType.AMA
+                  </a>
+                 </td>
+                 <td>
+                  Minimum altitude area. The lowest altitude to be used under instrument meteorological conditions (IMC) which will provide a minimum vertical clearance of 300 m (1 000 ft) or in designated mountainous terrain 600 m (2 000 ft) above all obstacles located in the area specified.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ASR" style="padding-top: 120px; margin-top: -120px;">
+              ASR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.ASR
+             </code>
+             <p>
+              Altimeter setting region.  Airspace of defined dimensions within which standardized altimeter setting procedures apply. Description: Non-ICAO Recognized. For example, during flight the altimeter shall be set to the current altimeter setting of the nearest station along the route of flight.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#ASR" target="_blank">
+                   CodeAirspaceType.ASR
+                  </a>
+                 </td>
+                 <td>
+                  Airspace of defined dimensions within which standardized altimeter setting procedures apply.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATZ" style="padding-top: 120px; margin-top: -120px;">
+              ATZ
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.ATZ
+             </code>
+             <p>
+              Airport Traffic Zone.  Airspace of defined dimensions established around an airport for the protection of airport traffic. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#ATZ" target="_blank">
+                   CodeAirspaceType.ATZ
+                  </a>
+                 </td>
+                 <td>
+                  An airspace of defined dimensions established around an aerodrome for the protection of aerodrome traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ATZ_P" style="padding-top: 120px; margin-top: -120px;">
+              ATZ_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.ATZ_P
+             </code>
+             <p>
+              Part of an airport traffic zone
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#ATZ_P" target="_blank">
+                   CodeAirspaceType.ATZ_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of an airport traffic zone
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AWY" style="padding-top: 120px; margin-top: -120px;">
+              AWY
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.AWY
+             </code>
+             <p>
+              Airway (corridor).  A control area or portion thereof established in the form of a corridor.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#AWY" target="_blank">
+                   CodeAirspaceType.AWY
+                  </a>
+                 </td>
+                 <td>
+                  A control area or portion thereof established in the form of a corridor.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CBA" style="padding-top: 120px; margin-top: -120px;">
+              CBA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CBA
+             </code>
+             <p>
+              Cross border area (FUA).  Airspace of defined dimensions, above the land areas or territorial waters of more than one state. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CBA" target="_blank">
+                   CodeAirspaceType.CBA
+                  </a>
+                 </td>
+                 <td>
+                  Airspace of defined dimensions, above the land areas or territorial waters of more than one state.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CLASS" style="padding-top: 120px; margin-top: -120px;">
+              CLASS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CLASS
+             </code>
+             <p>
+              Airspace having a specified class.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CLASS" target="_blank">
+                   CodeAirspaceType.CLASS
+                  </a>
+                 </td>
+                 <td>
+                  Airspace having a specified class.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CTA" style="padding-top: 120px; margin-top: -120px;">
+              CTA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CTA
+             </code>
+             <p>
+              Control area.  A controlled airspace extending upwards from a specified limit above the earth. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CTA" target="_blank">
+                   CodeAirspaceType.CTA
+                  </a>
+                 </td>
+                 <td>
+                  A controlled airspace extending upwards from a specified limit above the earth.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CTA_P" style="padding-top: 120px; margin-top: -120px;">
+              CTA_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CTA_P
+             </code>
+             <p>
+              Part of a CTA.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CTA_P" target="_blank">
+                   CodeAirspaceType.CTA_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of a CTA.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CTR" style="padding-top: 120px; margin-top: -120px;">
+              CTR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CTR
+             </code>
+             <p>
+              Control zone.  A controlled airspace extending upwards from the surface of the earth to a specified upper limit. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CTR" target="_blank">
+                   CodeAirspaceType.CTR
+                  </a>
+                 </td>
+                 <td>
+                  A controlled airspace extending upwards from the surface of the earth to a specified upper limit.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CTR_P" style="padding-top: 120px; margin-top: -120px;">
+              CTR_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.CTR_P
+             </code>
+             <p>
+              Part of a CTR.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#CTR_P" target="_blank">
+                   CodeAirspaceType.CTR_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of a CTR.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="D" style="padding-top: 120px; margin-top: -120px;">
+              D
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.D
+             </code>
+             <p>
+              Danger area.  Airspace of defined dimensions within which activities dangerous to the flight of aircraft may exist at specified times. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#D" target="_blank">
+                   CodeAirspaceType.D
+                  </a>
+                 </td>
+                 <td>
+                  An airspace of defined dimensions within which activities dangerous to the flight of aircraft may exist at specified times.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="D_OTHER" style="padding-top: 120px; margin-top: -120px;">
+              D_OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.D_OTHER
+             </code>
+             <p>
+              Activities of dangerous nature (other than a danger area).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#D_OTHER" target="_blank">
+                   CodeAirspaceType.D_OTHER
+                  </a>
+                 </td>
+                 <td>
+                  Activities of dangerous nature (other than a danger area).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIR" style="padding-top: 120px; margin-top: -120px;">
+              FIR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.FIR
+             </code>
+             <p>
+              Flight information region.  Airspace of defined dimensions within which flight information service and alerting service are provided. Description: ICAO Recognized. Might, for example, be used if service provided by more than one unit.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#FIR" target="_blank">
+                   CodeAirspaceType.FIR
+                  </a>
+                 </td>
+                 <td>
+                  An airspace of defined dimensions within which flight information service and alerting service are provided.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIR_P" style="padding-top: 120px; margin-top: -120px;">
+              FIR_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.FIR_P
+             </code>
+             <p>
+              Part of an FIR.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#FIR_P" target="_blank">
+                   CodeAirspaceType.FIR_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of an FIR.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HTZ" style="padding-top: 120px; margin-top: -120px;">
+              HTZ
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.HTZ
+             </code>
+             <p>
+              Helicopter traffic zone
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#HTZ" target="_blank">
+                   CodeAirspaceType.HTZ
+                  </a>
+                 </td>
+                 <td>
+                  Helicopter traffic zone
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MTR" style="padding-top: 120px; margin-top: -120px;">
+              MTR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.MTR
+             </code>
+             <p>
+              Military Training Route buffer.  A control area or portion thereof, established in the form of a corridor around a military training route in order to protect it from other traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#MTR" target="_blank">
+                   CodeAirspaceType.MTR
+                  </a>
+                 </td>
+                 <td>
+                  A control area or portion thereof, established in the form of a corridor around a military training route in order to protect it from other traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NAS" style="padding-top: 120px; margin-top: -120px;">
+              NAS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.NAS
+             </code>
+             <p>
+              National Airspace System. [note: The airspace within which a State provides Air Traffic Services is usually composed of:1) the territories over which the State has jurisdiction 2) those portions of the airspace over the high seas or in airspace of undetermined sovereignty where the provision of ATS are provided as determined by regional agreements. It can usually be determined by the UNION of FIRs (including, where appropriate, NO-FIRs) of the UNION of NAS-P. .]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#NAS" target="_blank">
+                   CodeAirspaceType.NAS
+                  </a>
+                 </td>
+                 <td>
+                  National Airspace System.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NAS_P" style="padding-top: 120px; margin-top: -120px;">
+              NAS_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.NAS_P
+             </code>
+             <p>
+              A part of a national airspace system
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#NAS_P" target="_blank">
+                   CodeAirspaceType.NAS_P
+                  </a>
+                 </td>
+                 <td>
+                  A part of a national airspace system
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="NO_FIR" style="padding-top: 120px; margin-top: -120px;">
+              NO_FIR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.NO_FIR
+             </code>
+             <p>
+              Airspace for which not even an FIR is defined. [note: There are parts in the world for which there is neither an FIR nor any other airspace-type is defined. These airspaces will be marked as NO-FIR .]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#NO_FIR" target="_blank">
+                   CodeAirspaceType.NO_FIR
+                  </a>
+                 </td>
+                 <td>
+                  Airspace for which not even a FIR is defined.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OCA" style="padding-top: 120px; margin-top: -120px;">
+              OCA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.OCA
+             </code>
+             <p>
+              Oceanic control area.  A Control Area extending upwards in the upper airspace. Description: Non-ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#OCA" target="_blank">
+                   CodeAirspaceType.OCA
+                  </a>
+                 </td>
+                 <td>
+                  Oceanic control area. A Control Area extending upwards in the upper airspace.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OCA_P" style="padding-top: 120px; margin-top: -120px;">
+              OCA_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.OCA_P
+             </code>
+             <p>
+              Part of an OCA.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#OCA_P" target="_blank">
+                   CodeAirspaceType.OCA_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of an OCA.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTA" style="padding-top: 120px; margin-top: -120px;">
+              OTA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.OTA
+             </code>
+             <p>
+              Oceanic transition area.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#OTA" target="_blank">
+                   CodeAirspaceType.OTA
+                  </a>
+                 </td>
+                 <td>
+                  Oceanic transition area.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="OTHER" style="padding-top: 120px; margin-top: -120px;">
+              OTHER
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.OTHER
+             </code>
+             <p>
+              Other
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="P" style="padding-top: 120px; margin-top: -120px;">
+              P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.P
+             </code>
+             <p>
+              Prohibited area.  Airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is prohibited. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#P" target="_blank">
+                   CodeAirspaceType.P
+                  </a>
+                 </td>
+                 <td>
+                  An airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is prohibited.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PART" style="padding-top: 120px; margin-top: -120px;">
+              PART
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.PART
+             </code>
+             <p>
+              Part of an airspace (used in airspace aggregation).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#PART" target="_blank">
+                   CodeAirspaceType.PART
+                  </a>
+                 </td>
+                 <td>
+                  Part of an airspace (used in airspace aggregation).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="POLITICAL" style="padding-top: 120px; margin-top: -120px;">
+              POLITICAL
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.POLITICAL
+             </code>
+             <p>
+              Political/administrative area.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#POLITICAL" target="_blank">
+                   CodeAirspaceType.POLITICAL
+                  </a>
+                 </td>
+                 <td>
+                  Political/administrative area.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PROTECT" style="padding-top: 120px; margin-top: -120px;">
+              PROTECT
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.PROTECT
+             </code>
+             <p>
+              Airspace protected from specific air traffic.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#PROTECTED" target="_blank">
+                   CodeAirspaceType.PROTECTED
+                  </a>
+                 </td>
+                 <td>
+                  Airspace protected from specific air traffic.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="R" style="padding-top: 120px; margin-top: -120px;">
+              R
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.R
+             </code>
+             <p>
+              Restricted area.  Airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is restricted in accordance with certain specified conditions. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#R" target="_blank">
+                   CodeAirspaceType.R
+                  </a>
+                 </td>
+                 <td>
+                  An airspace of defined dimensions, above the land areas or territorial waters of a State, within which the flight of aircraft is restricted in accordance with certain specified conditions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RAS" style="padding-top: 120px; margin-top: -120px;">
+              RAS
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.RAS
+             </code>
+             <p>
+              Regulated airspace (not otherwise covered).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#RAS" target="_blank">
+                   CodeAirspaceType.RAS
+                  </a>
+                 </td>
+                 <td>
+                  Regulated airspace (not otherwise covered).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RCA" style="padding-top: 120px; margin-top: -120px;">
+              RCA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.RCA
+             </code>
+             <p>
+              Reduced co-ordination area (FUA).  Portion of airspace of defined dimensions within which general aviation traffic is permitted "off-route" without requiring general aviation traffic controllers to initiate co-ordination with OAT controllers. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#RCA" target="_blank">
+                   CodeAirspaceType.RCA
+                  </a>
+                 </td>
+                 <td>
+                  Portion of airspace of defined dimensions within which general aviation traffic is permitted off-route" without requiring general aviation traffic controllers to initiate co-ordination with OAT controllers."
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SECTOR" style="padding-top: 120px; margin-top: -120px;">
+              SECTOR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.SECTOR
+             </code>
+             <p>
+              Control sector.  A subdivision of a designated control area within which responsibility is assigned to one controller or to a small group of controllers. Description: ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#SECTOR" target="_blank">
+                   CodeAirspaceType.SECTOR
+                  </a>
+                 </td>
+                 <td>
+                  A subdivision of a designated control area within which responsibility is assigned to one controller or to a small group of controllers.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SECTOR_C" style="padding-top: 120px; margin-top: -120px;">
+              SECTOR_C
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.SECTOR_C
+             </code>
+             <p>
+              Temporary consolidated (collapsed) sector.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#SECTOR_C" target="_blank">
+                   CodeAirspaceType.SECTOR_C
+                  </a>
+                 </td>
+                 <td>
+                  Temporary consolidated (collapsed) sector.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TMA" style="padding-top: 120px; margin-top: -120px;">
+              TMA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.TMA
+             </code>
+             <p>
+              Terminal control area.  Control area normally established at the confluence of ATS routes in the vicinity of one or more major aerodromes. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#TMA" target="_blank">
+                   CodeAirspaceType.TMA
+                  </a>
+                 </td>
+                 <td>
+                  A control area normally established at the confluence of ATS routes in the vicinity of one or more major aerodromes.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TMA_P" style="padding-top: 120px; margin-top: -120px;">
+              TMA_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.TMA_P
+             </code>
+             <p>
+              Part of a TMA.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#TMA_P" target="_blank">
+                   CodeAirspaceType.TMA_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of a TMA.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TRA" style="padding-top: 120px; margin-top: -120px;">
+              TRA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.TRA
+             </code>
+             <p>
+              Temporary reserved area (FUA).  Airspace of pre-defined dimensions within which activities require the reservation of airspace during a predetermined period of time. Description: Non-ICAO Recognized. Mainly used in Europe under the Flexible Use of Airspace concept.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#TRA" target="_blank">
+                   CodeAirspaceType.TRA
+                  </a>
+                 </td>
+                 <td>
+                  A defined volume of airspace normally under the jurisdiction of one aviation authority and temporarily reserved, by common agreement, for the specific use by another aviation authority and through which other traffic may be allowed to transit, under ATC clearance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TSA" style="padding-top: 120px; margin-top: -120px;">
+              TSA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.TSA
+             </code>
+             <p>
+              Temporary segregated area (FUA).  Airspace of pre-defined dimensions within which activities require the reservation of airspace for the exclusive use of specific users during a predetermined period of time. Description: (NATO) An area in which there are special restrictive measures employed to prevent or minimize interference between friendly forces.  An area under military jurisdiction in which special security measures are employed to prevent unauthorized entry.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#TSA" target="_blank">
+                   CodeAirspaceType.TSA
+                  </a>
+                 </td>
+                 <td>
+                  A defined volume of airspace normally under the jurisdiction of one aviation authority and temporarily segregated, by common agreement, for the exclusive use by another aviation authority and through which other traffic will not be allowed to transit.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UADV" style="padding-top: 120px; margin-top: -120px;">
+              UADV
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.UADV
+             </code>
+             <p>
+              Upper Advisory Area.  An area of defined dimensions in upper airspace within which air traffic advisory service is available. Description: ICAO Recognized. Air traffic control service provides a much more complete service than air traffic advisory service  advisory areas and routes are therefore not established within controlled airspace, but air traffic advisory service may be provided below and above.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#UADV" target="_blank">
+                   CodeAirspaceType.UADV
+                  </a>
+                 </td>
+                 <td>
+                  Upper Advisory Area. An area of defined dimensions in upper airspace within which air traffic advisory service is available.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UIR" style="padding-top: 120px; margin-top: -120px;">
+              UIR
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.UIR
+             </code>
+             <p>
+              Upper flight information region.  An upper airspace of defined dimensions within which flight information service and alerting service are provided. Description: Non-ICAO Recognized. Each state determines its definition for upper airspace.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#UIR" target="_blank">
+                   CodeAirspaceType.UIR
+                  </a>
+                 </td>
+                 <td>
+                  An upper airspace of defined dimensions within which flight information service and alerting service are provided.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UIR_P" style="padding-top: 120px; margin-top: -120px;">
+              UIR_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.UIR_P
+             </code>
+             <p>
+              Part of a UIR. [note: Might, for example, be used if more than one unites provide service in different parts of a UIR .]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#UIR_P" target="_blank">
+                   CodeAirspaceType.UIR_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of a UIR.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UTA" style="padding-top: 120px; margin-top: -120px;">
+              UTA
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.UTA
+             </code>
+             <p>
+              Upper control area.  A Control Area extending upwards in the upper airspace. Description: Non-ICAO Recognized.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#UTA" target="_blank">
+                   CodeAirspaceType.UTA
+                  </a>
+                 </td>
+                 <td>
+                  Upper control area. A Control Area extending upwards in the upper airspace.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="UTA_P" style="padding-top: 120px; margin-top: -120px;">
+              UTA_P
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.UTA_P
+             </code>
+             <p>
+              Part of a UTA.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#UTA_P" target="_blank">
+                   CodeAirspaceType.UTA_P
+                  </a>
+                 </td>
+                 <td>
+                  Part of a UTA.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="W" style="padding-top: 120px; margin-top: -120px;">
+              W
+             </h4>
+             <code class="text-secondary">
+              CodeAirspaceBaseType.W
+             </code>
+             <p>
+              Warning area.  A non-regulatory airspace of defined dimensions designated over international waters that contains activity which may be hazardous to aircraft not participating in the activity. The purpose of such warning areas is to warn non participating pilots of the potential danger. Description: Non-ICAO Recognized. Mainly used in contiguous United States and its territories.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#W" target="_blank">
+                   CodeAirspaceType.W
+                  </a>
+                 </td>
+                 <td>
+                  A non-regulatory airspace of defined dimensions designated over international waters that contains activity which may be hazardous to aircraft not participating in the activity. The purpose of such warning areas is to warn non participating pilots of the potential danger.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
