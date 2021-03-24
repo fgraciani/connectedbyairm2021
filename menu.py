@@ -102,6 +102,18 @@ def main_menu():
         import mapping2html
         mapping2html.create_mapping_item_pages("xlsx/ADR_23.5.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
+        main_menu()   
+    elif choice == "9":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_index_page("xlsx/FIXM_4.2.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concept-list-template.html")
+        print("Done.")
+        main_menu()    
+    elif choice == "10":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_item_pages("xlsx/FIXM_4.2.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
+        print("Done.")
         main_menu()
     elif choice == "99":
         test()  
