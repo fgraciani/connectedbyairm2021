@@ -39,6 +39,10 @@ def main_menu():
     print('')
     print("2: create_mapping_item_pages icao_wxxm_3.0.0")
     print('')
+    print("3: create_mapping_index_page amxm_2.0.0")
+    print('')
+    print("4: create_mapping_item_pages amxm_2.0.0")
+    print('')
     choice = input ("Please make a choice: ")
     print('')
 
@@ -54,4 +58,19 @@ def main_menu():
         mapping2html.create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v3.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
         main_menu()   
+    elif choice == "3":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_index_page("xlsx/AMXM_2.0.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concept-list-template.html")
+        print("Done.")
+        main_menu()    
+    elif choice == "4":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_item_pages("xlsx/AMXM_2.0.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
+        print("Done.")
+        main_menu()
+    elif choice == "99":
+        test_menu()  
+    
  

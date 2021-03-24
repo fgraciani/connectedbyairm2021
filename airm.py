@@ -31,7 +31,7 @@ class Airm:
     self.logical_supp_concepts.columns =    ["supplement","stereotype","class name","property name", "type","type urn", "definition", "synonyms", "abbreviation", "urn",  "parent", "parent urn", "source"]
 
   def get_concept(self, urn):
-    urn = urn.replace(' ','')
+    urn = urn.replace(' ','').replace('\t','').replace('	','')
     if urn == "":
       print("! empty urn")
     if "urn:" in urn:#if valid_urn(urn):
@@ -126,3 +126,72 @@ def urn_to_url(urn):
     return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+page+target
   else: 
     return "http://airm.aero/viewer/not-found"
+
+
+def create_connected_index():
+  df_connected_index_cols = ["airm_urn", "model_name", "concept_name", "concept_id", "concept_type"]
+  df_connected_index_rows = []
+
+  import fixm
+  fixm = fixm.Fixm()
+  fixm_mapping_dict = fixm.fixm_mapping_dataframe.to_dict('records')
+
+  for entry in fixm_mapping_dict:
+    sem_correspondences = str(entry['Semantic Correspondence']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      df_connected_index_rows.append({"airm_urn": urn, "model_name": "FIXM 4.2.0", "concept_name": entry["Data Concept"], "concept_id": entry["Identifier"], "concept_type": entry["Type"]})
+  
+  import amxm
+  amxm = amxm.Amxm()
+  amxm_mapping_dict = amxm.amxm_mapping_dataframe.to_dict('records')
+
+  for entry in amxm_mapping_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "missing data":
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+      else:
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+
+  amxm_mapping_dict = amxm.amxm_mapping_enum_dataframe.to_dict('records')
+
+  for entry in amxm_mapping_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "missing data":
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+      else:
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+
+  import aixm
+  aixm = aixm.Aixm()
+  aixm_mapping_merged_dict = aixm.aixm_mapping_merged_dataframe.to_dict('records')
+
+  for entry in aixm_mapping_merged_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "missing data":
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+      else:
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+
+  import aixm_adr
+  aixm_adr = aixm_adr.Aixm_adr()
+  aixm_adr_mapping_dict = aixm_adr.aixm_adr_mapping_dataframe.to_dict('records')
+
+  for entry in aixm_adr_mapping_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "missing data":
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+      else:
+        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+  
+  df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
+  with pd.ExcelWriter('data/xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
+      df_connected_index_out.to_excel(writer, sheet_name='connceted_index')
