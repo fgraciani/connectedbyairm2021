@@ -83,7 +83,7 @@ class Airm:
         "definition" : "A change request is required on the AIRM.",
         "url"  : "http://airm.aero/developers/airm-change-request.html"
       }
-    elif urn.lower() == "notestablished":
+    elif urn == "noSemanticCorrespondence":
       concept = {
         "name" : "Not Established",
         "definition" : "Semantic correspondence has not been established for this concept.",
