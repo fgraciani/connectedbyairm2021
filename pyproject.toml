@@ -11,6 +11,7 @@ pandas = "^1.2.2"
 bs4 = "^0.0.1"
 openpyxl = "^3.0.6"
 xlrd = "^2.0.1"
+aixm = "^1.0.2"
 
 [tool.poetry.dev-dependencies]
 

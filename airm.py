@@ -8,7 +8,7 @@ class Airm:
   logical_concepts = pd.read_excel (r'xlsx/airm/logical_core.xlsx', sheet_name='test')
   logical_supp_concepts = pd.read_excel (r'xlsx/airm/logical_supp.xlsx', sheet_name='test')
   
-  df_connected_index = pd.read_excel (r'data/xlsx/connected_index.xlsx', sheet_name='connceted_index')
+  #df_connected_index = pd.read_excel (r'data/xlsx/connected_index.xlsx', sheet_name='connceted_index')
 
   not_found_counter = 0
   
@@ -19,7 +19,7 @@ class Airm:
     self.logical_concepts.fillna("missing data", inplace = True)
     self.logical_supp_concepts.fillna("missing data", inplace = True)
     
-    self.df_connected_index.fillna("missing data", inplace = True)
+    #self.df_connected_index.fillna("missing data", inplace = True)
     
     self.contextual_abbreviations.columns = ["supplement","stereotype","class name","property name", "type", "definition", "synonyms", "abbreviation", "urn",  "parent", "source"]
     self.contextual_terms.columns =         ["supplement","stereotype","class name","property name", "type", "definition", "synonyms", "abbreviation", "urn",  "parent", "source"]
@@ -31,7 +31,7 @@ class Airm:
     self.logical_supp_concepts.columns =    ["supplement","stereotype","class name","property name", "type","type urn", "definition", "synonyms", "abbreviation", "urn",  "parent", "parent urn", "source"]
 
   def get_concept(self, urn):
-    urn = urn.replace(' ','')
+    urn = urn.replace(' ','').replace('\t','').replace('	','')
     if urn == "":
       print("! empty urn")
     if "urn:" in urn:#if valid_urn(urn):

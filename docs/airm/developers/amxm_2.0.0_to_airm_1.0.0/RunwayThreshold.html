@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   RunwayThreshold - AMXM 2.0.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../amxm_2.0.0_to_airm_1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AMXM 2.0.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           RunwayThreshold
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             RunwayThreshold
+            </h2>
+            <code class="text-secondary">
+             RunwayThreshold
+            </code>
+           </div>
+           <p>
+            Definition: The beginning of that portion of the runway that is available for landing [ICAO Annex 14], or the beginning of the runway area suitable for non-landing operations.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#alstype">
+                 alstype
+                </a>
+               </td>
+               <td>
+                Definition: Type of associated approach lighting system
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#asda">
+                 asda
+                </a>
+               </td>
+               <td>
+                Definition: Accelerate-stop distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#brngmag">
+                 brngmag
+                </a>
+               </td>
+               <td>
+                Definition: Magnetic runway bearing corresponding to threshold location valid at the day of data generation
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#brngtrue">
+                 brngtrue
+                </a>
+               </td>
+               <td>
+                Definition: True bearing corresponding to landing direction (ICAO Annex 14, Chapter 3.1.12)
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cat">
+                 cat
+                </a>
+               </td>
+               <td>
+                Definition: Type and Category of precision approach guidance system available for landing
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#elev">
+                 elev
+                </a>
+               </td>
+               <td>
+                Definition: Maximum elevation of feature (Orthometric height)
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ellipse">
+                 ellipse
+                </a>
+               </td>
+               <td>
+                Definition: Height above/below the WGS-84 ellipsoid at the point position
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#geopnt">
+                 geopnt
+                </a>
+               </td>
+               <td>
+                Definition: Point object
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#geound">
+                 geound
+                </a>
+               </td>
+               <td>
+                Definition: Geoidal undulation at the point position
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#idthr">
+                 idthr
+                </a>
+               </td>
+               <td>
+                Definition: Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of corresponding runway/helipad direction. &lt;/para&gt;&lt;para&gt; Example: 07L
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lda">
+                 lda
+                </a>
+               </td>
+               <td>
+                Definition: Landing distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lvo">
+                 lvo
+                </a>
+               </td>
+               <td>
+                Definition: Usage of the feature instance for Low Visibility Operations
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rwyslope">
+                 rwyslope
+                </a>
+               </td>
+               <td>
+                Definition: Runway gradient as derived from AIP corresponding to landing direction (positive being upward gradient)
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#status">
+                 status
+                </a>
+               </td>
+               <td>
+                Definition: State of feature
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tdze">
+                 tdze
+                </a>
+               </td>
+               <td>
+                Definition: Touchdown zone (ICAO Annex 14, Chapter 1.1) elevation (Orthometric height) corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tdzslope">
+                 tdzslope
+                </a>
+               </td>
+               <td>
+                Definition: Touchdown zone longitudinal slope (slope of 1/3 of the runway length from threshold of first 3000 feet for runways longer than 9000 feet)
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#thrtype">
+                 thrtype
+                </a>
+               </td>
+               <td>
+                Definition: Type of threshold (e.g., displaced).  If a displaced threshold exists, the threshold at the beginning of the runway is suitable for non-landing operations
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#toda">
+                 toda
+                </a>
+               </td>
+               <td>
+                Definition: Take-off distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tohlight">
+                 tohlight
+                </a>
+               </td>
+               <td>
+                Definition: Indicates if Takeoff Hold Light system is installed at that end of the runway
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tora">
+                 tora
+                </a>
+               </td>
+               <td>
+                Definition: Take-off run available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#vasis">
+                 vasis
+                </a>
+               </td>
+               <td>
+                Definition: Vertical guidance lighting system available corresponding to threshold location
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RunwayThreshold" style="padding-top: 120px; margin-top: -120px;">
+              RunwayThreshold
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold
+             </code>
+             <p>
+              The beginning of that portion of the runway that is available for landing [ICAO Annex 14], or the beginning of the runway area suitable for non-landing operations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#THRESHOLD" target="_blank">
+                   CodeInfrastructurePointUsageType.THRESHOLD
+                  </a>
+                 </td>
+                 <td>
+                  The beginning of that portion of the runway usable for landing.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeInfrastructurePointUsageType.html#DISPLACED_THRESHOLD" target="_blank">
+                   CodeInfrastructurePointUsageType.DISPLACED_THRESHOLD
+                  </a>
+                 </td>
+                 <td>
+                  A threshold not located at the extremity of a runway.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="alstype" style="padding-top: 120px; margin-top: -120px;">
+              alstype
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.alstype
+             </code>
+             <p>
+              Type of associated approach lighting system
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ApproachLightingSystem.html#type" target="_blank">
+                   ApproachLightingSystem.type
+                  </a>
+                 </td>
+                 <td>
+                  A regional or organisation specific classification of the approach lighting system equipment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="asda" style="padding-top: 120px; margin-top: -120px;">
+              asda
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.asda
+             </code>
+             <p>
+              Accelerate-stop distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDeclaredDistance.html#distance" target="_blank">
+                   RunwayDeclaredDistance.distance
+                  </a>
+                 </td>
+                 <td>
+                  The conventional operational distance declared for a runway direction.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeDeclaredDistanceType.html#ASDA" target="_blank">
+                   CodeDeclaredDistanceType.ASDA
+                  </a>
+                 </td>
+                 <td>
+                  The length of the take-off run available plus the length of the stopway, if provided.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="brngmag" style="padding-top: 120px; margin-top: -120px;">
+              brngmag
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.brngmag
+             </code>
+             <p>
+              Magnetic runway bearing corresponding to threshold location valid at the day of data generation
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#magneticBearing" target="_blank">
+                   RunwayDirection.magneticBearing
+                  </a>
+                 </td>
+                 <td>
+                  The measured angle between the runway direction and magnetic north at a given position.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="brngtrue" style="padding-top: 120px; margin-top: -120px;">
+              brngtrue
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.brngtrue
+             </code>
+             <p>
+              True bearing corresponding to landing direction (ICAO Annex 14, Chapter 3.1.12)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#trueBearing" target="_blank">
+                   RunwayDirection.trueBearing
+                  </a>
+                 </td>
+                 <td>
+                  The measured angle between the runway direction and true north at a given position.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="cat" style="padding-top: 120px; margin-top: -120px;">
+              cat
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.cat
+             </code>
+             <p>
+              Type and Category of precision approach guidance system available for landing
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#precisionApproachGuidance" target="_blank">
+                   RunwayDirection.precisionApproachGuidance
+                  </a>
+                 </td>
+                 <td>
+                  Degree to which navigation aids provide accurate approach guidance for a runway direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="elev" style="padding-top: 120px; margin-top: -120px;">
+              elev
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.elev
+             </code>
+             <p>
+              Maximum elevation of feature (Orthometric height)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ThreeDimensionalPointType.html#elevation" target="_blank">
+                   ThreeDimensionalPointType.elevation
+                  </a>
+                 </td>
+                 <td>
+                  The vertical distance of a point or a level, on or affixed to the surface of the earth, measured from mean sea level.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ellipse" style="padding-top: 120px; margin-top: -120px;">
+              ellipse
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.ellipse
+             </code>
+             <p>
+              Height above/below the WGS-84 ellipsoid at the point position
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="geopnt" style="padding-top: 120px; margin-top: -120px;">
+              geopnt
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.geopnt
+             </code>
+             <p>
+              Point object
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#position" target="_blank">
+                   GeoEnabledEntity.position
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as the position of a point on the surface of the Earth.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="geound" style="padding-top: 120px; margin-top: -120px;">
+              geound
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.geound
+             </code>
+             <p>
+              Geoidal undulation at the point position
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ThreeDimensionalPointType.html#geoidUndulation" target="_blank">
+                   ThreeDimensionalPointType.geoidUndulation
+                  </a>
+                 </td>
+                 <td>
+                  The distance of the geoid above (positive) or below (negative) the mathematical reference ellipsoid at the location of the point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="idthr" style="padding-top: 120px; margin-top: -120px;">
+              idthr
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.idthr
+             </code>
+             <p>
+              Name of feature instance&lt;/para&gt;&lt;para&gt; Encoding: Runway/helipad-designator of corresponding runway/helipad direction. &lt;/para&gt;&lt;para&gt; Example: 07L
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Runway.html#designator" target="_blank">
+                   Runway.designator
+                  </a>
+                 </td>
+                 <td>
+                  The designator of a runway, used to uniquely identify it at an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lda" style="padding-top: 120px; margin-top: -120px;">
+              lda
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.lda
+             </code>
+             <p>
+              Landing distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDeclaredDistance.html#distance" target="_blank">
+                   RunwayDeclaredDistance.distance
+                  </a>
+                 </td>
+                 <td>
+                  The conventional operational distance declared for a runway direction.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeDeclaredDistanceType.html#LDA" target="_blank">
+                   CodeDeclaredDistanceType.LDA
+                  </a>
+                 </td>
+                 <td>
+                  The length of runway which is declared available and suitable for the ground run of an aeroplane landing.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lvo" style="padding-top: 120px; margin-top: -120px;">
+              lvo
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.lvo
+             </code>
+             <p>
+              Usage of the feature instance for Low Visibility Operations
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="rwyslope" style="padding-top: 120px; margin-top: -120px;">
+              rwyslope
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.rwyslope
+             </code>
+             <p>
+              Runway gradient as derived from AIP corresponding to landing direction (positive being upward gradient)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#thresholdToThresholdGradientSlope" target="_blank">
+                   RunwayDirection.thresholdToThresholdGradientSlope
+                  </a>
+                 </td>
+                 <td>
+                  Threshold to threshold gradient slope.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="status" style="padding-top: 120px; margin-top: -120px;">
+              status
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.status
+             </code>
+             <p>
+              State of feature
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ManoeuvringAreaAvailability.html#operationalStatus" target="_blank">
+                   ManoeuvringAreaAvailability.operationalStatus
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the availability of the facility for specific flight operations.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="tdze" style="padding-top: 120px; margin-top: -120px;">
+              tdze
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.tdze
+             </code>
+             <p>
+              Touchdown zone (ICAO Annex 14, Chapter 1.1) elevation (Orthometric height) corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#touchDownZoneElevation" target="_blank">
+                   RunwayDirection.touchDownZoneElevation
+                  </a>
+                 </td>
+                 <td>
+                  The highest elevation of the runway touch down zone for a runway direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="tdzslope" style="padding-top: 120px; margin-top: -120px;">
+              tdzslope
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.tdzslope
+             </code>
+             <p>
+              Touchdown zone longitudinal slope (slope of 1/3 of the runway length from threshold of first 3000 feet for runways longer than 9000 feet)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDirection.html#touchDownZoneSlope" target="_blank">
+                   RunwayDirection.touchDownZoneSlope
+                  </a>
+                 </td>
+                 <td>
+                  Touchdown zone longitudinal slope (slope of 1/3 of the runway length from threshold or first 3000 feet for runways longer than 9000 feet) for a runway direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="thrtype" style="padding-top: 120px; margin-top: -120px;">
+              thrtype
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.thrtype
+             </code>
+             <p>
+              Type of threshold (e.g., displaced).  If a displaced threshold exists, the threshold at the beginning of the runway is suitable for non-landing operations
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="toda" style="padding-top: 120px; margin-top: -120px;">
+              toda
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.toda
+             </code>
+             <p>
+              Take-off distance available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDeclaredDistance.html#distance" target="_blank">
+                   RunwayDeclaredDistance.distance
+                  </a>
+                 </td>
+                 <td>
+                  The conventional operational distance declared for a runway direction.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeDeclaredDistanceType.html#TODA" target="_blank">
+                   CodeDeclaredDistanceType.TODA
+                  </a>
+                 </td>
+                 <td>
+                  The length of the take-off run available plus the length of the clearway, if provided.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="tohlight" style="padding-top: 120px; margin-top: -120px;">
+              tohlight
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.tohlight
+             </code>
+             <p>
+              Indicates if Takeoff Hold Light system is installed at that end of the runway
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/not-found" target="_blank">
+                   Not found
+                  </a>
+                 </td>
+                 <td>
+                  The provided URN does not exist.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="tora" style="padding-top: 120px; margin-top: -120px;">
+              tora
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.tora
+             </code>
+             <p>
+              Take-off run available (ICAO Annex 14, Chapter 1.1) corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayDeclaredDistance.html#distance" target="_blank">
+                   RunwayDeclaredDistance.distance
+                  </a>
+                 </td>
+                 <td>
+                  The conventional operational distance declared for a runway direction.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeDeclaredDistanceType.html#TORA" target="_blank">
+                   CodeDeclaredDistanceType.TORA
+                  </a>
+                 </td>
+                 <td>
+                  The length of runway declared available and suitable for the ground run of an aeroplane taking off.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="vasis" style="padding-top: 120px; margin-top: -120px;">
+              vasis
+             </h4>
+             <code class="text-secondary">
+              RunwayThreshold.vasis
+             </code>
+             <p>
+              Vertical guidance lighting system available corresponding to threshold location
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VisualGlideSlopeIndicator" target="_blank">
+                   VisualGlideSlopeIndicator
+                  </a>
+                 </td>
+                 <td>
+                  A visual guidance system that provides 'below/above glidepath' information to an aircraft executing an approach to a specific runway direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
