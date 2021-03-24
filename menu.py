@@ -1,4 +1,5 @@
 def test(): #See https://github.com/Mckinsey666/bullet for improvements
+  """Print the testing menu and wait for a selection."""
   choice ='0'
   while choice =='0':
     print("Menu: ")
@@ -29,6 +30,7 @@ def test(): #See https://github.com/Mckinsey666/bullet for improvements
         main_menu()   
 
 def main_menu():
+  """Print the main menu and wait for a selection."""
   choice ='0'
   while choice =='0':
     print("Menu: ")
@@ -49,7 +51,7 @@ def main_menu():
     elif choice == "2":
         print('\n')
         import mapping2html
-        mapping2html.dummy_create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v3.xlsx","docs/airm/templates/concepts/concept-template.html")
+        mapping2html.create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v3.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
         main_menu()   
  
