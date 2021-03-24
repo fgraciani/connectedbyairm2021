@@ -63,13 +63,15 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
       insert_position += 1
     
     insert_position=0
-    new_div = create_class_detail_div(info_concept)
-    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
-    insert_position += 1
     h3 = soup.new_tag("h2")
     h3.string = "Details"
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,h3)
+    insert_position += 1
 
+    new_div = create_class_detail_div(info_concept)
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
+    insert_position += 1
+    
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
     for data_concept in data_concepts:
       if data_concept["Data Concept"] != 'missing data':
