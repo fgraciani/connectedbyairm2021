@@ -61,8 +61,16 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
         new_table_row = create_properties_table_row(data_concept)
         soup.find(id="DATA_CONCEPTS_LIST").insert(insert_position,new_table_row)
       insert_position += 1
+    
     insert_position=0
+    new_div = create_class_detail_div(info_concept)
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
+    insert_position += 1
+    h3 = soup.new_tag("h2")
+    h3.string = "Details"
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,h3)
 
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,new_div)
     for data_concept in data_concepts:
       if data_concept["Data Concept"] != 'missing data':
         new_div = create_property_detail_div(data_concept)
@@ -107,6 +115,77 @@ def create_properties_table_row(data_concept):
   new_tr.insert(3,td_type)
   
   return new_tr
+
+def create_class_detail_div(info_concept):
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup("<b></b>", 'lxml')
+  class_div = soup.new_tag("div")
+  class_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+
+  h3 = soup.new_tag("h3")
+  h3.string = str(info_concept["Information Concept"])
+  h3["id"] = str(info_concept["Information Concept"])
+  h3["style"] = "padding-top: 120px; margin-top: -120px;"
+  class_div.insert(0,h3)
+
+  code = soup.new_tag("code")
+  identifier = info_concept["Information Concept"]
+  code.string = identifier
+  code["class"] = "text-secondary"
+  class_div.insert(1,code)
+
+  p = soup.new_tag("p")
+  definition = str(info_concept["Concept Definition"])
+  definition = definition.replace("Definition: ","")
+  p.string = definition
+  br = soup.new_tag("br")
+  p.insert(2,br)
+  class_div.insert(2,p)
+
+  sc_h5 = soup.new_tag("h5")
+  sc_h5.string = "Semantic Correspondence"
+  sc_h5['style'] = "margin-top: 40px;"
+  class_div.insert(3,sc_h5)
+
+  sc_div = soup.new_tag("div")
+  sc_div["class"] = "table-responsive"
+  sc_div.insert(1,create_semantic_correspondence_table(info_concept))
+  class_div.insert(4,sc_div)
+
+  if str(info_concept["Rationale"]) != "missing data":
+    h5 = soup.new_tag("h5")
+    h5.string = "Rationale"
+    class_div.insert(5,h5)
+
+    p = soup.new_tag("p")
+    p.string = str(info_concept["Rationale"])
+    print('Rationale:'+str(info_concept["Rationale"]))
+    class_div.insert(6,p)
+
+  if str(info_concept["Notes"]) != "missing data":
+    notes_h5 = soup.new_tag("h5")
+    notes_h5.string = "Notes"
+    class_div.insert(7,notes_h5)
+
+    p = soup.new_tag("p")
+    p.string = str(info_concept["Notes"])
+    #print('Notes:'+str(data_concept["Notes"]))
+    class_div.insert(8,p)
+
+  top_link_p = soup.new_tag("p")
+  new_link = soup.new_tag("a")
+  new_link['href'] = "#top"
+  new_icon = soup.new_tag("i")
+  new_icon['class'] = "fa fa-arrow-circle-up"
+  new_icon["data-toggle"] = "tooltip"
+  new_icon["data-placement"] = "left"
+  new_icon["title"] = "Top of page"
+  new_link.insert(1,new_icon)
+  top_link_p.insert(1,new_link)
+  top_link_p['class'] =   "text-right"
+  class_div.insert(9,top_link_p)
+
+  return class_div
 
 def create_property_detail_div(data_concept):
   from bs4 import BeautifulSoup
