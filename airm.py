@@ -53,6 +53,7 @@ class Airm:
       dataframe.sort_values("urn", inplace = True)
       dataframe.where(filter, inplace = True) 
       results = dataframe.dropna(how='all')  
+      results = results.applymap(str)
 
       if results.empty:
         print("! URN not found in AIRM: "+urn)
