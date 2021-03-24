@@ -92,8 +92,8 @@ class Airm:
     else:
       print("! URN not valid: "+urn)
       concept = {
-        "name" : "Not found",
-        "definition" : "The provided URN does not exist.",
+        "name" : "Invalid URN: "+urn,
+        "definition" : "The URN does not respect the URN syntax.",
         "url"  : "http://airm.aero/viewer/not-found"
       }
     return concept

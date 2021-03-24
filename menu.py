@@ -48,6 +48,10 @@ def main_menu():
     print('')
     print("6: create_mapping_item_pages aixm_5.1.1")
     print('')
+    print("7: create_mapping_index_page adr_23.5.0")
+    print('')
+    print("8: create_mapping_item_pages adr_23.5.0")
+    print('')
     choice = input ("Please make a choice: ")
     print('')
 
@@ -86,8 +90,21 @@ def main_menu():
         import mapping2html
         mapping2html.create_mapping_item_pages("xlsx/AIXM_5.1.1_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
+        main_menu()   
+    elif choice == "7":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_index_page("xlsx/ADR_23.5.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concept-list-template.html")
+        print("Done.")
+        main_menu()    
+    elif choice == "8":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_item_pages("xlsx/ADR_23.5.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
+        print("Done.")
         main_menu()
     elif choice == "99":
         test()  
     
+ 
  
