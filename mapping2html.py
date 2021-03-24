@@ -63,7 +63,7 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
       insert_position += 1
     
     insert_position=0
-    h3 = soup.new_tag("h2")
+    h3 = soup.new_tag("h3")
     h3.string = "Details"
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,h3)
     insert_position += 1
