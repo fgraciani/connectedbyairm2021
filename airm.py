@@ -57,7 +57,7 @@ class Airm:
       if results.empty:
         print("! URN not found in AIRM: "+urn)
         concept = {
-          "name" : "Not found",
+          "name" : "Not found: "+urn,
           "definition" : "The provided URN does not exist.",
           "url"  : "http://airm.aero/viewer/not-found"
         }
