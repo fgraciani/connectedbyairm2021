@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   TrajectoryPointPropertyTypeType - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../fixm-4.2.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           FIXM 4.2.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           TrajectoryPointPropertyTypeType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             TrajectoryPointPropertyTypeType
+            </h2>
+            <code class="text-secondary">
+             fx:TrajectoryPointPropertyTypeType
+            </code>
+           </div>
+           <p>
+            Enumerates any applicable properties of the trajectory point.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#AIRPORT_REFERENCE_LOCATION">
+                 AIRPORT_REFERENCE_LOCATION
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the airport reference location.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BEGIN_STAY">
+                 BEGIN_STAY
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is a point at which the flight is expected to begin an operation at which the flight will remain for some time.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CONSTRAINT_POINT">
+                 CONSTRAINT_POINT
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point of application of a constraint.  These can include explicit altitude, speed or time constraints or implicit MIT/MINIT, or sequencing constraints. For named constraints, a reference to the name of the constraint should be provided under trajectory point reference.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CROSSING_CONSTRAINED_AIRSPACE">
+                 CROSSING_CONSTRAINED_AIRSPACE
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross constrained airspace designated as a line.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CROSSOVER_ALTITUDE">
+                 CROSSOVER_ALTITUDE
+                </a>
+               </td>
+               <td>
+                The point in climb or descent where the airplane will transition between Mach and IAS control. (ARINC 702A)
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DEPARTURE_RUNWAY_END">
+                 DEPARTURE_RUNWAY_END
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point corresponds to the point at the end of the runway on departure. This point is at the center of the runway at the departure end when departing.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#END_EXPECT_VECTORS">
+                 END_EXPECT_VECTORS
+                </a>
+               </td>
+               <td>
+                When procedures specify "Expect Vectors", the associated point identifies the ending point of the vectoring.  The Point4D data at this point includes an estimate of the impact of vectoring.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#END_LANDING_ROLL">
+                 END_LANDING_ROLL
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to come to a full stop on the arrival runway. (A prediction only, the flight will likely exit the runway without coming to a full stop).
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#END_PREDICTION_POINT">
+                 END_PREDICTION_POINT
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the final point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to end at an exit point from the eASP airspace.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#END_STAY">
+                 END_STAY
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is a point at which the flight is expected to terminate an operation at which it remained for some time.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_CONSTRAINED_AIRSPACE ">
+                 ENTRY_CONSTRAINED_AIRSPACE
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross into designated constrained airspace.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE">
+                 ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the flight is predicted to enter an airspace restriction/reservation, including any additional safety buffer. An identifier to the airspace is provided in the trajectory point reference.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXIT_CONSTRAINED_AIRSPACE">
+                 EXIT_CONSTRAINED_AIRSPACE
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the trajectory is predicted to exit from designated constrained airspace.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EXIT_RESTRICTED_OR_RESERVED_AIRSPACE">
+                 EXIT_RESTRICTED_OR_RESERVED_AIRSPACE
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the flight is predicted to exit an airspace restriction/reservation, including any additional separation requirements. An identifier to the airspace is provided in the trajectory point reference.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FIR_BOUNDARY_CROSSING_POINT">
+                 FIR_BOUNDARY_CROSSING_POINT
+                </a>
+               </td>
+               <td>
+                Indicates the point at which the trajectory crosses from one FIR into another. A named reference to the FIR being entered may also be provided.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HOLD_ENTRY">
+                 HOLD_ENTRY
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is a point at which the flight is expected to enter into planned holding.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HOLD_EXIT">
+                 HOLD_EXIT
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is a point at which the flight is expected to exit from planned holding
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INITIAL_PREDICTION_POINT">
+                 INITIAL_PREDICTION_POINT
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the initial point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to begin at an entry point into the eASP airspace. This includes a point near entry into the Area of Responsibility.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PRESCRIBED_EET_POINT">
+                 PRESCRIBED_EET_POINT
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point represents a point that has been prescribed for required Estimated Elapsed Time reporting.  This can include a FIR boundary crossing point or a significant point as prescribed on the basis of regional air navigation agreements, or by the appropriate ATS authority.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RUNWAY_THRESHOLD">
+                 RUNWAY_THRESHOLD
+                </a>
+               </td>
+               <td>
+                This point is the threshold (which may be displaced) at the center of the runway at the arrival end when arriving.  See ICAO Annex 14.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#START_EXPECT_VECTORS">
+                 START_EXPECT_VECTORS
+                </a>
+               </td>
+               <td>
+                When procedures specify "Expect Vectors", the associated point identifies the starting point of the vectoring.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#START_TAKEOFF_ROLL">
+                 START_TAKEOFF_ROLL
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point corresponds to the point at the start of takeoff roll (used for departures only)
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TCP_LATERAL">
+                 TCP_LATERAL
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory change point (TCP) is one at which the course, track or heading is expected to change.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TCP_SPEED">
+                 TCP_SPEED
+                </a>
+               </td>
+               <td>
+                The point where the airplane will begin accelerating or decelerating as a result of a speed constraint or limit, or reaches the target speed (ARINC 702A)
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TCP_VERTICAL">
+                 TCP_VERTICAL
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory change point (TCP) is one at which a level segment (intermediate or cruise) will be initiated or terminated.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TOP_OF_CLIMB">
+                 TOP_OF_CLIMB
+                </a>
+               </td>
+               <td>
+                The point where the trajectory arrives at the cruise flight level after a climb.  There will be one top-of-climb for each cruise flight level (step climbs). (From ARINC 702A)
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TOP_OF_DESCENT">
+                 TOP_OF_DESCENT
+                </a>
+               </td>
+               <td>
+                The point where the trajectory begins a descent from the final cruise flight level.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TRANSITION_ALTITUDE_OR_LEVEL">
+                 TRANSITION_ALTITUDE_OR_LEVEL
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point is the point at which the trajectory reaches the transition altitude (in climb) or level (in descent).
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WHEELS_OFF">
+                 WHEELS_OFF
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels off the runway on departure.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#WHEELS_ON">
+                 WHEELS_ON
+                </a>
+               </td>
+               <td>
+                Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels on the runway for arrival.
+               </td>
+               <td>
+                enum value
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TrajectoryPointPropertyTypeType" style="padding-top: 120px; margin-top: -120px;">
+              TrajectoryPointPropertyTypeType
+             </h4>
+             <code class="text-secondary">
+              TrajectoryPointPropertyTypeType
+             </code>
+             <p>
+              Enumerates any applicable properties of the trajectory point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AIRPORT_REFERENCE_LOCATION" style="padding-top: 120px; margin-top: -120px;">
+              AIRPORT_REFERENCE_LOCATION
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:AIRPORT_REFERENCE_LOCATION
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the airport reference location.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="BEGIN_STAY" style="padding-top: 120px; margin-top: -120px;">
+              BEGIN_STAY
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:BEGIN_STAY
+             </code>
+             <p>
+              Indicates that the associated trajectory point is a point at which the flight is expected to begin an operation at which the flight will remain for some time.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#BEGIN_STAY_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.BEGIN_STAY_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the flight is expected to begin an operation at which the flight will remain for some time.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CONSTRAINT_POINT" style="padding-top: 120px; margin-top: -120px;">
+              CONSTRAINT_POINT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CONSTRAINT_POINT
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point of application of a constraint.  These can include explicit altitude, speed or time constraints or implicit MIT/MINIT, or sequencing constraints. For named constraints, a reference to the name of the constraint should be provided under trajectory point reference.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#CONSTRAINT_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.CONSTRAINT_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point of application of a constraint.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CROSSING_CONSTRAINED_AIRSPACE" style="padding-top: 120px; margin-top: -120px;">
+              CROSSING_CONSTRAINED_AIRSPACE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CROSSING_CONSTRAINED_AIRSPACE
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross constrained airspace designated as a line.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CROSSOVER_ALTITUDE" style="padding-top: 120px; margin-top: -120px;">
+              CROSSOVER_ALTITUDE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:CROSSOVER_ALTITUDE
+             </code>
+             <p>
+              The point in climb or descent where the airplane will transition between Mach and IAS control. (ARINC 702A)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#CROSSOVER_ALTITUDE_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.CROSSOVER_ALTITUDE_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point in climb or descent where the aircraft will transition between Mach and IAS control.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="DEPARTURE_RUNWAY_END" style="padding-top: 120px; margin-top: -120px;">
+              DEPARTURE_RUNWAY_END
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:DEPARTURE_RUNWAY_END
+             </code>
+             <p>
+              Indicates that the associated trajectory point corresponds to the point at the end of the runway on departure. This point is at the center of the runway at the departure end when departing.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="END_EXPECT_VECTORS" style="padding-top: 120px; margin-top: -120px;">
+              END_EXPECT_VECTORS
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_EXPECT_VECTORS
+             </code>
+             <p>
+              When procedures specify "Expect Vectors", the associated point identifies the ending point of the vectoring.  The Point4D data at this point includes an estimate of the impact of vectoring.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="END_LANDING_ROLL" style="padding-top: 120px; margin-top: -120px;">
+              END_LANDING_ROLL
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_LANDING_ROLL
+             </code>
+             <p>
+              Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to come to a full stop on the arrival runway. (A prediction only, the flight will likely exit the runway without coming to a full stop).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#END_OF_LANDING_ROLL_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.END_OF_LANDING_ROLL_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the aircraft is predicted to come to a full stop on the arrival runway.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="END_PREDICTION_POINT" style="padding-top: 120px; margin-top: -120px;">
+              END_PREDICTION_POINT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_PREDICTION_POINT
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the final point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to end at an exit point from the eASP airspace.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#END_PREDICTION_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.END_PREDICTION_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The final point at which a prediction was made.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="END_STAY" style="padding-top: 120px; margin-top: -120px;">
+              END_STAY
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:END_STAY
+             </code>
+             <p>
+              Indicates that the associated trajectory point is a point at which the flight is expected to terminate an operation at which it remained for some time.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#END_STAY_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.END_STAY_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the flight is expected to terminate an operation at which it remained for some time.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_CONSTRAINED_AIRSPACE " style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_CONSTRAINED_AIRSPACE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:ENTRY_CONSTRAINED_AIRSPACE
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the trajectory is predicted to cross into designated constrained airspace.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#CROSSING_INTO_CONSTRAINED_AIRSPACE_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.CROSSING_INTO_CONSTRAINED_AIRSPACE_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the trajectory is projected to cross into a constrained airspace.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE" style="padding-top: 120px; margin-top: -120px;">
+              ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:ENTRY_RESTRICTED_OR_RESERVED_AIRSPACE
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the flight is predicted to enter an airspace restriction/reservation, including any additional safety buffer. An identifier to the airspace is provided in the trajectory point reference.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="EXIT_CONSTRAINED_AIRSPACE" style="padding-top: 120px; margin-top: -120px;">
+              EXIT_CONSTRAINED_AIRSPACE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:EXIT_CONSTRAINED_AIRSPACE
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the trajectory is predicted to exit from designated constrained airspace.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#EXIT_FROM_CONSTRAINED_AIRSPACE_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.EXIT_FROM_CONSTRAINED_AIRSPACE_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the trajectory is projected to exit from designated constrained airspace.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="EXIT_RESTRICTED_OR_RESERVED_AIRSPACE" style="padding-top: 120px; margin-top: -120px;">
+              EXIT_RESTRICTED_OR_RESERVED_AIRSPACE
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:EXIT_RESTRICTED_OR_RESERVED_AIRSPACE
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the flight is predicted to exit an airspace restriction/reservation, including any additional separation requirements. An identifier to the airspace is provided in the trajectory point reference.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FIR_BOUNDARY_CROSSING_POINT" style="padding-top: 120px; margin-top: -120px;">
+              FIR_BOUNDARY_CROSSING_POINT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:FIR_BOUNDARY_CROSSING_POINT
+             </code>
+             <p>
+              Indicates the point at which the trajectory crosses from one FIR into another. A named reference to the FIR being entered may also be provided.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#FIR_BOUNDARY_CROSSING_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.FIR_BOUNDARY_CROSSING_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the trajectory crosses from one FIR into another.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HOLD_ENTRY" style="padding-top: 120px; margin-top: -120px;">
+              HOLD_ENTRY
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:HOLD_ENTRY
+             </code>
+             <p>
+              Indicates that the associated trajectory point is a point at which the flight is expected to enter into planned holding.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#HOLD_ENTRY_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.HOLD_ENTRY_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the flight is expected to enter into planned holding.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="HOLD_EXIT" style="padding-top: 120px; margin-top: -120px;">
+              HOLD_EXIT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:HOLD_EXIT
+             </code>
+             <p>
+              Indicates that the associated trajectory point is a point at which the flight is expected to exit from planned holding
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#HOLD_EXIT_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.HOLD_EXIT_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the flight is expected to exit from planned holding.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="INITIAL_PREDICTION_POINT" style="padding-top: 120px; margin-top: -120px;">
+              INITIAL_PREDICTION_POINT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:INITIAL_PREDICTION_POINT
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the initial point at which a prediction was made. For FF-ICE Planning, an eASP may provide a trajectory which is predicted to begin at an entry point into the eASP airspace. This includes a point near entry into the Area of Responsibility.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#INITIAL_PREDICTION_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.INITIAL_PREDICTION_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The initial point at which a prediction was made.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PRESCRIBED_EET_POINT" style="padding-top: 120px; margin-top: -120px;">
+              PRESCRIBED_EET_POINT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:PRESCRIBED_EET_POINT
+             </code>
+             <p>
+              Indicates that the associated trajectory point represents a point that has been prescribed for required Estimated Elapsed Time reporting.  This can include a FIR boundary crossing point or a significant point as prescribed on the basis of regional air navigation agreements, or by the appropriate ATS authority.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RUNWAY_THRESHOLD" style="padding-top: 120px; margin-top: -120px;">
+              RUNWAY_THRESHOLD
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:RUNWAY_THRESHOLD
+             </code>
+             <p>
+              This point is the threshold (which may be displaced) at the center of the runway at the arrival end when arriving.  See ICAO Annex 14.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="START_EXPECT_VECTORS" style="padding-top: 120px; margin-top: -120px;">
+              START_EXPECT_VECTORS
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:START_EXPECT_VECTORS
+             </code>
+             <p>
+              When procedures specify "Expect Vectors", the associated point identifies the starting point of the vectoring.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="START_TAKEOFF_ROLL" style="padding-top: 120px; margin-top: -120px;">
+              START_TAKEOFF_ROLL
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:START_TAKEOFF_ROLL
+             </code>
+             <p>
+              Indicates that the associated trajectory point corresponds to the point at the start of takeoff roll (used for departures only)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#START_OF_TAKEOFF_ROLL" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.START_OF_TAKEOFF_ROLL
+                  </a>
+                 </td>
+                 <td>
+                  The trajectory point at the start of take-off roll.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TCP_LATERAL" style="padding-top: 120px; margin-top: -120px;">
+              TCP_LATERAL
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_LATERAL
+             </code>
+             <p>
+              Indicates that the associated trajectory change point (TCP) is one at which the course, track or heading is expected to change.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TCP_SPEED" style="padding-top: 120px; margin-top: -120px;">
+              TCP_SPEED
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_SPEED
+             </code>
+             <p>
+              The point where the airplane will begin accelerating or decelerating as a result of a speed constraint or limit, or reaches the target speed (ARINC 702A)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TCP_VERTICAL" style="padding-top: 120px; margin-top: -120px;">
+              TCP_VERTICAL
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TCP_VERTICAL
+             </code>
+             <p>
+              Indicates that the associated trajectory change point (TCP) is one at which a level segment (intermediate or cruise) will be initiated or terminated.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TOP_OF_CLIMB" style="padding-top: 120px; margin-top: -120px;">
+              TOP_OF_CLIMB
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TOP_OF_CLIMB
+             </code>
+             <p>
+              The point where the trajectory arrives at the cruise flight level after a climb.  There will be one top-of-climb for each cruise flight level (step climbs). (From ARINC 702A)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#TOP_OF_CLIMB" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.TOP_OF_CLIMB
+                  </a>
+                 </td>
+                 <td>
+                  The trajectory point at which the trajectory arrives at the cruise flight level. There will be one top-of-climb for each cruise flight level (step climbs).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TOP_OF_DESCENT" style="padding-top: 120px; margin-top: -120px;">
+              TOP_OF_DESCENT
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TOP_OF_DESCENT
+             </code>
+             <p>
+              The point where the trajectory begins a descent from the final cruise flight level.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#TOP_OF_DESCENT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.TOP_OF_DESCENT
+                  </a>
+                 </td>
+                 <td>
+                  The trajectory point at which the trajectory begins a descent from the cruise flight level.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TRANSITION_ALTITUDE_OR_LEVEL" style="padding-top: 120px; margin-top: -120px;">
+              TRANSITION_ALTITUDE_OR_LEVEL
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:TRANSITION_ALTITUDE_OR_LEVEL
+             </code>
+             <p>
+              Indicates that the associated trajectory point is the point at which the trajectory reaches the transition altitude (in climb) or level (in descent).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#TRANSITION_ALTITUDE_OR_LEVEL_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.TRANSITION_ALTITUDE_OR_LEVEL_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the trajectory reaches the transition altitude (in climb) or level (in descent).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WHEELS_OFF" style="padding-top: 120px; margin-top: -120px;">
+              WHEELS_OFF
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:WHEELS_OFF
+             </code>
+             <p>
+              Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels off the runway on departure.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#WHEELS_OFF_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.WHEELS_OFF_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the aircraft is predicted to be wheels off the runway on departure.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="WHEELS_ON" style="padding-top: 120px; margin-top: -120px;">
+              WHEELS_ON
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPointPropertyTypeType:WHEELS_ON
+             </code>
+             <p>
+              Indicates that the associated trajectory point corresponds to the point at which the aircraft is predicted to be wheels on the runway for arrival.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeRouteTrajectoryPointUsageType.html#WHEELS_ON_POINT" target="_blank">
+                   CodeRouteTrajectoryPointUsageType.WHEELS_ON_POINT
+                  </a>
+                 </td>
+                 <td>
+                  The point at which the aircraft is predicted to be wheels on the runway for arrival.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

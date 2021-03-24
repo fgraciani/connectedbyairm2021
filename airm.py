@@ -47,7 +47,14 @@ class Airm:
           dataframe = self.logical_supp_concepts.copy()
         else:
           dataframe = self.logical_concepts.copy()
-
+      else:
+        print("! URN not found in AIRM: " + urn)
+        return {
+          "name" : "Not found: "+urn,
+          "definition" : "The provided URN does not exist.",
+          "url"  : "http://airm.aero/viewer/not-found"
+        }
+        
       #Search block:
       filter = dataframe["urn"]==urn
       dataframe.sort_values("urn", inplace = True)

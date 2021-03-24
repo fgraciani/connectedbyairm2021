@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   ArrivalType - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../fixm-4.2.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           FIXM 4.2.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           ArrivalType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             ArrivalType
+            </h2>
+            <code class="text-secondary">
+             fx:ArrivalType
+            </code>
+           </div>
+           <p>
+            Information about the actual arrival of the flight. [FIXM]
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#actualTimeOfArrival">
+                 actualTimeOfArrival
+                </a>
+               </td>
+               <td>
+                The actual time of arrival. [ICAO Doc 4444, Appendix 3, Field Type 17]
+               </td>
+               <td>
+                <a href="fb:TimeType.html" target="_blank">
+                 fb:TimeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airportSlotIdentification">
+                 airportSlotIdentification
+                </a>
+               </td>
+               <td>
+                The identifier of the arrival airport slot allocated to the flight. [FIXM]
+               </td>
+               <td>
+                <a href="fb:AirportSlotIdentificationType.html" target="_blank">
+                 fb:AirportSlotIdentificationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arrivalAerodrome">
+                 arrivalAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome at which the flight has actually arrived. [FIXM]
+               </td>
+               <td>
+                <a href="fb:AerodromeReferenceType.html" target="_blank">
+                 fb:AerodromeReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#destinationAerodrome">
+                 destinationAerodrome
+                </a>
+               </td>
+               <td>
+                The aerodrome of intended landing. [ICAO Doc 4444 - extracted from the definition of Destination Alternate]
+This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
+               </td>
+               <td>
+                <a href="fb:AerodromeReferenceType.html" target="_blank">
+                 fb:AerodromeReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#destinationAerodromeAlternate">
+                 destinationAerodromeAlternate
+                </a>
+               </td>
+               <td>
+                An alternate aerodrome to which an aircraft may proceed should it become either impossible or inadvisable to land at the aerodrome of intended landing. [ICAO Doc 4444]
+               </td>
+               <td>
+                <a href="fb:AerodromeReferenceType.html" target="_blank">
+                 fb:AerodromeReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#destinationAerodromePrevious">
+                 destinationAerodromePrevious
+                </a>
+               </td>
+               <td>
+                Specifies the previous destination aerodrome value when a change is made.
+               </td>
+               <td>
+                <a href="fb:AerodromeReferenceType.html" target="_blank">
+                 fb:AerodromeReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                <a href="fb:ArrivalExtensionType.html" target="_blank">
+                 fb:ArrivalExtensionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reclearanceInFlight">
+                 reclearanceInFlight
+                </a>
+               </td>
+               <td>
+                The route details to the revised destination aerodrome, followed by the ICAO four-letter location indicator of
+the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 4444]"
+               </td>
+               <td>
+                <a href="fx:ReclearanceInFlightType.html" target="_blank">
+                 fx:ReclearanceInFlightType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayDirection">
+                 runwayDirection
+                </a>
+               </td>
+               <td>
+                The runway direction on which the flight has actually landed. [FIXM]
+               </td>
+               <td>
+                <a href="fb:RunwayDirectionDesignatorType.html" target="_blank">
+                 fb:RunwayDirectionDesignatorType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ArrivalType" style="padding-top: 120px; margin-top: -120px;">
+              ArrivalType
+             </h4>
+             <code class="text-secondary">
+              ArrivalType
+             </code>
+             <p>
+              Information about the actual arrival of the flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="actualTimeOfArrival" style="padding-top: 120px; margin-top: -120px;">
+              actualTimeOfArrival
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:actualTimeOfArrival
+             </code>
+             <p>
+              The actual time of arrival. [ICAO Doc 4444, Appendix 3, Field Type 17]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Landing.html#time" target="_blank">
+                   Landing.time
+                  </a>
+                 </td>
+                 <td>
+                  Time at which an aircraft touches down.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="airportSlotIdentification" style="padding-top: 120px; margin-top: -120px;">
+              airportSlotIdentification
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:airportSlotIdentification
+             </code>
+             <p>
+              The identifier of the arrival airport slot allocated to the flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#identifier" target="_blank">
+                   Entity.identifier
+                  </a>
+                 </td>
+                 <td>
+                  Special unique identifier permanently assigned to an entity.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/AirportSlot" target="_blank">
+                   AirportSlot
+                  </a>
+                 </td>
+                 <td>
+                  The scheduled time of arrival or departure available for allocation by, or as allocated by, a coordinator for an aircraft movement on a specific date at a coordinated airport. For scheduling purposes, the slot is the scheduled time of arrival or departure at the terminal, not the time of landing or take-off from the runway. An allocated slot will take account of all the coordination parameters at the airport e.g. runway(s), taxiways, aircraft parking stands, gates, terminal capacity (e.g. check-in and baggage delivery), environmental constraints e.g. night restrictions etc.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="arrivalAerodrome" style="padding-top: 120px; margin-top: -120px;">
+              arrivalAerodrome
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:arrivalAerodrome
+             </code>
+             <p>
+              The aerodrome at which the flight has actually arrived. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="destinationAerodrome" style="padding-top: 120px; margin-top: -120px;">
+              destinationAerodrome
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:destinationAerodrome
+             </code>
+             <p>
+              The aerodrome of intended landing. [ICAO Doc 4444 - extracted from the definition of Destination Alternate]
+This is the aerodrome at which the flight is scheduled to arrive. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#destinationAerodrome" target="_blank">
+                   Flight.destinationAerodrome
+                  </a>
+                 </td>
+                 <td>
+                  The aerodrome of intended landing.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="destinationAerodromeAlternate" style="padding-top: 120px; margin-top: -120px;">
+              destinationAerodromeAlternate
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:destinationAerodromeAlternate
+             </code>
+             <p>
+              An alternate aerodrome to which an aircraft may proceed should it become either impossible or inadvisable to land at the aerodrome of intended landing. [ICAO Doc 4444]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#alternateAerodrome" target="_blank">
+                   Flight.alternateAerodrome
+                  </a>
+                 </td>
+                 <td>
+                  An  aerodrome  to  which  an  aircraft  may  proceed  when it  becomes either  impossible  or inadvisable  to  proceed  to  or  to  land  at  the aerodrome  of  intended  landing  where  the  necessary  services  and facilities  are  available,  where  aircraft  performance  requirements  can  be  met  and  which  is  operational at  the expected time of use.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="destinationAerodromePrevious" style="padding-top: 120px; margin-top: -120px;">
+              destinationAerodromePrevious
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:destinationAerodromePrevious
+             </code>
+             <p>
+              Specifies the previous destination aerodrome value when a change is made.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#destinationAerodrome" target="_blank">
+                   Flight.destinationAerodrome
+                  </a>
+                 </td>
+                 <td>
+                  The aerodrome of intended landing.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extension" style="padding-top: 120px; margin-top: -120px;">
+              extension
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:extension
+             </code>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="reclearanceInFlight" style="padding-top: 120px; margin-top: -120px;">
+              reclearanceInFlight
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:reclearanceInFlight
+             </code>
+             <p>
+              The route details to the revised destination aerodrome, followed by the ICAO four-letter location indicator of
+the aerodrome. The revised route is subject to reclearance in flight. [ICAO Doc 4444]"
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/european-supplement/Flight.html#rif" target="_blank">
+                   Flight.rif
+                  </a>
+                 </td>
+                 <td>
+                  The reclearance in flight.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="runwayDirection" style="padding-top: 120px; margin-top: -120px;">
+              runwayDirection
+             </h4>
+             <code class="text-secondary">
+              fx:ArrivalType:runwayDirection
+             </code>
+             <p>
+              The runway direction on which the flight has actually landed. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ArrivalOperations.html#arrivalRunwayDirection" target="_blank">
+                   ArrivalOperations.arrivalRunwayDirection
+                  </a>
+                 </td>
+                 <td>
+                  The runway direction used for landing.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

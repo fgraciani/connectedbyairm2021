@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   PostalAddressType - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../fixm-4.2.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           FIXM 4.2.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           PostalAddressType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             PostalAddressType
+            </h2>
+            <code class="text-secondary">
+             fb:PostalAddressType
+            </code>
+           </div>
+           <p>
+            Physical address at which the organization or individual may be contacted. Derived from ISO19115-2003
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#administrativeArea">
+                 administrativeArea
+                </a>
+               </td>
+               <td>
+                The state or province of the location or organisation.
+               </td>
+               <td>
+                <a href="fb:TextNameType.html" target="_blank">
+                 fb:TextNameType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#city">
+                 city
+                </a>
+               </td>
+               <td>
+                The city of the location or organisation.
+               </td>
+               <td>
+                <a href="fb:TextCityType.html" target="_blank">
+                 fb:TextCityType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#countryCode">
+                 countryCode
+                </a>
+               </td>
+               <td>
+                The country of the physical address for the location or organisation.  ISO 3166 abbreviations.
+               </td>
+               <td>
+                <a href="fb:TextCountryCodeType.html" target="_blank">
+                 fb:TextCountryCodeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#countryName">
+                 countryName
+                </a>
+               </td>
+               <td>
+                The country of the physical address for the location or organisation.  Full name, not ISO 3166 abbreviations.
+               </td>
+               <td>
+                <a href="fb:TextCountryNameType.html" target="_blank">
+                 fb:TextCountryNameType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#deliveryPoint">
+                 deliveryPoint
+                </a>
+               </td>
+               <td>
+                The street address line for the location.  More than one address line may be used. [FIXM]
+               </td>
+               <td>
+                <a href="fb:TextAddressType.html" target="_blank">
+                 fb:TextAddressType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                <a href="fb:PostalAddressExtensionType.html" target="_blank">
+                 fb:PostalAddressExtensionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#postalCode">
+                 postalCode
+                </a>
+               </td>
+               <td>
+                The ZIP or other postal code for the location or organisation.
+               </td>
+               <td>
+                <a href="fb:TextNameType.html" target="_blank">
+                 fb:TextNameType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="PostalAddressType" style="padding-top: 120px; margin-top: -120px;">
+              PostalAddressType
+             </h4>
+             <code class="text-secondary">
+              PostalAddressType
+             </code>
+             <p>
+              Physical address at which the organization or individual may be contacted. Derived from ISO19115-2003
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="administrativeArea" style="padding-top: 120px; margin-top: -120px;">
+              administrativeArea
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:administrativeArea
+             </code>
+             <p>
+              The state or province of the location or organisation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/PostalAddress.html#administrativeArea" target="_blank">
+                   PostalAddress.administrativeArea
+                  </a>
+                 </td>
+                 <td>
+                  The state or province of an organisation's or individual's physical address.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="city" style="padding-top: 120px; margin-top: -120px;">
+              city
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:city
+             </code>
+             <p>
+              The city of the location or organisation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/PostalAddress.html#city" target="_blank">
+                   PostalAddress.city
+                  </a>
+                 </td>
+                 <td>
+                  The city portion of the physical address for an organisation or individual.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="countryCode" style="padding-top: 120px; margin-top: -120px;">
+              countryCode
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:countryCode
+             </code>
+             <p>
+              The country of the physical address for the location or organisation.  ISO 3166 abbreviations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/State.html#iataCountryCode" target="_blank">
+                   State.iataCountryCode
+                  </a>
+                 </td>
+                 <td>
+                  Country codes as defined by IATA and ISO.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              PostalAddress to include country code from ISO
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="countryName" style="padding-top: 120px; margin-top: -120px;">
+              countryName
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:countryName
+             </code>
+             <p>
+              The country of the physical address for the location or organisation.  Full name, not ISO 3166 abbreviations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/PostalAddress.html#country" target="_blank">
+                   PostalAddress.country
+                  </a>
+                 </td>
+                 <td>
+                  The country name portion of the physical address for an organisation or individual.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="deliveryPoint" style="padding-top: 120px; margin-top: -120px;">
+              deliveryPoint
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:deliveryPoint
+             </code>
+             <p>
+              The street address line for the location.  More than one address line may be used. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/PostalAddress.html#deliveryPoint" target="_blank">
+                   PostalAddress.deliveryPoint
+                  </a>
+                 </td>
+                 <td>
+                  The street address portion of the physical address for an organisation or individual.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extension" style="padding-top: 120px; margin-top: -120px;">
+              extension
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:extension
+             </code>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="postalCode" style="padding-top: 120px; margin-top: -120px;">
+              postalCode
+             </h4>
+             <code class="text-secondary">
+              fb:PostalAddressType:postalCode
+             </code>
+             <p>
+              The ZIP or other postal code for the location or organisation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/PostalAddress.html#postalCode" target="_blank">
+                   PostalAddress.postalCode
+                  </a>
+                 </td>
+                 <td>
+                  The ZIP or other postal code portion of the physical address for an organisation or individual.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   TrajectoryPoint4DType - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../fixm-4.2.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           FIXM 4.2.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           TrajectoryPoint4DType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             TrajectoryPoint4DType
+            </h2>
+            <code class="text-secondary">
+             fx:TrajectoryPoint4DType
+            </code>
+           </div>
+           <p>
+            Identifies relevant information about a trajectory point including location, altitude, time, etc.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#altimeterSetting">
+                 altimeterSetting
+                </a>
+               </td>
+               <td>
+                The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting (29.92).
+               </td>
+               <td>
+                <a href="fb:PressureType.html" target="_blank">
+                 fb:PressureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                <a href="fb:TrajectoryPoint4DExtensionType.html" target="_blank">
+                 fb:TrajectoryPoint4DExtensionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#level">
+                 level
+                </a>
+               </td>
+               <td>
+                Altitude of the 4D point.
+               </td>
+               <td>
+                <a href="fb:FlightLevelOrAltitudeChoiceType.html" target="_blank">
+                 fb:FlightLevelOrAltitudeChoiceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#metData">
+                 metData
+                </a>
+               </td>
+               <td>
+                In a predicted trajectory, the instantaneous temperature and wind vector used at the 4D Point for creating the 4D trajectory.
+               </td>
+               <td>
+                <a href="fx:MeteorologicalDataType.html" target="_blank">
+                 fx:MeteorologicalDataType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#pointProperty">
+                 pointProperty
+                </a>
+               </td>
+               <td>
+                Describes any applicable properties of the trajectory point.  May include multiple properties per point.
+               </td>
+               <td>
+                <a href="fx:TrajectoryPointPropertyType.html" target="_blank">
+                 fx:TrajectoryPointPropertyType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#position">
+                 position
+                </a>
+               </td>
+               <td>
+                The geographical location of the 4D point.
+               </td>
+               <td>
+                <a href="fb:GeographicalPositionType.html" target="_blank">
+                 fb:GeographicalPositionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#predictedAirspeed">
+                 predictedAirspeed
+                </a>
+               </td>
+               <td>
+                The predicted  indicated airspeed or Mach at the trajectory point.
+               </td>
+               <td>
+                <a href="fb:IndicatedAirspeedType.html" target="_blank">
+                 fb:IndicatedAirspeedType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#predictedGroundspeed">
+                 predictedGroundspeed
+                </a>
+               </td>
+               <td>
+                The predicted ground speed at the Trajectory Point in knots or kilometers per hour.
+               </td>
+               <td>
+                <a href="fb:GroundSpeedType.html" target="_blank">
+                 fb:GroundSpeedType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#time">
+                 time
+                </a>
+               </td>
+               <td>
+                4D Point time expressed as either absolute or relative time.
+               </td>
+               <td>
+                <a href="fx:Point4DTimeChoiceType.html" target="_blank">
+                 fx:Point4DTimeChoiceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalRange">
+                 verticalRange
+                </a>
+               </td>
+               <td>
+                Vertical Range representing block altitude clearances
+               </td>
+               <td>
+                <a href="fb:VerticalRangeType.html" target="_blank">
+                 fb:VerticalRangeType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="TrajectoryPoint4DType" style="padding-top: 120px; margin-top: -120px;">
+              TrajectoryPoint4DType
+             </h4>
+             <code class="text-secondary">
+              TrajectoryPoint4DType
+             </code>
+             <p>
+              Identifies relevant information about a trajectory point including location, altitude, time, etc.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altimeterSetting" style="padding-top: 120px; margin-top: -120px;">
+              altimeterSetting
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:altimeterSetting
+             </code>
+             <p>
+              The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting (29.92).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FlightConfiguration.html#barometricPressureSetting" target="_blank">
+                   FlightConfiguration.barometricPressureSetting
+                  </a>
+                 </td>
+                 <td>
+                  The barometric pressure reading used to adjust a pressure altimeter for variations in existing atmospheric pressure or to the standard altimeter setting.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extension" style="padding-top: 120px; margin-top: -120px;">
+              extension
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:extension
+             </code>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="level" style="padding-top: 120px; margin-top: -120px;">
+              level
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:level
+             </code>
+             <p>
+              Altitude of the 4D point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/european-supplement/AircraftState.html#aircraftAltitude" target="_blank">
+                   AircraftState.aircraftAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The altitude of the aircraft at the trajectory point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="metData" style="padding-top: 120px; margin-top: -120px;">
+              metData
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:metData
+             </code>
+             <p>
+              In a predicted trajectory, the instantaneous temperature and wind vector used at the 4D Point for creating the 4D trajectory.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteTrajectoryPoint.html#weatherCondition" target="_blank">
+                   RouteTrajectoryPoint.weatherCondition
+                  </a>
+                 </td>
+                 <td>
+                  The weather condition at the trajectory point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="pointProperty" style="padding-top: 120px; margin-top: -120px;">
+              pointProperty
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:pointProperty
+             </code>
+             <p>
+              Describes any applicable properties of the trajectory point.  May include multiple properties per point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="position" style="padding-top: 120px; margin-top: -120px;">
+              position
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:position
+             </code>
+             <p>
+              The geographical location of the 4D point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#position" target="_blank">
+                   GeoEnabledEntity.position
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as the position of a point on the surface of the Earth.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              RouteTrajectoryPoint inherits from GeoEnabledEntity
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="predictedAirspeed" style="padding-top: 120px; margin-top: -120px;">
+              predictedAirspeed
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:predictedAirspeed
+             </code>
+             <p>
+              The predicted  indicated airspeed or Mach at the trajectory point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AircraftSpeed.html#indicatedAirSpeed" target="_blank">
+                   AircraftSpeed.indicatedAirSpeed
+                  </a>
+                 </td>
+                 <td>
+                  The uncorrected reading on the airspeed indicator.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Predicted qualifier is missing in the AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="predictedGroundspeed" style="padding-top: 120px; margin-top: -120px;">
+              predictedGroundspeed
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:predictedGroundspeed
+             </code>
+             <p>
+              The predicted ground speed at the Trajectory Point in knots or kilometers per hour.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AircraftSpeed.html#groundSpeed" target="_blank">
+                   AircraftSpeed.groundSpeed
+                  </a>
+                 </td>
+                 <td>
+                  The speed of the aircraft relative to the ground.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Predicted qualifier is missing in the AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="time" style="padding-top: 120px; margin-top: -120px;">
+              time
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:time
+             </code>
+             <p>
+              4D Point time expressed as either absolute or relative time.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              Container
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalRange" style="padding-top: 120px; margin-top: -120px;">
+              verticalRange
+             </h4>
+             <code class="text-secondary">
+              fx:TrajectoryPoint4DType:verticalRange
+             </code>
+             <p>
+              Vertical Range representing block altitude clearances
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

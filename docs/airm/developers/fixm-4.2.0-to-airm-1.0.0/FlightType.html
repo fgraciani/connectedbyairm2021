@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   FlightType - FIXM 4.2.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../fixm-4.2.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           FIXM 4.2.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           FlightType
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             FlightType
+            </h2>
+            <code class="text-secondary">
+             fx:FlightType
+            </code>
+           </div>
+           <p>
+            The Flight element is an entry point to the FIXM model.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aircraft">
+                 aircraft
+                </a>
+               </td>
+               <td>
+                Aircraft enabling the flight. [FIXM]
+               </td>
+               <td>
+                <a href="fx:AircraftType.html" target="_blank">
+                 fx:AircraftType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arrival">
+                 arrival
+                </a>
+               </td>
+               <td>
+                The actual arrival of the flight. [FIXM]
+               </td>
+               <td>
+                <a href="fx:ArrivalType.html" target="_blank">
+                 fx:ArrivalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dangerousGoods">
+                 dangerousGoods
+                </a>
+               </td>
+               <td>
+                Contains information about any board dangerous goods
+               </td>
+               <td>
+                <a href="fx:DangerousGoodsType.html" target="_blank">
+                 fx:DangerousGoodsType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#departure">
+                 departure
+                </a>
+               </td>
+               <td>
+                Contains flight departure information
+               </td>
+               <td>
+                <a href="fx:DepartureType.html" target="_blank">
+                 fx:DepartureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#emergency">
+                 emergency
+                </a>
+               </td>
+               <td>
+                Groups emergency information (description, phase, position, etc) for the flight.
+               </td>
+               <td>
+                <a href="fx:FlightEmergencyType.html" target="_blank">
+                 fx:FlightEmergencyType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#enRoute">
+                 enRoute
+                </a>
+               </td>
+               <td>
+                Groups the en route information about the flight.
+               </td>
+               <td>
+                <a href="fx:EnRouteType.html" target="_blank">
+                 fx:EnRouteType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extension">
+                 extension
+                </a>
+               </td>
+               <td>
+                An extension hook for attaching extension (non-core) classes.
+               </td>
+               <td>
+                <a href="fb:FlightExtensionType.html" target="_blank">
+                 fb:FlightExtensionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightConstraint">
+                 flightConstraint
+                </a>
+               </td>
+               <td>
+                A general flight constraint is intended to express a constraint on the flight that cannot be associated with a specific trajectory point, either because it is not relevant to only a specific point or because it is not possible to identify the point. [FF-ICE]
+               </td>
+               <td>
+                <a href="fx:FlightConstraintType.html" target="_blank">
+                 fx:FlightConstraintType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightIdentification">
+                 flightIdentification
+                </a>
+               </td>
+               <td>
+                A container of flight identifying data. [FIXM]
+               </td>
+               <td>
+                <a href="fx:FlightIdentificationType.html" target="_blank">
+                 fx:FlightIdentificationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightPlanOriginator">
+                 flightPlanOriginator
+                </a>
+               </td>
+               <td>
+                Originator of the Flight Plan, can be FF-ICE Participant or a non-upgraded ASP. [adapted from ICAO Draft FF-ICE Implementation Guidance] Equivalent to ATS 18 ORGN/.
+               </td>
+               <td>
+                <a href="fb:PersonOrOrganizationType.html" target="_blank">
+                 fb:PersonOrOrganizationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightPlanSubmitter">
+                 flightPlanSubmitter
+                </a>
+               </td>
+               <td>
+                The FF-ICE Participant that submitted the flight plan. [ICAO Draft FF-ICE Implementation Guidance]
+               </td>
+               <td>
+                <a href="fb:PersonOrOrganizationType.html" target="_blank">
+                 fb:PersonOrOrganizationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightType">
+                 flightType
+                </a>
+               </td>
+               <td>
+                Indication of the rule under which an air traffic controller provides categorical handling of a flight. [FIXM]
+               </td>
+               <td>
+                <a href="fx:TypeOfFlightType.html" target="_blank">
+                 fx:TypeOfFlightType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#gufi">
+                 gufi
+                </a>
+               </td>
+               <td>
+                A single reference for FF-ICE information pertinent to a flight that is unique globally. [ICAO Doc 9965]
+This is a reference that uniquely identifies a specific flight and is independent of any particular system. [FIXM]
+               </td>
+               <td>
+                <a href="fb:UniversallyUniqueIdentifierType.html" target="_blank">
+                 fb:UniversallyUniqueIdentifierType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#gufiOriginator">
+                 gufiOriginator
+                </a>
+               </td>
+               <td>
+                Originator of the GUFI, can be FF-ICE Participant or an ASP. [adapted from ICAO Draft FF-ICE Implementation Guidance]
+               </td>
+               <td>
+                <a href="fb:PersonOrOrganizationType.html" target="_blank">
+                 fb:PersonOrOrganizationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operator">
+                 operator
+                </a>
+               </td>
+               <td>
+                A person, organization or enterprise engaged in or offering to engage in an aircraft operation. [ICAO Annex 9]
+               </td>
+               <td>
+                <a href="fb:AircraftOperatorType.html" target="_blank">
+                 fb:AircraftOperatorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radioCommunicationFailure">
+                 radioCommunicationFailure
+                </a>
+               </td>
+               <td>
+                Contains information about radio communication failure
+               </td>
+               <td>
+                <a href="fx:RadioCommunicationFailureType.html" target="_blank">
+                 fx:RadioCommunicationFailureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#remarks">
+                 remarks
+                </a>
+               </td>
+               <td>
+                Any other plain-language remarks when required by the appropriate ATS authority or deemed necessary, by the pilot-in-command for the provision of air traffic services.
+               </td>
+               <td>
+                <a href="fb:CharacterStringType.html" target="_blank">
+                 fb:CharacterStringType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#routeTrajectoryGroup">
+                 routeTrajectoryGroup
+                </a>
+               </td>
+               <td>
+                A logical grouping for all Route Trajectory Groups associated with the flight. [FIXM]
+               </td>
+               <td>
+                <a href="fx:RouteTrajectoryGroupContainerType.html" target="_blank">
+                 fx:RouteTrajectoryGroupContainerType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#specialHandling">
+                 specialHandling
+                </a>
+               </td>
+               <td>
+                The reason for special handling of a flight by ATS. [adapted from ICAO Doc 4444, Appendix 2, ITEM 18 STS/]
+               </td>
+               <td>
+                <a href="fx:SpecialHandlingReasonCodeListType.html" target="_blank">
+                 fx:SpecialHandlingReasonCodeListType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#supplementaryData">
+                 supplementaryData
+                </a>
+               </td>
+               <td>
+                A container for supplementary data about the flight. This container does not capture the complete set of elements described in ICAO Doc 4444 ITEM 19 "Supplementary Information"; it only contains those elements that could not be modeled more logically in other FIXM structures. [FIXM]
+               </td>
+               <td>
+                <a href="fx:SupplementaryDataType.html" target="_blank">
+                 fx:SupplementaryDataType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FlightType" style="padding-top: 120px; margin-top: -120px;">
+              FlightType
+             </h4>
+             <code class="text-secondary">
+              FlightType
+             </code>
+             <p>
+              The Flight element is an entry point to the FIXM model.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="aircraft" style="padding-top: 120px; margin-top: -120px;">
+              aircraft
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:aircraft
+             </code>
+             <p>
+              Aircraft enabling the flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#aircraft" target="_blank">
+                   Flight.aircraft
+                  </a>
+                 </td>
+                 <td>
+                  The aircraft enabling the flight.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="arrival" style="padding-top: 120px; margin-top: -120px;">
+              arrival
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:arrival
+             </code>
+             <p>
+              The actual arrival of the flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#arrivalOperations" target="_blank">
+                   Flight.arrivalOperations
+                  </a>
+                 </td>
+                 <td>
+                  The set of flight operations following procedures associated with the destination aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dangerousGoods" style="padding-top: 120px; margin-top: -120px;">
+              dangerousGoods
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:dangerousGoods
+             </code>
+             <p>
+              Contains information about any board dangerous goods
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="departure" style="padding-top: 120px; margin-top: -120px;">
+              departure
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:departure
+             </code>
+             <p>
+              Contains flight departure information
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#departureOperations" target="_blank">
+                   Flight.departureOperations
+                  </a>
+                 </td>
+                 <td>
+                  The set of flight operations following procedures associated with the departure aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="emergency" style="padding-top: 120px; margin-top: -120px;">
+              emergency
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:emergency
+             </code>
+             <p>
+              Groups emergency information (description, phase, position, etc) for the flight.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#emergencyPhase" target="_blank">
+                   Flight.emergencyPhase
+                  </a>
+                 </td>
+                 <td>
+                  Emergency situation in which the flight may be.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="enRoute" style="padding-top: 120px; margin-top: -120px;">
+              enRoute
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:enRoute
+             </code>
+             <p>
+              Groups the en route information about the flight.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/european-supplement/CodeFlightPhaseType.html#ENROUTE_PHASE" target="_blank">
+                   CodeFlightPhaseType.ENROUTE_PHASE
+                  </a>
+                 </td>
+                 <td>
+                  The phase of flight from the completion of initial climb at the departure aerodrome to the completion of controlled descent to the outer marker [ifr] or [vfr] to completion of the controlled descent to the vfr pattern or 1,500 feet [450 metres] above runway end elevation, whichever comes first.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extension" style="padding-top: 120px; margin-top: -120px;">
+              extension
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:extension
+             </code>
+             <p>
+              An extension hook for attaching extension (non-core) classes.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="flightConstraint" style="padding-top: 120px; margin-top: -120px;">
+              flightConstraint
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:flightConstraint
+             </code>
+             <p>
+              A general flight constraint is intended to express a constraint on the flight that cannot be associated with a specific trajectory point, either because it is not relevant to only a specific point or because it is not possible to identify the point. [FF-ICE]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="flightIdentification" style="padding-top: 120px; margin-top: -120px;">
+              flightIdentification
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:flightIdentification
+             </code>
+             <p>
+              A container of flight identifying data. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              container
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="flightPlanOriginator" style="padding-top: 120px; margin-top: -120px;">
+              flightPlanOriginator
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:flightPlanOriginator
+             </code>
+             <p>
+              Originator of the Flight Plan, can be FF-ICE Participant or a non-upgraded ASP. [adapted from ICAO Draft FF-ICE Implementation Guidance] Equivalent to ATS 18 ORGN/.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="flightPlanSubmitter" style="padding-top: 120px; margin-top: -120px;">
+              flightPlanSubmitter
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:flightPlanSubmitter
+             </code>
+             <p>
+              The FF-ICE Participant that submitted the flight plan. [ICAO Draft FF-ICE Implementation Guidance]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="flightType" style="padding-top: 120px; margin-top: -120px;">
+              flightType
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:flightType
+             </code>
+             <p>
+              Indication of the rule under which an air traffic controller provides categorical handling of a flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#type" target="_blank">
+                   Flight.type
+                  </a>
+                 </td>
+                 <td>
+                  The type of the flight.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="gufi" style="padding-top: 120px; margin-top: -120px;">
+              gufi
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:gufi
+             </code>
+             <p>
+              A single reference for FF-ICE information pertinent to a flight that is unique globally. [ICAO Doc 9965]
+This is a reference that uniquely identifies a specific flight and is independent of any particular system. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#globallyUniqueFlightIdentifier" target="_blank">
+                   Flight.globallyUniqueFlightIdentifier
+                  </a>
+                 </td>
+                 <td>
+                  A single reference for FF-ICE information pertinent to a flight that is unique globally.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="gufiOriginator" style="padding-top: 120px; margin-top: -120px;">
+              gufiOriginator
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:gufiOriginator
+             </code>
+             <p>
+              Originator of the GUFI, can be FF-ICE Participant or an ASP. [adapted from ICAO Draft FF-ICE Implementation Guidance]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="operator" style="padding-top: 120px; margin-top: -120px;">
+              operator
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:operator
+             </code>
+             <p>
+              A person, organization or enterprise engaged in or offering to engage in an aircraft operation. [ICAO Annex 9]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#operator" target="_blank">
+                   Flight.operator
+                  </a>
+                 </td>
+                 <td>
+                  The aircraft operator of the flight.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="radioCommunicationFailure" style="padding-top: 120px; margin-top: -120px;">
+              radioCommunicationFailure
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:radioCommunicationFailure
+             </code>
+             <p>
+              Contains information about radio communication failure
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="remarks" style="padding-top: 120px; margin-top: -120px;">
+              remarks
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:remarks
+             </code>
+             <p>
+              Any other plain-language remarks when required by the appropriate ATS authority or deemed necessary, by the pilot-in-command for the provision of air traffic services.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/LinguisticNote.html#note" target="_blank">
+                   LinguisticNote.note
+                  </a>
+                 </td>
+                 <td>
+                  The text of the note, in a specific language.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/CodeNotePurposeType.html#REMARK" target="_blank">
+                   CodeNotePurposeType.REMARK
+                  </a>
+                 </td>
+                 <td>
+                  Additional information about the entity or property, to be considered by a human operator.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="routeTrajectoryGroup" style="padding-top: 120px; margin-top: -120px;">
+              routeTrajectoryGroup
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:routeTrajectoryGroup
+             </code>
+             <p>
+              A logical grouping for all Route Trajectory Groups associated with the flight. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#routeTrajectory" target="_blank">
+                   Flight.routeTrajectory
+                  </a>
+                 </td>
+                 <td>
+                  The description of movement of an aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="specialHandling" style="padding-top: 120px; margin-top: -120px;">
+              specialHandling
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:specialHandling
+             </code>
+             <p>
+              The reason for special handling of a flight by ATS. [adapted from ICAO Doc 4444, Appendix 2, ITEM 18 STS/]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Flight.html#reasonForSpecialHandling" target="_blank">
+                   Flight.reasonForSpecialHandling
+                  </a>
+                 </td>
+                 <td>
+                  The reason for special handling of a flight by ATS.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="supplementaryData" style="padding-top: 120px; margin-top: -120px;">
+              supplementaryData
+             </h4>
+             <code class="text-secondary">
+              fx:FlightType:supplementaryData
+             </code>
+             <p>
+              A container for supplementary data about the flight. This container does not capture the complete set of elements described in ICAO Doc 4444 ITEM 19 "Supplementary Information"; it only contains those elements that could not be modeled more logically in other FIXM structures. [FIXM]
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Not found in AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

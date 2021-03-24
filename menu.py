@@ -52,6 +52,10 @@ def main_menu():
     print('')
     print("8: create_mapping_item_pages adr_23.5.0")
     print('')
+    print("9: create_mapping_index_page fixm_4.2.0")
+    print('')
+    print("10: create_mapping_item_pages fixm_4.2.0")
+    print('')
     choice = input ("Please make a choice: ")
     print('')
 
