@@ -159,7 +159,7 @@ def create_class_detail_div(info_concept):
 
     p = soup.new_tag("p")
     p.string = str(info_concept["Rationale"])
-    print('Rationale:'+str(info_concept["Rationale"]))
+    #print('Rationale:'+str(info_concept["Rationale"]))
     class_div.insert(6,p)
 
   if str(info_concept["Notes"]) != "missing data":
