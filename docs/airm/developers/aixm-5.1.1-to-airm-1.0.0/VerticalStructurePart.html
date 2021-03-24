@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   VerticalStructurePart - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           VerticalStructurePart
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             VerticalStructurePart
+            </h2>
+            <code class="text-secondary">
+             VerticalStructurePart
+            </code>
+           </div>
+           <p>
+            A part of the vertical structure that can be represented as point, line or polygon with vertical extent.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#constructionStatus">
+                 constructionStatus
+                </a>
+               </td>
+               <td>
+                The status of construction of the man-made object that constitutes the vertical structure part.
+               </td>
+               <td>
+                <a href="(string) CodeStatusConstructionType	.html" target="_blank">
+                 (string) CodeStatusConstructionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                A distinguishing label by which the vertical structure part is identified locally.
+               </td>
+               <td>
+                <a href="(string) TextDesignatorType	.html" target="_blank">
+                 (string) TextDesignatorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#frangible">
+                 frangible
+                </a>
+               </td>
+               <td>
+                An indicator that the vertical structure part is easily broken.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#horizontalProjection">
+                 horizontalProjection
+                </a>
+               </td>
+               <td>
+                The three different possibilities for describing the horizontal projection of an obstacle: point, line or polygon
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lighting">
+                 lighting
+                </a>
+               </td>
+               <td>
+                An element of the vertical structure part lighting.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#markingFirstColour">
+                 markingFirstColour
+                </a>
+               </td>
+               <td>
+                The principal colour of the marking of the vertical structure part.
+               </td>
+               <td>
+                <a href="(string) CodeColourType	.html" target="_blank">
+                 (string) CodeColourType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#markingPattern">
+                 markingPattern
+                </a>
+               </td>
+               <td>
+                The general layout of the external paint or another marking element, intended to increase the visibility of the vertical structure part.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalStructureMarkingType	.html" target="_blank">
+                 (string) CodeVerticalStructureMarkingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#markingSecondColour">
+                 markingSecondColour
+                </a>
+               </td>
+               <td>
+                The secondary colour for the marking of the vertical structure part.
+               </td>
+               <td>
+                <a href="(string) CodeColourType	.html" target="_blank">
+                 (string) CodeColourType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#mobile">
+                 mobile
+                </a>
+               </td>
+               <td>
+                An indicator that the vertical structure part is expected to move around its nominal location.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                An indicator of the type of vertical structure part, such as building, tower, cable, etc.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalStructureType	.html" target="_blank">
+                 (string) CodeVerticalStructureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalExtent">
+                 verticalExtent
+                </a>
+               </td>
+               <td>
+                The vertical extent of the vertical structure part.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalExtentAccuracy">
+                 verticalExtentAccuracy
+                </a>
+               </td>
+               <td>
+                Accuracy of the value of the declared vertical extent of the vertical structure part.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#visibleMaterial">
+                 visibleMaterial
+                </a>
+               </td>
+               <td>
+                An indicator of the type(s) of material that compose the load-bearing structure and/or exterior facing of a vertical construction (for example: a building or non-building structure).
+               </td>
+               <td>
+                <a href="(string) CodeVerticalStructureMaterialType	.html" target="_blank">
+                 (string) CodeVerticalStructureMaterialType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VerticalStructurePart" style="padding-top: 120px; margin-top: -120px;">
+              VerticalStructurePart
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart
+             </code>
+             <p>
+              A part of the vertical structure that can be represented as point, line or polygon with vertical extent.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart" target="_blank">
+                   VerticalStructurePart
+                  </a>
+                 </td>
+                 <td>
+                  A part of the vertical structure that can be represented as point, line or polygon with vertical extent.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="constructionStatus" style="padding-top: 120px; margin-top: -120px;">
+              constructionStatus
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.constructionStatus
+             </code>
+             <p>
+              The status of construction of the man-made object that constitutes the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#constructionStatus" target="_blank">
+                   VerticalStructurePart.constructionStatus
+                  </a>
+                 </td>
+                 <td>
+                  The status of construction of the man-made object that constitutes the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="designator" style="padding-top: 120px; margin-top: -120px;">
+              designator
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.designator
+             </code>
+             <p>
+              A distinguishing label by which the vertical structure part is identified locally.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#designator" target="_blank">
+                   VerticalStructurePart.designator
+                  </a>
+                 </td>
+                 <td>
+                  A distinguishing label by which the vertical structure part is identified locally.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="frangible" style="padding-top: 120px; margin-top: -120px;">
+              frangible
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.frangible
+             </code>
+             <p>
+              An indicator that the vertical structure part is easily broken.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#isFrangible" target="_blank">
+                   VerticalStructurePart.isFrangible
+                  </a>
+                 </td>
+                 <td>
+                  An indicator that the vertical structure part is easily broken.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="horizontalProjection" style="padding-top: 120px; margin-top: -120px;">
+              horizontalProjection
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.horizontalProjection
+             </code>
+             <p>
+              The three different possibilities for describing the horizontal projection of an obstacle: point, line or polygon
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#curveExtent" target="_blank">
+                   GeoEnabledEntity.curveExtent
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as a curve which is a connected sequence of points.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#position" target="_blank">
+                   GeoEnabledEntity.position
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as the position of a point on the surface of the Earth.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#surfaceExtent" target="_blank">
+                   GeoEnabledEntity.surfaceExtent
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as a surface or area described by a closed line.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Multiple traces have been used to reflect the use of "or" in the AIXM definition
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lighting" style="padding-top: 120px; margin-top: -120px;">
+              lighting
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.lighting
+             </code>
+             <p>
+              An element of the vertical structure part lighting.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#lighting" target="_blank">
+                   VerticalStructurePart.lighting
+                  </a>
+                 </td>
+                 <td>
+                  An element of the vertical structure part lighting.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="markingFirstColour" style="padding-top: 120px; margin-top: -120px;">
+              markingFirstColour
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.markingFirstColour
+             </code>
+             <p>
+              The principal colour of the marking of the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#markingFirstColour" target="_blank">
+                   VerticalStructurePart.markingFirstColour
+                  </a>
+                 </td>
+                 <td>
+                  The principal colour of the marking of the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="markingPattern" style="padding-top: 120px; margin-top: -120px;">
+              markingPattern
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.markingPattern
+             </code>
+             <p>
+              The general layout of the external paint or another marking element, intended to increase the visibility of the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#markingPattern" target="_blank">
+                   VerticalStructurePart.markingPattern
+                  </a>
+                 </td>
+                 <td>
+                  The general layout of the external paint or another marking element, intended to increase the visibility of the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="markingSecondColour" style="padding-top: 120px; margin-top: -120px;">
+              markingSecondColour
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.markingSecondColour
+             </code>
+             <p>
+              The secondary colour for the marking of the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#markingSecondColour" target="_blank">
+                   VerticalStructurePart.markingSecondColour
+                  </a>
+                 </td>
+                 <td>
+                  The secondary colour for the marking of the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="mobile" style="padding-top: 120px; margin-top: -120px;">
+              mobile
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.mobile
+             </code>
+             <p>
+              An indicator that the vertical structure part is expected to move around its nominal location.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#isMobile" target="_blank">
+                   VerticalStructurePart.isMobile
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the vertical structure part is expected to move around its nominal location.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="type" style="padding-top: 120px; margin-top: -120px;">
+              type
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.type
+             </code>
+             <p>
+              An indicator of the type of vertical structure part, such as building, tower, cable, etc.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#type" target="_blank">
+                   VerticalStructurePart.type
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the type of vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalExtent" style="padding-top: 120px; margin-top: -120px;">
+              verticalExtent
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.verticalExtent
+             </code>
+             <p>
+              The vertical extent of the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#verticalExtent" target="_blank">
+                   VerticalStructurePart.verticalExtent
+                  </a>
+                 </td>
+                 <td>
+                  The vertical extent of the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalExtentAccuracy" style="padding-top: 120px; margin-top: -120px;">
+              verticalExtentAccuracy
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.verticalExtentAccuracy
+             </code>
+             <p>
+              Accuracy of the value of the declared vertical extent of the vertical structure part.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#verticalExtentAccuracy" target="_blank">
+                   VerticalStructurePart.verticalExtentAccuracy
+                  </a>
+                 </td>
+                 <td>
+                  Accuracy of the value of the declared vertical extent of the vertical structure part.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="visibleMaterial" style="padding-top: 120px; margin-top: -120px;">
+              visibleMaterial
+             </h4>
+             <code class="text-secondary">
+              VerticalStructurePart.visibleMaterial
+             </code>
+             <p>
+              An indicator of the type(s) of material that compose the load-bearing structure and/or exterior facing of a vertical construction (for example: a building or non-building structure).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VerticalStructurePart.html#visibleMaterial" target="_blank">
+                   VerticalStructurePart.visibleMaterial
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the type(s) of material that compose the load-bearing structure and/or exterior facing of a vertical construction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

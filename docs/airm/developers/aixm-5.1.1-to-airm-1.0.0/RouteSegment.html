@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   RouteSegment - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           RouteSegment
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             RouteSegment
+            </h2>
+            <code class="text-secondary">
+             RouteSegment
+            </code>
+           </div>
+           <p>
+            A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational availability of the RouteSegment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#curveExtent">
+                 curveExtent
+                </a>
+               </td>
+               <td>
+                The extent of the route segment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorSuffix">
+                 designatorSuffix
+                </a>
+               </td>
+               <td>
+                A suffix for the route designator (according ICAO Annex 11), indicating whether advisory service only is available on that portion, or the RNP status of the route portion.
+               </td>
+               <td>
+                <a href="(string) CodeRouteDesignatorSuffixType	.html" target="_blank">
+                 (string) CodeRouteDesignatorSuffixType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#end">
+                 end
+                </a>
+               </td>
+               <td>
+                The end EnRouteSegmentPoint for the Route Segment
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#evaluationArea">
+                 evaluationArea
+                </a>
+               </td>
+               <td>
+                The obstacle evaluation area for the route segment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#length">
+                 length
+                </a>
+               </td>
+               <td>
+                The length of the path (depending on the type of the path).
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#level">
+                 level
+                </a>
+               </td>
+               <td>
+                A code indicating if the route segment is in the upper airspace, the lower airspace or both.
+               </td>
+               <td>
+                <a href="(string) CodeLevelType	.html" target="_blank">
+                 (string) CodeLevelType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowerLimit">
+                 lowerLimit
+                </a>
+               </td>
+               <td>
+                The vertical position of the route segment floor.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowerLimitReference">
+                 lowerLimitReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the lower limit. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticTrack">
+                 magneticTrack
+                </a>
+               </td>
+               <td>
+                The initial magnetic track.
+               </td>
+               <td>
+                <a href="(decimal) ValBearingType	.html" target="_blank">
+                 (decimal) ValBearingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#maximumCrossingAtEnd">
+                 maximumCrossingAtEnd
+                </a>
+               </td>
+               <td>
+                The uppermost vertical position at the end point, when flying on the route portion in the direction indicated in the RoutePortionUsage.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#maximumCrossingAtEndReference">
+                 maximumCrossingAtEndReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the maximumCrossingAtEnd. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumCrossingAtEnd">
+                 minimumCrossingAtEnd
+                </a>
+               </td>
+               <td>
+                The lowermost vertical position at the end point, when flying on the route portion in the direction indicated in the RoutePortionUsage.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumCrossingAtEndReference">
+                 minimumCrossingAtEndReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the minimumCrossingAtEnd. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumEnrouteAltitude">
+                 minimumEnrouteAltitude
+                </a>
+               </td>
+               <td>
+                Minimum en-route altitude (MEA). The altitude for an en-route segment that provides adequate reception of relevant navigation facilities and ATS communications, complies with the airspace structure and provides the required obstacle clearance.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumObstacleClearanceAltitude">
+                 minimumObstacleClearanceAltitude
+                </a>
+               </td>
+               <td>
+                Minimum obstacle clearance altitude (MOCA). The minimum altitude for a defined segment of flight that provides the required obstacle clearance.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#navigationType">
+                 navigationType
+                </a>
+               </td>
+               <td>
+                Classification of the Route Portion for navigational purposes. Examples: conventional, RNAV.
+               </td>
+               <td>
+                <a href="(string) CodeRouteNavigationType	.html" target="_blank">
+                 (string) CodeRouteNavigationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#pathType">
+                 pathType
+                </a>
+               </td>
+               <td>
+                The type of segment path. For example, great circle, rhumbline, geodesic line, etc.
+               </td>
+               <td>
+                <a href="(string) CodeRouteSegmentPathType	.html" target="_blank">
+                 (string) CodeRouteSegmentPathType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#requiredNavigationPerformance">
+                 requiredNavigationPerformance
+                </a>
+               </td>
+               <td>
+                A code indicating the required navigation performance for the route portion
+               </td>
+               <td>
+                <a href="(string) CodeRNPType	.html" target="_blank">
+                 (string) CodeRNPType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reverseMagneticTrack">
+                 reverseMagneticTrack
+                </a>
+               </td>
+               <td>
+                The reverse initial magnetic track.
+               </td>
+               <td>
+                <a href="(decimal) ValBearingType	.html" target="_blank">
+                 (decimal) ValBearingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reverseTrueTrack">
+                 reverseTrueTrack
+                </a>
+               </td>
+               <td>
+                The reverse initial true track.
+               </td>
+               <td>
+                <a href="(decimal) ValBearingType	.html" target="_blank">
+                 (decimal) ValBearingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#routeFormed">
+                 routeFormed
+                </a>
+               </td>
+               <td>
+                The route formed by the Route Segments.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#signalGap">
+                 signalGap
+                </a>
+               </td>
+               <td>
+                indicates a signal gap in the segment
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#start">
+                 start
+                </a>
+               </td>
+               <td>
+                The start EnRouteSegmentPoint for the Route Segment
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#trueTrack">
+                 trueTrack
+                </a>
+               </td>
+               <td>
+                The initial true track.
+               </td>
+               <td>
+                <a href="(decimal) ValBearingType	.html" target="_blank">
+                 (decimal) ValBearingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#turnDirection">
+                 turnDirection
+                </a>
+               </td>
+               <td>
+                Indicates the turn direction (if any) at the end of the current segment, in order to continue on to the next segment of the same route.
+               </td>
+               <td>
+                <a href="(string) CodeDirectionTurnType	.html" target="_blank">
+                 (string) CodeDirectionTurnType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#upperLimit">
+                 upperLimit
+                </a>
+               </td>
+               <td>
+                The vertical position of the route segment ceiling.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#upperLimitReference">
+                 upperLimitReference
+                </a>
+               </td>
+               <td>
+                The reference surface used for the value of the upper limit. For example, Mean Sea Level, Ground, standard pressure,  etc..
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#widthLeft">
+                 widthLeft
+                </a>
+               </td>
+               <td>
+                The distance from the centreline of the route segment to the left edge, when considering the direction from the start point to the end point.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#widthRight">
+                 widthRight
+                </a>
+               </td>
+               <td>
+                The distance from the centreline of the route segment to the right edge, when considering the direction from the start point to the end point.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RouteSegment" style="padding-top: 120px; margin-top: -120px;">
+              RouteSegment
+             </h4>
+             <code class="text-secondary">
+              RouteSegment
+             </code>
+             <p>
+              A portion of a route to be flown usually without an intermediate stop, as defined by two consecutive significant points.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment" target="_blank">
+                   RouteSegment
+                  </a>
+                 </td>
+                 <td>
+                  A route or portion of route usually flown without an intermediate stop.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="availability" style="padding-top: 120px; margin-top: -120px;">
+              availability
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.availability
+             </code>
+             <p>
+              The operational availability of the RouteSegment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#availability" target="_blank">
+                   RouteSegment.availability
+                  </a>
+                 </td>
+                 <td>
+                  The operational availability of the route segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="curveExtent" style="padding-top: 120px; margin-top: -120px;">
+              curveExtent
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.curveExtent
+             </code>
+             <p>
+              The extent of the route segment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#curveExtent" target="_blank">
+                   GeoEnabledEntity.curveExtent
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as a curve which is a connected sequence of points.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="designatorSuffix" style="padding-top: 120px; margin-top: -120px;">
+              designatorSuffix
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.designatorSuffix
+             </code>
+             <p>
+              A suffix for the route designator (according ICAO Annex 11), indicating whether advisory service only is available on that portion, or the RNP status of the route portion.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#designatorSuffix" target="_blank">
+                   RouteSegment.designatorSuffix
+                  </a>
+                 </td>
+                 <td>
+                  A suffix for the route designator defined in accordance with ICAO Annex 11.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="end" style="padding-top: 120px; margin-top: -120px;">
+              end
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.end
+             </code>
+             <p>
+              The end EnRouteSegmentPoint for the Route Segment
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#endEnRouteSegmentPoint" target="_blank">
+                   RouteSegment.endEnRouteSegmentPoint
+                  </a>
+                 </td>
+                 <td>
+                  The end en-route segment point for the route segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="evaluationArea" style="padding-top: 120px; margin-top: -120px;">
+              evaluationArea
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.evaluationArea
+             </code>
+             <p>
+              The obstacle evaluation area for the route segment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#evaluationArea" target="_blank">
+                   RouteSegment.evaluationArea
+                  </a>
+                 </td>
+                 <td>
+                  The obstacle evaluation area for the route segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="length" style="padding-top: 120px; margin-top: -120px;">
+              length
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.length
+             </code>
+             <p>
+              The length of the path (depending on the type of the path).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#length" target="_blank">
+                   RouteSegment.length
+                  </a>
+                 </td>
+                 <td>
+                  The length of the path.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="level" style="padding-top: 120px; margin-top: -120px;">
+              level
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.level
+             </code>
+             <p>
+              A code indicating if the route segment is in the upper airspace, the lower airspace or both.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#level" target="_blank">
+                   RouteSegment.level
+                  </a>
+                 </td>
+                 <td>
+                  A code indicating if the route segment is in the upper airspace, the lower airspace or both.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lowerLimit" style="padding-top: 120px; margin-top: -120px;">
+              lowerLimit
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.lowerLimit
+             </code>
+             <p>
+              The vertical position of the route segment floor.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#lowerLimit" target="_blank">
+                   RouteSegment.lowerLimit
+                  </a>
+                 </td>
+                 <td>
+                  The vertical position of the route segment floor.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lowerLimitReference" style="padding-top: 120px; margin-top: -120px;">
+              lowerLimitReference
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.lowerLimitReference
+             </code>
+             <p>
+              The reference surface used for the value of the lower limit. For example, Mean Sea Level, Ground, standard pressure,  etc..
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticTrack" style="padding-top: 120px; margin-top: -120px;">
+              magneticTrack
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.magneticTrack
+             </code>
+             <p>
+              The initial magnetic track.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#magneticTrack" target="_blank">
+                   RouteSegment.magneticTrack
+                  </a>
+                 </td>
+                 <td>
+                  The initial magnetic track.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="maximumCrossingAtEnd" style="padding-top: 120px; margin-top: -120px;">
+              maximumCrossingAtEnd
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.maximumCrossingAtEnd
+             </code>
+             <p>
+              The uppermost vertical position at the end point, when flying on the route portion in the direction indicated in the RoutePortionUsage.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#maximumCrossingAtEnd" target="_blank">
+                   RouteSegment.maximumCrossingAtEnd
+                  </a>
+                 </td>
+                 <td>
+                  The uppermost vertical position at the end point, when flying on the route portion in the direction indicated in the route portion usage.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="maximumCrossingAtEndReference" style="padding-top: 120px; margin-top: -120px;">
+              maximumCrossingAtEndReference
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.maximumCrossingAtEndReference
+             </code>
+             <p>
+              The reference surface used for the value of the maximumCrossingAtEnd. For example, Mean Sea Level, Ground, standard pressure,  etc..
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="minimumCrossingAtEnd" style="padding-top: 120px; margin-top: -120px;">
+              minimumCrossingAtEnd
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.minimumCrossingAtEnd
+             </code>
+             <p>
+              The lowermost vertical position at the end point, when flying on the route portion in the direction indicated in the RoutePortionUsage.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#minimumCrossingAtEnd" target="_blank">
+                   RouteSegment.minimumCrossingAtEnd
+                  </a>
+                 </td>
+                 <td>
+                  The lowermost vertical position at the end point, when flying on the route portion in the direction indicated in the route portion usage.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="minimumCrossingAtEndReference" style="padding-top: 120px; margin-top: -120px;">
+              minimumCrossingAtEndReference
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.minimumCrossingAtEndReference
+             </code>
+             <p>
+              The reference surface used for the value of the minimumCrossingAtEnd. For example, Mean Sea Level, Ground, standard pressure,  etc..
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="minimumEnrouteAltitude" style="padding-top: 120px; margin-top: -120px;">
+              minimumEnrouteAltitude
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.minimumEnrouteAltitude
+             </code>
+             <p>
+              Minimum en-route altitude (MEA). The altitude for an en-route segment that provides adequate reception of relevant navigation facilities and ATS communications, complies with the airspace structure and provides the required obstacle clearance.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#minimumEnrouteAltitude" target="_blank">
+                   RouteSegment.minimumEnrouteAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The altitude for an en-route segment that provides adequate reception of relevant navigation facilities and ATS communications, complies with the airspace structure and provides the required obstacle clearance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="minimumObstacleClearanceAltitude" style="padding-top: 120px; margin-top: -120px;">
+              minimumObstacleClearanceAltitude
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.minimumObstacleClearanceAltitude
+             </code>
+             <p>
+              Minimum obstacle clearance altitude (MOCA). The minimum altitude for a defined segment of flight that provides the required obstacle clearance.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#minimumObstacleClearanceAltitude" target="_blank">
+                   RouteSegment.minimumObstacleClearanceAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The minimum altitude for a defined segment of flight that provides the required obstacle clearance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="navigationType" style="padding-top: 120px; margin-top: -120px;">
+              navigationType
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.navigationType
+             </code>
+             <p>
+              Classification of the Route Portion for navigational purposes. Examples: conventional, RNAV.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#navigationType" target="_blank">
+                   RouteSegment.navigationType
+                  </a>
+                 </td>
+                 <td>
+                  Classification of the route portion for navigational purposes.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="pathType" style="padding-top: 120px; margin-top: -120px;">
+              pathType
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.pathType
+             </code>
+             <p>
+              The type of segment path. For example, great circle, rhumbline, geodesic line, etc.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#pathType" target="_blank">
+                   RouteSegment.pathType
+                  </a>
+                 </td>
+                 <td>
+                  The type of segment path.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="requiredNavigationPerformance" style="padding-top: 120px; margin-top: -120px;">
+              requiredNavigationPerformance
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.requiredNavigationPerformance
+             </code>
+             <p>
+              A code indicating the required navigation performance for the route portion
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#requiredNavigationPerformance" target="_blank">
+                   RouteSegment.requiredNavigationPerformance
+                  </a>
+                 </td>
+                 <td>
+                  The required navigation performance for the route portion expressed in NM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="reverseMagneticTrack" style="padding-top: 120px; margin-top: -120px;">
+              reverseMagneticTrack
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.reverseMagneticTrack
+             </code>
+             <p>
+              The reverse initial magnetic track.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#reverseMagneticTrack" target="_blank">
+                   RouteSegment.reverseMagneticTrack
+                  </a>
+                 </td>
+                 <td>
+                  The reverse initial magnetic track.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="reverseTrueTrack" style="padding-top: 120px; margin-top: -120px;">
+              reverseTrueTrack
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.reverseTrueTrack
+             </code>
+             <p>
+              The reverse initial true track.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#reverseTrueTrack" target="_blank">
+                   RouteSegment.reverseTrueTrack
+                  </a>
+                 </td>
+                 <td>
+                  The reverse initial true track.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="routeFormed" style="padding-top: 120px; margin-top: -120px;">
+              routeFormed
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.routeFormed
+             </code>
+             <p>
+              The route formed by the Route Segments.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#routeFormed" target="_blank">
+                   RouteSegment.routeFormed
+                  </a>
+                 </td>
+                 <td>
+                  The route formed partly by the route segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="signalGap" style="padding-top: 120px; margin-top: -120px;">
+              signalGap
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.signalGap
+             </code>
+             <p>
+              indicates a signal gap in the segment
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#hasSignalGap" target="_blank">
+                   RouteSegment.hasSignalGap
+                  </a>
+                 </td>
+                 <td>
+                  Indication of a signal gap in the segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="start" style="padding-top: 120px; margin-top: -120px;">
+              start
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.start
+             </code>
+             <p>
+              The start EnRouteSegmentPoint for the Route Segment
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#startEnRouteSegmentPoint" target="_blank">
+                   RouteSegment.startEnRouteSegmentPoint
+                  </a>
+                 </td>
+                 <td>
+                  The start en-route segment point for the route segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="trueTrack" style="padding-top: 120px; margin-top: -120px;">
+              trueTrack
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.trueTrack
+             </code>
+             <p>
+              The initial true track.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#trueTrack" target="_blank">
+                   RouteSegment.trueTrack
+                  </a>
+                 </td>
+                 <td>
+                  The initial true track.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="turnDirection" style="padding-top: 120px; margin-top: -120px;">
+              turnDirection
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.turnDirection
+             </code>
+             <p>
+              Indicates the turn direction (if any) at the end of the current segment, in order to continue on to the next segment of the same route.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#turnDirection" target="_blank">
+                   RouteSegment.turnDirection
+                  </a>
+                 </td>
+                 <td>
+                  The turn direction, if any, at the end of the segment in order to continue on to the next segment of the same route.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="upperLimit" style="padding-top: 120px; margin-top: -120px;">
+              upperLimit
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.upperLimit
+             </code>
+             <p>
+              The vertical position of the route segment ceiling.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#upperLimit" target="_blank">
+                   RouteSegment.upperLimit
+                  </a>
+                 </td>
+                 <td>
+                  The vertical position of the route segment ceiling.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="upperLimitReference" style="padding-top: 120px; margin-top: -120px;">
+              upperLimitReference
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.upperLimitReference
+             </code>
+             <p>
+              The reference surface used for the value of the upper limit. For example, Mean Sea Level, Ground, standard pressure,  etc..
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="widthLeft" style="padding-top: 120px; margin-top: -120px;">
+              widthLeft
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.widthLeft
+             </code>
+             <p>
+              The distance from the centreline of the route segment to the left edge, when considering the direction from the start point to the end point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#widthLeft" target="_blank">
+                   RouteSegment.widthLeft
+                  </a>
+                 </td>
+                 <td>
+                  The distance from the centreline of the route segment to the left edge, when considering the direction from the start point to the end point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="widthRight" style="padding-top: 120px; margin-top: -120px;">
+              widthRight
+             </h4>
+             <code class="text-secondary">
+              RouteSegment.widthRight
+             </code>
+             <p>
+              The distance from the centreline of the route segment to the right edge, when considering the direction from the start point to the end point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RouteSegment.html#widthRight" target="_blank">
+                   RouteSegment.widthRight
+                  </a>
+                 </td>
+                 <td>
+                  The distance from the centreline of the route segment to the right edge, when considering the direction from the start point to the end point.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

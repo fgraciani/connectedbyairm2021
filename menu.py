@@ -33,6 +33,7 @@ def main_menu():
   """Print the main menu and wait for a selection."""
   choice ='0'
   while choice =='0':
+    print('')
     print("Menu: ")
     print('')
     print("1: create_mapping_index_page icao_wxxm_3.0.0")
@@ -42,6 +43,10 @@ def main_menu():
     print("3: create_mapping_index_page amxm_2.0.0")
     print('')
     print("4: create_mapping_item_pages amxm_2.0.0")
+    print('')
+    print("5: create_mapping_index_page aixm_5.1.1")
+    print('')
+    print("6: create_mapping_item_pages aixm_5.1.1")
     print('')
     choice = input ("Please make a choice: ")
     print('')
@@ -69,8 +74,20 @@ def main_menu():
         import mapping2html
         mapping2html.create_mapping_item_pages("xlsx/AMXM_2.0.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
+        main_menu()   
+    elif choice == "5":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_index_page("xlsx/AIXM_5.1.1_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concept-list-template.html")
+        print("Done.")
+        main_menu()    
+    elif choice == "6":
+        print('\n')
+        import mapping2html
+        mapping2html.create_mapping_item_pages("xlsx/AIXM_5.1.1_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
+        print("Done.")
         main_menu()
     elif choice == "99":
-        test_menu()  
+        test()  
     
  

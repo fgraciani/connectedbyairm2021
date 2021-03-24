@@ -257,7 +257,7 @@ def create_property_detail_div(data_concept):
 
     p = soup.new_tag("p")
     p.string = str(data_concept["Rationale"])
-    print('Rationale:'+str(data_concept["Rationale"]))
+    #print('Rationale:'+str(data_concept["Rationale"]))
     property_div.insert(6,p)
 
   if str(data_concept["Notes"]) != "missing data":
@@ -312,8 +312,8 @@ def create_semantic_correspondence_table(data_concept):
     airm = airm.Airm()
     urns = str(data_concept['AIRM Concept Identifier']).split('\n')
     for urn in urns:
-      if urn != '':
-        airm_concept = airm.get_concept(urn)
+      airm_concept = airm.get_concept(urn)
+      if airm_concept != None:
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
         a = soup.new_tag("a")
@@ -332,8 +332,8 @@ def create_semantic_correspondence_table(data_concept):
     airm = airm.Airm()
     urns = str(data_concept['Additional Traces']).split('\n')
     for urn in urns:
-      if urn != '':
-        airm_concept = airm.get_concept(urn)
+      airm_concept = airm.get_concept(urn)
+      if airm_concept != None:
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
         spam = soup.new_tag("spam")
@@ -359,8 +359,8 @@ def create_semantic_correspondence_table(data_concept):
     airm = airm.Airm()
     parts = str(data_concept['Special cases \n(CR, OutOfScope, Not Established)']).split('\n')
     for case in parts:
-      if case != '':
-        airm_concept = airm.get_concept(case)
+      airm_concept = airm.get_concept(case)
+      if airm_concept != None:
         tr = soup.new_tag("tr")
         td = soup.new_tag("td")
         a = soup.new_tag("a")
@@ -404,10 +404,10 @@ def create_index_table_row(mapping_entry, mapping_metadata):
 
   td_dc_name = soup.new_tag("td")
   if mapping_entry["Data Concept"] != "missing data":
-    text = mapping_entry["Data Concept"]
+    text = str(mapping_entry["Data Concept"])
     new_link = soup.new_tag("a")
     print(str(mapping_entry["Information Concept"])+"."+str(mapping_entry["Data Concept"]))
-    new_link['href'] = mapping_metadata["url_name"] + "/" + mapping_entry["Information Concept"] + ".html" + "#" + mapping_entry["Data Concept"]
+    new_link['href'] = mapping_metadata["url_name"] + "/" + mapping_entry["Information Concept"] + ".html" + "#" + str(mapping_entry["Data Concept"])
     new_link['target'] = "_blank"
     new_link.string = text
     td_dc_name.insert(1,new_link)
