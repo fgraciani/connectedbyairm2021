@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   MeteorologicalAerodromeObservation - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../icao-wxxm-3.0.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           ICAO WXXM 3.0.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           MeteorologicalAerodromeObservation
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             MeteorologicalAerodromeObservation
+            </h2>
+            <code class="text-secondary">
+             MeteorologicalAerodromeObservation
+            </code>
+           </div>
+           <p>
+            Meteorological conditions observed at an aerodrome. When no clouds of operational significance or no weather of operational significance is observed, the NothingOfOperationalSignificance nilReason is used for the cloud or presentWeather association. When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason is used for the cloud association.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#airTemperature">
+                 airTemperature
+                </a>
+               </td>
+               <td>
+                The observed air temperature.  This is the temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation. Measured air temperature shall be given in degrees Celsius (Cel")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloud">
+                 cloud
+                </a>
+               </td>
+               <td>
+                When no clouds are detected by the automatic observing system, it should be indicated by a missing cloud group with a nil reason of notDetectedByAutoSystem (NCD" from TAC).
+               </td>
+               <td>
+                <a href="AerodromeCloud.html" target="_blank">
+                 AerodromeCloud
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cloudAndVisibilityOK">
+                 cloudAndVisibilityOK
+                </a>
+               </td>
+               <td>
+                When true, indicates that the following conditions occur simultaneously at the time of observation (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dewpointTemperature">
+                 dewpointTemperature
+                </a>
+               </td>
+               <td>
+                The observed dew point temperature.  This is the temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur. Measured dew-point temperature shall be given in degrees Celsius (Cel")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#presentWeather">
+                 presentWeather
+                </a>
+               </td>
+               <td>
+                When observed, between one and three present weather conditions
+When present weather cannot be observed by the automatic observing system due to a temporary failure of the system/sensor (//") the present weather is missing with a nil reason of notObservab"
+               </td>
+               <td>
+                <a href="AerodromePresentWeather.html" target="_blank">
+                 AerodromePresentWeather
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#qnh">
+                 qnh
+                </a>
+               </td>
+               <td>
+                The observed QNH altimeter setting. Altitude setting (also known as QNH) is defined as barometric pressure adjusted to sea level. It is a pressure setting used by pilots, air traffic control (ATC), and low frequency weather beacons to refer to the barometric setting which, when set on an aircraft's altimeter, will cause the altimeter to read altitude above mean sea level within a certain defined region. Measured altimeter setting shall be given in hectoPascals (hPa")."
+               </td>
+               <td>
+                <a href="MeasureWithNilReason.html" target="_blank">
+                 MeasureWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#recentWeather">
+                 recentWeather
+                </a>
+               </td>
+               <td>
+                Recent weather is one of the recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeRecentWeather.html" target="_blank">
+                 AerodromeRecentWeather
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#runwayState">
+                 runwayState
+                </a>
+               </td>
+               <td>
+                When runways are affected by snow, slush, or other contaminants, a runway state report for each runway in use is required.
+There is no maximum number of runway states that can be reported.  This may be changed in a future amendment.
+               </td>
+               <td>
+                <a href="AerodromeRunwayState.html" target="_blank">
+                 AerodromeRunwayState
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rvr">
+                 rvr
+                </a>
+               </td>
+               <td>
+                RVR conditions are required if horizontal visibility or RVR is less than 1500 meters, up to a maximum of four runways
+               </td>
+               <td>
+                <a href="AerodromeRunwayVisualRange.html" target="_blank">
+                 AerodromeRunwayVisualRange
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#seaCondition">
+                 seaCondition
+                </a>
+               </td>
+               <td>
+                Sea surface temperature and state of the sea or significant wave height are recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeSeaCondition.html" target="_blank">
+                 AerodromeSeaCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#surfaceWind">
+                 surfaceWind
+                </a>
+               </td>
+               <td>
+                Representative surface wind observations.
+               </td>
+               <td>
+                <a href="AerodromeSurfaceWind.html" target="_blank">
+                 AerodromeSurfaceWind
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windShear">
+                 windShear
+                </a>
+               </td>
+               <td>
+                Wind shear is one of the recent weather phenomena to be reported as supplementary information.
+               </td>
+               <td>
+                <a href="AerodromeWindShear.html" target="_blank">
+                 AerodromeWindShear
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="MeteorologicalAerodromeObservation" style="padding-top: 120px; margin-top: -120px;">
+              MeteorologicalAerodromeObservation
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation
+             </code>
+             <p>
+              Meteorological conditions observed at an aerodrome. When no clouds of operational significance or no weather of operational significance is observed, the NothingOfOperationalSignificance nilReason is used for the cloud or presentWeather association. When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason is used for the cloud association.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              container
+             </p>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              In Logical Model: urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="airTemperature" style="padding-top: 120px; margin-top: -120px;">
+              airTemperature
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.airTemperature
+             </code>
+             <p>
+              The observed air temperature.  This is the temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation. Measured air temperature shall be given in degrees Celsius (Cel")."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AviationCondition.html#airTemperature" target="_blank">
+                   AviationCondition.airTemperature
+                  </a>
+                 </td>
+                 <td>
+                  The temperature indicated by a thermometer exposed to the air in a place sheltered from direct solar radiation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="cloud" style="padding-top: 120px; margin-top: -120px;">
+              cloud
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.cloud
+             </code>
+             <p>
+              When no clouds are detected by the automatic observing system, it should be indicated by a missing cloud group with a nil reason of notDetectedByAutoSystem (NCD" from TAC).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
+                   WeatherCondition.phenomenon
+                  </a>
+                 </td>
+                 <td>
+                  The phenomenon of relevance for the weather condition.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/Cloud" target="_blank">
+                   Cloud
+                  </a>
+                 </td>
+                 <td>
+                  A hydrometeor consisting of minute particles of liquid water or ice, or of both, suspended in the free air and usually not touching the ground. It may also include larger particles of liquid water or ice and non-aqueous liquid or solid particles such as those present in fumes, smoke and dust.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="cloudAndVisibilityOK" style="padding-top: 120px; margin-top: -120px;">
+              cloudAndVisibilityOK
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.cloudAndVisibilityOK
+             </code>
+             <p>
+              When true, indicates that the following conditions occur simultaneously at the time of observation (also know as CAVOK"): a) visibility, 10km or more, and the lowest visibility is not reported b) no cloud of operational significance c) no weather of significance to aviation Information on visibility, runway visual range, present weather and cloud amount, cloud type and height of cloud base shall not be reported.  See ICAO Annex 3 / WMO No. 49-2 Section 2.2."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#cavok" target="_blank">
+                   AerodromeCondition.cavok
+                  </a>
+                 </td>
+                 <td>
+                  Visibility, cloud and present weather better than prescribed values or conditions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dewpointTemperature" style="padding-top: 120px; margin-top: -120px;">
+              dewpointTemperature
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.dewpointTemperature
+             </code>
+             <p>
+              The observed dew point temperature.  This is the temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur. Measured dew-point temperature shall be given in degrees Celsius (Cel")."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AviationCondition.html#dewpointTemperature" target="_blank">
+                   AviationCondition.dewpointTemperature
+                  </a>
+                 </td>
+                 <td>
+                  The temperature to which a given air parcel must be cooled at constant pressure and constant water vapor content in order for saturation to occur.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="presentWeather" style="padding-top: 120px; margin-top: -120px;">
+              presentWeather
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.presentWeather
+             </code>
+             <p>
+              When observed, between one and three present weather conditions
+When present weather cannot be observed by the automatic observing system due to a temporary failure of the system/sensor (//") the present weather is missing with a nil reason of notObservab"
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              role played by Aerodrome in this specific application context this is implicitly in the AIRM
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="qnh" style="padding-top: 120px; margin-top: -120px;">
+              qnh
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.qnh
+             </code>
+             <p>
+              The observed QNH altimeter setting. Altitude setting (also known as QNH) is defined as barometric pressure adjusted to sea level. It is a pressure setting used by pilots, air traffic control (ATC), and low frequency weather beacons to refer to the barometric setting which, when set on an aircraft's altimeter, will cause the altimeter to read altitude above mean sea level within a certain defined region. Measured altimeter setting shall be given in hectoPascals (hPa")."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#qnh" target="_blank">
+                   AerodromeCondition.qnh
+                  </a>
+                 </td>
+                 <td>
+                  Q Code corresponding to the derived atmospheric pressure at Mean Sea Level, based on the atmospheric pressure at the reference point converted using the characteristics of the ICAO Standard Atmosphere.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="recentWeather" style="padding-top: 120px; margin-top: -120px;">
+              recentWeather
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.recentWeather
+             </code>
+             <p>
+              Recent weather is one of the recent weather phenomena to be reported as supplementary information.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              role played by AerodromeRecentWeather in this specific application context
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="runwayState" style="padding-top: 120px; margin-top: -120px;">
+              runwayState
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.runwayState
+             </code>
+             <p>
+              When runways are affected by snow, slush, or other contaminants, a runway state report for each runway in use is required.
+There is no maximum number of runway states that can be reported.  This may be changed in a future amendment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayCondition.html#runway" target="_blank">
+                   RunwayCondition.runway
+                  </a>
+                 </td>
+                 <td>
+                  The runway which is subject to observation or forecast.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="rvr" style="padding-top: 120px; margin-top: -120px;">
+              rvr
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.rvr
+             </code>
+             <p>
+              RVR conditions are required if horizontal visibility or RVR is less than 1500 meters, up to a maximum of four runways
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RunwayCondition.html#rvr" target="_blank">
+                   RunwayCondition.rvr
+                  </a>
+                 </td>
+                 <td>
+                  The observed or forecast runway visual range.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="seaCondition" style="padding-top: 120px; margin-top: -120px;">
+              seaCondition
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.seaCondition
+             </code>
+             <p>
+              Sea surface temperature and state of the sea or significant wave height are recent weather phenomena to be reported as supplementary information.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#aerodromeSeaState" target="_blank">
+                   AerodromeCondition.aerodromeSeaState
+                  </a>
+                 </td>
+                 <td>
+                  Sea state conditions typically reported together at an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="surfaceWind" style="padding-top: 120px; margin-top: -120px;">
+              surfaceWind
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.surfaceWind
+             </code>
+             <p>
+              Representative surface wind observations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
+                   WeatherCondition.phenomenon
+                  </a>
+                 </td>
+                 <td>
+                  The phenomenon of relevance for the weather condition.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/Wind" target="_blank">
+                   Wind
+                  </a>
+                 </td>
+                 <td>
+                  Air motion relative to the Earth's surface. Unless otherwise specified, only the horizontal component is considered.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="windShear" style="padding-top: 120px; margin-top: -120px;">
+              windShear
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation.windShear
+             </code>
+             <p>
+              Wind shear is one of the recent weather phenomena to be reported as supplementary information.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#phenomenon" target="_blank">
+                   WeatherCondition.phenomenon
+                  </a>
+                 </td>
+                 <td>
+                  The phenomenon of relevance for the weather condition.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/WindShear" target="_blank">
+                   WindShear
+                  </a>
+                 </td>
+                 <td>
+                  Local variation of the wind vector or any of its components in a given direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

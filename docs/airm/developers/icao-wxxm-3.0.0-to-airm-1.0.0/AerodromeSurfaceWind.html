@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   AerodromeSurfaceWind - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../icao-wxxm-3.0.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           ICAO WXXM 3.0.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           AerodromeSurfaceWind
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             AerodromeSurfaceWind
+            </h2>
+            <code class="text-secondary">
+             AerodromeSurfaceWind
+            </code>
+           </div>
+           <p>
+            An aggregation of surface wind conditions typically reported together at an aerodrome, including wind direction information, wind speed, and wind gusts.
+
+Wind direction is reported according to ICAO Annex 3 / WMO No. 49-2 Section 4.1.5.2b:
+"variations from the mean wind direction during the past 10 minutes is reported as follows, if the total variation is 60 or more:
+1) when the total variation is 60 or more and less than 180 and the wind speed is 1.5 m/s (3 kt) or more, such directional variations are reported as the two extreme directions between which the surface wind has varied;
+2) when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction is reported as variable with no mean wind direction; or
+3) when the total variation is 180 or more, the wind direction is reported as variable with no mean wind direction"
+
+Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is "deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0. Wind speeds and gusts, if present, shall be provided in either two units of measures: "m/s" or "[kn_i]" (knot)
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#extremeClockwiseWindDirection">
+                 extremeClockwiseWindDirection
+                </a>
+               </td>
+               <td>
+                The extreme clockwise direction from which the wind has varied, inclusive. This corresponds to the dxdxdx part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#extremeCounterClockwiseWindDirection">
+                 extremeCounterClockwiseWindDirection
+                </a>
+               </td>
+               <td>
+                The extreme counter-clockwise direction from which the wind has varied, inclusive. This corresponds to the dndndn part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindDirection">
+                 meanWindDirection
+                </a>
+               </td>
+               <td>
+                The observed average wind direction from which the wind is blowing over the past ten minutes.  Not reported when winds are variable. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0."
+               </td>
+               <td>
+                <a href="AngleWithNilReason.html" target="_blank">
+                 AngleWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindSpeed">
+                 meanWindSpeed
+                </a>
+               </td>
+               <td>
+                The average observed wind speed over the past ten minutes ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2a Wind speeds shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="VelocityWithNilReason.html" target="_blank">
+                 VelocityWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#meanWindSpeedOperator">
+                 meanWindSpeedOperator
+                </a>
+               </td>
+               <td>
+                Indication that the mean wind speed is above or below the reported value.  To report a wind speed of at least 49 meters per second, wind speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind speed is an exact value with identical semantics to other measured quantities."
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#variableWindDirection">
+                 variableWindDirection
+                </a>
+               </td>
+               <td>
+                When true, indicates that the wind direction is variable.  A wind direction value may still be reported
+               </td>
+               <td>
+                <a href="Boolean.html" target="_blank">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windGustSpeed">
+                 windGustSpeed
+                </a>
+               </td>
+               <td>
+                Variations from the mean wind speed (gusts) during the past 10 minutes. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2c Wind gusts shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+               </td>
+               <td>
+                <a href="VelocityWithNilReason.html" target="_blank">
+                 VelocityWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windGustSpeedOperator">
+                 windGustSpeedOperator
+                </a>
+               </td>
+               <td>
+                Indication that the wind gust speed is above or below the reported value.  To report a wind gust speed of at least 49 meters per second, wind gust speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind gust speed is an exact value with identical semantics to other measured quantities."
+               </td>
+               <td>
+                <a href="RelationalOperator.html" target="_blank">
+                 RelationalOperator
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AerodromeSurfaceWind" style="padding-top: 120px; margin-top: -120px;">
+              AerodromeSurfaceWind
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind
+             </code>
+             <p>
+              An aggregation of surface wind conditions typically reported together at an aerodrome, including wind direction information, wind speed, and wind gusts.
+
+Wind direction is reported according to ICAO Annex 3 / WMO No. 49-2 Section 4.1.5.2b:
+"variations from the mean wind direction during the past 10 minutes is reported as follows, if the total variation is 60 or more:
+1) when the total variation is 60 or more and less than 180 and the wind speed is 1.5 m/s (3 kt) or more, such directional variations are reported as the two extreme directions between which the surface wind has varied;
+2) when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction is reported as variable with no mean wind direction; or
+3) when the total variation is 180 or more, the wind direction is reported as variable with no mean wind direction"
+
+Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is "deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0. Wind speeds and gusts, if present, shall be provided in either two units of measures: "m/s" or "[kn_i]" (knot)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind" target="_blank">
+                   Wind
+                  </a>
+                 </td>
+                 <td>
+                  Air motion relative to the Earth's surface. Unless otherwise specified, only the horizontal component is considered.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Wind
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extremeClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
+              extremeClockwiseWindDirection
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.extremeClockwiseWindDirection
+             </code>
+             <p>
+              The extreme clockwise direction from which the wind has varied, inclusive. This corresponds to the dxdxdx part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#extremeClockwiseWindDirection" target="_blank">
+                   Wind.extremeClockwiseWindDirection
+                  </a>
+                 </td>
+                 <td>
+                  The extreme clockwise direction from which the wind is blowing, inclusive.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extremeCounterClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
+              extremeCounterClockwiseWindDirection
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.extremeCounterClockwiseWindDirection
+             </code>
+             <p>
+              The extreme counter-clockwise direction from which the wind has varied, inclusive. This corresponds to the dndndn part of the reported variation dndndnVdxdxdx in TAC. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2b 1)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#extremeCounterClockwiseWindDirection" target="_blank">
+                   Wind.extremeCounterClockwiseWindDirection
+                  </a>
+                 </td>
+                 <td>
+                  The extreme counter-clockwise direction from which the wind is blowing, inclusive.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="meanWindDirection" style="padding-top: 120px; margin-top: -120px;">
+              meanWindDirection
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.meanWindDirection
+             </code>
+             <p>
+              The observed average wind direction from which the wind is blowing over the past ten minutes.  Not reported when winds are variable. Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#windDirection" target="_blank">
+                   Wind.windDirection
+                  </a>
+                 </td>
+                 <td>
+                  Direction from which wind is blowing.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="meanWindSpeed" style="padding-top: 120px; margin-top: -120px;">
+              meanWindSpeed
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.meanWindSpeed
+             </code>
+             <p>
+              The average observed wind speed over the past ten minutes ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2a Wind speeds shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#windSpeed" target="_blank">
+                   Wind.windSpeed
+                  </a>
+                 </td>
+                 <td>
+                  The speed of the wind.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="meanWindSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
+              meanWindSpeedOperator
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.meanWindSpeedOperator
+             </code>
+             <p>
+              Indication that the mean wind speed is above or below the reported value.  To report a wind speed of at least 49 meters per second, wind speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind speed is an exact value with identical semantics to other measured quantities."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#maxWindSpeed" target="_blank">
+                   Wind.maxWindSpeed
+                  </a>
+                 </td>
+                 <td>
+                  The maximum speed of the wind.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#minWindSpeed" target="_blank">
+                   Wind.minWindSpeed
+                  </a>
+                 </td>
+                 <td>
+                  The minimum speed of the wind.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              CR for data concept type or make clear AIRM has modelled max and min wind speed in addition to wind speed.
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="variableWindDirection" style="padding-top: 120px; margin-top: -120px;">
+              variableWindDirection
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.variableWindDirection
+             </code>
+             <p>
+              When true, indicates that the wind direction is variable.  A wind direction value may still be reported
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#isVariable" target="_blank">
+                   Wind.isVariable
+                  </a>
+                 </td>
+                 <td>
+                  Indication that the direction of the wind changes frequently. According to Annex 3 the wind is reported as variable (VRB) in local routine or special reports, in METAR and SPECI, when one of the following situations occur: - when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction shall be reported as variable with no mean wind direction; or - when the total variation is 180 or more, the wind direction shall be reported as variable with no mean wind direction.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="windGustSpeed" style="padding-top: 120px; margin-top: -120px;">
+              windGustSpeed
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.windGustSpeed
+             </code>
+             <p>
+              Variations from the mean wind speed (gusts) during the past 10 minutes. ICAO Annex 3 / WMO No. 49-2: Section 4.1.5.2c Wind gusts shall be provided in either two units of measures: m/s" or "[kn_i]" (knot)."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind.html#windGust" target="_blank">
+                   Wind.windGust
+                  </a>
+                 </td>
+                 <td>
+                  Variation from the mean surface wind speed as defined by ICAO Annex 3.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="windGustSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
+              windGustSpeedOperator
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind.windGustSpeedOperator
+             </code>
+             <p>
+              Indication that the wind gust speed is above or below the reported value.  To report a wind gust speed of at least 49 meters per second, wind gust speed is reported as 49 meters per second and the operator is reported as above". When no operator is reported, wind gust speed is an exact value with identical semantics to other measured quantities."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              CR for data concept type. AIRM is missing the min and max idea here.
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   VolcanicAshAdvisory - ICAO WXXM 3.0.0 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../icao-wxxm-3.0.0-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           ICAO WXXM 3.0.0 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           VolcanicAshAdvisory
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             VolcanicAshAdvisory
+            </h2>
+            <code class="text-secondary">
+             VolcanicAshAdvisory
+            </code>
+           </div>
+           <p>
+            An advisory of volcanic ash conditions of significance to aviation as represented in ICAO Annex 3 / WMO No. 49-2.  Volcanic ash advisories are issued by volcanic ash advisory centres (VAACs)
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#advisoryNumber">
+                 advisoryNumber
+                </a>
+               </td>
+               <td>
+                Advisory number: year in full and message number (separate sequence for each volcano)
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#colourCode">
+                 colourCode
+                </a>
+               </td>
+               <td>
+                The aviation colour code
+               </td>
+               <td>
+                <a href="AviationColourCode.html" target="_blank">
+                 AviationColourCode
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#eruptionDetails">
+                 eruptionDetails
+                </a>
+               </td>
+               <td>
+                Eruption details (excluding date/time of eruption(s)).
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#forecast">
+                 forecast
+                </a>
+               </td>
+               <td>
+                The forecast conditions of volcanic ash clouds.
+               </td>
+               <td>
+                <a href="VolcanicAshForecastConditions.html" target="_blank">
+                 VolcanicAshForecastConditions
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#informationSource">
+                 informationSource
+                </a>
+               </td>
+               <td>
+                Information source - described in free text
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issueTime">
+                 issueTime
+                </a>
+               </td>
+               <td>
+                The time at which this report was issued
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#issuingVolcanicAshAdvisoryCentre">
+                 issuingVolcanicAshAdvisoryCentre
+                </a>
+               </td>
+               <td>
+                The issuing VAAC
+               </td>
+               <td>
+                <a href="Unit.html" target="_blank">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#nextAdvisoryTime">
+                 nextAdvisoryTime
+                </a>
+               </td>
+               <td>
+                The time at which the next advisory will be issued Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="TM_Instant.html" target="_blank">
+                 TM_Instant
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#observation">
+                 observation
+                </a>
+               </td>
+               <td>
+                The observed (or estimated) conditions of volcanic ash clouds.
+               </td>
+               <td>
+                <a href="VolcanicAshObservedOrEstimatedConditions.html" target="_blank">
+                 VolcanicAshObservedOrEstimatedConditions
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#remarks">
+                 remarks
+                </a>
+               </td>
+               <td>
+                Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#stateOrRegion">
+                 stateOrRegion
+                </a>
+               </td>
+               <td>
+                State, or region if ash is not reported over a State
+               </td>
+               <td>
+                <a href="StringWithNilReason.html" target="_blank">
+                 StringWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#summitElevation">
+                 summitElevation
+                </a>
+               </td>
+               <td>
+                Elevation of a summit. Summit elevation shall be reported either in meters (m") or feet ("[ft_i]")."
+               </td>
+               <td>
+                <a href="LengthWithNilReason.html" target="_blank">
+                 LengthWithNilReason
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#volcano">
+                 volcano
+                </a>
+               </td>
+               <td>
+                The erupting volcano that is the source of volcanic ash
+               </td>
+               <td>
+                <a href="EruptingVolcano.html" target="_blank">
+                 EruptingVolcano
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="VolcanicAshAdvisory" style="padding-top: 120px; margin-top: -120px;">
+              VolcanicAshAdvisory
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory
+             </code>
+             <p>
+              An advisory of volcanic ash conditions of significance to aviation as represented in ICAO Annex 3 / WMO No. 49-2.  Volcanic ash advisories are issued by volcanic ash advisory centres (VAACs)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/conceptual-model/VolcanicAshAdvisory" target="_blank">
+                   VolcanicAshAdvisory
+                  </a>
+                 </td>
+                 <td>
+                  Advisory information regarding the lateral and vertical extent and forecast movement of volcanic ash in the atmosphere following volcanic eruptions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="advisoryNumber" style="padding-top: 120px; margin-top: -120px;">
+              advisoryNumber
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.advisoryNumber
+             </code>
+             <p>
+              Advisory number: year in full and message number (separate sequence for each volcano)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="colourCode" style="padding-top: 120px; margin-top: -120px;">
+              colourCode
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.colourCode
+             </code>
+             <p>
+              The aviation colour code
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeColourType" target="_blank">
+                   CodeColourType
+                  </a>
+                 </td>
+                 <td>
+                  A list of colours.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="eruptionDetails" style="padding-top: 120px; margin-top: -120px;">
+              eruptionDetails
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.eruptionDetails
+             </code>
+             <p>
+              Eruption details (excluding date/time of eruption(s)).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              String
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="forecast" style="padding-top: 120px; margin-top: -120px;">
+              forecast
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.forecast
+             </code>
+             <p>
+              The forecast conditions of volcanic ash clouds.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeWeatherConditionType.html#METEOROLOGICAL_FORECAST" target="_blank">
+                   CodeWeatherConditionType.METEOROLOGICAL_FORECAST
+                  </a>
+                 </td>
+                 <td>
+                  A statement of expected meteorological conditions for a specified time or period, and for a specified area or portion of airspace.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="informationSource" style="padding-top: 120px; margin-top: -120px;">
+              informationSource
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.informationSource
+             </code>
+             <p>
+              Information source - described in free text
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#weatherInformationSource" target="_blank">
+                   WeatherCondition.weatherInformationSource
+                  </a>
+                 </td>
+                 <td>
+                  The weather information source.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="issueTime" style="padding-top: 120px; margin-top: -120px;">
+              issueTime
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.issueTime
+             </code>
+             <p>
+              The time at which this report was issued
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="issuingVolcanicAshAdvisoryCentre" style="padding-top: 120px; margin-top: -120px;">
+              issuingVolcanicAshAdvisoryCentre
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.issuingVolcanicAshAdvisoryCentre
+             </code>
+             <p>
+              The issuing VAAC
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/WeatherCondition.html#weatherInformationSource" target="_blank">
+                   WeatherCondition.weatherInformationSource
+                  </a>
+                 </td>
+                 <td>
+                  The weather information source.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeUnitType.html#VAAC" target="_blank">
+                   CodeUnitType.VAAC
+                  </a>
+                 </td>
+                 <td>
+                  A meteorological centre designated by regional air navigation agreement to provide advisory information to meteorological watch offices, area control centres, flight information centres, world area forecast centres and international OPMET databanks regarding the lateral and vertical extent and forecast movement of volcanic ash in the atmosphere following volcanic eruptions.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="nextAdvisoryTime" style="padding-top: 120px; margin-top: -120px;">
+              nextAdvisoryTime
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.nextAdvisoryTime
+             </code>
+             <p>
+              The time at which the next advisory will be issued Use attribute indeterminatePosition to element timePosition to indicate if the actual temporal position is before or after the specified value. When no subsequent advisory is expected to be issued it should be indicated by a missing expected advisory time with a nil reason of 'inapplicable'
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-change-request.html" target="_blank">
+                   Change request
+                  </a>
+                 </td>
+                 <td>
+                  A change request is required on the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="observation" style="padding-top: 120px; margin-top: -120px;">
+              observation
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.observation
+             </code>
+             <p>
+              The observed (or estimated) conditions of volcanic ash clouds.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeWeatherConditionType.html#METEOROLOGICAL_OBSERVATION" target="_blank">
+                   CodeWeatherConditionType.METEOROLOGICAL_OBSERVATION
+                  </a>
+                 </td>
+                 <td>
+                  The evaluation of one or more meteorological elements.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="remarks" style="padding-top: 120px; margin-top: -120px;">
+              remarks
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.remarks
+             </code>
+             <p>
+              Remarks, as necessary. When the remark is nil, it should be indicated by a missing remarks with a nil reason of 'inapplicable'
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="stateOrRegion" style="padding-top: 120px; margin-top: -120px;">
+              stateOrRegion
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.stateOrRegion
+             </code>
+             <p>
+              State, or region if ash is not reported over a State
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/CodeAirspaceType.html#REGION" target="_blank">
+                   CodeAirspaceType.REGION
+                  </a>
+                 </td>
+                 <td>
+                  Region.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="summitElevation" style="padding-top: 120px; margin-top: -120px;">
+              summitElevation
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.summitElevation
+             </code>
+             <p>
+              Elevation of a summit. Summit elevation shall be reported either in meters (m") or feet ("[ft_i]")."
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ThreeDimensionalSurfaceType.html#elevation" target="_blank">
+                   ThreeDimensionalSurfaceType.elevation
+                  </a>
+                 </td>
+                 <td>
+                  The vertical distance of a point or a level, on or affixed to the surface of the earth, measured from mean sea level.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              missing 'summit'
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="volcano" style="padding-top: 120px; margin-top: -120px;">
+              volcano
+             </h4>
+             <code class="text-secondary">
+              VolcanicAshAdvisory.volcano
+             </code>
+             <p>
+              The erupting volcano that is the source of volcanic ash
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/VolcanicActivity.html#volcano" target="_blank">
+                   VolcanicActivity.volcano
+                  </a>
+                 </td>
+                 <td>
+                  The active volcano.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
