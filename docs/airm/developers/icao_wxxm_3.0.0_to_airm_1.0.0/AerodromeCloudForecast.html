@@ -200,10 +200,74 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="layer" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="AerodromeCloudForecast" style="padding-top: 120px; margin-top: -120px;">
+              AerodromeCloudForecast
+             </h4>
+             <code class="text-secondary">
+              AerodromeCloudForecast
+             </code>
+             <p>
+              Forecast cloud conditions, including predicted vertical visibility and cloud layers. A single vertical visibility may be reported, but cannot be reported with cloud layers.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              container
+             </p>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:WeatherLayer
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="layer" style="padding-top: 120px; margin-top: -120px;">
               layer
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeCloudForecast.layer
              </code>
@@ -248,9 +312,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="verticalVisibility" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="verticalVisibility" style="padding-top: 120px; margin-top: -120px;">
               verticalVisibility
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeCloudForecast.verticalVisibility
              </code>
@@ -282,6 +346,19 @@
                  </td>
                  <td>
                   Maximum distance at which an observer can see and identify an object on the same vertical as himself, above or below.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition" target="_blank">
+                   AerodromeCondition
+                  </a>
+                 </td>
+                 <td>
+                  Weather observations and or forecast for an aerodrome
                  </td>
                 </tr>
                </tbody>

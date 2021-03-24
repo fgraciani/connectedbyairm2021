@@ -352,10 +352,73 @@ There is no maximum number of runway states that can be reported.  This may be c
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="airTemperature" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="MeteorologicalAerodromeObservation" style="padding-top: 120px; margin-top: -120px;">
+              MeteorologicalAerodromeObservation
+             </h4>
+             <code class="text-secondary">
+              MeteorologicalAerodromeObservation
+             </code>
+             <p>
+              Meteorological conditions observed at an aerodrome. When no clouds of operational significance or no weather of operational significance is observed, the NothingOfOperationalSignificance nilReason is used for the cloud or presentWeather association. When no clouds were detected by the automatic observing system, the NotDetectedByAutoSystem nilReason is used for the cloud association.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../developers/airm-out-of-scope.html" target="_blank">
+                   Out of scope
+                  </a>
+                 </td>
+                 <td>
+                  This concept is considered as out of the scope of the AIRM.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Rationale
+             </h5>
+             <p>
+              container
+             </p>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              In Logical Model: urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="airTemperature" style="padding-top: 120px; margin-top: -120px;">
               airTemperature
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.airTemperature
              </code>
@@ -400,9 +463,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="cloud" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="cloud" style="padding-top: 120px; margin-top: -120px;">
               cloud
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.cloud
              </code>
@@ -460,9 +523,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="cloudAndVisibilityOK" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="cloudAndVisibilityOK" style="padding-top: 120px; margin-top: -120px;">
               cloudAndVisibilityOK
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.cloudAndVisibilityOK
              </code>
@@ -507,9 +570,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="dewpointTemperature" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="dewpointTemperature" style="padding-top: 120px; margin-top: -120px;">
               dewpointTemperature
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.dewpointTemperature
              </code>
@@ -554,9 +617,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="presentWeather" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="presentWeather" style="padding-top: 120px; margin-top: -120px;">
               presentWeather
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.presentWeather
              </code>
@@ -608,9 +671,9 @@ When present weather cannot be observed by the automatic observing system due to
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="qnh" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="qnh" style="padding-top: 120px; margin-top: -120px;">
               qnh
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.qnh
              </code>
@@ -655,9 +718,9 @@ When present weather cannot be observed by the automatic observing system due to
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="recentWeather" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="recentWeather" style="padding-top: 120px; margin-top: -120px;">
               recentWeather
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.recentWeather
              </code>
@@ -708,9 +771,9 @@ When present weather cannot be observed by the automatic observing system due to
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="runwayState" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="runwayState" style="padding-top: 120px; margin-top: -120px;">
               runwayState
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.runwayState
              </code>
@@ -756,9 +819,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="rvr" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="rvr" style="padding-top: 120px; margin-top: -120px;">
               rvr
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.rvr
              </code>
@@ -803,9 +866,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="seaCondition" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="seaCondition" style="padding-top: 120px; margin-top: -120px;">
               seaCondition
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.seaCondition
              </code>
@@ -850,9 +913,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="surfaceWind" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="surfaceWind" style="padding-top: 120px; margin-top: -120px;">
               surfaceWind
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.surfaceWind
              </code>
@@ -910,9 +973,9 @@ There is no maximum number of runway states that can be reported.  This may be c
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="windShear" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="windShear" style="padding-top: 120px; margin-top: -120px;">
               windShear
-             </h3>
+             </h4>
              <code class="text-secondary">
               MeteorologicalAerodromeObservation.windShear
              </code>

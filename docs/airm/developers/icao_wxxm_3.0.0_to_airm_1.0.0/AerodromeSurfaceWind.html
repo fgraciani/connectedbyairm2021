@@ -298,10 +298,76 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="extremeClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="AerodromeSurfaceWind" style="padding-top: 120px; margin-top: -120px;">
+              AerodromeSurfaceWind
+             </h4>
+             <code class="text-secondary">
+              AerodromeSurfaceWind
+             </code>
+             <p>
+              An aggregation of surface wind conditions typically reported together at an aerodrome, including wind direction information, wind speed, and wind gusts.
+
+Wind direction is reported according to ICAO Annex 3 / WMO No. 49-2 Section 4.1.5.2b:
+"variations from the mean wind direction during the past 10 minutes is reported as follows, if the total variation is 60 or more:
+1) when the total variation is 60 or more and less than 180 and the wind speed is 1.5 m/s (3 kt) or more, such directional variations are reported as the two extreme directions between which the surface wind has varied;
+2) when the total variation is 60 or more and less than 180 and the wind speed is less than 1.5 m/s (3 kt), the wind direction is reported as variable with no mean wind direction; or
+3) when the total variation is 180 or more, the wind direction is reported as variable with no mean wind direction"
+
+Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is "deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0. Wind speeds and gusts, if present, shall be provided in either two units of measures: "m/s" or "[kn_i]" (knot)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Wind" target="_blank">
+                   Wind
+                  </a>
+                 </td>
+                 <td>
+                  Air motion relative to the Earth's surface. Unless otherwise specified, only the horizontal component is considered.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Wind
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="extremeClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
               extremeClockwiseWindDirection
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.extremeClockwiseWindDirection
              </code>
@@ -346,9 +412,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="extremeCounterClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="extremeCounterClockwiseWindDirection" style="padding-top: 120px; margin-top: -120px;">
               extremeCounterClockwiseWindDirection
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.extremeCounterClockwiseWindDirection
              </code>
@@ -393,9 +459,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="meanWindDirection" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="meanWindDirection" style="padding-top: 120px; margin-top: -120px;">
               meanWindDirection
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.meanWindDirection
              </code>
@@ -440,9 +506,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="meanWindSpeed" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="meanWindSpeed" style="padding-top: 120px; margin-top: -120px;">
               meanWindSpeed
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.meanWindSpeed
              </code>
@@ -487,9 +553,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="meanWindSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="meanWindSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
               meanWindSpeedOperator
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.meanWindSpeedOperator
              </code>
@@ -550,9 +616,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="variableWindDirection" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="variableWindDirection" style="padding-top: 120px; margin-top: -120px;">
               variableWindDirection
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.variableWindDirection
              </code>
@@ -597,9 +663,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="windGustSpeed" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="windGustSpeed" style="padding-top: 120px; margin-top: -120px;">
               windGustSpeed
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.windGustSpeed
              </code>
@@ -644,9 +710,9 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="windGustSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="windGustSpeedOperator" style="padding-top: 120px; margin-top: -120px;">
               windGustSpeedOperator
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeSurfaceWind.windGustSpeedOperator
              </code>

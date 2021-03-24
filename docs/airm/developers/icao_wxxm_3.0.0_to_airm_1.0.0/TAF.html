@@ -275,10 +275,67 @@
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="aerodrome" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="TAF" style="padding-top: 120px; margin-top: -120px;">
+              TAF
+             </h4>
+             <code class="text-secondary">
+              TAF
+             </code>
+             <p>
+              An Aerodrome Forecast (TAF) report is a routine aerodrome forecast intended for distribution beyond an aerodrome.  TAF reports report base forecast conditions, and modifications to those conditions throughout the valid period. TAF reports include similar information to a METAR/SPECI trend forecast. However, TAF forecast information includes additional detail. Aerodromes can issue both METAR/SPECI and TAF reports on a routine basis, but TAFs are not issued by every METAR-reporting aerodrome. The issuance of a new forecast by a meteorological office, such as a TAF, cancels any forecast of the same type previously issued for the same place and for the same period of validity or part thereof. Prevailing conditions and forecast changes differ in that the prevailing conditions can include temperatures, base conditions do not include a change indicator, and that forecast changes may report no significant weather (NSW). Rather than have two class hierarchies, constraints are present ensuring that each (base and forecast conditions) only include relevant information
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/conceptual-model/TAF" target="_blank">
+                   TAF
+                  </a>
+                 </td>
+                 <td>
+                  Message to transmit aerodrome forecasts and amendments prepared by the meteorological office designated the meteorological authority concerned.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              In Logical Model: urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:AerodromeCondition
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="aerodrome" style="padding-top: 120px; margin-top: -120px;">
               aerodrome
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.aerodrome
              </code>
@@ -323,9 +380,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="baseForecast" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="baseForecast" style="padding-top: 120px; margin-top: -120px;">
               baseForecast
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.baseForecast
              </code>
@@ -370,9 +427,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="cancelledReportValidPeriod" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="cancelledReportValidPeriod" style="padding-top: 120px; margin-top: -120px;">
               cancelledReportValidPeriod
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.cancelledReportValidPeriod
              </code>
@@ -417,9 +474,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="changeForecast" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="changeForecast" style="padding-top: 120px; margin-top: -120px;">
               changeForecast
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.changeForecast
              </code>
@@ -464,9 +521,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="isCancelReport" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="isCancelReport" style="padding-top: 120px; margin-top: -120px;">
               isCancelReport
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.isCancelReport
              </code>
@@ -511,9 +568,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="issueTime" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="issueTime" style="padding-top: 120px; margin-top: -120px;">
               issueTime
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.issueTime
              </code>
@@ -558,9 +615,9 @@
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="validPeriod" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="validPeriod" style="padding-top: 120px; margin-top: -120px;">
               validPeriod
-             </h3>
+             </h4>
              <code class="text-secondary">
               TAF.validPeriod
              </code>

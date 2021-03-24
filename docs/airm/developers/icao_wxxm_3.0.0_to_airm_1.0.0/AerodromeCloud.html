@@ -202,10 +202,67 @@ When cumulonimbus clouds or towering cumulus clouds are detected by the automati
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="layer" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="AerodromeCloud" style="padding-top: 120px; margin-top: -120px;">
+              AerodromeCloud
+             </h4>
+             <code class="text-secondary">
+              AerodromeCloud
+             </code>
+             <p>
+              An aggregation of observed cloud conditions typically reported together at an aerodrome, including cloud types, cloud layers, and vertical visibility.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition.html#cloudCondition" target="_blank">
+                   AerodromeCondition.cloudCondition
+                  </a>
+                 </td>
+                 <td>
+                  The cloud conditions at the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              Is part of MeteorologicalAerodromeObservation in IWXXM.
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="layer" style="padding-top: 120px; margin-top: -120px;">
               layer
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeCloud.layer
              </code>
@@ -258,9 +315,9 @@ When cumulonimbus clouds or towering cumulus clouds are detected by the automati
              </p>
             </div>
             <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 id="verticalVisibility" style="padding-top: 120px; margin-top: -120px;">
+             <h4 id="verticalVisibility" style="padding-top: 120px; margin-top: -120px;">
               verticalVisibility
-             </h3>
+             </h4>
              <code class="text-secondary">
               AerodromeCloud.verticalVisibility
              </code>
@@ -286,12 +343,25 @@ When cumulonimbus clouds or towering cumulus clouds are detected by the automati
                <tbody>
                 <tr>
                  <td>
-                  <a href="../../viewer/not-found" target="_blank">
-                   Not found
+                  <a href="../../viewer/1.0.0/logical-model/AviationCondition.html#verticalVisibility" target="_blank">
+                   AviationCondition.verticalVisibility
                   </a>
                  </td>
                  <td>
-                  The provided URN does not exist.
+                  Maximum distance at which an observer can see and identify an object on the same vertical as himself, above or below.
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <spam class="badge badge-secondary" data-placement="bottom" data-toggle="tooltip" title="Additional traces to clarify the mapping of narrower concepts">
+                   Additional trace
+                  </spam>
+                  <a href="../../viewer/1.0.0/logical-model/AerodromeCondition" target="_blank">
+                   AerodromeCondition
+                  </a>
+                 </td>
+                 <td>
+                  Weather observations and or forecast for an aerodrome
                  </td>
                 </tr>
                </tbody>
