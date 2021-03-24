@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   RadarEquipment - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           RadarEquipment
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             RadarEquipment
+            </h2>
+            <code class="text-secondary">
+             RadarEquipment
+            </code>
+           </div>
+           <p>
+            Physical radar equipment like PAR, ARSR, ASR, SECRA, etc..
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contact">
+                 contact
+                </a>
+               </td>
+               <td>
+                The contact information of the group or individual associated with the Radar Equipment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dateMagneticVariation">
+                 dateMagneticVariation
+                </a>
+               </td>
+               <td>
+                The date on which the magnetic variation had this value.
+               </td>
+               <td>
+                <a href="(string) DateYearType	.html" target="_blank">
+                 (string) DateYearType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#digital">
+                 digital
+                </a>
+               </td>
+               <td>
+                Indicates if the radar equipment is digital or analogue.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dualChannel">
+                 dualChannel
+                </a>
+               </td>
+               <td>
+                Indicates whether the component has dual frequency.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#location">
+                 location
+                </a>
+               </td>
+               <td>
+                The graphical location of the component
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariation">
+                 magneticVariation
+                </a>
+               </td>
+               <td>
+                The angular difference between True North and Magnetic North measured at a given position and date.
+               </td>
+               <td>
+                <a href="(decimal) ValMagneticVariationType	.html" target="_blank">
+                 (decimal) ValMagneticVariationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariationAccuracy">
+                 magneticVariationAccuracy
+                </a>
+               </td>
+               <td>
+                Accuracy of the magnetic variation.
+               </td>
+               <td>
+                <a href="(decimal) ValAngleType	.html" target="_blank">
+                 (decimal) ValAngleType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#militaryUseOnly">
+                 militaryUseOnly
+                </a>
+               </td>
+               <td>
+                Indicates the equipment is for military use only.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#movingTargetIndicator">
+                 movingTargetIndicator
+                </a>
+               </td>
+               <td>
+                Indicates whether a Moving Target Indicator (MTI) is available for the component.  The MTI function eliminates ground clutter.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                Textual name of the equipment.
+               </td>
+               <td>
+                <a href="(string) TextNameType	.html" target="_blank">
+                 (string) TextNameType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#range">
+                 range
+                </a>
+               </td>
+               <td>
+                The applicable range of the equipment to detect aircraft.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rangeAccuracy">
+                 rangeAccuracy
+                </a>
+               </td>
+               <td>
+                Accuracy of the applicable range of the equipment to detect aircraft.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#serialNumber">
+                 serialNumber
+                </a>
+               </td>
+               <td>
+                Serial number of the equipment.
+               </td>
+               <td>
+                <a href="(string) TextDesignatorType	.html" target="_blank">
+                 (string) TextDesignatorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#specialAircraftOnly">
+                 specialAircraftOnly
+                </a>
+               </td>
+               <td>
+                Indicates the equipment is to be only used for certain type of aircraft that are capable of using it.  In some instances, the slope angle or procedure can only be flown by high performance aircraft.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#specialUseOnly">
+                 specialUseOnly
+                </a>
+               </td>
+               <td>
+                Indicates the equipment is for special use procedures only such as Helipads, etc.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#standbyPower">
+                 standbyPower
+                </a>
+               </td>
+               <td>
+                Indicates how the component is powered  if  the primary power fails.
+               </td>
+               <td>
+                <a href="(string) CodeStandbyPowerType	.html" target="_blank">
+                 (string) CodeStandbyPowerType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="RadarEquipment" style="padding-top: 120px; margin-top: -120px;">
+              RadarEquipment
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment
+             </code>
+             <p>
+              Physical radar equipment like PAR, ARSR, ASR, SECRA, etc..
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment" target="_blank">
+                   RadarEquipment
+                  </a>
+                 </td>
+                 <td>
+                  A physical radar equipment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="contact" style="padding-top: 120px; margin-top: -120px;">
+              contact
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.contact
+             </code>
+             <p>
+              The contact information of the group or individual associated with the Radar Equipment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#contact" target="_blank">
+                   RadarEquipment.contact
+                  </a>
+                 </td>
+                 <td>
+                  The contact information of the group or individual associated with the radar equipment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dateMagneticVariation" style="padding-top: 120px; margin-top: -120px;">
+              dateMagneticVariation
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.dateMagneticVariation
+             </code>
+             <p>
+              The date on which the magnetic variation had this value.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#dateMagneticVariation" target="_blank">
+                   RadarEquipment.dateMagneticVariation
+                  </a>
+                 </td>
+                 <td>
+                  The date at which the magnetic variation had this value.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="digital" style="padding-top: 120px; margin-top: -120px;">
+              digital
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.digital
+             </code>
+             <p>
+              Indicates if the radar equipment is digital or analogue.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isDigital" target="_blank">
+                   RadarEquipment.isDigital
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the radar equipment is digital.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dualChannel" style="padding-top: 120px; margin-top: -120px;">
+              dualChannel
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.dualChannel
+             </code>
+             <p>
+              Indicates whether the component has dual frequency.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isDualChannel" target="_blank">
+                   RadarEquipment.isDualChannel
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the radar equipment has dual frequency.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="location" style="padding-top: 120px; margin-top: -120px;">
+              location
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.location
+             </code>
+             <p>
+              The graphical location of the component
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#position" target="_blank">
+                   GeoEnabledEntity.position
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as the position of a point on the surface of the Earth.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticVariation" style="padding-top: 120px; margin-top: -120px;">
+              magneticVariation
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.magneticVariation
+             </code>
+             <p>
+              The angular difference between True North and Magnetic North measured at a given position and date.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#magneticVariation" target="_blank">
+                   RadarEquipment.magneticVariation
+                  </a>
+                 </td>
+                 <td>
+                  The angular difference between True North and Magnetic North measured at a given position and date.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticVariationAccuracy" style="padding-top: 120px; margin-top: -120px;">
+              magneticVariationAccuracy
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.magneticVariationAccuracy
+             </code>
+             <p>
+              Accuracy of the magnetic variation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#magneticVariationAccuracy" target="_blank">
+                   RadarEquipment.magneticVariationAccuracy
+                  </a>
+                 </td>
+                 <td>
+                  Accuracy of the magnetic variation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="militaryUseOnly" style="padding-top: 120px; margin-top: -120px;">
+              militaryUseOnly
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.militaryUseOnly
+             </code>
+             <p>
+              Indicates the equipment is for military use only.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isForMilitaryUseOnly" target="_blank">
+                   RadarEquipment.isForMilitaryUseOnly
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the equipment is for military use only.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="movingTargetIndicator" style="padding-top: 120px; margin-top: -120px;">
+              movingTargetIndicator
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.movingTargetIndicator
+             </code>
+             <p>
+              Indicates whether a Moving Target Indicator (MTI) is available for the component.  The MTI function eliminates ground clutter.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isMovingTargetIndicatorAvailable" target="_blank">
+                   RadarEquipment.isMovingTargetIndicatorAvailable
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether a Moving Target Indicator (MTI) is available for the component.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="name" style="padding-top: 120px; margin-top: -120px;">
+              name
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.name
+             </code>
+             <p>
+              Textual name of the equipment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#name" target="_blank">
+                   RadarEquipment.name
+                  </a>
+                 </td>
+                 <td>
+                  The name of the equipment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="range" style="padding-top: 120px; margin-top: -120px;">
+              range
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.range
+             </code>
+             <p>
+              The applicable range of the equipment to detect aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#range" target="_blank">
+                   RadarEquipment.range
+                  </a>
+                 </td>
+                 <td>
+                  The applicable range of the equipment to detect aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="rangeAccuracy" style="padding-top: 120px; margin-top: -120px;">
+              rangeAccuracy
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.rangeAccuracy
+             </code>
+             <p>
+              Accuracy of the applicable range of the equipment to detect aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#rangeAccuracy" target="_blank">
+                   RadarEquipment.rangeAccuracy
+                  </a>
+                 </td>
+                 <td>
+                  Accuracy of the applicable range of the equipment to detect aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="serialNumber" style="padding-top: 120px; margin-top: -120px;">
+              serialNumber
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.serialNumber
+             </code>
+             <p>
+              Serial number of the equipment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#serialNumber" target="_blank">
+                   RadarEquipment.serialNumber
+                  </a>
+                 </td>
+                 <td>
+                  Serial number of the equipment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="specialAircraftOnly" style="padding-top: 120px; margin-top: -120px;">
+              specialAircraftOnly
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.specialAircraftOnly
+             </code>
+             <p>
+              Indicates the equipment is to be only used for certain type of aircraft that are capable of using it.  In some instances, the slope angle or procedure can only be flown by high performance aircraft.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isForSpecialAircraftOnly" target="_blank">
+                   RadarEquipment.isForSpecialAircraftOnly
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the equipment is to be only used for certain type of aircraft that are capable of using it.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="specialUseOnly" style="padding-top: 120px; margin-top: -120px;">
+              specialUseOnly
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.specialUseOnly
+             </code>
+             <p>
+              Indicates the equipment is for special use procedures only such as Helipads, etc.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#isForSpecialUseOnly" target="_blank">
+                   RadarEquipment.isForSpecialUseOnly
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the equipment is for special use procedures only.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="standbyPower" style="padding-top: 120px; margin-top: -120px;">
+              standbyPower
+             </h4>
+             <code class="text-secondary">
+              RadarEquipment.standbyPower
+             </code>
+             <p>
+              Indicates how the component is powered  if  the primary power fails.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/RadarEquipment.html#standbyPower" target="_blank">
+                   RadarEquipment.standbyPower
+                  </a>
+                 </td>
+                 <td>
+                  A description of how the component is powered if  the primary power fails.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

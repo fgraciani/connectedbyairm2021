@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   FASDataBlock - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           FASDataBlock
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             FASDataBlock
+            </h2>
+            <code class="text-secondary">
+             FASDataBlock
+            </code>
+           </div>
+           <p>
+            Final Approach Segment Data Block.  The additional information about the Precision Final Segment.  Most attributes describe the LPV path point record required for WAAS procedures.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#CRCRemainder">
+                 CRCRemainder
+                </a>
+               </td>
+               <td>
+                Hexadecimal representation of the 32-bit CRC used to check the integrity of the FAS data block.
+               </td>
+               <td>
+                <a href="(string) ValHexType	.html" target="_blank">
+                 (string) ValHexType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#approachPerformanceDesignator">
+                 approachPerformanceDesignator
+                </a>
+               </td>
+               <td>
+                Approach Performance Designator. A number from 0 to 7 that identifies the type of approach.
+               </td>
+               <td>
+                <a href="(unsignedint) NoSequenceType	.html" target="_blank">
+                 (unsignedint) NoSequenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#codeICAO">
+                 codeICAO
+                </a>
+               </td>
+               <td>
+                The first two designators of the ICAO location identifier, as identified in ICAO Doc 7910.
+               </td>
+               <td>
+                <a href="(string) CodeICAOCountryType	.html" target="_blank">
+                 (string) CodeICAOCountryType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#horizontalAlarmLimit">
+                 horizontalAlarmLimit
+                </a>
+               </td>
+               <td>
+                (ARINC) Horizontal Alert Limit (HAL) is the radius of a circle in the horizontal plane (the local plane tangent to the WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated horizontal position with the required probability for a particular navigation mode assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+               </td>
+               <td>
+                <a href="(decimal) ValAlarmLimitType	.html" target="_blank">
+                 (decimal) ValAlarmLimitType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lengthOffset">
+                 lengthOffset
+                </a>
+               </td>
+               <td>
+                Distance from the stop end of the runway to the Flight Path Alignment Point
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operationType">
+                 operationType
+                </a>
+               </td>
+               <td>
+                Operation Type. A number from 0 to 15 that indicates the type of the final approach segment.
+               </td>
+               <td>
+                <a href="(unsignedint) NoSequenceType	.html" target="_blank">
+                 (unsignedint) NoSequenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referencePathDataSelector">
+                 referencePathDataSelector
+                </a>
+               </td>
+               <td>
+                Reference Path Data Selector (RPDS). A number (0-48) that enables automatic tuning of a procedure by LAAS avionics.
+               </td>
+               <td>
+                <a href="(unsignedint) NoSequenceType	.html" target="_blank">
+                 (unsignedint) NoSequenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referencePathIdentifier">
+                 referencePathIdentifier
+                </a>
+               </td>
+               <td>
+                Reference Path Identifier. A four-character identifier that is used to confirm selection of the correct approach procedure.
+               </td>
+               <td>
+                <a href="(string) CodeReferencePathIdentifierType	.html" target="_blank">
+                 (string) CodeReferencePathIdentifierType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#routeIndicator">
+                 routeIndicator
+                </a>
+               </td>
+               <td>
+                Route Indicator. A single alpha character (A through Z or blank, omitting I and O) used to differentiate between multiple final approach segments to the same runway or heliport.
+               </td>
+               <td>
+                <a href="(string) CodeRouteIndicatorType	.html" target="_blank">
+                 (string) CodeRouteIndicatorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#serviceProviderSBAS">
+                 serviceProviderSBAS
+                </a>
+               </td>
+               <td>
+                SBAS Service Provider Identifier. A number from 0 to 15 that associates the approach procedure to a particular satellite based approach system service provider.
+               </td>
+               <td>
+                <a href="(unsignedint) NoSequenceType	.html" target="_blank">
+                 (unsignedint) NoSequenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#thresholdCourseWidth">
+                 thresholdCourseWidth
+                </a>
+               </td>
+               <td>
+                The width of the lateral course at the Landing Threshold Point (LTP). This width, in conjunction with the location of the Flight Path Alignment Point (FPAP) defines the sensitivity of the lateral deviations throughout the approach.
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalAlarmLimit">
+                 verticalAlarmLimit
+                </a>
+               </td>
+               <td>
+                (ARINC) Vertical Alert Limit (VAL) is half the length of a segment on the vertical axis (perpendicular to the horizontal plane of WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated vertical position with a probability of 1-E-7 per approach, assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+               </td>
+               <td>
+                <a href="(decimal) ValAlarmLimitType	.html" target="_blank">
+                 (decimal) ValAlarmLimitType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="FASDataBlock" style="padding-top: 120px; margin-top: -120px;">
+              FASDataBlock
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock
+             </code>
+             <p>
+              Final Approach Segment Data Block.  The additional information about the Precision Final Segment.  Most attributes describe the LPV path point record required for WAAS procedures.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock" target="_blank">
+                   FinalApproachSegmentDataBlock
+                  </a>
+                 </td>
+                 <td>
+                  The additional information about the Precision Final Segment. Most attributes describe the LPV path point record required for WAAS procedures.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="CRCRemainder" style="padding-top: 120px; margin-top: -120px;">
+              CRCRemainder
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.CRCRemainder
+             </code>
+             <p>
+              Hexadecimal representation of the 32-bit CRC used to check the integrity of the FAS data block.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#remainderCyclicRedundancyCheck" target="_blank">
+                   FinalApproachSegmentDataBlock.remainderCyclicRedundancyCheck
+                  </a>
+                 </td>
+                 <td>
+                  Hexadecimal representation of the 32-bit CRC used to check the integrity of the FAS data block.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="approachPerformanceDesignator" style="padding-top: 120px; margin-top: -120px;">
+              approachPerformanceDesignator
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.approachPerformanceDesignator
+             </code>
+             <p>
+              Approach Performance Designator. A number from 0 to 7 that identifies the type of approach.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#approachPerformanceDesignator" target="_blank">
+                   FinalApproachSegmentDataBlock.approachPerformanceDesignator
+                  </a>
+                 </td>
+                 <td>
+                  Approach Performance Designator. A number from 0 to 7 that identifies the type of approach.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="codeICAO" style="padding-top: 120px; margin-top: -120px;">
+              codeICAO
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.codeICAO
+             </code>
+             <p>
+              The first two designators of the ICAO location identifier, as identified in ICAO Doc 7910.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#codeICAO" target="_blank">
+                   FinalApproachSegmentDataBlock.codeICAO
+                  </a>
+                 </td>
+                 <td>
+                  The first two designators of the ICAO location identifier, as identified in ICAO Doc 7910.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="horizontalAlarmLimit" style="padding-top: 120px; margin-top: -120px;">
+              horizontalAlarmLimit
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.horizontalAlarmLimit
+             </code>
+             <p>
+              (ARINC) Horizontal Alert Limit (HAL) is the radius of a circle in the horizontal plane (the local plane tangent to the WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated horizontal position with the required probability for a particular navigation mode assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#horizontalAlarmLimit" target="_blank">
+                   FinalApproachSegmentDataBlock.horizontalAlarmLimit
+                  </a>
+                 </td>
+                 <td>
+                  The radius of a circle in the horizontal plane (the local plane tangent to the WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated horizontal position with the required probability for a particular navigation mode assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lengthOffset" style="padding-top: 120px; margin-top: -120px;">
+              lengthOffset
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.lengthOffset
+             </code>
+             <p>
+              Distance from the stop end of the runway to the Flight Path Alignment Point
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#lengthOffset" target="_blank">
+                   FinalApproachSegmentDataBlock.lengthOffset
+                  </a>
+                 </td>
+                 <td>
+                  Distance from the stop end of the runway to the Flight Path Alignment Point
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="operationType" style="padding-top: 120px; margin-top: -120px;">
+              operationType
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.operationType
+             </code>
+             <p>
+              Operation Type. A number from 0 to 15 that indicates the type of the final approach segment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#operationType" target="_blank">
+                   FinalApproachSegmentDataBlock.operationType
+                  </a>
+                 </td>
+                 <td>
+                  Operation Type. A number from 0 to 15 that indicates the type of the final approach segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="referencePathDataSelector" style="padding-top: 120px; margin-top: -120px;">
+              referencePathDataSelector
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.referencePathDataSelector
+             </code>
+             <p>
+              Reference Path Data Selector (RPDS). A number (0-48) that enables automatic tuning of a procedure by LAAS avionics.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#referencePathDataSelector" target="_blank">
+                   FinalApproachSegmentDataBlock.referencePathDataSelector
+                  </a>
+                 </td>
+                 <td>
+                  Reference Path Data Selector (RPDS). A number (0-48) that enables automatic tuning of a procedure by LAAS avionics.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="referencePathIdentifier" style="padding-top: 120px; margin-top: -120px;">
+              referencePathIdentifier
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.referencePathIdentifier
+             </code>
+             <p>
+              Reference Path Identifier. A four-character identifier that is used to confirm selection of the correct approach procedure.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#referencePathIdentifier" target="_blank">
+                   FinalApproachSegmentDataBlock.referencePathIdentifier
+                  </a>
+                 </td>
+                 <td>
+                  Reference Path Identifier. A four-character identifier that is used to confirm selection of the correct approach procedure.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="routeIndicator" style="padding-top: 120px; margin-top: -120px;">
+              routeIndicator
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.routeIndicator
+             </code>
+             <p>
+              Route Indicator. A single alpha character (A through Z or blank, omitting I and O) used to differentiate between multiple final approach segments to the same runway or heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#routeIndicator" target="_blank">
+                   FinalApproachSegmentDataBlock.routeIndicator
+                  </a>
+                 </td>
+                 <td>
+                  Route Indicator. A single alpha character (A through Z or blank, omitting I and O) used to differentiate between multiple final approach segments to the same runway or heliport.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="serviceProviderSBAS" style="padding-top: 120px; margin-top: -120px;">
+              serviceProviderSBAS
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.serviceProviderSBAS
+             </code>
+             <p>
+              SBAS Service Provider Identifier. A number from 0 to 15 that associates the approach procedure to a particular satellite based approach system service provider.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#satelliteBasedAugmentationSystemServiceProvider" target="_blank">
+                   FinalApproachSegmentDataBlock.satelliteBasedAugmentationSystemServiceProvider
+                  </a>
+                 </td>
+                 <td>
+                  SBAS Service Provider Identifier. A number from 0 to 15 that associates the approach procedure to a particular satellite based approach system service provider.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="thresholdCourseWidth" style="padding-top: 120px; margin-top: -120px;">
+              thresholdCourseWidth
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.thresholdCourseWidth
+             </code>
+             <p>
+              The width of the lateral course at the Landing Threshold Point (LTP). This width, in conjunction with the location of the Flight Path Alignment Point (FPAP) defines the sensitivity of the lateral deviations throughout the approach.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#thresholdCourseWidth" target="_blank">
+                   FinalApproachSegmentDataBlock.thresholdCourseWidth
+                  </a>
+                 </td>
+                 <td>
+                  The width of the lateral course at the Landing Threshold Point (LTP). This width, in conjunction with the location of the Flight Path Alignment Point (FPAP) defines the sensitivity of the lateral deviations throughout the approach.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalAlarmLimit" style="padding-top: 120px; margin-top: -120px;">
+              verticalAlarmLimit
+             </h4>
+             <code class="text-secondary">
+              FASDataBlock.verticalAlarmLimit
+             </code>
+             <p>
+              (ARINC) Vertical Alert Limit (VAL) is half the length of a segment on the vertical axis (perpendicular to the horizontal plane of WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated vertical position with a probability of 1-E-7 per approach, assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/FinalApproachSegmentDataBlock.html#verticalAlarmLimit" target="_blank">
+                   FinalApproachSegmentDataBlock.verticalAlarmLimit
+                  </a>
+                 </td>
+                 <td>
+                  Half the length of a segment on the vertical axis (perpendicular to the horizontal plane of WGS-84 ellipsoid), with its centre being at the true position, which describes the region which is required to contain the indicated vertical position with a probability of 1-E-7 per approach, assuming the probability of a GPS satellite integrity failure being included in the position solution is less than or equal to E-4 per hour.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

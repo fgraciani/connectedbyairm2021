@@ -33,7 +33,7 @@ class Airm:
   def get_concept(self, urn):
     urn = urn.replace(' ','').replace('\t','').replace('	','')
     if urn == "":
-      print("! empty urn")
+      return None
     if "urn:" in urn:#if valid_urn(urn):
       if "ContextualModel" in urn:
         dataframe = self.contextual_terms.copy()

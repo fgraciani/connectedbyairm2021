@@ -14,6 +14,7 @@ class Mapping:
   def __init__(self, mapping_file_pathname):
     self.dataframe = pd.read_excel(r''+mapping_file_pathname, sheet_name='semantic correspondences', engine='openpyxl')
     self.dataframe.fillna("missing data", inplace = True)
+    self.dataframe = self.dataframe.applymap(str)
     self.dictionary = self.dataframe.to_dict('records')
     self.load_metadata(mapping_file_pathname)
 
@@ -26,9 +27,10 @@ class Mapping:
     self.metadata["notes"] = sheet['B8'].value
     self.metadata["name"] = self.metadata["information_definition"]+" to AIRM "+self.metadata["airm_version"]
     self.metadata["url_name"] = self.metadata["name"].lower().replace(" ", "-")
-    print("Mapping:\t\tname: "+self.metadata["name"])
-    print(        "\t\turl_name: "+self.metadata["url_name"])
-    print(        "\t\tnotes: "+self.metadata["notes"])
+    print("Mapping metadata:")
+    print("name: "+self.metadata["name"])
+    print("url_name: "+self.metadata["url_name"])
+    print("notes: "+self.metadata["notes"])
 
   def get_information_concepts(self):
     dataframe = self.dataframe.copy()

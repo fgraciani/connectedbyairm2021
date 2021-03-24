@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   SegmentLeg - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           SegmentLeg
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             SegmentLeg
+            </h2>
+            <code class="text-secondary">
+             SegmentLeg
+            </code>
+           </div>
+           <p>
+            A portion of a procedure as defined by two consecutive significant points.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aircraftCategory">
+                 aircraftCategory
+                </a>
+               </td>
+               <td>
+                Classification of aircraft based on 1.3 times stall speed in landing configuration at maximum certified landing mass.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitudeInterpretation">
+                 altitudeInterpretation
+                </a>
+               </td>
+               <td>
+                A code indicating how the altitude attributes of a procedure leg should be interpreted.
+               </td>
+               <td>
+                <a href="(string) CodeAltitudeUseType	.html" target="_blank">
+                 (string) CodeAltitudeUseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitudeOverrideATC">
+                 altitudeOverrideATC
+                </a>
+               </td>
+               <td>
+                Alternate altitude when directed by Air Traffic Control
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitudeOverrideReference">
+                 altitudeOverrideReference
+                </a>
+               </td>
+               <td>
+                A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#angle">
+                 angle
+                </a>
+               </td>
+               <td>
+                The angle defined to limit aircraft trajectory.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#arcCentre">
+                 arcCentre
+                </a>
+               </td>
+               <td>
+                The center point used to define an arc.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#bankAngle">
+                 bankAngle
+                </a>
+               </td>
+               <td>
+                The recommended bank angle of the aircraft on the turn.  &lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be between 5 and 35 degrees.
+               </td>
+               <td>
+                <a href="(decimal) ValAngleType	.html" target="_blank">
+                 (decimal) ValAngleType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#course">
+                 course
+                </a>
+               </td>
+               <td>
+                The value of the course angle in degrees.
+               </td>
+               <td>
+                <a href="(decimal) ValBearingType	.html" target="_blank">
+                 (decimal) ValBearingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseDirection">
+                 courseDirection
+                </a>
+               </td>
+               <td>
+                Indicates flight direction to/from the navaid providing the course guidance.
+               </td>
+               <td>
+                <a href="(string) CodeDirectionReferenceType	.html" target="_blank">
+                 (string) CodeDirectionReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseType">
+                 courseType
+                </a>
+               </td>
+               <td>
+                A code indicating the type of course to be observed. E.g. true track, magnetic track, heading, VOR radial, true bearing, magnetic bearing.
+               </td>
+               <td>
+                <a href="(string) CodeCourseType	.html" target="_blank">
+                 (string) CodeCourseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designSurface">
+                 designSurface
+                </a>
+               </td>
+               <td>
+                An evaluation area used when designing a procedure segment to insure safety of aircraft
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#distance">
+                 distance
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#duration">
+                 duration
+                </a>
+               </td>
+               <td>
+                Segment duration
+               </td>
+               <td>
+                <a href="(decimal) ValDurationType	.html" target="_blank">
+                 (decimal) ValDurationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endConditionDesignator">
+                 endConditionDesignator
+                </a>
+               </td>
+               <td>
+                An indication of the event that allows identifying the end of the leg and the start of the next leg on the procedure.  For example, reaching an altitude or outbound timing.
+               </td>
+               <td>
+                <a href="(string) CodeSegmentTerminationType	.html" target="_blank">
+                 (string) CodeSegmentTerminationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endPoint">
+                 endPoint
+                </a>
+               </td>
+               <td>
+                The point used to indicate the end of a segment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#holding">
+                 holding
+                </a>
+               </td>
+               <td>
+                Established holding used on a procedure.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#legPath">
+                 legPath
+                </a>
+               </td>
+               <td>
+                A code defining a specific type of flight path such as arc, base turn outbound, base turn inbound, track, proc turn, hold in lieu.
+               </td>
+               <td>
+                <a href="(string) CodeTrajectoryType	.html" target="_blank">
+                 (string) CodeTrajectoryType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#legTypeARINC">
+                 legTypeARINC
+                </a>
+               </td>
+               <td>
+                A comprehensive description of the 'path and terminator' concept is given in ARINC Specification 424, Attachment 5, Path and Terminator.
+               </td>
+               <td>
+                <a href="(string) CodeSegmentPathType	.html" target="_blank">
+                 (string) CodeSegmentPathType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#length">
+                 length
+                </a>
+               </td>
+               <td>
+                Length of the segment
+               </td>
+               <td>
+                <a href="(decimal) ValDistanceType	.html" target="_blank">
+                 (decimal) ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowerLimitAltitude">
+                 lowerLimitAltitude
+                </a>
+               </td>
+               <td>
+                The lower limit altitude.  &lt;/para&gt;&lt;para&gt; used with codeDescrDistVer: At or above the lower altitude. At the lower altitude Between the lower and the upper altitude. Lower altitude is recommended. Expect lower altitude by ATC.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowerLimitReference">
+                 lowerLimitReference
+                </a>
+               </td>
+               <td>
+                A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#procedureTurnRequired">
+                 procedureTurnRequired
+                </a>
+               </td>
+               <td>
+                Indicates if a procedure turn is required at the end of the segmentleg.  Default is No.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#speedInterpretation">
+                 speedInterpretation
+                </a>
+               </td>
+               <td>
+                A code indicating how the speed attributes of a procedure leg should be interpreted.
+               </td>
+               <td>
+                <a href="(string) CodeAltitudeUseType	.html" target="_blank">
+                 (string) CodeAltitudeUseType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#speedLimit">
+                 speedLimit
+                </a>
+               </td>
+               <td>
+                The value of the speed limit on the procedure leg.  &lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be equivalent to between 0 and 400, when expressed in Km/h.
+               </td>
+               <td>
+                <a href="(decimal) ValSpeedType	.html" target="_blank">
+                 (decimal) ValSpeedType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#speedReference">
+                 speedReference
+                </a>
+               </td>
+               <td>
+                A code indicating the reference system for a speed value.
+               </td>
+               <td>
+                <a href="(string) CodeSpeedReferenceType	.html" target="_blank">
+                 (string) CodeSpeedReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startPoint">
+                 startPoint
+                </a>
+               </td>
+               <td>
+                The point used to indicate the beginning of a segment.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#trajectory">
+                 trajectory
+                </a>
+               </td>
+               <td>
+                The path of the moving aircraft on the segment leg.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#turnDirection">
+                 turnDirection
+                </a>
+               </td>
+               <td>
+                A code indicating the direction of the turn.
+               </td>
+               <td>
+                <a href="(string) CodeDirectionTurnType	.html" target="_blank">
+                 (string) CodeDirectionTurnType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#upperLimitAltitude">
+                 upperLimitAltitude
+                </a>
+               </td>
+               <td>
+                The value of the upper altitude used with codeDescrDistVer: At or below the higher altitude. Between the lower and the upper altitude.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#upperLimitReference">
+                 upperLimitReference
+                </a>
+               </td>
+               <td>
+                A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalReferenceType	.html" target="_blank">
+                 (string) CodeVerticalReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalAngle">
+                 verticalAngle
+                </a>
+               </td>
+               <td>
+                The value of the vertical climb angle of the aircraft on the procedure leg. A negative value means descent.&lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be between -10 and +50 degrees.
+               </td>
+               <td>
+                <a href="(decimal) ValAngleType	.html" target="_blank">
+                 (decimal) ValAngleType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="SegmentLeg" style="padding-top: 120px; margin-top: -120px;">
+              SegmentLeg
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg
+             </code>
+             <p>
+              A portion of a procedure as defined by two consecutive significant points.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg" target="_blank">
+                   SegmentLeg
+                  </a>
+                 </td>
+                 <td>
+                  A part of an instrument or visual flight procedure defined by two consecutive significant points.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="aircraftCategory" style="padding-top: 120px; margin-top: -120px;">
+              aircraftCategory
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.aircraftCategory
+             </code>
+             <p>
+              Classification of aircraft based on 1.3 times stall speed in landing configuration at maximum certified landing mass.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#aircraftCategory" target="_blank">
+                   SegmentLeg.aircraftCategory
+                  </a>
+                 </td>
+                 <td>
+                  The aircraft category for which the segment leg is valid.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altitudeInterpretation" style="padding-top: 120px; margin-top: -120px;">
+              altitudeInterpretation
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.altitudeInterpretation
+             </code>
+             <p>
+              A code indicating how the altitude attributes of a procedure leg should be interpreted.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#altitudeInterpretation" target="_blank">
+                   SegmentLeg.altitudeInterpretation
+                  </a>
+                 </td>
+                 <td>
+                  A code indicating how the altitude attributes of a procedure leg should be interpreted.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altitudeOverrideATC" style="padding-top: 120px; margin-top: -120px;">
+              altitudeOverrideATC
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.altitudeOverrideATC
+             </code>
+             <p>
+              Alternate altitude when directed by Air Traffic Control
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#altitudeOverrideATC" target="_blank">
+                   SegmentLeg.altitudeOverrideATC
+                  </a>
+                 </td>
+                 <td>
+                  Alternate altitude when directed by Air Traffic Control.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altitudeOverrideReference" style="padding-top: 120px; margin-top: -120px;">
+              altitudeOverrideReference
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.altitudeOverrideReference
+             </code>
+             <p>
+              A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="angle" style="padding-top: 120px; margin-top: -120px;">
+              angle
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.angle
+             </code>
+             <p>
+              The angle defined to limit aircraft trajectory.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#angle" target="_blank">
+                   SegmentLeg.angle
+                  </a>
+                 </td>
+                 <td>
+                  The angle defined to limit aircraft trajectory.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="arcCentre" style="padding-top: 120px; margin-top: -120px;">
+              arcCentre
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.arcCentre
+             </code>
+             <p>
+              The center point used to define an arc.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#arcCentre" target="_blank">
+                   SegmentLeg.arcCentre
+                  </a>
+                 </td>
+                 <td>
+                  The center point used to define an arc.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="bankAngle" style="padding-top: 120px; margin-top: -120px;">
+              bankAngle
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.bankAngle
+             </code>
+             <p>
+              The recommended bank angle of the aircraft on the turn.  &lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be between 5 and 35 degrees.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#bankAngle" target="_blank">
+                   SegmentLeg.bankAngle
+                  </a>
+                 </td>
+                 <td>
+                  The recommended bank angle of the aircraft on the turn.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="course" style="padding-top: 120px; margin-top: -120px;">
+              course
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.course
+             </code>
+             <p>
+              The value of the course angle in degrees.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#course" target="_blank">
+                   SegmentLeg.course
+                  </a>
+                 </td>
+                 <td>
+                  The value of the course angle.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="courseDirection" style="padding-top: 120px; margin-top: -120px;">
+              courseDirection
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.courseDirection
+             </code>
+             <p>
+              Indicates flight direction to/from the navaid providing the course guidance.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#courseDirection" target="_blank">
+                   SegmentLeg.courseDirection
+                  </a>
+                 </td>
+                 <td>
+                  The flight direction to/from the navaid providing the course guidance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="courseType" style="padding-top: 120px; margin-top: -120px;">
+              courseType
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.courseType
+             </code>
+             <p>
+              A code indicating the type of course to be observed. E.g. true track, magnetic track, heading, VOR radial, true bearing, magnetic bearing.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#courseType" target="_blank">
+                   SegmentLeg.courseType
+                  </a>
+                 </td>
+                 <td>
+                  A code indicating the type of course to be observed.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="designSurface" style="padding-top: 120px; margin-top: -120px;">
+              designSurface
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.designSurface
+             </code>
+             <p>
+              An evaluation area used when designing a procedure segment to insure safety of aircraft
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#designSurface" target="_blank">
+                   SegmentLeg.designSurface
+                  </a>
+                 </td>
+                 <td>
+                  An evaluation area used when designing a procedure segment to insure safety of aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="distance" style="padding-top: 120px; margin-top: -120px;">
+              distance
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.distance
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#distance" target="_blank">
+                   SegmentLeg.distance
+                  </a>
+                 </td>
+                 <td>
+                  The distance defined to limit aircraft trajectory.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="duration" style="padding-top: 120px; margin-top: -120px;">
+              duration
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.duration
+             </code>
+             <p>
+              Segment duration
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#duration" target="_blank">
+                   SegmentLeg.duration
+                  </a>
+                 </td>
+                 <td>
+                  The duration of the segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="endConditionDesignator" style="padding-top: 120px; margin-top: -120px;">
+              endConditionDesignator
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.endConditionDesignator
+             </code>
+             <p>
+              An indication of the event that allows identifying the end of the leg and the start of the next leg on the procedure.  For example, reaching an altitude or outbound timing.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#endConditionDesignator" target="_blank">
+                   SegmentLeg.endConditionDesignator
+                  </a>
+                 </td>
+                 <td>
+                  An indication of the event that allows identifying the end of the leg and the start of the next leg on the procedure.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="endPoint" style="padding-top: 120px; margin-top: -120px;">
+              endPoint
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.endPoint
+             </code>
+             <p>
+              The point used to indicate the end of a segment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#endTerminalSegmentPoint" target="_blank">
+                   SegmentLeg.endTerminalSegmentPoint
+                  </a>
+                 </td>
+                 <td>
+                  The point used to indicate the end of a segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="holding" style="padding-top: 120px; margin-top: -120px;">
+              holding
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.holding
+             </code>
+             <p>
+              Established holding used on a procedure.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#holding" target="_blank">
+                   SegmentLeg.holding
+                  </a>
+                 </td>
+                 <td>
+                  Established holding used on a procedure.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="legPath" style="padding-top: 120px; margin-top: -120px;">
+              legPath
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.legPath
+             </code>
+             <p>
+              A code defining a specific type of flight path such as arc, base turn outbound, base turn inbound, track, proc turn, hold in lieu.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#legPath" target="_blank">
+                   SegmentLeg.legPath
+                  </a>
+                 </td>
+                 <td>
+                  The type of flight path.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="legTypeARINC" style="padding-top: 120px; margin-top: -120px;">
+              legTypeARINC
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.legTypeARINC
+             </code>
+             <p>
+              A comprehensive description of the 'path and terminator' concept is given in ARINC Specification 424, Attachment 5, Path and Terminator.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#legType" target="_blank">
+                   SegmentLeg.legType
+                  </a>
+                 </td>
+                 <td>
+                  The type of 'path and terminator' as given in ARINC Specification 424, Attachment 5, Path and Terminator.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="length" style="padding-top: 120px; margin-top: -120px;">
+              length
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.length
+             </code>
+             <p>
+              Length of the segment
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#length" target="_blank">
+                   SegmentLeg.length
+                  </a>
+                 </td>
+                 <td>
+                  The length of the segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lowerLimitAltitude" style="padding-top: 120px; margin-top: -120px;">
+              lowerLimitAltitude
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.lowerLimitAltitude
+             </code>
+             <p>
+              The lower limit altitude.  &lt;/para&gt;&lt;para&gt; used with codeDescrDistVer: At or above the lower altitude. At the lower altitude Between the lower and the upper altitude. Lower altitude is recommended. Expect lower altitude by ATC.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#lowerLimitAltitude" target="_blank">
+                   SegmentLeg.lowerLimitAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The lower limit altitude.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lowerLimitReference" style="padding-top: 120px; margin-top: -120px;">
+              lowerLimitReference
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.lowerLimitReference
+             </code>
+             <p>
+              A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="procedureTurnRequired" style="padding-top: 120px; margin-top: -120px;">
+              procedureTurnRequired
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.procedureTurnRequired
+             </code>
+             <p>
+              Indicates if a procedure turn is required at the end of the segmentleg.  Default is No.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#isProcedureTurnRequired" target="_blank">
+                   SegmentLeg.isProcedureTurnRequired
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether a procedure turn is required at the end of the segment leg.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="speedInterpretation" style="padding-top: 120px; margin-top: -120px;">
+              speedInterpretation
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.speedInterpretation
+             </code>
+             <p>
+              A code indicating how the speed attributes of a procedure leg should be interpreted.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#speedInterpretation" target="_blank">
+                   SegmentLeg.speedInterpretation
+                  </a>
+                 </td>
+                 <td>
+                  Indication how the speed attribute of a procedure leg should be interpreted.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="speedLimit" style="padding-top: 120px; margin-top: -120px;">
+              speedLimit
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.speedLimit
+             </code>
+             <p>
+              The value of the speed limit on the procedure leg.  &lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be equivalent to between 0 and 400, when expressed in Km/h.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#speedLimit" target="_blank">
+                   SegmentLeg.speedLimit
+                  </a>
+                 </td>
+                 <td>
+                  The value of the speed limit on the procedure leg.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="speedReference" style="padding-top: 120px; margin-top: -120px;">
+              speedReference
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.speedReference
+             </code>
+             <p>
+              A code indicating the reference system for a speed value.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#speedReference" target="_blank">
+                   SegmentLeg.speedReference
+                  </a>
+                 </td>
+                 <td>
+                  A code indicating the reference system for a speed value.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="startPoint" style="padding-top: 120px; margin-top: -120px;">
+              startPoint
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.startPoint
+             </code>
+             <p>
+              The point used to indicate the beginning of a segment.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#startTerminalSegmentPoint" target="_blank">
+                   SegmentLeg.startTerminalSegmentPoint
+                  </a>
+                 </td>
+                 <td>
+                  The point used to indicate the beginning of a segment.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="trajectory" style="padding-top: 120px; margin-top: -120px;">
+              trajectory
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.trajectory
+             </code>
+             <p>
+              The path of the moving aircraft on the segment leg.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#curveExtent" target="_blank">
+                   GeoEnabledEntity.curveExtent
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as a curve which is a connected sequence of points.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="turnDirection" style="padding-top: 120px; margin-top: -120px;">
+              turnDirection
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.turnDirection
+             </code>
+             <p>
+              A code indicating the direction of the turn.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#turnDirection" target="_blank">
+                   SegmentLeg.turnDirection
+                  </a>
+                 </td>
+                 <td>
+                  The direction of the turn.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="upperLimitAltitude" style="padding-top: 120px; margin-top: -120px;">
+              upperLimitAltitude
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.upperLimitAltitude
+             </code>
+             <p>
+              The value of the upper altitude used with codeDescrDistVer: At or below the higher altitude. Between the lower and the upper altitude.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#upperLimitAltitude" target="_blank">
+                   SegmentLeg.upperLimitAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The upper limit altitude.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="upperLimitReference" style="padding-top: 120px; margin-top: -120px;">
+              upperLimitReference
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.upperLimitReference
+             </code>
+             <p>
+              A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid 2) pressure distance: QFE, QNH, STD.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/ValVerticalDistanceType.html#verticalReference" target="_blank">
+                   ValVerticalDistanceType.verticalReference
+                  </a>
+                 </td>
+                 <td>
+                  The reference surface used for determining the value of the vertical distance.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalAngle" style="padding-top: 120px; margin-top: -120px;">
+              verticalAngle
+             </h4>
+             <code class="text-secondary">
+              SegmentLeg.verticalAngle
+             </code>
+             <p>
+              The value of the vertical climb angle of the aircraft on the procedure leg. A negative value means descent.&lt;/para&gt;&lt;para&gt; Rules:  As a plausibility rule, value should be between -10 and +50 degrees.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/SegmentLeg.html#verticalAngle" target="_blank">
+                   SegmentLeg.verticalAngle
+                  </a>
+                 </td>
+                 <td>
+                  The vertical climb angle of the aircraft on the procedure leg.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   Timesheet - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           Timesheet
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             Timesheet
+            </h2>
+            <code class="text-secondary">
+             Timesheet
+            </code>
+           </div>
+           <p>
+            The definition of a single time interval, that occurs repeatedly as part of a schedule.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#day">
+                 day
+                </a>
+               </td>
+               <td>
+                An indicator of the day the timesheet is referring to.
+               </td>
+               <td>
+                <a href="(string) CodeDayType	.html" target="_blank">
+                 (string) CodeDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dayTil">
+                 dayTil
+                </a>
+               </td>
+               <td>
+                An indicator of the days affected by a timesheet, as follows: if the value of this attribute is left blank, the 'EndTime', 'EndEvent', 'EndTimeRelativeEvent' and 'endEventInterpretation' values of a timesheet must be considered as occurring on the day specified.
+               </td>
+               <td>
+                <a href="(string) CodeDayType	.html" target="_blank">
+                 (string) CodeDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#daylightSavingAdjust">
+                 daylightSavingAdjust
+                </a>
+               </td>
+               <td>
+                Indicates that the 'StartTime' and 'EndTime' values of a timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#end(string) Time">
+                 end(string) Time
+                </a>
+               </td>
+               <td>
+                The time of the day when the period described in the timesheet ends.
+               </td>
+               <td>
+                <a href="(string) TimeType	.html" target="_blank">
+                 (string) TimeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#end(string) TimeRelativeEvent">
+                 end(string) TimeRelativeEvent
+                </a>
+               </td>
+               <td>
+                The number of minutes before or after an event, referred to by the timesheet's 'EndEvent', when the period described in the timesheet ends.
+               </td>
+               <td>
+                <a href="(decimal) ValDurationType	.html" target="_blank">
+                 (decimal) ValDurationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endDate">
+                 endDate
+                </a>
+               </td>
+               <td>
+                The end date of the validity of a timesheet. Used together with a timesheet's 'StartDate' to express repetitive time periods like 15 May to 15 November.
+               </td>
+               <td>
+                <a href="(string) DateMonthDayType	.html" target="_blank">
+                 (string) DateMonthDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endEvent">
+                 endEvent
+                </a>
+               </td>
+               <td>
+                A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in a timesheet ends.
+               </td>
+               <td>
+                <a href="(string) CodeTimeEventType	.html" target="_blank">
+                 (string) CodeTimeEventType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#endEventInterpretation">
+                 endEventInterpretation
+                </a>
+               </td>
+               <td>
+                When both the 'EndTime' and 'EndEvent' values of a timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
+               </td>
+               <td>
+                <a href="(string) CodeTimeEventCombinationType	.html" target="_blank">
+                 (string) CodeTimeEventCombinationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#excluded">
+                 excluded
+                </a>
+               </td>
+               <td>
+                An indicator that the time block indicated by a timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#start(string) Time">
+                 start(string) Time
+                </a>
+               </td>
+               <td>
+                The time of the day (specified in the timesheet's 'day' attribute) when the period described in the timesheet starts.
+               </td>
+               <td>
+                <a href="(string) TimeType	.html" target="_blank">
+                 (string) TimeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#start(string) TimeRelativeEvent">
+                 start(string) TimeRelativeEvent
+                </a>
+               </td>
+               <td>
+                The number of minutes before or after the event referred to by the timesheet's 'StartEvent' when the period described in the timesheet starts.
+               </td>
+               <td>
+                <a href="(decimal) ValDurationType	.html" target="_blank">
+                 (decimal) ValDurationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startDate">
+                 startDate
+                </a>
+               </td>
+               <td>
+                The start date of the validity of a timesheet. Used together with a timesheet's 'EndDate' to express repetitive time periods like 15 May to 15 November.
+               </td>
+               <td>
+                <a href="(string) DateMonthDayType	.html" target="_blank">
+                 (string) DateMonthDayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startEvent">
+                 startEvent
+                </a>
+               </td>
+               <td>
+                A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in a timesheet starts.
+               </td>
+               <td>
+                <a href="(string) CodeTimeEventType	.html" target="_blank">
+                 (string) CodeTimeEventType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#startEventInterpretation">
+                 startEventInterpretation
+                </a>
+               </td>
+               <td>
+                When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
+               </td>
+               <td>
+                <a href="(string) CodeTimeEventCombinationType	.html" target="_blank">
+                 (string) CodeTimeEventCombinationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#timeReference">
+                 timeReference
+                </a>
+               </td>
+               <td>
+                An indicator of the time reference system or reference system offset (for example, Coodinated Universal Time (UTC), or UTC minus 7 hours), for time values specified in a timesheet.
+               </td>
+               <td>
+                <a href="(string) CodeTimeReferenceType	.html" target="_blank">
+                 (string) CodeTimeReferenceType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="Timesheet" style="padding-top: 120px; margin-top: -120px;">
+              Timesheet
+             </h4>
+             <code class="text-secondary">
+              Timesheet
+             </code>
+             <p>
+              The definition of a single time interval, that occurs repeatedly as part of a schedule.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet" target="_blank">
+                   Timesheet
+                  </a>
+                 </td>
+                 <td>
+                  The definition of a single time interval, that occurs repeatedly as part of a schedule.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              Timesheet.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="day" style="padding-top: 120px; margin-top: -120px;">
+              day
+             </h4>
+             <code class="text-secondary">
+              Timesheet.day
+             </code>
+             <p>
+              An indicator of the day the timesheet is referring to.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#day" target="_blank">
+                   Timesheet.day
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the day the timesheet is referring to.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dayTil" style="padding-top: 120px; margin-top: -120px;">
+              dayTil
+             </h4>
+             <code class="text-secondary">
+              Timesheet.dayTil
+             </code>
+             <p>
+              An indicator of the days affected by a timesheet, as follows: if the value of this attribute is left blank, the 'EndTime', 'EndEvent', 'EndTimeRelativeEvent' and 'endEventInterpretation' values of a timesheet must be considered as occurring on the day specified.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#dayTil" target="_blank">
+                   Timesheet.dayTil
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the days affected by the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="daylightSavingAdjust" style="padding-top: 120px; margin-top: -120px;">
+              daylightSavingAdjust
+             </h4>
+             <code class="text-secondary">
+              Timesheet.daylightSavingAdjust
+             </code>
+             <p>
+              Indicates that the 'StartTime' and 'EndTime' values of a timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#daylightSavingAdjust" target="_blank">
+                   Timesheet.daylightSavingAdjust
+                  </a>
+                 </td>
+                 <td>
+                  Indicates that the startTime and endTime values of the timesheet have to be decreased by one hour when Daylight Saving is in force (summer time).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="end(string) Time" style="padding-top: 120px; margin-top: -120px;">
+              end(string) Time
+             </h4>
+             <code class="text-secondary">
+              Timesheet.endTime
+             </code>
+             <p>
+              The time of the day when the period described in the timesheet ends.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#endTime" target="_blank">
+                   Timesheet.endTime
+                  </a>
+                 </td>
+                 <td>
+                  The time of the day when the period described in the timesheet ends.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="end(string) TimeRelativeEvent" style="padding-top: 120px; margin-top: -120px;">
+              end(string) TimeRelativeEvent
+             </h4>
+             <code class="text-secondary">
+              Timesheet.endTimeRelativeEvent
+             </code>
+             <p>
+              The number of minutes before or after an event, referred to by the timesheet's 'EndEvent', when the period described in the timesheet ends.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#endTimeRelativeEvent" target="_blank">
+                   Timesheet.endTimeRelativeEvent
+                  </a>
+                 </td>
+                 <td>
+                  The number of minutes before or after the end event when the period described in the timesheet ends.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="endDate" style="padding-top: 120px; margin-top: -120px;">
+              endDate
+             </h4>
+             <code class="text-secondary">
+              Timesheet.endDate
+             </code>
+             <p>
+              The end date of the validity of a timesheet. Used together with a timesheet's 'StartDate' to express repetitive time periods like 15 May to 15 November.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#endDate" target="_blank">
+                   Timesheet.endDate
+                  </a>
+                 </td>
+                 <td>
+                  The end date of the validity of the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="endEvent" style="padding-top: 120px; margin-top: -120px;">
+              endEvent
+             </h4>
+             <code class="text-secondary">
+              Timesheet.endEvent
+             </code>
+             <p>
+              A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in a timesheet ends.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#endEvent" target="_blank">
+                   Timesheet.endEvent
+                  </a>
+                 </td>
+                 <td>
+                  A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet ends.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="endEventInterpretation" style="padding-top: 120px; margin-top: -120px;">
+              endEventInterpretation
+             </h4>
+             <code class="text-secondary">
+              Timesheet.endEventInterpretation
+             </code>
+             <p>
+              When both the 'EndTime' and 'EndEvent' values of a timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#endEventInterpretation" target="_blank">
+                   Timesheet.endEventInterpretation
+                  </a>
+                 </td>
+                 <td>
+                  When both the 'EndTime' and 'EndEvent' values of the timesheet are not blank, this attribute explains how the combination of the two attributes should be interpreted, i.e. which of the two moments in time is the end of the period described by the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="excluded" style="padding-top: 120px; margin-top: -120px;">
+              excluded
+             </h4>
+             <code class="text-secondary">
+              Timesheet.excluded
+             </code>
+             <p>
+              An indicator that the time block indicated by a timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#isExcluded" target="_blank">
+                   Timesheet.isExcluded
+                  </a>
+                 </td>
+                 <td>
+                  An indicator that the time block indicated by the timesheet is excluded (subtracted) from the total time interval(s) defined by one or more additional timesheet(s).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="start(string) Time" style="padding-top: 120px; margin-top: -120px;">
+              start(string) Time
+             </h4>
+             <code class="text-secondary">
+              Timesheet.startTime
+             </code>
+             <p>
+              The time of the day (specified in the timesheet's 'day' attribute) when the period described in the timesheet starts.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#startTime" target="_blank">
+                   Timesheet.startTime
+                  </a>
+                 </td>
+                 <td>
+                  The time of the day when the period described in the timesheet starts.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="start(string) TimeRelativeEvent" style="padding-top: 120px; margin-top: -120px;">
+              start(string) TimeRelativeEvent
+             </h4>
+             <code class="text-secondary">
+              Timesheet.startTimeRelativeEvent
+             </code>
+             <p>
+              The number of minutes before or after the event referred to by the timesheet's 'StartEvent' when the period described in the timesheet starts.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#startTimeRelativeEvent" target="_blank">
+                   Timesheet.startTimeRelativeEvent
+                  </a>
+                 </td>
+                 <td>
+                  The number of minutes before or after the start event when the period described in the timesheet starts.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="startDate" style="padding-top: 120px; margin-top: -120px;">
+              startDate
+             </h4>
+             <code class="text-secondary">
+              Timesheet.startDate
+             </code>
+             <p>
+              The start date of the validity of a timesheet. Used together with a timesheet's 'EndDate' to express repetitive time periods like 15 May to 15 November.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#startDate" target="_blank">
+                   Timesheet.startDate
+                  </a>
+                 </td>
+                 <td>
+                  The start date of the validity of the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="startEvent" style="padding-top: 120px; margin-top: -120px;">
+              startEvent
+             </h4>
+             <code class="text-secondary">
+              Timesheet.startEvent
+             </code>
+             <p>
+              A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in a timesheet starts.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#startEvent" target="_blank">
+                   Timesheet.startEvent
+                  </a>
+                 </td>
+                 <td>
+                  A reference to an event (like sunset or sunrise), the occurrence of which indicates when the period described in the timesheet starts.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="startEventInterpretation" style="padding-top: 120px; margin-top: -120px;">
+              startEventInterpretation
+             </h4>
+             <code class="text-secondary">
+              Timesheet.startEventInterpretation
+             </code>
+             <p>
+              When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#startEventInterpretation" target="_blank">
+                   Timesheet.startEventInterpretation
+                  </a>
+                 </td>
+                 <td>
+                  When both the 'StartTime' and 'StartEvent' values of a timesheet are not blank, this explains how the combination of the two values should be interpreted, i.e. which of the two moments in time is the beginning of the period described by the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="timeReference" style="padding-top: 120px; margin-top: -120px;">
+              timeReference
+             </h4>
+             <code class="text-secondary">
+              Timesheet.timeReference
+             </code>
+             <p>
+              An indicator of the time reference system or reference system offset (for example, Coodinated Universal Time (UTC), or UTC minus 7 hours), for time values specified in a timesheet.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Timesheet.html#timeReference" target="_blank">
+                   Timesheet.timeReference
+                  </a>
+                 </td>
+                 <td>
+                  An indicator of the time reference system or reference system offset for time values specified in the timesheet.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

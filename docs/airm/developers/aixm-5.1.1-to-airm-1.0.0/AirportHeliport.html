@@ -1,0 +1,2575 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   AirportHeliport - AIXM 5.1.1 to AIRM 1.0.0 | AIRM.aero
+  </title>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../assets/css/sidebar.css" rel="stylesheet"/>
+  <link href="../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(178,215,243,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../semantic-correspondences.html">
+          <span>
+           Semantic Correspondences
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../aixm-5.1.1-to-airm-1.0.0.html" id="MAPPING_NAME_BC">
+          <span>
+           AIXM 5.1.1 to AIRM 1.0.0
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a id="BC_INFO_CONCEPT_NAME">
+          <span>
+           AirportHeliport
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             AirportHeliport
+            </h2>
+            <code class="text-secondary">
+             AirportHeliport
+            </code>
+           </div>
+           <p>
+            A defined area on land or water (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft/helicopters.
+           </p>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#ARP">
+                 ARP
+                </a>
+               </td>
+               <td>
+                Airport reference point.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#abandoned">
+                 abandoned
+                </a>
+               </td>
+               <td>
+                An indicator that the airport/heliport is no longer in operational use, but it's infrastructure is still present and visible from the air.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altimeterCheckLocation">
+                 altimeterCheckLocation
+                </a>
+               </td>
+               <td>
+                The availability of a point or area designated at an airport/heliport where the checking of an altimeter system can be accomplished.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altimeterSource">
+                 altimeterSource
+                </a>
+               </td>
+               <td>
+                The altimeter source used by the Airport.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#annotation">
+                 annotation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                Information about the operational status of the airport/heliport.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aviationBoundary">
+                 aviationBoundary
+                </a>
+               </td>
+               <td>
+                Boundary of the airport/heliport used for aviation operations.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certificationDate">
+                 certificationDate
+                </a>
+               </td>
+               <td>
+                The date when the airport/heliport certification has been issued by the supervising authority.
+               </td>
+               <td>
+                <a href="(date) DateType	.html" target="_blank">
+                 (date) DateType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certificationExpirationDate">
+                 certificationExpirationDate
+                </a>
+               </td>
+               <td>
+                The date when the airport/heliport certification will become invalid.
+               </td>
+               <td>
+                <a href="(date) DateType	.html" target="_blank">
+                 (date) DateType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#certifiedICAO">
+                 certifiedICAO
+                </a>
+               </td>
+               <td>
+                Indicating that the airport/heliport is certified according to the International Civil Aviation Organization (ICAO) rules.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contact">
+                 contact
+                </a>
+               </td>
+               <td>
+                Contact details for the AirportHeliport (phone, postal address, e-mail, etc.)
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#contaminant">
+                 contaminant
+                </a>
+               </td>
+               <td>
+                Overall contamination of an airport.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#controlType">
+                 controlType
+                </a>
+               </td>
+               <td>
+                The primary organization type in terms of civil or military, which controls the airport/heliport.
+               </td>
+               <td>
+                <a href="(string) CodeMilitaryOperationsType	.html" target="_blank">
+                 (string) CodeMilitaryOperationsType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#dateMagneticVariation">
+                 dateMagneticVariation
+                </a>
+               </td>
+               <td>
+                The date on which an associated magnetic variation was measured at the airport/heliport.
+               </td>
+               <td>
+                <a href="(string) DateYearType	.html" target="_blank">
+                 (string) DateYearType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designator">
+                 designator
+                </a>
+               </td>
+               <td>
+                A designator for an airport/heliport.
+               </td>
+               <td>
+                <a href="(string) CodeAirportHeliportDesignatorType	.html" target="_blank">
+                 (string) CodeAirportHeliportDesignatorType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorIATA">
+                 designatorIATA
+                </a>
+               </td>
+               <td>
+                The identifier that is assigned to a location in accordance with rules (resolution 767) governed by the International Air Transport Association (IATA).
+               </td>
+               <td>
+                <a href="(string) CodeIATAType	.html" target="_blank">
+                 (string) CodeIATAType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fieldElevation">
+                 fieldElevation
+                </a>
+               </td>
+               <td>
+                The vertical distance above Mean Sea Level (MSL) of the highest point of the landing area.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fieldElevationAccuracy">
+                 fieldElevationAccuracy
+                </a>
+               </td>
+               <td>
+                The vertical distance from the stated elevation within which there is a defined confidence of the true position falling.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#landingDirectionIndicator">
+                 landingDirectionIndicator
+                </a>
+               </td>
+               <td>
+                The availability of a device that indicates visually the direction currently designated for landing and for take-off.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#locationIndicatorICAO">
+                 locationIndicatorICAO
+                </a>
+               </td>
+               <td>
+                The International Civil Aviation Organization (ICAO) location indicator of the airport/heliport, as listed in ICAO DOC 7910.
+               </td>
+               <td>
+                <a href="(string) CodeICAOType	.html" target="_blank">
+                 (string) CodeICAOType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#lowestTemperature">
+                 lowestTemperature
+                </a>
+               </td>
+               <td>
+                The monthly mean of the daily minimum temperatures for the coldest month of the year at an airport/heliport.
+               </td>
+               <td>
+                <a href="(decimal) ValTemperatureType	.html" target="_blank">
+                 (decimal) ValTemperatureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariation">
+                 magneticVariation
+                </a>
+               </td>
+               <td>
+                The angular difference between True North and Magnetic North measured at a given position and date.
+               </td>
+               <td>
+                <a href="(decimal) ValMagneticVariationType	.html" target="_blank">
+                 (decimal) ValMagneticVariationType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariationAccuracy">
+                 magneticVariationAccuracy
+                </a>
+               </td>
+               <td>
+                The accuracy of the Magnetic Variation.
+               </td>
+               <td>
+                <a href="(decimal) ValAngleType	.html" target="_blank">
+                 (decimal) ValAngleType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#magneticVariationChange">
+                 magneticVariationChange
+                </a>
+               </td>
+               <td>
+                The annual rate of change of the magnetic variation at a specified airport/heliport.
+               </td>
+               <td>
+                <a href="(decimal) ValMagneticVariationChangeType	.html" target="_blank">
+                 (decimal) ValMagneticVariationChangeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                The primary official name of an airport/heliport as designated by an appropriate authority.
+               </td>
+               <td>
+                <a href="(string) TextNameType	.html" target="_blank">
+                 (string) TextNameType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#privateUse">
+                 privateUse
+                </a>
+               </td>
+               <td>
+                An airport or heliport not open for the public. Only for the use of the owners.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#referenceTemperature">
+                 referenceTemperature
+                </a>
+               </td>
+               <td>
+                The monthly mean of the daily maximum temperatures for the hottest month of the year at an airport/heliport.
+               </td>
+               <td>
+                <a href="(decimal) ValTemperatureType	.html" target="_blank">
+                 (decimal) ValTemperatureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#responsibleOrganisation">
+                 responsibleOrganisation
+                </a>
+               </td>
+               <td>
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#secondaryPowerSupply">
+                 secondaryPowerSupply
+                </a>
+               </td>
+               <td>
+                The availability of emergency power supply for the airport/heliport.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#servedCity">
+                 servedCity
+                </a>
+               </td>
+               <td>
+                The location that is served by the airport.
+               </td>
+               <td>
+                -
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#transitionAltitude">
+                 transitionAltitude
+                </a>
+               </td>
+               <td>
+                The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes at the airport/heliport.
+               </td>
+               <td>
+                <a href="(string) ValDistanceVerticalType	.html" target="_blank">
+                 (string) ValDistanceVerticalType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#transitionLevel">
+                 transitionLevel
+                </a>
+               </td>
+               <td>
+                The lowest flight level available for use above the transition altitude at the airport/heliport.
+               </td>
+               <td>
+                <a href="(unsignedint) ValFLType	.html" target="_blank">
+                 (unsignedint) ValFLType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of airport/heliport. For example, aerodrome only, combined aerodrome/heliport or simple landing site.
+               </td>
+               <td>
+                <a href="(string) CodeAirportHeliportType	.html" target="_blank">
+                 (string) CodeAirportHeliportType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#verticalDatum">
+                 verticalDatum
+                </a>
+               </td>
+               <td>
+                A reference surface with respect to which elevations and/or depths are specified at the airport/heliport.
+               </td>
+               <td>
+                <a href="(string) CodeVerticalDatumType	.html" target="_blank">
+                 (string) CodeVerticalDatumType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#windDirectionIndicator">
+                 windDirectionIndicator
+                </a>
+               </td>
+               <td>
+                The availability of a device, at the airport/heliport, that indicates the direction and the intensity of the wind.
+               </td>
+               <td>
+                <a href="(string) CodeYesNoType	.html" target="_blank">
+                 (string) CodeYesNoType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <hr/>
+            <h3 style="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;">
+             Details
+            </h3>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="AirportHeliport" style="padding-top: 120px; margin-top: -120px;">
+              AirportHeliport
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport
+             </code>
+             <p>
+              A defined area on land or water (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft/helicopters.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome" target="_blank">
+                   Aerodrome
+                  </a>
+                 </td>
+                 <td>
+                  A defined area on land or water (including any buildings, installations and equipment) intended to be used either wholly or in part for the arrival, departure and surface movement of aircraft.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="ARP" style="padding-top: 120px; margin-top: -120px;">
+              ARP
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.ARP
+             </code>
+             <p>
+              Airport reference point.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#aerodromeReferencePoint" target="_blank">
+                   Aerodrome.aerodromeReferencePoint
+                  </a>
+                 </td>
+                 <td>
+                  The designated geographical location of an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="abandoned" style="padding-top: 120px; margin-top: -120px;">
+              abandoned
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.abandoned
+             </code>
+             <p>
+              An indicator that the airport/heliport is no longer in operational use, but it's infrastructure is still present and visible from the air.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isAbandoned" target="_blank">
+                   Aerodrome.isAbandoned
+                  </a>
+                 </td>
+                 <td>
+                  An indicator that the aerodrome is no longer in operational use, but its infrastructure is still present and visible from the air.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altimeterCheckLocation" style="padding-top: 120px; margin-top: -120px;">
+              altimeterCheckLocation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.altimeterCheckLocation
+             </code>
+             <p>
+              The availability of a point or area designated at an airport/heliport where the checking of an altimeter system can be accomplished.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isAltimeterCheckLocationAvailable" target="_blank">
+                   Aerodrome.isAltimeterCheckLocationAvailable
+                  </a>
+                 </td>
+                 <td>
+                  The availability of a point or area designated at an aerodrome where the checking of an altimeter system can be accomplished.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="altimeterSource" style="padding-top: 120px; margin-top: -120px;">
+              altimeterSource
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.altimeterSource
+             </code>
+             <p>
+              The altimeter source used by the Airport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#altimeterSource" target="_blank">
+                   Aerodrome.altimeterSource
+                  </a>
+                 </td>
+                 <td>
+                  The altimeter source used by the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="annotation" style="padding-top: 120px; margin-top: -120px;">
+              annotation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.annotation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Entity.html#annotation" target="_blank">
+                   Entity.annotation
+                  </a>
+                 </td>
+                 <td>
+                  A general text note for the entity or for one of its properties.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="availability" style="padding-top: 120px; margin-top: -120px;">
+              availability
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.availability
+             </code>
+             <p>
+              Information about the operational status of the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#availability" target="_blank">
+                   Aerodrome.availability
+                  </a>
+                 </td>
+                 <td>
+                  The operational status of the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="aviationBoundary" style="padding-top: 120px; margin-top: -120px;">
+              aviationBoundary
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.aviationBoundary
+             </code>
+             <p>
+              Boundary of the airport/heliport used for aviation operations.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/GeoEnabledEntity.html#surfaceExtent" target="_blank">
+                   GeoEnabledEntity.surfaceExtent
+                  </a>
+                 </td>
+                 <td>
+                  The geometry of the entity expressed as a surface or area described by a closed line.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="certificationDate" style="padding-top: 120px; margin-top: -120px;">
+              certificationDate
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.certificationDate
+             </code>
+             <p>
+              The date when the airport/heliport certification has been issued by the supervising authority.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#certificationDate" target="_blank">
+                   Aerodrome.certificationDate
+                  </a>
+                 </td>
+                 <td>
+                  The date when the aerodrome certification has been issued by the supervising authority.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="certificationExpirationDate" style="padding-top: 120px; margin-top: -120px;">
+              certificationExpirationDate
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.certificationExpirationDate
+             </code>
+             <p>
+              The date when the airport/heliport certification will become invalid.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#certificationExpirationDate" target="_blank">
+                   Aerodrome.certificationExpirationDate
+                  </a>
+                 </td>
+                 <td>
+                  The date when the aerodrome certification will become invalid.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="certifiedICAO" style="padding-top: 120px; margin-top: -120px;">
+              certifiedICAO
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.certifiedICAO
+             </code>
+             <p>
+              Indicating that the airport/heliport is certified according to the International Civil Aviation Organization (ICAO) rules.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#certificationICAO" target="_blank">
+                   Aerodrome.certificationICAO
+                  </a>
+                 </td>
+                 <td>
+                  The aerodrome conformity to applicable safety regulatory requirements.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="contact" style="padding-top: 120px; margin-top: -120px;">
+              contact
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.contact
+             </code>
+             <p>
+              Contact details for the AirportHeliport (phone, postal address, e-mail, etc.)
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#contact" target="_blank">
+                   Aerodrome.contact
+                  </a>
+                 </td>
+                 <td>
+                  Contact details for the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="contaminant" style="padding-top: 120px; margin-top: -120px;">
+              contaminant
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.contaminant
+             </code>
+             <p>
+              Overall contamination of an airport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#contaminant" target="_blank">
+                   Aerodrome.contaminant
+                  </a>
+                 </td>
+                 <td>
+                  Overall contamination of an aerodrome
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="controlType" style="padding-top: 120px; margin-top: -120px;">
+              controlType
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.controlType
+             </code>
+             <p>
+              The primary organization type in terms of civil or military, which controls the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#responsibleOrganisation" target="_blank">
+                   Aerodrome.responsibleOrganisation
+                  </a>
+                 </td>
+                 <td>
+                  The organisation which is responsible for managing the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <h5>
+              Notes
+             </h5>
+             <p>
+              what does control mean in the AIXM definition
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="dateMagneticVariation" style="padding-top: 120px; margin-top: -120px;">
+              dateMagneticVariation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.dateMagneticVariation
+             </code>
+             <p>
+              The date on which an associated magnetic variation was measured at the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#dateMagneticVariation" target="_blank">
+                   Aerodrome.dateMagneticVariation
+                  </a>
+                 </td>
+                 <td>
+                  The date on which an associated magnetic variation was measured at the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="designator" style="padding-top: 120px; margin-top: -120px;">
+              designator
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.designator
+             </code>
+             <p>
+              A designator for an airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#designator" target="_blank">
+                   Aerodrome.designator
+                  </a>
+                 </td>
+                 <td>
+                  A designator for an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="designatorIATA" style="padding-top: 120px; margin-top: -120px;">
+              designatorIATA
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.designatorIATA
+             </code>
+             <p>
+              The identifier that is assigned to a location in accordance with rules (resolution 767) governed by the International Air Transport Association (IATA).
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#designatorIATA" target="_blank">
+                   Aerodrome.designatorIATA
+                  </a>
+                 </td>
+                 <td>
+                  The identifier that is assigned to a location in accordance with rules (resolution 767) governed by the International Air Transport Association (IATA).
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="fieldElevation" style="padding-top: 120px; margin-top: -120px;">
+              fieldElevation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.fieldElevation
+             </code>
+             <p>
+              The vertical distance above Mean Sea Level (MSL) of the highest point of the landing area.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#fieldElevation" target="_blank">
+                   Aerodrome.fieldElevation
+                  </a>
+                 </td>
+                 <td>
+                  The vertical distance above Mean Sea Level (MSL) of the highest point of the landing area.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="fieldElevationAccuracy" style="padding-top: 120px; margin-top: -120px;">
+              fieldElevationAccuracy
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.fieldElevationAccuracy
+             </code>
+             <p>
+              The vertical distance from the stated elevation within which there is a defined confidence of the true position falling.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#fieldElevationAccuracy" target="_blank">
+                   Aerodrome.fieldElevationAccuracy
+                  </a>
+                 </td>
+                 <td>
+                  The vertical distance from the stated elevation within which there is a defined confidence of the true position falling.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="landingDirectionIndicator" style="padding-top: 120px; margin-top: -120px;">
+              landingDirectionIndicator
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.landingDirectionIndicator
+             </code>
+             <p>
+              The availability of a device that indicates visually the direction currently designated for landing and for take-off.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isLandingDirectionIndicatorAvailable" target="_blank">
+                   Aerodrome.isLandingDirectionIndicatorAvailable
+                  </a>
+                 </td>
+                 <td>
+                  The availability of a device that indicates visually the direction currently designated for landing and for take-off.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="locationIndicatorICAO" style="padding-top: 120px; margin-top: -120px;">
+              locationIndicatorICAO
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.locationIndicatorICAO
+             </code>
+             <p>
+              The International Civil Aviation Organization (ICAO) location indicator of the airport/heliport, as listed in ICAO DOC 7910.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#locationIndicatorICAO" target="_blank">
+                   Aerodrome.locationIndicatorICAO
+                  </a>
+                 </td>
+                 <td>
+                  A four-letter code group formulated in accordance with rules prescribed by ICAO and assigned to the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="lowestTemperature" style="padding-top: 120px; margin-top: -120px;">
+              lowestTemperature
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.lowestTemperature
+             </code>
+             <p>
+              The monthly mean of the daily minimum temperatures for the coldest month of the year at an airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#lowestTemperature" target="_blank">
+                   Aerodrome.lowestTemperature
+                  </a>
+                 </td>
+                 <td>
+                  The mean lowest temperature of the coldest month of the year at an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticVariation" style="padding-top: 120px; margin-top: -120px;">
+              magneticVariation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.magneticVariation
+             </code>
+             <p>
+              The angular difference between True North and Magnetic North measured at a given position and date.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#magneticVariation" target="_blank">
+                   Aerodrome.magneticVariation
+                  </a>
+                 </td>
+                 <td>
+                  The angular difference between True North and Magnetic North measured at a given position and date.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticVariationAccuracy" style="padding-top: 120px; margin-top: -120px;">
+              magneticVariationAccuracy
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.magneticVariationAccuracy
+             </code>
+             <p>
+              The accuracy of the Magnetic Variation.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#magneticVariationAccuracy" target="_blank">
+                   Aerodrome.magneticVariationAccuracy
+                  </a>
+                 </td>
+                 <td>
+                  The accuracy of the magnetic variation.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="magneticVariationChange" style="padding-top: 120px; margin-top: -120px;">
+              magneticVariationChange
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.magneticVariationChange
+             </code>
+             <p>
+              The annual rate of change of the magnetic variation at a specified airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#magneticVariationChange" target="_blank">
+                   Aerodrome.magneticVariationChange
+                  </a>
+                 </td>
+                 <td>
+                  The annual rate of change of the magnetic variation at a specified aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="name" style="padding-top: 120px; margin-top: -120px;">
+              name
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.name
+             </code>
+             <p>
+              The primary official name of an airport/heliport as designated by an appropriate authority.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#name" target="_blank">
+                   Aerodrome.name
+                  </a>
+                 </td>
+                 <td>
+                  The primary official name of an aerodrome as designated by an appropriate authority.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="privateUse" style="padding-top: 120px; margin-top: -120px;">
+              privateUse
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.privateUse
+             </code>
+             <p>
+              An airport or heliport not open for the public. Only for the use of the owners.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isPrivateUse" target="_blank">
+                   Aerodrome.isPrivateUse
+                  </a>
+                 </td>
+                 <td>
+                  Indication whether the aerodrome is only for the use of the owners and not open for the public.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="referenceTemperature" style="padding-top: 120px; margin-top: -120px;">
+              referenceTemperature
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.referenceTemperature
+             </code>
+             <p>
+              The monthly mean of the daily maximum temperatures for the hottest month of the year at an airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#referenceTemperature" target="_blank">
+                   Aerodrome.referenceTemperature
+                  </a>
+                 </td>
+                 <td>
+                  The monthly mean of the daily maximum temperatures for the hottest month of the year at an aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="responsibleOrganisation" style="padding-top: 120px; margin-top: -120px;">
+              responsibleOrganisation
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.responsibleOrganisation
+             </code>
+             <p>
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#responsibleOrganisation" target="_blank">
+                   Aerodrome.responsibleOrganisation
+                  </a>
+                 </td>
+                 <td>
+                  The organisation which is responsible for managing the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="secondaryPowerSupply" style="padding-top: 120px; margin-top: -120px;">
+              secondaryPowerSupply
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.secondaryPowerSupply
+             </code>
+             <p>
+              The availability of emergency power supply for the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isSecondaryPowerSupplyAvailable" target="_blank">
+                   Aerodrome.isSecondaryPowerSupplyAvailable
+                  </a>
+                 </td>
+                 <td>
+                  The availability of emergency power supply for the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="servedCity" style="padding-top: 120px; margin-top: -120px;">
+              servedCity
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.servedCity
+             </code>
+             <p>
+              The location that is served by the airport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#servedCity" target="_blank">
+                   Aerodrome.servedCity
+                  </a>
+                 </td>
+                 <td>
+                  The city served by the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="transitionAltitude" style="padding-top: 120px; margin-top: -120px;">
+              transitionAltitude
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.transitionAltitude
+             </code>
+             <p>
+              The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes at the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#transitionAltitude" target="_blank">
+                   Aerodrome.transitionAltitude
+                  </a>
+                 </td>
+                 <td>
+                  The altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="transitionLevel" style="padding-top: 120px; margin-top: -120px;">
+              transitionLevel
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.transitionLevel
+             </code>
+             <p>
+              The lowest flight level available for use above the transition altitude at the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#transitionLevel" target="_blank">
+                   Aerodrome.transitionLevel
+                  </a>
+                 </td>
+                 <td>
+                  The lowest flight level available for use above the transition altitude.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="type" style="padding-top: 120px; margin-top: -120px;">
+              type
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.type
+             </code>
+             <p>
+              The type of airport/heliport. For example, aerodrome only, combined aerodrome/heliport or simple landing site.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#type" target="_blank">
+                   Aerodrome.type
+                  </a>
+                 </td>
+                 <td>
+                  The type of aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="verticalDatum" style="padding-top: 120px; margin-top: -120px;">
+              verticalDatum
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.verticalDatum
+             </code>
+             <p>
+              A reference surface with respect to which elevations and/or depths are specified at the airport/heliport.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#verticalDatum" target="_blank">
+                   Aerodrome.verticalDatum
+                  </a>
+                 </td>
+                 <td>
+                  A reference surface with respect to which elevations and/or depths are specified at the aerodrome.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h4 id="windDirectionIndicator" style="padding-top: 120px; margin-top: -120px;">
+              windDirectionIndicator
+             </h4>
+             <code class="text-secondary">
+              AirportHeliport.windDirectionIndicator
+             </code>
+             <p>
+              The availability of a device, at the airport/heliport, that indicates the direction and the intensity of the wind.
+              <br/>
+             </p>
+             <h5 style="margin-top: 40px;">
+              Semantic Correspondence
+             </h5>
+             <div class="table-responsive">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  AIRM Concept
+                 </th>
+                 <th>
+                  Definition
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <a href="../../viewer/1.0.0/logical-model/Aerodrome.html#isWindDirectionIndicatorAvailable" target="_blank">
+                   Aerodrome.isWindDirectionIndicatorAvailable
+                  </a>
+                 </td>
+                 <td>
+                  The availability of a device at the aerodrome that indicates the direction and the intensity of the wind.
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row" style="margin-left: 231px;">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="../../viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../developers.html">
+     <img src="../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../assets/js/bs-init.js">
+  </script>
+  <script src="../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../assets/js/theme.js">
+  </script>
+  <script src="../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../assets/js/ie.js">
+  </script>
+  <script src="../../assets/js/smooth.js">
+  </script>
+  <script src="../../assets/js/toast.js">
+  </script>
+  <script src="../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
