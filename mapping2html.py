@@ -63,7 +63,10 @@ def dummy_create_mapping_item_pages (mapping_file_pathname, template):
       insert_position += 1
     
     insert_position=0
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,soup.new_tag("hr"))
+    insert_position += 1
     h3 = soup.new_tag("h3")
+    h3["style"]="text-align:center; color:grey; margin-top: 50px; margin-bottom: 20px;"
     h3.string = "Details"
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_position,h3)
     insert_position += 1
@@ -124,11 +127,11 @@ def create_class_detail_div(info_concept):
   class_div = soup.new_tag("div")
   class_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
 
-  h3 = soup.new_tag("h3")
-  h3.string = str(info_concept["Information Concept"])
-  h3["id"] = str(info_concept["Information Concept"])
-  h3["style"] = "padding-top: 120px; margin-top: -120px;"
-  class_div.insert(0,h3)
+  h4 = soup.new_tag("h4")
+  h4.string = str(info_concept["Information Concept"])
+  h4["id"] = str(info_concept["Information Concept"])
+  h4["style"] = "padding-top: 120px; margin-top: -120px;"
+  class_div.insert(0,h4)
 
   code = soup.new_tag("code")
   identifier = info_concept["Information Concept"]
@@ -190,16 +193,17 @@ def create_class_detail_div(info_concept):
   return class_div
 
 def create_property_detail_div(data_concept):
+  #merge with create_class_detail_div
   from bs4 import BeautifulSoup
   soup = BeautifulSoup("<b></b>", 'lxml')
   property_div = soup.new_tag("div")
   property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
                   
-  h3 = soup.new_tag("h3")
-  h3.string = str(data_concept["Data Concept"])
-  h3["id"] = str(data_concept["Data Concept"])
-  h3["style"] = "padding-top: 120px; margin-top: -120px;"
-  property_div.insert(0,h3)
+  h4 = soup.new_tag("h4")
+  h4.string = str(data_concept["Data Concept"])
+  h4["id"] = str(data_concept["Data Concept"])
+  h4["style"] = "padding-top: 120px; margin-top: -120px;"
+  property_div.insert(0,h4)
 
   code = soup.new_tag("code")
   identifier = data_concept['Concept Identifier']
