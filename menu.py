@@ -58,13 +58,13 @@ def main_menu():
     if choice == "1":
         print('\n')
         import mapping2html
-        mapping2html.create_mapping_index_page("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v3.xlsx","docs/airm/templates/concept-list-template.html")
+        mapping2html.create_mapping_index_page("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concept-list-template.html")
         print("Done.")
         main_menu()    
     elif choice == "2":
         print('\n')
         import mapping2html
-        mapping2html.create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report_v3.xlsx","docs/airm/templates/concepts/concept-template.html")
+        mapping2html.create_mapping_item_pages("xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report.xlsx","docs/airm/templates/concepts/concept-template.html")
         print("Done.")
         main_menu()   
     elif choice == "3":
