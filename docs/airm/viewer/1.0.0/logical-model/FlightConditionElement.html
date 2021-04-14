@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   FlightConditionElement - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           FlightConditionElement
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             FlightConditionElement
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement
+            </code>
+           </div>
+           <p>
+            An operand in a flight condition combination.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              EUROCONTROL-FAA AIXM v.5.1
+             </span>
+             <br/>
+             <b>
+              Parent concept:
+             </b>
+             <a href="Object.html">
+              Object
+             </a>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#aerialRefuellingCondition">
+                 aerialRefuellingCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an aerial refuelling.
+               </td>
+               <td>
+                <a href="AerialRefuelling.html">
+                 AerialRefuelling
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#standardInstrumentDepartureCondition">
+                 standardInstrumentDepartureCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an SID.
+               </td>
+               <td>
+                <a href="StandardInstrumentDeparture.html">
+                 StandardInstrumentDeparture
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#standardInstrumentArrivalCondition">
+                 standardInstrumentArrivalCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an standard instrument arrival.
+               </td>
+               <td>
+                <a href="StandardInstrumentArrival.html">
+                 StandardInstrumentArrival
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#index">
+                 index
+                </a>
+               </td>
+               <td>
+                A sequence number used to indicate the order of the operand when composing the flight condition combination.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#borderCrossingCondition">
+                 borderCrossingCondition
+                </a>
+               </td>
+               <td>
+                A condition based on the crossing of the common border between two adjacent airspaces.
+               </td>
+               <td>
+                <a href="AirspaceEntry.html">
+                 AirspaceEntry
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#weather">
+                 weather
+                </a>
+               </td>
+               <td>
+                A condition based on the weather.
+               </td>
+               <td>
+                <a href="WeatherCondition.html">
+                 WeatherCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aerodromeCondition">
+                 aerodromeCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an aerodrome.
+               </td>
+               <td>
+                <a href="Aerodrome.html">
+                 Aerodrome
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#flightLevel">
+                 flightLevel
+                </a>
+               </td>
+               <td>
+                Flight level associated with a flight condition element.
+               </td>
+               <td>
+                <a href="FlightRestrictionLevel.html">
+                 FlightRestrictionLevel
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#significantPointCondition">
+                 significantPointCondition
+                </a>
+               </td>
+               <td>
+                A condition based on a significant point.
+               </td>
+               <td>
+                <a href="SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#organisationCondition">
+                 organisationCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an organisation.
+               </td>
+               <td>
+                <a href="Organisation.html">
+                 Organisation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#routePortionCondition">
+                 routePortionCondition
+                </a>
+               </td>
+               <td>
+                A condition based on a route portion.
+               </td>
+               <td>
+                <a href="RoutePortion.html">
+                 RoutePortion
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#directFlightCondition">
+                 directFlightCondition
+                </a>
+               </td>
+               <td>
+                A condition based on a direct flight.
+               </td>
+               <td>
+                <a href="RouteTrajectorySegment.html">
+                 RouteTrajectorySegment
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operand">
+                 operand
+                </a>
+               </td>
+               <td>
+                A combination of flight conditions.
+               </td>
+               <td>
+                <a href="FlightConditionCombination.html">
+                 FlightConditionCombination
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#aircraft">
+                 aircraft
+                </a>
+               </td>
+               <td>
+                A condition based on an aircraft.
+               </td>
+               <td>
+                <a href="Aircraft.html">
+                 Aircraft
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#airspaceCondition">
+                 airspaceCondition
+                </a>
+               </td>
+               <td>
+                A condition based on an airspace.
+               </td>
+               <td>
+                <a href="Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#operationalCondition">
+                 operationalCondition
+                </a>
+               </td>
+               <td>
+                A condition based on operational circumstances.
+               </td>
+               <td>
+                <a href="FlightConditionCircumstance.html">
+                 FlightConditionCircumstance
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerialRefuellingCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aerialRefuellingCondition">
+              aerialRefuellingCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aerialRefuellingCondition
+             </code>
+             <p>
+              A condition based on an aerial refuelling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AerialRefuelling.html">
+                AerialRefuelling
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aerialRefuellingConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="aerialRefuellingConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#aerialRefuellingCondition" target="_blank" title="FlightConditionElementChoice.aerialRefuellingCondition">
+                   aerialRefuellingCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="standardInstrumentDepartureCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@standardInstrumentDepartureCondition">
+              standardInstrumentDepartureCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@standardInstrumentDepartureCondition
+             </code>
+             <p>
+              A condition based on an SID.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="StandardInstrumentDeparture.html">
+                StandardInstrumentDeparture
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#standardInstrumentDepartureConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="standardInstrumentDepartureConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#standardInstrumentDepartureCondition" target="_blank" title="FlightConditionElementChoice.standardInstrumentDepartureCondition">
+                   standardInstrumentDepartureCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="standardInstrumentArrivalCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@standardInstrumentArrivalCondition">
+              standardInstrumentArrivalCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@standardInstrumentArrivalCondition
+             </code>
+             <p>
+              A condition based on an standard instrument arrival.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="StandardInstrumentArrival.html">
+                StandardInstrumentArrival
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#standardInstrumentArrivalConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="standardInstrumentArrivalConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#standardInstrumentArrivalCondition" target="_blank" title="FlightConditionElementChoice.standardInstrumentArrivalCondition">
+                   standardInstrumentArrivalCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="index" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@index">
+              index
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@index
+             </code>
+             <p>
+              A sequence number used to indicate the order of the operand when composing the flight condition combination.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#indexcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="indexcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElement.html#index" target="_blank" title="FlightConditionElement.index">
+                   index
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="borderCrossingCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@borderCrossingCondition">
+              borderCrossingCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@borderCrossingCondition
+             </code>
+             <p>
+              A condition based on the crossing of the common border between two adjacent airspaces.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AirspaceEntry.html">
+                AirspaceEntry
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#borderCrossingConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="borderCrossingConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   ADR 23.5.0 Extension (AIXM 5.1.1)
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/FlightConditionElementExtensionPropertyGroup.html#borderCrossingCondition" target="_blank" title="http://www.aixm.aero/schema/5.1.1/extensions/EUR/ADR:FlightConditionElementExtensionPropertyGroup:borderCrossingCondition">
+                   borderCrossingCondition
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#borderCrossingCondition" target="_blank" title="FlightConditionElementChoice.borderCrossingCondition">
+                   borderCrossingCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="weather" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@weather">
+              weather
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@weather
+             </code>
+             <p>
+              A condition based on the weather.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="WeatherCondition.html">
+                WeatherCondition
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#weathercollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="weathercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#weather" target="_blank" title="FlightConditionElementChoice.weather">
+                   weather
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aerodromeCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aerodromeCondition">
+              aerodromeCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aerodromeCondition
+             </code>
+             <p>
+              A condition based on an aerodrome.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aerodrome.html">
+                Aerodrome
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aerodromeConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="aerodromeConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#airportHeliportCondition" target="_blank" title="FlightConditionElementChoice.airportHeliportCondition">
+                   airportHeliportCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flightLevel" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@flightLevel">
+              flightLevel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@flightLevel
+             </code>
+             <p>
+              Flight level associated with a flight condition element.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FlightRestrictionLevel.html">
+                FlightRestrictionLevel
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#flightLevelcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="flightLevelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElement.html#flightLevel" target="_blank" title="FlightConditionElement.flightLevel">
+                   flightLevel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="significantPointCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@significantPointCondition">
+              significantPointCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@significantPointCondition
+             </code>
+             <p>
+              A condition based on a significant point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#significantPointConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="significantPointConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#significantPointCondition" target="_blank" title="FlightConditionElementChoice.significantPointCondition">
+                   significantPointCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="organisationCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@organisationCondition">
+              organisationCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@organisationCondition
+             </code>
+             <p>
+              A condition based on an organisation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Organisation.html">
+                Organisation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#organisationConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="organisationConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#organisationCondition" target="_blank" title="FlightConditionElementChoice.organisationCondition">
+                   organisationCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="routePortionCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@routePortionCondition">
+              routePortionCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@routePortionCondition
+             </code>
+             <p>
+              A condition based on a route portion.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RoutePortion.html">
+                RoutePortion
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#routePortionConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="routePortionConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#routePortionCondition" target="_blank" title="FlightConditionElementChoice.routePortionCondition">
+                   routePortionCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="directFlightCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@directFlightCondition">
+              directFlightCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@directFlightCondition
+             </code>
+             <p>
+              A condition based on a direct flight.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RouteTrajectorySegment.html">
+                RouteTrajectorySegment
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#directFlightConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="directFlightConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#directFlightCondition" target="_blank" title="FlightConditionElementChoice.directFlightCondition">
+                   directFlightCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="operand" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@operand">
+              operand
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@operand
+             </code>
+             <p>
+              A combination of flight conditions.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FlightConditionCombination.html">
+                FlightConditionCombination
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#operandcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="operandcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#operand" target="_blank" title="FlightConditionElementChoice.operand">
+                   operand
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="aircraft" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aircraft">
+              aircraft
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@aircraft
+             </code>
+             <p>
+              A condition based on an aircraft.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Aircraft.html">
+                Aircraft
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#aircraftcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="aircraftcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#aircraft" target="_blank" title="FlightConditionElementChoice.aircraft">
+                   aircraft
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="airspaceCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@airspaceCondition">
+              airspaceCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@airspaceCondition
+             </code>
+             <p>
+              A condition based on an airspace.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#airspaceConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="airspaceConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElementChoice.html#airspaceCondition" target="_blank" title="FlightConditionElementChoice.airspaceCondition">
+                   airspaceCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="operationalCondition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@operationalCondition">
+              operationalCondition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:DemandAndCapacityBalancing:FlightConditionElement@operationalCondition
+             </code>
+             <p>
+              A condition based on operational circumstances.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FlightConditionCircumstance.html">
+                FlightConditionCircumstance
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#operationalConditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="operationalConditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FlightConditionElement.html#operationalCondition" target="_blank" title="FlightConditionElement.operationalCondition">
+                   operationalCondition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

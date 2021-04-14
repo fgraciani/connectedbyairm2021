@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   AerialRefuelling - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           AerialRefuelling
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             AerialRefuelling
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling
+            </code>
+           </div>
+           <p>
+            A procedure used by the military to transfer fuel from one aircraft to another during flight.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              EUROCONTROL-FAA AIXM v.5.1
+             </span>
+             <br/>
+             <b>
+              Parent concept:
+             </b>
+             <a href="TemporalEnabledEntity.html">
+              TemporalEnabledEntity
+             </a>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#xbandRadarSetting">
+                 xbandRadarSetting
+                </a>
+               </td>
+               <td>
+                The setting to be used by the airborne identification radar beacon during aerial refuelling operations.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#type">
+                 type
+                </a>
+               </td>
+               <td>
+                The type of aerial refuelling procedure based on its configuration.
+               </td>
+               <td>
+                <a href="CodeAerialRefuellingType.html">
+                 CodeAerialRefuellingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#tankerChannel">
+                 tankerChannel
+                </a>
+               </td>
+               <td>
+                The Tactical Air Navigation System (TACAN) UHF channel assigned to the tanker aircraft to provide omnidirectional course and distance navigational information during air refuelling operations.
+               </td>
+               <td>
+                <a href="CodeTACANChannelType.html">
+                 CodeTACANChannelType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#reverseDirectionTurn">
+                 reverseDirectionTurn
+                </a>
+               </td>
+               <td>
+                An indicator of the turn direction in an aerial manoeuvre (referred to as the Direction of Course Reversal Turn) performed by aircraft during aerial refuelling, where it can reverse its direction of course by turning around either right or left.
+               </td>
+               <td>
+                <a href="CodeDirectionTurnType.html">
+                 CodeDirectionTurnType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#oppositeTrack">
+                 oppositeTrack
+                </a>
+               </td>
+               <td>
+                The opposite aerial refuelling.
+               </td>
+               <td>
+                <a href="AerialRefuelling.html">
+                 AerialRefuelling
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#managingOrganisation">
+                 managingOrganisation
+                </a>
+               </td>
+               <td>
+                The organisation that manages the aerial refuelling.
+               </td>
+               <td>
+                <a href="Organisation.html">
+                 Organisation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#receiverChannel">
+                 receiverChannel
+                </a>
+               </td>
+               <td>
+                The Tactical Air Navigation System (TACAN) UHF channel assigned to an aircraft receiving fuel to provide omnidirectional course and distance navigational information during air refuelling operations.
+               </td>
+               <td>
+                <a href="CodeTACANChannelType.html">
+                 CodeTACANChannelType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorDirection">
+                 designatorDirection
+                </a>
+               </td>
+               <td>
+                An indicator of the general cardinal direction of the aerial refuelling procedure.
+               </td>
+               <td>
+                <a href="CodeCompassPointType.html">
+                 CodeCompassPointType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorNumber">
+                 designatorNumber
+                </a>
+               </td>
+               <td>
+                A designator that identifies the aerial refuelling route.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#protectingAirspace">
+                 protectingAirspace
+                </a>
+               </td>
+               <td>
+                The airspace that protects the aerial refuelling area.
+               </td>
+               <td>
+                <a href="Airspace.html">
+                 Airspace
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorPrefix">
+                 designatorPrefix
+                </a>
+               </td>
+               <td>
+                An affix placed before a route designator used to identify an aerial refuelling route.
+               </td>
+               <td>
+                <a href="CodeAerialRefuellingPrefixType.html">
+                 CodeAerialRefuellingPrefixType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#designatorSuffix">
+                 designatorSuffix
+                </a>
+               </td>
+               <td>
+                An affix placed after a route designator used to qualify an aerial refuelling route.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isBidirectionalUse">
+                 isBidirectionalUse
+                </a>
+               </td>
+               <td>
+                An indication that the aerial refuelling track supports simultaneous opposite direction aerial refuelling.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isHelicopterRoute">
+                 isHelicopterRoute
+                </a>
+               </td>
+               <td>
+                An indication that the aerial refuelling procedure is designed only for helicopter usage.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isSpecialRefuelling">
+                 isSpecialRefuelling
+                </a>
+               </td>
+               <td>
+                An indication that the aerial refuelling procedure supports special missions/sortie.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                An identifier by which the aerial refuelling route is known.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radarBeaconSetting">
+                 radarBeaconSetting
+                </a>
+               </td>
+               <td>
+                The setting to be used by the airborne navigation radar beacon during aerial refuel operations.
+               </td>
+               <td>
+                <a href="Integer.html">
+                 Integer
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#track">
+                 track
+                </a>
+               </td>
+               <td>
+                The aerial refuelling track.
+               </td>
+               <td>
+                <a href="AerialRefuellingTrack.html">
+                 AerialRefuellingTrack
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#anchor">
+                 anchor
+                </a>
+               </td>
+               <td>
+                The aerial refuelling anchor.
+               </td>
+               <td>
+                <a href="AerialRefuellingAnchor.html">
+                 AerialRefuellingAnchor
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational availability of the aerial refuelling.
+               </td>
+               <td>
+                <a href="RouteAvailability.html">
+                 RouteAvailability
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="xbandRadarSetting" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@xbandRadarSetting">
+              xbandRadarSetting
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@xbandRadarSetting
+             </code>
+             <p>
+              The setting to be used by the airborne identification radar beacon during aerial refuelling operations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#xbandRadarSettingcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="xbandRadarSettingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#xbandRadarSetting" target="_blank" title="AerialRefuelling.xbandRadarSetting">
+                   xbandRadarSetting
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="type" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@type">
+              type
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@type
+             </code>
+             <p>
+              The type of aerial refuelling procedure based on its configuration.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeAerialRefuellingType.html">
+                CodeAerialRefuellingType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#typecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="typecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#type" target="_blank" title="AerialRefuelling.type">
+                   type
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="tankerChannel" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@tankerChannel">
+              tankerChannel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@tankerChannel
+             </code>
+             <p>
+              The Tactical Air Navigation System (TACAN) UHF channel assigned to the tanker aircraft to provide omnidirectional course and distance navigational information during air refuelling operations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTACANChannelType.html">
+                CodeTACANChannelType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#tankerChannelcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="tankerChannelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#tankerChannel" target="_blank" title="AerialRefuelling.tankerChannel">
+                   tankerChannel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="reverseDirectionTurn" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@reverseDirectionTurn">
+              reverseDirectionTurn
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@reverseDirectionTurn
+             </code>
+             <p>
+              An indicator of the turn direction in an aerial manoeuvre (referred to as the Direction of Course Reversal Turn) performed by aircraft during aerial refuelling, where it can reverse its direction of course by turning around either right or left.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeDirectionTurnType.html">
+                CodeDirectionTurnType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#reverseDirectionTurncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="reverseDirectionTurncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#reverseDirectionTurn" target="_blank" title="AerialRefuelling.reverseDirectionTurn">
+                   reverseDirectionTurn
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="oppositeTrack" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@oppositeTrack">
+              oppositeTrack
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@oppositeTrack
+             </code>
+             <p>
+              The opposite aerial refuelling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AerialRefuelling.html">
+                AerialRefuelling
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#oppositeTrackcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="oppositeTrackcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#oppositeTrack" target="_blank" title="AerialRefuelling.oppositeTrack">
+                   oppositeTrack
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="managingOrganisation" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@managingOrganisation">
+              managingOrganisation
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@managingOrganisation
+             </code>
+             <p>
+              The organisation that manages the aerial refuelling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Organisation.html">
+                Organisation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#managingOrganisationcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="managingOrganisationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#managingOrganisation" target="_blank" title="AerialRefuelling.managingOrganisation">
+                   managingOrganisation
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="receiverChannel" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@receiverChannel">
+              receiverChannel
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@receiverChannel
+             </code>
+             <p>
+              The Tactical Air Navigation System (TACAN) UHF channel assigned to an aircraft receiving fuel to provide omnidirectional course and distance navigational information during air refuelling operations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeTACANChannelType.html">
+                CodeTACANChannelType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#receiverChannelcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="receiverChannelcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#receiverChannel" target="_blank" title="AerialRefuelling.receiverChannel">
+                   receiverChannel
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designatorDirection" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorDirection">
+              designatorDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorDirection
+             </code>
+             <p>
+              An indicator of the general cardinal direction of the aerial refuelling procedure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeCompassPointType.html">
+                CodeCompassPointType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#designatorDirectioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="designatorDirectioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#designatorDirection" target="_blank" title="AerialRefuelling.designatorDirection">
+                   designatorDirection
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designatorNumber" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorNumber">
+              designatorNumber
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorNumber
+             </code>
+             <p>
+              A designator that identifies the aerial refuelling route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#designatorNumbercollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="designatorNumbercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#designatorNumber" target="_blank" title="AerialRefuelling.designatorNumber">
+                   designatorNumber
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="protectingAirspace" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@protectingAirspace">
+              protectingAirspace
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@protectingAirspace
+             </code>
+             <p>
+              The airspace that protects the aerial refuelling area.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Airspace.html">
+                Airspace
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#protectingAirspacecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="protectingAirspacecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#protectingAirspace" target="_blank" title="AerialRefuelling.protectingAirspace">
+                   protectingAirspace
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designatorPrefix" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorPrefix">
+              designatorPrefix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorPrefix
+             </code>
+             <p>
+              An affix placed before a route designator used to identify an aerial refuelling route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeAerialRefuellingPrefixType.html">
+                CodeAerialRefuellingPrefixType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#designatorPrefixcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="designatorPrefixcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#designatorPrefix" target="_blank" title="AerialRefuelling.designatorPrefix">
+                   designatorPrefix
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="designatorSuffix" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorSuffix">
+              designatorSuffix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@designatorSuffix
+             </code>
+             <p>
+              An affix placed after a route designator used to qualify an aerial refuelling route.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#designatorSuffixcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="designatorSuffixcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#designatorSuffix" target="_blank" title="AerialRefuelling.designatorSuffix">
+                   designatorSuffix
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isBidirectionalUse" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isBidirectionalUse">
+              isBidirectionalUse
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isBidirectionalUse
+             </code>
+             <p>
+              An indication that the aerial refuelling track supports simultaneous opposite direction aerial refuelling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isBidirectionalUsecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isBidirectionalUsecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#bidirectionalUse" target="_blank" title="AerialRefuelling.bidirectionalUse">
+                   bidirectionalUse
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isHelicopterRoute" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isHelicopterRoute">
+              isHelicopterRoute
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isHelicopterRoute
+             </code>
+             <p>
+              An indication that the aerial refuelling procedure is designed only for helicopter usage.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isHelicopterRoutecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isHelicopterRoutecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#helicopterRoute" target="_blank" title="AerialRefuelling.helicopterRoute">
+                   helicopterRoute
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isSpecialRefuelling" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isSpecialRefuelling">
+              isSpecialRefuelling
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@isSpecialRefuelling
+             </code>
+             <p>
+              An indication that the aerial refuelling procedure supports special missions/sortie.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isSpecialRefuellingcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isSpecialRefuellingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#specialRefuelling" target="_blank" title="AerialRefuelling.specialRefuelling">
+                   specialRefuelling
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="name" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@name
+             </code>
+             <p>
+              An identifier by which the aerial refuelling route is known.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#namecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="namecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#name" target="_blank" title="AerialRefuelling.name">
+                   name
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="radarBeaconSetting" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@radarBeaconSetting">
+              radarBeaconSetting
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@radarBeaconSetting
+             </code>
+             <p>
+              The setting to be used by the airborne navigation radar beacon during aerial refuel operations.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Integer.html">
+                Integer
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#radarBeaconSettingcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="radarBeaconSettingcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#radarBeaconSetting" target="_blank" title="AerialRefuelling.radarBeaconSetting">
+                   radarBeaconSetting
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="track" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@track">
+              track
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@track
+             </code>
+             <p>
+              The aerial refuelling track.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AerialRefuellingTrack.html">
+                AerialRefuellingTrack
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#trackcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="trackcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#track" target="_blank" title="AerialRefuelling.track">
+                   track
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="anchor" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@anchor">
+              anchor
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@anchor
+             </code>
+             <p>
+              The aerial refuelling anchor.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="AerialRefuellingAnchor.html">
+                AerialRefuellingAnchor
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#anchorcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="anchorcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#anchor" target="_blank" title="AerialRefuelling.anchor">
+                   anchor
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="availability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:AerialRefuelling@availability
+             </code>
+             <p>
+              The operational availability of the aerial refuelling.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RouteAvailability.html">
+                RouteAvailability
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#availabilitycollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="availabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AerialRefuelling.html#availability" target="_blank" title="AerialRefuelling.availability">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

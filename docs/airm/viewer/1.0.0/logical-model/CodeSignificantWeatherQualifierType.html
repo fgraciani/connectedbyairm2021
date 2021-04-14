@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeSignificantWeatherQualifierType - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeSignificantWeatherQualifierType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeSignificantWeatherQualifierType
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType
+            </code>
+           </div>
+           <p>
+            Qualifiers used in association with a reported significant weather phenomenon.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              SESAR
+             </span>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#SHALLOW">
+                 SHALLOW
+                </a>
+               </td>
+               <td>
+                Has a very little vertical extent.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PATCHES">
+                 PATCHES
+                </a>
+               </td>
+               <td>
+                Occurrences over small areas.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SHOWER">
+                 SHOWER
+                </a>
+               </td>
+               <td>
+                Precipitation, often short-lived and heavy, falling from convective clouds. A shower is characterized by its sudden beginning and ending, and generally by large and rapid changes of intensity.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BLOWING">
+                 BLOWING
+                </a>
+               </td>
+               <td>
+                Raised by the wind to a moderate height above the ground (2 meters or more).
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FREEZING">
+                 FREEZING
+                </a>
+               </td>
+               <td>
+                Precipitation freezing on impact on the ground and on exposed objects.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LOW_DRIFTING">
+                 LOW_DRIFTING
+                </a>
+               </td>
+               <td>
+                In motion due to the action of wind or raised by the wind to a small height above the ground (less than 2 meters).
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PARTIAL">
+                 PARTIAL
+                </a>
+               </td>
+               <td>
+                Covering part of the aerodrome.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PROXIMITY">
+                 PROXIMITY
+                </a>
+               </td>
+               <td>
+                The weather phenomenon is observed between approximately 8 km and 16 km from the aerodrome reference point.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#THUNDERSTORM">
+                 THUNDERSTORM
+                </a>
+               </td>
+               <td>
+                Sudden electrical discharges manifested by a flash of light (lightning) and a sharp or rumbling sound (thunder). Thunderstorms are associated with convective clouds (Cumulonimbus) and are, more often, accompanied by precipitation in the form of rainshowers or hail, or occasionally snow, snow pellets, or ice pellets.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SHALLOW" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@SHALLOW">
+              SHALLOW
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@SHALLOW
+             </code>
+             <p>
+              Has a very little vertical extent.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PATCHES" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PATCHES">
+              PATCHES
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PATCHES
+             </code>
+             <p>
+              Occurrences over small areas.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SHOWER" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@SHOWER">
+              SHOWER
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@SHOWER
+             </code>
+             <p>
+              Precipitation, often short-lived and heavy, falling from convective clouds. A shower is characterized by its sudden beginning and ending, and generally by large and rapid changes of intensity.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BLOWING" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@BLOWING">
+              BLOWING
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@BLOWING
+             </code>
+             <p>
+              Raised by the wind to a moderate height above the ground (2 meters or more).
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FREEZING" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@FREEZING">
+              FREEZING
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@FREEZING
+             </code>
+             <p>
+              Precipitation freezing on impact on the ground and on exposed objects.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LOW_DRIFTING" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@LOW_DRIFTING">
+              LOW_DRIFTING
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@LOW_DRIFTING
+             </code>
+             <p>
+              In motion due to the action of wind or raised by the wind to a small height above the ground (less than 2 meters).
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PARTIAL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PARTIAL">
+              PARTIAL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PARTIAL
+             </code>
+             <p>
+              Covering part of the aerodrome.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PROXIMITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PROXIMITY">
+              PROXIMITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@PROXIMITY
+             </code>
+             <p>
+              The weather phenomenon is observed between approximately 8 km and 16 km from the aerodrome reference point.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="THUNDERSTORM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@THUNDERSTORM">
+              THUNDERSTORM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Meteorology:Codelists:CodeSignificantWeatherQualifierType@THUNDERSTORM
+             </code>
+             <p>
+              Sudden electrical discharges manifested by a flash of light (lightning) and a sharp or rumbling sound (thunder). Thunderstorms are associated with convective clouds (Cumulonimbus) and are, more often, accompanied by precipitation in the form of rainshowers or hail, or occasionally snow, snow pellets, or ice pellets.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

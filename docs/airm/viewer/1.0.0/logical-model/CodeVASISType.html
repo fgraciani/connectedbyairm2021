@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeVASISType - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeVASISType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeVASISType
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType
+            </code>
+           </div>
+           <p>
+            A code indicating a type of visual approach slope indicator system. For example, VASIS, AVASIS, 3-BAR VASIS, PAPI, APAPI, etc..
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              EUROCONTROL-FAA AIXM v.5.1
+             </span>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#PNI">
+                 PNI
+                </a>
+               </td>
+               <td>
+                Alignment of elements system.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#OLS">
+                 OLS
+                </a>
+               </td>
+               <td>
+                Optical landing system for strip decks and aircraft carriers (sometimes available on ground air bases for training purposes).
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HAPI">
+                 HAPI
+                </a>
+               </td>
+               <td>
+                Helicopter approach path indicator.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AVASIS">
+                 AVASIS
+                </a>
+               </td>
+               <td>
+                Abbreviated visual approach slow indicator system.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATVASIS">
+                 ATVASIS
+                </a>
+               </td>
+               <td>
+                Abbreviated TVASIS
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#3B_VASIS">
+                 3B_VASIS
+                </a>
+               </td>
+               <td>
+                3 bar VASIS.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#APAPI">
+                 APAPI
+                </a>
+               </td>
+               <td>
+                Abbreviated precision approach path indicator.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PVASI">
+                 PVASI
+                </a>
+               </td>
+               <td>
+                Pulsating/steady burning visual approach slope indicator, normally a single light unit projecting two colours.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TRCV">
+                 TRCV
+                </a>
+               </td>
+               <td>
+                Tri-colour visual approach slope indicator, normally a single light unit projecting three colours.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#3B_AVASIS">
+                 3B_AVASIS
+                </a>
+               </td>
+               <td>
+                3 bar AVASIS
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#3B_ATVASIS">
+                 3B_ATVASIS
+                </a>
+               </td>
+               <td>
+                3 bar ATVASIS.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VASIS">
+                 VASIS
+                </a>
+               </td>
+               <td>
+                Visual approach slope indicator system.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PAPI">
+                 PAPI
+                </a>
+               </td>
+               <td>
+                Precision approach path indicator.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LCVASI">
+                 LCVASI
+                </a>
+               </td>
+               <td>
+                Low cost visual approach slope indicator: 3 sets of 4 white lights on 3 mounts usually on only one side of the runway.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ILU">
+                 ILU
+                </a>
+               </td>
+               <td>
+                A number of identical light units.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TVASIS">
+                 TVASIS
+                </a>
+               </td>
+               <td>
+                T-shaped VASIS
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PNI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PNI">
+              PNI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PNI
+             </code>
+             <p>
+              Alignment of elements system.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#PNIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="PNIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#PNI" target="_blank" title="CodeVASISBaseType.PNI">
+                   PNI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="OLS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@OLS">
+              OLS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@OLS
+             </code>
+             <p>
+              Optical landing system for strip decks and aircraft carriers (sometimes available on ground air bases for training purposes).
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#OLScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="OLScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#OLS" target="_blank" title="CodeVASISBaseType.OLS">
+                   OLS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="HAPI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@HAPI">
+              HAPI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@HAPI
+             </code>
+             <p>
+              Helicopter approach path indicator.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#HAPIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="HAPIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#HAPI" target="_blank" title="CodeVASISBaseType.HAPI">
+                   HAPI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AVASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@AVASIS">
+              AVASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@AVASIS
+             </code>
+             <p>
+              Abbreviated visual approach slow indicator system.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#AVASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="AVASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AMXM 2.0.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/vasisBaseType.html#AVASIS" target="_blank" title="vasisBaseType.AVASIS">
+                   AVASIS
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#AVASIS" target="_blank" title="CodeVASISBaseType.AVASIS">
+                   AVASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ATVASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@ATVASIS">
+              ATVASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@ATVASIS
+             </code>
+             <p>
+              Abbreviated TVASIS
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ATVASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ATVASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#ATVASIS" target="_blank" title="CodeVASISBaseType.ATVASIS">
+                   ATVASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="3B_VASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_VASIS">
+              3B_VASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_VASIS
+             </code>
+             <p>
+              3 bar VASIS.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#3B_VASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="3B_VASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#3B_VASIS" target="_blank" title="CodeVASISBaseType.3B_VASIS">
+                   3B_VASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="APAPI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@APAPI">
+              APAPI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@APAPI
+             </code>
+             <p>
+              Abbreviated precision approach path indicator.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#APAPIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="APAPIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AMXM 2.0.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/vasisBaseType.html#APAPI" target="_blank" title="vasisBaseType.APAPI">
+                   APAPI
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#APAPI" target="_blank" title="CodeVASISBaseType.APAPI">
+                   APAPI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PVASI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PVASI">
+              PVASI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PVASI
+             </code>
+             <p>
+              Pulsating/steady burning visual approach slope indicator, normally a single light unit projecting two colours.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#PVASIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="PVASIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#PVASI" target="_blank" title="CodeVASISBaseType.PVASI">
+                   PVASI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TRCV" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@TRCV">
+              TRCV
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@TRCV
+             </code>
+             <p>
+              Tri-colour visual approach slope indicator, normally a single light unit projecting three colours.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#TRCVcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="TRCVcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#TRCV" target="_blank" title="CodeVASISBaseType.TRCV">
+                   TRCV
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="3B_AVASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_AVASIS">
+              3B_AVASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_AVASIS
+             </code>
+             <p>
+              3 bar AVASIS
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#3B_AVASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="3B_AVASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#3B_AVASIS" target="_blank" title="CodeVASISBaseType.3B_AVASIS">
+                   3B_AVASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="3B_ATVASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_ATVASIS">
+              3B_ATVASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@3B_ATVASIS
+             </code>
+             <p>
+              3 bar ATVASIS.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#3B_ATVASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="3B_ATVASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#3B_ATVASIS" target="_blank" title="CodeVASISBaseType.3B_ATVASIS">
+                   3B_ATVASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="VASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@VASIS">
+              VASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@VASIS
+             </code>
+             <p>
+              Visual approach slope indicator system.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="VASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AMXM 2.0.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/vasisBaseType.html#VASIS" target="_blank" title="vasisBaseType.VASIS">
+                   VASIS
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#VASIS" target="_blank" title="CodeVASISBaseType.VASIS">
+                   VASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PAPI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PAPI">
+              PAPI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@PAPI
+             </code>
+             <p>
+              Precision approach path indicator.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#PAPIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="PAPIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AMXM 2.0.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/amxm-2.0.0-to-airm-1.0.0/vasisBaseType.html#PAPI" target="_blank" title="vasisBaseType.PAPI">
+                   PAPI
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#PAPI" target="_blank" title="CodeVASISBaseType.PAPI">
+                   PAPI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LCVASI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@LCVASI">
+              LCVASI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@LCVASI
+             </code>
+             <p>
+              Low cost visual approach slope indicator: 3 sets of 4 white lights on 3 mounts usually on only one side of the runway.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#LCVASIcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="LCVASIcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#LCVASI" target="_blank" title="CodeVASISBaseType.LCVASI">
+                   LCVASI
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ILU" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@ILU">
+              ILU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@ILU
+             </code>
+             <p>
+              A number of identical light units.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ILUcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ILUcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#ILU" target="_blank" title="CodeVASISBaseType.ILU">
+                   ILU
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TVASIS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@TVASIS">
+              TVASIS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:Codelists:CodeVASISType@TVASIS
+             </code>
+             <p>
+              T-shaped VASIS
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#TVASIScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="TVASIScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeVASISBaseType.html#TVASIS" target="_blank" title="CodeVASISBaseType.TVASIS">
+                   TVASIS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

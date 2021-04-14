@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   Minima - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           Minima
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             Minima
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima
+            </code>
+           </div>
+           <p>
+            Vertical and horizontal visual minima for a procedure segment conditions such as aircraft category, navigation equipment usage, procedure type, altimeter, etc.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              EUROCONTROL-FAA AIXM v.5.1
+             </span>
+             <br/>
+             <b>
+              Parent concept:
+             </b>
+             <a href="Object.html">
+              Object
+             </a>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#adjustmentINOP">
+                 adjustmentINOP
+                </a>
+               </td>
+               <td>
+                The inoperable equipment.
+               </td>
+               <td>
+                <a href="EquipmentUnavailableAdjustment.html">
+                 EquipmentUnavailableAdjustment
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#heightCode">
+                 heightCode
+                </a>
+               </td>
+               <td>
+                An indication of the meaning of the height value, such as obstacle clearance height or decision height.
+               </td>
+               <td>
+                <a href="CodeMinimumHeightType.html">
+                 CodeMinimumHeightType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitudeCode">
+                 altitudeCode
+                </a>
+               </td>
+               <td>
+                An indication of the meaning of the altitude value.
+               </td>
+               <td>
+                <a href="CodeMinimumAltitudeType.html">
+                 CodeMinimumAltitudeType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#altitude">
+                 altitude
+                </a>
+               </td>
+               <td>
+                The lowest altitude an aircraft flies before making a decision to land or abort and take the missed approach.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#height">
+                 height
+                </a>
+               </td>
+               <td>
+                The height value for the minimum
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isRVREquipmentMandatory">
+                 isRVREquipmentMandatory
+                </a>
+               </td>
+               <td>
+                Indication that RVR equipment is mandatory for this operation.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#militaryHeight">
+                 militaryHeight
+                </a>
+               </td>
+               <td>
+                The height value for the minimum used by militaries.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#militaryVisibility">
+                 militaryVisibility
+                </a>
+               </td>
+               <td>
+                The visibility value applicable to the military height.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radioHeight">
+                 radioHeight
+                </a>
+               </td>
+               <td>
+                The height reported by a radio altimeter.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#visibility">
+                 visibility
+                </a>
+               </td>
+               <td>
+                The minimum visibility needed to land at the airport when using the specified altitude and/or height.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="adjustmentINOP" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@adjustmentINOP">
+              adjustmentINOP
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@adjustmentINOP
+             </code>
+             <p>
+              The inoperable equipment.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="EquipmentUnavailableAdjustment.html">
+                EquipmentUnavailableAdjustment
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#adjustmentINOPcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="adjustmentINOPcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#adjustmentINOP" target="_blank" title="Minima.adjustmentINOP">
+                   adjustmentINOP
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="heightCode" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@heightCode">
+              heightCode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@heightCode
+             </code>
+             <p>
+              An indication of the meaning of the height value, such as obstacle clearance height or decision height.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeMinimumHeightType.html">
+                CodeMinimumHeightType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#heightCodecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="heightCodecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#heightCode" target="_blank" title="Minima.heightCode">
+                   heightCode
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="altitudeCode" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@altitudeCode">
+              altitudeCode
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@altitudeCode
+             </code>
+             <p>
+              An indication of the meaning of the altitude value.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeMinimumAltitudeType.html">
+                CodeMinimumAltitudeType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#altitudeCodecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="altitudeCodecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#altitudeCode" target="_blank" title="Minima.altitudeCode">
+                   altitudeCode
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="altitude" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@altitude">
+              altitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@altitude
+             </code>
+             <p>
+              The lowest altitude an aircraft flies before making a decision to land or abort and take the missed approach.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#altitudecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="altitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#altitude" target="_blank" title="Minima.altitude">
+                   altitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="height" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@height">
+              height
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@height
+             </code>
+             <p>
+              The height value for the minimum
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#heightcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="heightcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#height" target="_blank" title="Minima.height">
+                   height
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isRVREquipmentMandatory" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@isRVREquipmentMandatory">
+              isRVREquipmentMandatory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@isRVREquipmentMandatory
+             </code>
+             <p>
+              Indication that RVR equipment is mandatory for this operation.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#isRVREquipmentMandatorycollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="isRVREquipmentMandatorycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#mandatoryRVR" target="_blank" title="Minima.mandatoryRVR">
+                   mandatoryRVR
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="militaryHeight" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@militaryHeight">
+              militaryHeight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@militaryHeight
+             </code>
+             <p>
+              The height value for the minimum used by militaries.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#militaryHeightcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="militaryHeightcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#militaryHeight" target="_blank" title="Minima.militaryHeight">
+                   militaryHeight
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="militaryVisibility" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@militaryVisibility">
+              militaryVisibility
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@militaryVisibility
+             </code>
+             <p>
+              The visibility value applicable to the military height.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#militaryVisibilitycollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="militaryVisibilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#militaryVisibility" target="_blank" title="Minima.militaryVisibility">
+                   militaryVisibility
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="radioHeight" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@radioHeight">
+              radioHeight
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@radioHeight
+             </code>
+             <p>
+              The height reported by a radio altimeter.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#radioHeightcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="radioHeightcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#radioHeight" target="_blank" title="Minima.radioHeight">
+                   radioHeight
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="visibility" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@visibility">
+              visibility
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:Minima@visibility
+             </code>
+             <p>
+              The minimum visibility needed to land at the airport when using the specified altitude and/or height.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#visibilitycollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="visibilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Minima.html#visibility" target="_blank" title="Minima.visibility">
+                   visibility
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

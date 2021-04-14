@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeIATACountryCodeType - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeIATACountryCodeType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeIATACountryCodeType
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType
+            </code>
+           </div>
+           <p>
+            The list of IATA Country Codes.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              ISO 3166-1
+             </span>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#IE">
+                 IE
+                </a>
+               </td>
+               <td>
+                Ireland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UA">
+                 UA
+                </a>
+               </td>
+               <td>
+                Ukraine
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TR">
+                 TR
+                </a>
+               </td>
+               <td>
+                Turkey
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TM">
+                 TM
+                </a>
+               </td>
+               <td>
+                Turkmenistan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AZ">
+                 AZ
+                </a>
+               </td>
+               <td>
+                Azerbaijan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BE">
+                 BE
+                </a>
+               </td>
+               <td>
+                Belgium
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BA">
+                 BA
+                </a>
+               </td>
+               <td>
+                Bosnia and Herzegovina
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#EE">
+                 EE
+                </a>
+               </td>
+               <td>
+                Estonia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FI">
+                 FI
+                </a>
+               </td>
+               <td>
+                Finland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AM">
+                 AM
+                </a>
+               </td>
+               <td>
+                Armenia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GE">
+                 GE
+                </a>
+               </td>
+               <td>
+                Georgia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DE">
+                 DE
+                </a>
+               </td>
+               <td>
+                Germany
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GI">
+                 GI
+                </a>
+               </td>
+               <td>
+                Gibraltar
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GR">
+                 GR
+                </a>
+               </td>
+               <td>
+                Greece
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GL">
+                 GL
+                </a>
+               </td>
+               <td>
+                Greenland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HU">
+                 HU
+                </a>
+               </td>
+               <td>
+                Hungary
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IS">
+                 IS
+                </a>
+               </td>
+               <td>
+                Iceland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PT">
+                 PT
+                </a>
+               </td>
+               <td>
+                Portugal
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IL">
+                 IL
+                </a>
+               </td>
+               <td>
+                Israel
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#KZ">
+                 KZ
+                </a>
+               </td>
+               <td>
+                Kazakhstan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FR">
+                 FR
+                </a>
+               </td>
+               <td>
+                France
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RO">
+                 RO
+                </a>
+               </td>
+               <td>
+                Romania
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LT">
+                 LT
+                </a>
+               </td>
+               <td>
+                Lithuania
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UZ">
+                 UZ
+                </a>
+               </td>
+               <td>
+                Uzbekistan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BY">
+                 BY
+                </a>
+               </td>
+               <td>
+                Belarus
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AT">
+                 AT
+                </a>
+               </td>
+               <td>
+                Austria
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LU">
+                 LU
+                </a>
+               </td>
+               <td>
+                Luxembourg
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LV">
+                 LV
+                </a>
+               </td>
+               <td>
+                Latvia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TJ">
+                 TJ
+                </a>
+               </td>
+               <td>
+                Tajikistan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#CH">
+                 CH
+                </a>
+               </td>
+               <td>
+                Switzerland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SE">
+                 SE
+                </a>
+               </td>
+               <td>
+                Sweden
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ES">
+                 ES
+                </a>
+               </td>
+               <td>
+                Spain
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SI">
+                 SI
+                </a>
+               </td>
+               <td>
+                Slovenia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SK">
+                 SK
+                </a>
+               </td>
+               <td>
+                Slovakia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GB">
+                 GB
+                </a>
+               </td>
+               <td>
+                United Kingdom
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RU">
+                 RU
+                </a>
+               </td>
+               <td>
+                Russian Federation
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NL">
+                 NL
+                </a>
+               </td>
+               <td>
+                Netherlands
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MK">
+                 MK
+                </a>
+               </td>
+               <td>
+                Macedonia, the former Yugoslav Republic of
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MC">
+                 MC
+                </a>
+               </td>
+               <td>
+                Monaco
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ME">
+                 ME
+                </a>
+               </td>
+               <td>
+                Montenegro
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MT">
+                 MT
+                </a>
+               </td>
+               <td>
+                Malta
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NO">
+                 NO
+                </a>
+               </td>
+               <td>
+                Norway
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PL">
+                 PL
+                </a>
+               </td>
+               <td>
+                Poland
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RS">
+                 RS
+                </a>
+               </td>
+               <td>
+                Serbia
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#IT">
+                 IT
+                </a>
+               </td>
+               <td>
+                Italy
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#KG">
+                 KG
+                </a>
+               </td>
+               <td>
+                Kyrgyzstan
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#AL">
+                 AL
+                </a>
+               </td>
+               <td>
+                Albania
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="IE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IE">
+              IE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IE
+             </code>
+             <p>
+              Ireland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="UA" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@UA">
+              UA
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@UA
+             </code>
+             <p>
+              Ukraine
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TR" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TR">
+              TR
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TR
+             </code>
+             <p>
+              Turkey
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TM">
+              TM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TM
+             </code>
+             <p>
+              Turkmenistan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AZ" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AZ">
+              AZ
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AZ
+             </code>
+             <p>
+              Azerbaijan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BE">
+              BE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BE
+             </code>
+             <p>
+              Belgium
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BA" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BA">
+              BA
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BA
+             </code>
+             <p>
+              Bosnia and Herzegovina
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@EE">
+              EE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@EE
+             </code>
+             <p>
+              Estonia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@FI">
+              FI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@FI
+             </code>
+             <p>
+              Finland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AM">
+              AM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AM
+             </code>
+             <p>
+              Armenia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GE">
+              GE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GE
+             </code>
+             <p>
+              Georgia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@DE">
+              DE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@DE
+             </code>
+             <p>
+              Germany
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GI">
+              GI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GI
+             </code>
+             <p>
+              Gibraltar
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GR" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GR">
+              GR
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GR
+             </code>
+             <p>
+              Greece
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GL">
+              GL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GL
+             </code>
+             <p>
+              Greenland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="HU" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@HU">
+              HU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@HU
+             </code>
+             <p>
+              Hungary
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="IS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IS">
+              IS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IS
+             </code>
+             <p>
+              Iceland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@PT">
+              PT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@PT
+             </code>
+             <p>
+              Portugal
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="IL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IL">
+              IL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IL
+             </code>
+             <p>
+              Israel
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="KZ" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@KZ">
+              KZ
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@KZ
+             </code>
+             <p>
+              Kazakhstan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FR" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@FR">
+              FR
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@FR
+             </code>
+             <p>
+              France
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RO" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RO">
+              RO
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RO
+             </code>
+             <p>
+              Romania
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LT">
+              LT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LT
+             </code>
+             <p>
+              Lithuania
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="UZ" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@UZ">
+              UZ
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@UZ
+             </code>
+             <p>
+              Uzbekistan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BY">
+              BY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@BY
+             </code>
+             <p>
+              Belarus
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AT">
+              AT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AT
+             </code>
+             <p>
+              Austria
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LU" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LU">
+              LU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LU
+             </code>
+             <p>
+              Luxembourg
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LV" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LV">
+              LV
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@LV
+             </code>
+             <p>
+              Latvia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TJ" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TJ">
+              TJ
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@TJ
+             </code>
+             <p>
+              Tajikistan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="CH" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@CH">
+              CH
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@CH
+             </code>
+             <p>
+              Switzerland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SE">
+              SE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SE
+             </code>
+             <p>
+              Sweden
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ES" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@ES">
+              ES
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@ES
+             </code>
+             <p>
+              Spain
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SI" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SI">
+              SI
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SI
+             </code>
+             <p>
+              Slovenia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SK" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SK">
+              SK
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@SK
+             </code>
+             <p>
+              Slovakia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GB" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GB">
+              GB
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@GB
+             </code>
+             <p>
+              United Kingdom
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RU" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RU">
+              RU
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RU
+             </code>
+             <p>
+              Russian Federation
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="NL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@NL">
+              NL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@NL
+             </code>
+             <p>
+              Netherlands
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MK" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MK">
+              MK
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MK
+             </code>
+             <p>
+              Macedonia, the former Yugoslav Republic of
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MC" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MC">
+              MC
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MC
+             </code>
+             <p>
+              Monaco
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ME" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@ME">
+              ME
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@ME
+             </code>
+             <p>
+              Montenegro
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MT">
+              MT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@MT
+             </code>
+             <p>
+              Malta
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="NO" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@NO">
+              NO
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@NO
+             </code>
+             <p>
+              Norway
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@PL">
+              PL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@PL
+             </code>
+             <p>
+              Poland
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RS">
+              RS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@RS
+             </code>
+             <p>
+              Serbia
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="IT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IT">
+              IT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@IT
+             </code>
+             <p>
+              Italy
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="KG" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@KG">
+              KG
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@KG
+             </code>
+             <p>
+              Kyrgyzstan
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="AL" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AL">
+              AL
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeIATACountryCodeType@AL
+             </code>
+             <p>
+              Albania
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

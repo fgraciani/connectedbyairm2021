@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeNavigationCapabilityType - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeNavigationCapabilityType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeNavigationCapabilityType
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType
+            </code>
+           </div>
+           <p>
+            A code indicating the navigation capability of the aircraft and associated flight crew qualifications.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              FIXM
+             </span>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#SBAS_CAPABILITY">
+                 SBAS_CAPABILITY
+                </a>
+               </td>
+               <td>
+                SBAS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MLS">
+                 MLS
+                </a>
+               </td>
+               <td>
+                MLS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LORAN_C">
+                 LORAN_C
+                </a>
+               </td>
+               <td>
+                LORAN-C capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#INERTIAL_NAVIGATION">
+                 INERTIAL_NAVIGATION
+                </a>
+               </td>
+               <td>
+                Inertial Navigation capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LNAV_VNAV_CAPABILITY">
+                 LNAV_VNAV_CAPABILITY
+                </a>
+               </td>
+               <td>
+                LNAV/VNAV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VOR">
+                 VOR
+                </a>
+               </td>
+               <td>
+                VOR capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TACTICAL_ILS_CAPABILITY">
+                 TACTICAL_ILS_CAPABILITY
+                </a>
+               </td>
+               <td>
+                Tactical ILS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LNAV_CAPABILITY">
+                 LNAV_CAPABILITY
+                </a>
+               </td>
+               <td>
+                LNAV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ILS">
+                 ILS
+                </a>
+               </td>
+               <td>
+                ILS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY">
+                 GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY
+                </a>
+               </td>
+               <td>
+                GBAS AAST and ranging source type VNAV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GBAS_CAPABILITY">
+                 GBAS_CAPABILITY
+                </a>
+               </td>
+               <td>
+                GBAS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DME">
+                 DME
+                </a>
+               </td>
+               <td>
+                DME capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#BARO_VNAV_CAPABILITY">
+                 BARO_VNAV_CAPABILITY
+                </a>
+               </td>
+               <td>
+                BARO/VNAV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#APV_CAPABILITY">
+                 APV_CAPABILITY
+                </a>
+               </td>
+               <td>
+                APV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ADF">
+                 ADF
+                </a>
+               </td>
+               <td>
+                ADF capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LOCALIZER_CAPABILITY">
+                 LOCALIZER_CAPABILITY
+                </a>
+               </td>
+               <td>
+                Localizer capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GNSS">
+                 GNSS
+                </a>
+               </td>
+               <td>
+                GNSS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LPV">
+                 LPV
+                </a>
+               </td>
+               <td>
+                LPV capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#MNPS_APPROVED">
+                 MNPS_APPROVED
+                </a>
+               </td>
+               <td>
+                MNPS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PRMG_CAPABILITY">
+                 PRMG_CAPABILITY
+                </a>
+               </td>
+               <td>
+                PRMG capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RSBN_CAPABILITY">
+                 RSBN_CAPABILITY
+                </a>
+               </td>
+               <td>
+                RSBN capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RVSM_APPROVED">
+                 RVSM_APPROVED
+                </a>
+               </td>
+               <td>
+                RVSM capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#GBAS_LANDING_SYSTEM">
+                 GBAS_LANDING_SYSTEM
+                </a>
+               </td>
+               <td>
+                GBAS capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#TACAN">
+                 TACAN
+                </a>
+               </td>
+               <td>
+                TACAN capability.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SBAS_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@SBAS_CAPABILITY">
+              SBAS_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@SBAS_CAPABILITY
+             </code>
+             <p>
+              SBAS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MLS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@MLS">
+              MLS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@MLS
+             </code>
+             <p>
+              MLS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MLScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MLScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#K" target="_blank" title="fx:NavigationCapabilityCodeType:K">
+                   K
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#MLS" target="_blank" title="CodeNavigationEquipmentBaseType.MLS">
+                   MLS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LORAN_C" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LORAN_C">
+              LORAN_C
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LORAN_C
+             </code>
+             <p>
+              LORAN-C capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#LORAN_Ccollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="LORAN_Ccollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#LORAN" target="_blank" title="CodeNavigationEquipmentBaseType.LORAN">
+                   LORAN
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#C" target="_blank" title="fx:NavigationCapabilityCodeType:C">
+                   C
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="INERTIAL_NAVIGATION" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@INERTIAL_NAVIGATION">
+              INERTIAL_NAVIGATION
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@INERTIAL_NAVIGATION
+             </code>
+             <p>
+              Inertial Navigation capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#INERTIAL_NAVIGATIONcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="INERTIAL_NAVIGATIONcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#I" target="_blank" title="fx:NavigationCapabilityCodeType:I">
+                   I
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LNAV_VNAV_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LNAV_VNAV_CAPABILITY">
+              LNAV_VNAV_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LNAV_VNAV_CAPABILITY
+             </code>
+             <p>
+              LNAV/VNAV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="VOR" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@VOR">
+              VOR
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@VOR
+             </code>
+             <p>
+              VOR capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VORcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="VORcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#O" target="_blank" title="fx:NavigationCapabilityCodeType:O">
+                   O
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TACTICAL_ILS_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@TACTICAL_ILS_CAPABILITY">
+              TACTICAL_ILS_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@TACTICAL_ILS_CAPABILITY
+             </code>
+             <p>
+              Tactical ILS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LNAV_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LNAV_CAPABILITY">
+              LNAV_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LNAV_CAPABILITY
+             </code>
+             <p>
+              LNAV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ILS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@ILS">
+              ILS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@ILS
+             </code>
+             <p>
+              ILS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ILScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ILScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#ILS" target="_blank" title="CodeNavigationEquipmentBaseType.ILS">
+                   ILS
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#L" target="_blank" title="fx:NavigationCapabilityCodeType:L">
+                   L
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#INS" target="_blank" title="CodeNavigationEquipmentBaseType.INS">
+                   INS
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY">
+              GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_AAST_AND_RANGING_SOURCE_TYPE_VNAV_CAPABILITY
+             </code>
+             <p>
+              GBAS AAST and ranging source type VNAV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GBAS_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_CAPABILITY">
+              GBAS_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_CAPABILITY
+             </code>
+             <p>
+              GBAS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#GBAS_CAPABILITYcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="GBAS_CAPABILITYcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#A" target="_blank" title="fx:NavigationCapabilityCodeType:A">
+                   A
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DME" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@DME">
+              DME
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@DME
+             </code>
+             <p>
+              DME capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#DMEcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="DMEcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#D" target="_blank" title="fx:NavigationCapabilityCodeType:D">
+                   D
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#DME" target="_blank" title="CodeNavigationEquipmentBaseType.DME">
+                   DME
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="BARO_VNAV_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@BARO_VNAV_CAPABILITY">
+              BARO_VNAV_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@BARO_VNAV_CAPABILITY
+             </code>
+             <p>
+              BARO/VNAV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="APV_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@APV_CAPABILITY">
+              APV_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@APV_CAPABILITY
+             </code>
+             <p>
+              APV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ADF" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@ADF">
+              ADF
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@ADF
+             </code>
+             <p>
+              ADF capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ADFcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ADFcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#F" target="_blank" title="fx:NavigationCapabilityCodeType:F">
+                   F
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LOCALIZER_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LOCALIZER_CAPABILITY">
+              LOCALIZER_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LOCALIZER_CAPABILITY
+             </code>
+             <p>
+              Localizer capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GNSS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GNSS">
+              GNSS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GNSS
+             </code>
+             <p>
+              GNSS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#GNSScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="GNSScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#GNSS" target="_blank" title="CodeNavigationEquipmentBaseType.GNSS">
+                   GNSS
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#G" target="_blank" title="fx:NavigationCapabilityCodeType:G">
+                   G
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LPV" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LPV">
+              LPV
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@LPV
+             </code>
+             <p>
+              LPV capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#LPVcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="LPVcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#B" target="_blank" title="fx:NavigationCapabilityCodeType:B">
+                   B
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="MNPS_APPROVED" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@MNPS_APPROVED">
+              MNPS_APPROVED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@MNPS_APPROVED
+             </code>
+             <p>
+              MNPS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#MNPS_APPROVEDcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="MNPS_APPROVEDcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#X" target="_blank" title="fx:NavigationCapabilityCodeType:X">
+                   X
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PRMG_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@PRMG_CAPABILITY">
+              PRMG_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@PRMG_CAPABILITY
+             </code>
+             <p>
+              PRMG capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RSBN_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@RSBN_CAPABILITY">
+              RSBN_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@RSBN_CAPABILITY
+             </code>
+             <p>
+              RSBN capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RVSM_APPROVED" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@RVSM_APPROVED">
+              RVSM_APPROVED
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@RVSM_APPROVED
+             </code>
+             <p>
+              RVSM capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#RVSM_APPROVEDcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="RVSM_APPROVEDcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#W" target="_blank" title="fx:NavigationCapabilityCodeType:W">
+                   W
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="GBAS_LANDING_SYSTEM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_LANDING_SYSTEM">
+              GBAS_LANDING_SYSTEM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@GBAS_LANDING_SYSTEM
+             </code>
+             <p>
+              GBAS capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="TACAN" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@TACAN">
+              TACAN
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeNavigationCapabilityType@TACAN
+             </code>
+             <p>
+              TACAN capability.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#TACANcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="TACANcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeNavigationEquipmentBaseType.html#TACAN" target="_blank" title="CodeNavigationEquipmentBaseType.TACAN">
+                   TACAN
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilityCodeType.html#T" target="_blank" title="fx:NavigationCapabilityCodeType:T">
+                   T
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>

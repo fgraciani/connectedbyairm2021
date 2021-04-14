@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
+  <title>
+   CodeCommunicationCapabilityType - Logical Model | AIRM.aero
+  </title>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/img/favicon.png" rel="icon" sizes="523x412" type="image/png"/>
+  <link href="../../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/airm-custom.css" rel="stylesheet"/>
+  <link href="../../../assets/css/beta.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Brands.css" rel="stylesheet"/>
+  <link href="../../../assets/css/Contact-Form-Clean.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
+  <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
+  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149524587-1');
+  </script>
+ </head>
+ <body>
+  <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean" style="padding-bottom: 0px;margin-top: 85px;height: 35px;background: rgba(143,170,220,0.66);">
+   <div class="container">
+    <a class="navbar-brand" href="http://airm.aero" style="color: #E1E1E1;">
+    </a>
+    <button class="navbar-toggler" data-target="#" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
+     <ul class="nav navbar-nav mx-auto">
+      <li class="nav-item">
+       <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
+        <li class="breadcrumb-item">
+         <a href="../../../viewer.html">
+          <span>
+           AIRM Viewer
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a href="../logical-model.html">
+          <span>
+           Logical Model
+          </span>
+         </a>
+        </li>
+        <li class="breadcrumb-item">
+         <a>
+          <span>
+           CodeCommunicationCapabilityType
+           <br/>
+          </span>
+         </a>
+        </li>
+       </ol>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="search.html">
+        Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="support-pages.html">
+        Support
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <main class="page" id="top" style="margin-top: 30px;">
+   <section class="clean-block features">
+    <div class="container">
+     <div class="block-heading" style="padding-top: 24px;">
+     </div>
+     <div class="row align-items-center">
+      <div class="col-md-12 col-lg-12 col-xl-12">
+       <div class="items">
+        <div class="product">
+         <div class="row justify-content-center align-items-center">
+          <div class="col text-justify">
+           <div id="INFO_CONCEPT_NAME">
+            <h2>
+             CodeCommunicationCapabilityType
+             <spam>
+             </spam>
+            </h2>
+            <code class="text-secondary">
+             urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType
+            </code>
+           </div>
+           <p>
+            A code indicating the capability of the aircraft and associated flight crew qualifications to communicate with ATS units.
+           </p>
+           <div id="INFO_CONCEPT_OTHER">
+            <p>
+             <b>
+              Source:
+             </b>
+             <span>
+              FIXM
+             </span>
+             <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
+            </p>
+           </div>
+           <div class="table-responsive">
+            <table class="table">
+             <thead>
+              <tr>
+               <th>
+                Properties
+               </th>
+               <th>
+                Definition
+               </th>
+               <th>
+                Type
+               </th>
+              </tr>
+             </thead>
+             <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY">
+                 VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY
+                </a>
+               </td>
+               <td>
+                8.33 KHz equipment status
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#HF_RTF">
+                 HF_RTF
+                </a>
+               </td>
+               <td>
+                Hi frequency Radio Transmission Frequency
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#COMMA_COMMB_UPLINK_EML_DOWNLINK_EML">
+                 COMMA_COMMB_UPLINK_EML_DOWNLINK_EML
+                </a>
+               </td>
+               <td>
+                Comm. A, Comm. B, Uplink ELM and Downlink ELM
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#UHF_RTF">
+                 UHF_RTF
+                </a>
+               </td>
+               <td>
+                Ultra High frequency Radio Transmission Frequency
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#VHF_RTF">
+                 VHF_RTF
+                </a>
+               </td>
+               <td>
+                Very High frequency Radio Transmission Frequency
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#PDC_ACARS">
+                 PDC_ACARS
+                </a>
+               </td>
+               <td>
+                Pre-Departure Clearances Aircraft Communications Addressing and Reporting System
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#LEVEL5_TRANSPONDER">
+                 LEVEL5_TRANSPONDER
+                </a>
+               </td>
+               <td>
+                Level 5 Transponder capability
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#COMMA_COMMB">
+                 COMMA_COMMB
+                </a>
+               </td>
+               <td>
+                Comm. A and Comm. B capability
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FMC_WPR_ACARS">
+                 FMC_WPR_ACARS
+                </a>
+               </td>
+               <td>
+                Flight Management Computer Waypoint Reporting Aircraft Communications Addressing and Reporting System
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#DFIS_ACARS">
+                 DFIS_ACARS
+                </a>
+               </td>
+               <td>
+                Digital-Flight Information Services Aircraft Communications Addressing and Reporting System
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATC_RTF_SATCOM_INMARSAT">
+                 ATC_RTF_SATCOM_INMARSAT
+                </a>
+               </td>
+               <td>
+                Aeronautical Telecommunication Network RTF INMARSAT
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATC_RTF_MTSAT">
+                 ATC_RTF_MTSAT
+                </a>
+               </td>
+               <td>
+                Aeronautical Telecommunication Network RTF MTSAT
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ATC_RTF_IRIDIUM">
+                 ATC_RTF_IRIDIUM
+                </a>
+               </td>
+               <td>
+                Aeronautical Telecommunication Network RTF Iridium
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#ACARS_OVER_AVLC">
+                 ACARS_OVER_AVLC
+                </a>
+               </td>
+               <td>
+                ACARS over AVLC
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#NO_COMMUNICATIONS">
+                 NO_COMMUNICATIONS
+                </a>
+               </td>
+               <td>
+                No communications capability (surveillance only)
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#COMMA_COMMB_UPLINK_EML">
+                 COMMA_COMMB_UPLINK_EML
+                </a>
+               </td>
+               <td>
+                Comm. A, Comm. B and Uplink ELM
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#SELCAL_SYSTEM">
+                 SELCAL_SYSTEM
+                </a>
+               </td>
+               <td>
+                Selcal system
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#RCP">
+                 RCP
+                </a>
+               </td>
+               <td>
+                Required Communications Performance
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </div>
+           <p>
+           </p>
+           <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY">
+              VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITY
+             </code>
+             <p>
+              8.33 KHz equipment status
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITYcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="VHF_WITH_8.33_KHZ_CHANNEL_SPACING_CAPABILITYcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#Y" target="_blank" title="fx:CommunicationCapabilityCodeType:Y">
+                   Y
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="HF_RTF" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@HF_RTF">
+              HF_RTF
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@HF_RTF
+             </code>
+             <p>
+              Hi frequency Radio Transmission Frequency
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#HF_RTFcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="HF_RTFcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#H" target="_blank" title="fx:CommunicationCapabilityCodeType:H">
+                   H
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="COMMA_COMMB_UPLINK_EML_DOWNLINK_EML" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB_UPLINK_EML_DOWNLINK_EML">
+              COMMA_COMMB_UPLINK_EML_DOWNLINK_EML
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB_UPLINK_EML_DOWNLINK_EML
+             </code>
+             <p>
+              Comm. A, Comm. B, Uplink ELM and Downlink ELM
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="UHF_RTF" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@UHF_RTF">
+              UHF_RTF
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@UHF_RTF
+             </code>
+             <p>
+              Ultra High frequency Radio Transmission Frequency
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#UHF_RTFcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="UHF_RTFcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#U" target="_blank" title="fx:CommunicationCapabilityCodeType:U">
+                   U
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="VHF_RTF" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@VHF_RTF">
+              VHF_RTF
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@VHF_RTF
+             </code>
+             <p>
+              Very High frequency Radio Transmission Frequency
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#VHF_RTFcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="VHF_RTFcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#V" target="_blank" title="fx:CommunicationCapabilityCodeType:V">
+                   V
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="PDC_ACARS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@PDC_ACARS">
+              PDC_ACARS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@PDC_ACARS
+             </code>
+             <p>
+              Pre-Departure Clearances Aircraft Communications Addressing and Reporting System
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#PDC_ACARScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="PDC_ACARScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#E3" target="_blank" title="fx:CommunicationCapabilityCodeType:E3">
+                   E3
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="LEVEL5_TRANSPONDER" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@LEVEL5_TRANSPONDER">
+              LEVEL5_TRANSPONDER
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@LEVEL5_TRANSPONDER
+             </code>
+             <p>
+              Level 5 Transponder capability
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="COMMA_COMMB" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB">
+              COMMA_COMMB
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB
+             </code>
+             <p>
+              Comm. A and Comm. B capability
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FMC_WPR_ACARS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@FMC_WPR_ACARS">
+              FMC_WPR_ACARS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@FMC_WPR_ACARS
+             </code>
+             <p>
+              Flight Management Computer Waypoint Reporting Aircraft Communications Addressing and Reporting System
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#FMC_WPR_ACARScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="FMC_WPR_ACARScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#E1" target="_blank" title="fx:CommunicationCapabilityCodeType:E1">
+                   E1
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="DFIS_ACARS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@DFIS_ACARS">
+              DFIS_ACARS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@DFIS_ACARS
+             </code>
+             <p>
+              Digital-Flight Information Services Aircraft Communications Addressing and Reporting System
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#DFIS_ACARScollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="DFIS_ACARScollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#E2" target="_blank" title="fx:CommunicationCapabilityCodeType:E2">
+                   E2
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ATC_RTF_SATCOM_INMARSAT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_SATCOM_INMARSAT">
+              ATC_RTF_SATCOM_INMARSAT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_SATCOM_INMARSAT
+             </code>
+             <p>
+              Aeronautical Telecommunication Network RTF INMARSAT
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ATC_RTF_SATCOM_INMARSATcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ATC_RTF_SATCOM_INMARSATcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#M1" target="_blank" title="fx:CommunicationCapabilityCodeType:M1">
+                   M1
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ATC_RTF_MTSAT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_MTSAT">
+              ATC_RTF_MTSAT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_MTSAT
+             </code>
+             <p>
+              Aeronautical Telecommunication Network RTF MTSAT
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ATC_RTF_MTSATcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ATC_RTF_MTSATcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#M2" target="_blank" title="fx:CommunicationCapabilityCodeType:M2">
+                   M2
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ATC_RTF_IRIDIUM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_IRIDIUM">
+              ATC_RTF_IRIDIUM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ATC_RTF_IRIDIUM
+             </code>
+             <p>
+              Aeronautical Telecommunication Network RTF Iridium
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ATC_RTF_IRIDIUMcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="ATC_RTF_IRIDIUMcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilityCodeType.html#M3" target="_blank" title="fx:CommunicationCapabilityCodeType:M3">
+                   M3
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="ACARS_OVER_AVLC" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ACARS_OVER_AVLC">
+              ACARS_OVER_AVLC
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@ACARS_OVER_AVLC
+             </code>
+             <p>
+              ACARS over AVLC
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="NO_COMMUNICATIONS" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@NO_COMMUNICATIONS">
+              NO_COMMUNICATIONS
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@NO_COMMUNICATIONS
+             </code>
+             <p>
+              No communications capability (surveillance only)
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="COMMA_COMMB_UPLINK_EML" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB_UPLINK_EML">
+              COMMA_COMMB_UPLINK_EML
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@COMMA_COMMB_UPLINK_EML
+             </code>
+             <p>
+              Comm. A, Comm. B and Uplink ELM
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="SELCAL_SYSTEM" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@SELCAL_SYSTEM">
+              SELCAL_SYSTEM
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@SELCAL_SYSTEM
+             </code>
+             <p>
+              Selcal system
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="RCP" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@RCP">
+              RCP
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:Codelists:CodeCommunicationCapabilityType@RCP
+             </code>
+             <p>
+              Required Communications Performance
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="page-footer dark">
+   <div class="container">
+    <div class="row">
+     <div class="col col-sm-3">
+      <h5>
+       Get Started
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="../../../index.html#start">
+         Start using the AIRM
+        </a>
+       </li>
+       <li>
+        <a href="../../../developers/downloads.html">
+         Downloads
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       About Us
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../community.html">
+         AIRM Community
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation/airm-change-management.html">
+         AIRM CCB
+        </a>
+       </li>
+       <li>
+        <a href="../../../contact-us.html">
+         Contact us
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       Support
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../faq.html">
+         FAQ
+        </a>
+       </li>
+       <li>
+        <a href="../../../documentation.html">
+         AIRM Docs
+        </a>
+       </li>
+       <li>
+        <a href="https://www.cookiesandyou.com/">
+         Cookies
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="col col-sm-3">
+      <h5>
+       AIRM Viewer
+      </h5>
+      <ul>
+       <li>
+        <a href="../../../viewer.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-terms.html">
+         Terms
+        </a>
+       </li>
+       <li>
+        <a href="viewer/1.0.0/contextual-model-abbreviations.html">
+         Abbreviations
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="footer-copyright">
+    <p style="font-size: 11px;">
+     <a href="https://www.eurocontrol.int/">
+      <br/>
+      © 2019 EUROCONTROL
+      <br/>
+      <br/>
+     </a>
+    </p>
+   </div>
+  </footer>
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark clean-navbar">
+   <div class="container">
+    <a class="navbar-brand logo" href="../../../developers.html">
+     <img src="../../../assets/img/Picture2-black.png" style="height: 33px;"/>
+    </a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+     <span class="sr-only">
+      Toggle navigation
+     </span>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item item">
+       <a class="nav-link" href="../../../index.html">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../developers/advanced-search.html">
+        AIRM Search
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../community.html">
+        Community
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../documentation.html">
+        DOCS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="../../../faq.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="faq.html">
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="../../../developers.html" style="color: rgb(143,170,220);">
+        Developers
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="../../../assets/js/smart-forms.min.js">
+  </script>
+  <script src="../../../assets/js/bs-init.js">
+  </script>
+  <script src="../../../assets/js/tooltips.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js">
+  </script>
+  <script src="../../../assets/js/smoothproducts.min.js">
+  </script>
+  <script src="../../../assets/js/theme.js">
+  </script>
+  <script src="../../../assets/js/clipboard.js">
+  </script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/dataRender/ellipsis.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js">
+  </script>
+  <script src="../../../assets/js/ie.js">
+  </script>
+  <script src="../../../assets/js/smooth.js">
+  </script>
+  <script src="../../../assets/js/toast.js">
+  </script>
+  <script src="../../../assets/js/navbarfix.js">
+  </script>
+ </body>
+</html>
