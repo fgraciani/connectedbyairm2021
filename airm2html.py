@@ -260,7 +260,7 @@ def create_conceptual_model_with_supplements_index_page():
   f.close() 
 
 def create_conceptual_model_item_pages():
-  #CONTINUE HERE
+  #CONTINUE HERE - 2 sets to cover
   pass
 
 def create_logical_model_index_page():
