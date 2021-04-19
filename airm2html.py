@@ -24,13 +24,13 @@ def create_contextual_model_abbreviations_with_supplements_index_page():
 
   from bs4 import BeautifulSoup
   soup = BeautifulSoup(template, "lxml")
-  directory = "contextual-model/"
   
   for record in airm_abbreviations:
     if record["supplement"] == "\t\t\t":
+      directory = "contextual-model/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
     elif record["supplement"] == "\t\t\tEuropean Supplement":
-      directory=directory+"european-supplement/"
+      directory="contextual-model/european-supplement/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
 
   f= open("docs/airm/viewer/1.0.0/contextual-model-abbreviations-with-supplements.html","w+")
@@ -112,13 +112,13 @@ def create_contextual_model_terms_with_supplements_index_page():
 
   from bs4 import BeautifulSoup
   soup = BeautifulSoup(template, "lxml")
-  directory = "contextual-model/"
   
   for record in airm_abbreviations:
     if record["supplement"] == "\t\t\t":
+      directory = "contextual-model/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
     elif record["supplement"] == "\t\t\tEuropean Supplement":
-      directory=directory+"european-supplement/"
+      directory = "contextual-model/european-supplement/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
 
   f= open("docs/airm/viewer/1.0.0/contextual-model-terms-with-supplements.html","w+")
