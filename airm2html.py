@@ -38,7 +38,6 @@ def create_contextual_model_abbreviations_with_supplements_index_page():
   f.close() 
 
 def create_contextual_model_abbreviations_item_pages():
-  from bs4 import BeautifulSoup
   import airm
   airm = airm.Airm()
   airm_abbs = airm.contextual_abbreviations.to_dict('records')
@@ -46,16 +45,17 @@ def create_contextual_model_abbreviations_item_pages():
   for record in airm_abbs:
     
     if record["supplement"] == "\t\t\t":
-      html = open("docs/airm/templates/viewer/contextual-model/contextual-model-abbreviation-template.html").read()
+      template = open("docs/airm/templates/viewer/contextual-model/contextual-model-abbreviation-template.html").read()
       directory = "docs/airm/viewer/1.0.0/contextual-model/"
 
     elif record["supplement"] == "\t\t\tEuropean Supplement":
-      html = open("docs/airm/templates/viewer/contextual-model/european-supplement/contextual-model-abbreviation-template.html").read()
+      template = open("docs/airm/templates/viewer/contextual-model/european-supplement/contextual-model-abbreviation-template.html").read()
       directory = "docs/airm/viewer/1.0.0/contextual-model/european-supplement/"
           
-    print(record['class name'])
-    soup = BeautifulSoup(html, "lxml") 
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(template, "lxml") 
 
+    print(record['class name'])
     soup.title.string = str(record['class name'])+" - Contextual Model | AIRM.aero"
     soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
 
@@ -81,142 +81,51 @@ def create_contextual_model_abbreviations_item_pages():
     span.string = record["source"]
     p.insert(2,span)
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
-    filename = str(record['class name'])+".html"
-    filename = filename.replace("/", "-")
-    filename = filename.replace("*", "-")
-    filename = filename.replace(" ", "")
-    filename = filename.replace("\t", "")
-    filename = filename.replace("\n", "")
+    filename = classname_to_filename(str(record['class name']))
     f= open(directory + filename,"w+")
     f.write(soup.prettify())
     f.close()
 
 def create_contextual_model_terms_index_page():
-  from bs4 import BeautifulSoup
-  import os
-  airm_cx_pages_directory = "docs/airm/viewer/1.0.0/contextual-model"
-  path = airm_cx_pages_directory
-  try:
-      os.mkdir(path)
-  except OSError:
-      print ("Creation of the directory %s failed" % path)
-  else:
-      print ("Successfully created the directory %s " % path)
   import airm
   airm = airm.Airm()
-  airm_terms = airm.contextual_terms.to_dict('records')
-  html = open("docs/airm/templates/viewer/contextual-model-terms-template.html").read()
-  soup = BeautifulSoup(html, "lxml")
-  for record in airm_terms:
-    if record["supplement"] == "\t\t\t":
-      tr = soup.new_tag("tr")
+  airm_abbreviations = airm.contextual_abbreviations.to_dict('records')
+  template = open("docs/airm/templates/viewer/contextual-model-terms-template.html").read()
 
-      td_ic_name = soup.new_tag("td")
-      td_ic_name["data-order"] = record["class name"]
-      filename = str(record['class name'])+".html"
-      filename = filename.replace("/", "-")
-      filename = filename.replace("*", "-")
-      filename = filename.replace(" ", "")
-      filename = filename.replace("\t", "")
-      filename = filename.replace("\n", "")
-      url = "contextual-model/"+filename
-      text = record["class name"]
-      print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_ic_name.insert(1,new_link)
-      tr.insert(1,td_ic_name)
-      
-      if record["definition"] != "":
-        td_def = soup.new_tag("td")
-        td_def.string = str(record["definition"])
-        tr.insert(2,td_def)
-     
-      soup.find('tbody').insert(1,tr)
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup(template, "lxml")
+  directory = "contextual-model/"
+
+  for record in airm_abbreviations:
+    if record["supplement"] == "\t\t\t":     
+      soup.find('tbody').insert(1,create_index_row(record,directory))
   
   f= open("docs/airm/viewer/1.0.0/contextual-model-terms.html","w+")
   f.write(soup.prettify())
   f.close() 
   
 def create_contextual_model_terms_with_supplements_index_page():
-  from bs4 import BeautifulSoup
   import airm
   airm = airm.Airm()
-  airm_terms = airm.contextual_terms.to_dict('records')
-  html = open("docs/airm/templates/viewer/contextual-model-terms-with-supplements-template.html").read()
-  soup = BeautifulSoup(html, "lxml")
-  for record in airm_terms:
-    if record["supplement"] == "\t\t\t":
-      tr = soup.new_tag("tr")
-      td_supplement = soup.new_tag("td")
-      tr.insert(1,td_supplement)
+  airm_abbreviations = airm.contextual_abbreviations.to_dict('records')
+  template = open("docs/airm/templates/viewer/contextual-model-terms-with-supplements-template.html").read()
 
-      td_ic_name = soup.new_tag("td")
-      td_ic_name["data-order"] = record["class name"]
-      filename = str(record['class name'])+".html"
-      filename = filename.replace("/", "-")
-      filename = filename.replace("*", "-")
-      filename = filename.replace(" ", "")
-      filename = filename.replace("\t", "")
-      filename = filename.replace("\n", "")
-      url = "contextual-model/"+filename
-      text = record["class name"]
-      print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_ic_name.insert(1,new_link)
-      tr.insert(2,td_ic_name)
-      
-      if record["definition"] != "":
-        td_def = soup.new_tag("td")
-        td_def.string = str(record["definition"])
-        tr.insert(3,td_def)
-     
-      soup.find('tbody').insert(1,tr)
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup(template, "lxml")
+  directory = "contextual-model/"
+  
+  for record in airm_abbreviations:
+    if record["supplement"] == "\t\t\t":
+      soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
     elif record["supplement"] == "\t\t\tEuropean Supplement":
-      tr = soup.new_tag("tr")
-      td_supplement = soup.new_tag("td")
-      span_supplement = soup.new_tag("spam")
-      span_supplement['class'] = "badge badge-secondary"
-      span_supplement.string = "European Supplement"
-      td_supplement.insert(1,span_supplement)
-      tr.insert(1,td_supplement)
-      
-      td_ic_name = soup.new_tag("td")
-      td_ic_name["data-order"] = record["class name"]
-      filename = str(record['class name'])+".html"
-      filename = filename.replace("/", "-")
-      filename = filename.replace("*", "-")
-      filename = filename.replace(" ", "")
-      filename = filename.replace("\t", "")
-      filename = filename.replace("\n", "")
-      url = "contextual-model/european-supplement/"+filename
-      text = record["class name"]
-      print(text)
-      new_link = soup.new_tag("a")
-      new_link['href'] = url
-      new_link['target'] = "_blank"
-      new_link.string = text
-      td_ic_name.insert(1,new_link)
-      tr.insert(2,td_ic_name)
-      
-      if record["definition"] != "":
-        td_def = soup.new_tag("td")
-        td_def.string = str(record["definition"])
-        tr.insert(3,td_def)
-     
-      soup.find('tbody').insert(1,tr)
+      directory=directory+"european-supplement/"
+      soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
 
   f= open("docs/airm/viewer/1.0.0/contextual-model-terms-with-supplements.html","w+")
   f.write(soup.prettify())
   f.close()
 
 def create_contextual_model_terms_item_pages():
-  from bs4 import BeautifulSoup
   import airm
   airm = airm.Airm()
   airm_terms = airm.contextual_terms.to_dict('records')
@@ -224,16 +133,17 @@ def create_contextual_model_terms_item_pages():
   for record in airm_terms:
     
     if record["supplement"] == "\t\t\t":
-      html = open("docs/airm/templates/viewer/contextual-model/contextual-model-term-template.html").read()
+      template = open("docs/airm/templates/viewer/contextual-model/contextual-model-term-template.html").read()
       directory = "docs/airm/viewer/1.0.0/contextual-model/"
 
     elif record["supplement"] == "\t\t\tEuropean Supplement":
-      html = open("docs/airm/templates/viewer/contextual-model/european-supplement/contextual-model-term-template.html").read()
+      template = open("docs/airm/templates/viewer/contextual-model/european-supplement/contextual-model-term-template.html").read()
       directory = "docs/airm/viewer/1.0.0/contextual-model/european-supplement/"
           
-    print(record['class name'])
-    soup = BeautifulSoup(html, "lxml") 
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(template, "lxml") 
 
+    print(record['class name'])
     soup.title.string = str(record['class name'])+" - Contextual Model | AIRM.aero"
     soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
 
@@ -302,12 +212,7 @@ def create_contextual_model_terms_item_pages():
 
     soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
 
-    filename = str(record['class name'])+".html"
-    filename = filename.replace("/", "-")
-    filename = filename.replace("*", "-")
-    filename = filename.replace(" ", "")
-    filename = filename.replace("\t", "")
-    filename = filename.replace("\n", "")
+    filename = classname_to_filename(str(record['class name']))
     f= open(directory + filename,"w+")
     f.write(soup.prettify())
     f.close()
