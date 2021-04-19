@@ -89,14 +89,14 @@ def create_contextual_model_abbreviations_item_pages():
 def create_contextual_model_terms_index_page():
   import airm
   airm = airm.Airm()
-  airm_abbreviations = airm.contextual_abbreviations.to_dict('records')
+  airm_terms = airm.contextual_terms.to_dict('records')
   template = open("docs/airm/templates/viewer/contextual-model-terms-template.html").read()
 
   from bs4 import BeautifulSoup
   soup = BeautifulSoup(template, "lxml")
   directory = "contextual-model/"
 
-  for record in airm_abbreviations:
+  for record in airm_terms:
     if record["supplement"] == "\t\t\t":     
       soup.find('tbody').insert(1,create_index_row(record,directory))
   
@@ -107,13 +107,13 @@ def create_contextual_model_terms_index_page():
 def create_contextual_model_terms_with_supplements_index_page():
   import airm
   airm = airm.Airm()
-  airm_abbreviations = airm.contextual_abbreviations.to_dict('records')
+  airm_terms = airm.contextual_terms.to_dict('records')
   template = open("docs/airm/templates/viewer/contextual-model-terms-with-supplements-template.html").read()
 
   from bs4 import BeautifulSoup
   soup = BeautifulSoup(template, "lxml")
   
-  for record in airm_abbreviations:
+  for record in airm_terms:
     if record["supplement"] == "\t\t\t":
       directory = "contextual-model/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
@@ -219,7 +219,23 @@ def create_contextual_model_terms_item_pages():
 
 
 def create_conceptual_model_index_page():
-  pass
+  import airm
+  airm = airm.Airm()
+  airm_concepts = airm.conceptual_concepts.to_dict('records')
+  template = open("docs/airm/templates/viewer/conceptual-model-template.html").read()
+
+  from bs4 import BeautifulSoup
+  soup = BeautifulSoup(template, "lxml")
+  directory = "conceptual-model/"
+
+  for record in airm_concepts:
+    if record["supplement"] == "\t\t\t":     
+      soup.find('tbody').insert(1,create_index_row(record,directory))
+  
+  f= open("docs/airm/viewer/1.0.0/conceptual-model.html","w+")
+  f.write(soup.prettify())
+  f.close() 
+
 def create_conceptual_model_with_supplements_index_page():
   pass
 def create_conceptual_model_item_pages():
