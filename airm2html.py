@@ -124,7 +124,58 @@ def create_contextual_model_abbreviations_with_supplements_index_page():
   f.close() 
 
 def create_contextual_model_abbreviations_item_pages():
-  pass
+  from bs4 import BeautifulSoup
+  import airm
+  airm = airm.Airm()
+  airm_abbs = airm.contextual_abbreviations.to_dict('records')
+
+  for record in airm_abbs:
+    
+    if record["supplement"] == "\t\t\t":
+      html = open("docs/airm/templates/viewer/contextual-model/contextual-model-abbreviation-template.html").read()
+      directory = "docs/airm/viewer/1.0.0/contextual-model/"
+
+    elif record["supplement"] == "\t\t\tEuropean Supplement":
+      html = open("docs/airm/templates/viewer/contextual-model/european-supplement/contextual-model-abbreviation-template.html").read()
+      directory = "docs/airm/viewer/1.0.0/contextual-model/european-supplement/"
+          
+    print(record['class name'])
+    soup = BeautifulSoup(html, "lxml") 
+
+    soup.title.string = str(record['class name'])+" - Contextual Model | AIRM.aero"
+    soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
+
+    h2 = soup.new_tag("h2")
+    h2.string = str(record['class name'])
+
+    span_supplement = soup.new_tag("spam")
+    if record["supplement"] == "\t\t\tEuropean Supplement":
+      span_supplement['class'] = "badge badge-secondary"
+      span_supplement.string = "European Supplement"
+    h2.insert(1,span_supplement)
+
+    soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+    code = soup.new_tag("code")
+    code.string = record['urn']
+    code["class"] = "text-secondary"
+    soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+    soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
+    
+    p = soup.new_tag("p")
+    p.string = "Source: "
+    span = soup.new_tag("span")
+    span.string = record["source"]
+    p.insert(2,span)
+    soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,p)
+    filename = str(record['class name'])+".html"
+    filename = filename.replace("/", "-")
+    filename = filename.replace("*", "-")
+    filename = filename.replace(" ", "")
+    filename = filename.replace("\t", "")
+    filename = filename.replace("\n", "")
+    f= open(directory + filename,"w+")
+    f.write(soup.prettify())
+    f.close()
 
 def create_contextual_model_terms_index_page():
   pass

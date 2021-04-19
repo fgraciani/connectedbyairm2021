@@ -71,10 +71,16 @@ def viewer_menu():
         airm2html.create_contextual_model_abbreviations_with_supplements_index_page()
         print("Done.")
         viewer_menu()
+    elif choice == "3":
+        print('\n')
+        import airm2html
+        airm2html.create_contextual_model_abbreviations_item_pages()
+        print("Done.")
+        viewer_menu()
+    elif choice == "99":
+        main_menu() 
 
-    """create_contextual_model_abbreviations_index_page()
-    create_contextual_model_abbreviations_with_supplements_index_page()
-    create_contextual_model_abbreviations_item_pages()
+    """
     create_contextual_model_terms_index_page()
     create_contextual_model_terms_with_supplements_index_page()
     create_contextual_model_terms_item_pages()
