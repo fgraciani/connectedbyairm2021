@@ -239,6 +239,7 @@ def create_conceptual_model_with_supplements_index_page():
   import airm
   airm = airm.Airm()
   airm_concepts = airm.conceptual_concepts.to_dict('records')
+  airm_concepts_supp = airm.conceptual_supp_concepts.to_dict('records')
   template = open("docs/airm/templates/viewer/conceptual-model-with-supplements-template.html").read()
 
   from bs4 import BeautifulSoup
@@ -248,7 +249,9 @@ def create_conceptual_model_with_supplements_index_page():
     if record["supplement"] == "\t\t\t":
       directory = "conceptual-model/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
-    elif record["supplement"] == "\t\t\tEuropean Supplement":
+
+  for record in airm_concepts_supp:
+    if record["supplement"] == "\t\t\tEuropean Supplement":
       directory="conceptual-model/european-supplement/"
       soup.find('tbody').insert(1,create_index_row_with_supplements(record,directory))
 
@@ -257,6 +260,7 @@ def create_conceptual_model_with_supplements_index_page():
   f.close() 
 
 def create_conceptual_model_item_pages():
+  #CONTINUE HERE
   pass
 
 def create_logical_model_index_page():
