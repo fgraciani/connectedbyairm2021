@@ -89,11 +89,16 @@ def viewer_menu():
         airm2html.create_contextual_model_terms_with_supplements_index_page()
         print("Done.")
         viewer_menu()
+    elif choice == "6":
+        print('\n')
+        import airm2html
+        airm2html.create_contextual_model_terms_item_pages()
+        print("Done.")
+        viewer_menu()
     elif choice == "99":
         main_menu() 
 
     """
-    create_contextual_model_terms_item_pages()
     create_conceptual_model_index_page()
     create_conceptual_model_with_supplements_index_page()
     create_conceptual_model_item_pages()
