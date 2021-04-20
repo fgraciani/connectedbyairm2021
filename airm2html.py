@@ -555,7 +555,7 @@ def create_logical_model_item_page(record, template, scope):
       results = airm.get_logical_properties_by_class(str(record['class name']), scope)
       if results != None:
         print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
-        print(results)
+        #print(results)
         hr = soup.new_tag("hr")
         p.insert(insert_index,hr)
         insert_index = insert_index+1
@@ -597,8 +597,8 @@ def create_logical_model_item_page(record, template, scope):
             tr.insert(3,td_dc_type)
           elif result["type"] != "":
             td_dc_type = soup.new_tag("td")
-            url = create_url_for_supplements(str(result['type']), result['type urn'], scope)
-            text = result["type"]
+            url = create_url_for_supplements(str(result['type']), str(result['type urn']), scope)
+            text = str(result["type"])
             new_link = soup.new_tag("a")
             new_link['href'] = url
             new_link.string = text

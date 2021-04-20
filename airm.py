@@ -155,11 +155,9 @@ class Airm:
 
   def get_logical_properties_by_class(self, class_name, scope):
     if scope == "european-supplement/":
-      logical_df = self.logical_concepts.copy()
-      scope_filter = "\tEuropean Supplement"
-    elif scope == "":
       logical_df = self.logical_supp_concepts.copy()
-      scope_filter = "\t"
+    elif scope == "":
+      logical_df = self.logical_concepts.copy()
 
     filter = logical_df["class name"] == class_name
     logical_df.sort_values("class name", inplace = True)
@@ -170,17 +168,13 @@ class Airm:
     filter = df_results01["stereotype"]=="missing data"
     df_results01.sort_values("stereotype", inplace = True)
     df_results01.where(filter, inplace = True)
-    df_results02 = df_results01.copy()
+    df_results02 = df_results01.dropna(how='all') 
 
-    filter = df_results02["supplement"]==scope_filter
-    df_results02.sort_values("supplement", inplace = True)
-    df_results02.where(filter, inplace = True) 
-    df_results03 = df_results02.dropna(how='all') 
 
-    if df_results03.empty:
+    if df_results02.empty:
       return None
     else:
-      results_dict = df_results03.to_dict('records')
+      results_dict = df_results02.to_dict('records')
       return results_dict
 
 def urn_to_url(urn):
