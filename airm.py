@@ -224,7 +224,7 @@ def create_connected_index():
   df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/FIXM_4.2.0_Semantic_Correspondence_Report.xlsx")
   
   df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
-  with pd.ExcelWriter('data/xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
+  with pd.ExcelWriter('xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
       df_connected_index_out.to_excel(writer, sheet_name='connceted_index')
 
 def add_mapping_to_connected_index(connected_index, mapping_file_pathname):
