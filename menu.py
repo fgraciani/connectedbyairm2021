@@ -119,13 +119,16 @@ def viewer_menu():
         airm2html.create_logical_model_index_page()
         print("Done.")
         viewer_menu()
+    elif choice == "11":
+        print('\n')
+        import airm2html
+        airm2html.create_logical_model_with_supplements_index_page()
+        print("Done.")
+        viewer_menu()
     elif choice == "99":
         main_menu() 
 
     """
-    ()
-    create_logical_model_index_page()
-    create_logical_model_with_supplements_index_page()
     create_logical_model_item_pages()"""
 
 
