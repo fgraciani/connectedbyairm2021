@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -92,7 +93,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -167,11 +168,6 @@
               VerticalStructure
              </a>
              <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -190,545 +186,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#designator">
-                 designator
-                </a>
-               </td>
-               <td>
-                A name identifying a terminal.
-               </td>
-               <td>
-                <a href="CharacterString.html">
-                 CharacterString
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#internationalType">
-                 internationalType
-                </a>
-               </td>
-               <td>
-                The Terminal may be reserved for domestic/national flights or for international flights (Schengen or not).
-               </td>
-               <td>
-                <a href="CodeInternationalFlightType.html">
-                 CodeInternationalFlightType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfGateRooms">
-                 numberOfGateRooms
-                </a>
-               </td>
-               <td>
-                Number of gate rooms available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfLuggageReclaimDevices">
-                 numberOfLuggageReclaimDevices
-                </a>
-               </td>
-               <td>
-                Number of luggage reclaim devices available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfArrivalPassportDesks">
-                 numberOfArrivalPassportDesks
-                </a>
-               </td>
-               <td>
-                Number of arrival passport desks available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfDeparturePassportDesks">
-                 numberOfDeparturePassportDesks
-                </a>
-               </td>
-               <td>
-                Number of departure passport desks available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#gate">
-                 gate
-                </a>
-               </td>
-               <td>
-                A gate at the terminal.
-               </td>
-               <td>
-                <a href="Gate.html">
-                 Gate
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#availability">
-                 availability
-                </a>
-               </td>
-               <td>
-                Information about the operational status of the terminal.
-               </td>
-               <td>
-                <a href="AerodromeAvailability.html">
-                 AerodromeAvailability
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfPassengerLevels">
-                 numberOfPassengerLevels
-                </a>
-               </td>
-               <td>
-                Number of levels for passengers at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfCustomChannels">
-                 numberOfCustomChannels
-                </a>
-               </td>
-               <td>
-                Number of custom channels at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfBagSecurityPoints">
-                 numberOfBagSecurityPoints
-                </a>
-               </td>
-               <td>
-                Number of bag security points available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfCheckInDesks">
-                 numberOfCheckInDesks
-                </a>
-               </td>
-               <td>
-                Number of check-in desks available at the terminal.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#description">
-                 description
-                </a>
-               </td>
-               <td>
-                Free text field used to describe a terminal.
-               </td>
-               <td>
-                <a href="CharacterString.html">
-                 CharacterString
-                </a>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="designator" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@designator">
-              designator
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@designator
-             </code>
-             <p>
-              A name identifying a terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CharacterString.html">
-                CharacterString
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="internationalType" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@internationalType">
-              internationalType
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@internationalType
-             </code>
-             <p>
-              The Terminal may be reserved for domestic/national flights or for international flights (Schengen or not).
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeInternationalFlightType.html">
-                CodeInternationalFlightType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfGateRooms" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfGateRooms">
-              numberOfGateRooms
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfGateRooms
-             </code>
-             <p>
-              Number of gate rooms available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfLuggageReclaimDevices" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfLuggageReclaimDevices">
-              numberOfLuggageReclaimDevices
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfLuggageReclaimDevices
-             </code>
-             <p>
-              Number of luggage reclaim devices available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfArrivalPassportDesks" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfArrivalPassportDesks">
-              numberOfArrivalPassportDesks
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfArrivalPassportDesks
-             </code>
-             <p>
-              Number of arrival passport desks available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfDeparturePassportDesks" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfDeparturePassportDesks">
-              numberOfDeparturePassportDesks
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfDeparturePassportDesks
-             </code>
-             <p>
-              Number of departure passport desks available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="gate" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@gate">
-              gate
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@gate
-             </code>
-             <p>
-              A gate at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Gate.html">
-                Gate
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="availability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@availability">
-              availability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@availability
-             </code>
-             <p>
-              Information about the operational status of the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="AerodromeAvailability.html">
-                AerodromeAvailability
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfPassengerLevels" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfPassengerLevels">
-              numberOfPassengerLevels
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfPassengerLevels
-             </code>
-             <p>
-              Number of levels for passengers at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfCustomChannels" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfCustomChannels">
-              numberOfCustomChannels
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfCustomChannels
-             </code>
-             <p>
-              Number of custom channels at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfBagSecurityPoints" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfBagSecurityPoints">
-              numberOfBagSecurityPoints
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfBagSecurityPoints
-             </code>
-             <p>
-              Number of bag security points available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfCheckInDesks" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfCheckInDesks">
-              numberOfCheckInDesks
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@numberOfCheckInDesks
-             </code>
-             <p>
-              Number of check-in desks available at the terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="description" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@description">
-              description
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:BaseInfrastructure:AerodromeInfrastructure:Terminal@description
-             </code>
-             <p>
-              Free text field used to describe a terminal.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CharacterString.html">
-                CharacterString
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -856,15 +319,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -897,11 +360,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../assets/js/bs-init.js">
   </script>
   <script src="../../../assets/js/tooltips.js">
   </script>

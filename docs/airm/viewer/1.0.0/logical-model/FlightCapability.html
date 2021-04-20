@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -92,7 +93,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -167,11 +168,6 @@
               TemporalEnabledEntity
              </a>
              <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -190,393 +186,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#navigationCapability">
-                 navigationCapability
-                </a>
-               </td>
-               <td>
-                The navigation capability of the aircraft and associated flight crew qualifications.
-               </td>
-               <td>
-                <a href="CodeNavigationCapabilityType.html">
-                 CodeNavigationCapabilityType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#rnavCapability">
-                 rnavCapability
-                </a>
-               </td>
-               <td>
-                Indication about which Area Navigation requirements can be met by the aircraft while operating in the context of a particular airspace when supported by the appropriate navigation infrastructure.
-               </td>
-               <td>
-                <a href="CodeRNAVFlightCapabilityType.html">
-                 CodeRNAVFlightCapabilityType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#communicationCapability">
-                 communicationCapability
-                </a>
-               </td>
-               <td>
-                The capability of the aircraft and associated flight crew qualifications to communicate with ATS units.
-               </td>
-               <td>
-                <a href="CodeCommunicationCapabilityType.html">
-                 CodeCommunicationCapabilityType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#flightCrewApplicationAndApproval">
-                 flightCrewApplicationAndApproval
-                </a>
-               </td>
-               <td>
-                Equipment and procedures for which the air crew is qualified.
-               </td>
-               <td>
-                <a href="FlightCrewApplicationAndApproval.html">
-                 FlightCrewApplicationAndApproval
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#rnpCapability">
-                 rnpCapability
-                </a>
-               </td>
-               <td>
-                Indication about which Required Navigation Performance requirements can be met by the aircraft while operating in the context of a particular airspace when supported by the appropriate navigation infrastructure.
-               </td>
-               <td>
-                <a href="CodeRNPCapabilityType.html">
-                 CodeRNPCapabilityType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#aircraftCapability">
-                 aircraftCapability
-                </a>
-               </td>
-               <td>
-                The ability of an aircraft or an aircraft equipment to provide a service or perform a function that, either on its own or with other services or functions, can deliver a definable level of performance.
-               </td>
-               <td>
-                <a href="AircraftCapability.html">
-                 AircraftCapability
-                </a>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="navigationCapability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@navigationCapability">
-              navigationCapability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@navigationCapability
-             </code>
-             <p>
-              The navigation capability of the aircraft and associated flight crew qualifications.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeNavigationCapabilityType.html">
-                CodeNavigationCapabilityType
-               </a>
-              </span>
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#navigationCapabilitycollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="navigationCapabilitycollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   FIXM 4.2.0
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilitiesType.html#otherNavigationCapabilities" target="_blank" title="fx:NavigationCapabilitiesType:otherNavigationCapabilities">
-                   otherNavigationCapabilities
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   FIXM 4.2.0
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilitiesType.html#navigationCapabilityCode" target="_blank" title="fx:NavigationCapabilitiesType:navigationCapabilityCode">
-                   navigationCapabilityCode
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="rnavCapability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@rnavCapability">
-              rnavCapability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@rnavCapability
-             </code>
-             <p>
-              Indication about which Area Navigation requirements can be met by the aircraft while operating in the context of a particular airspace when supported by the appropriate navigation infrastructure.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeRNAVFlightCapabilityType.html">
-                CodeRNAVFlightCapabilityType
-               </a>
-              </span>
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#rnavCapabilitycollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="rnavCapabilitycollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   FIXM 4.2.0
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/NavigationCapabilitiesType.html#performanceBasedCode" target="_blank" title="fx:NavigationCapabilitiesType:performanceBasedCode">
-                   performanceBasedCode
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AircraftCharacteristic.html#navigationSpecification" target="_blank" title="AircraftCharacteristic.navigationSpecification">
-                   navigationSpecification
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="communicationCapability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@communicationCapability">
-              communicationCapability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@communicationCapability
-             </code>
-             <p>
-              The capability of the aircraft and associated flight crew qualifications to communicate with ATS units.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeCommunicationCapabilityType.html">
-                CodeCommunicationCapabilityType
-               </a>
-              </span>
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#communicationCapabilitycollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="communicationCapabilitycollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   FIXM 4.2.0
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilitiesType.html#communicationCapabilityCode" target="_blank" title="fx:CommunicationCapabilitiesType:communicationCapabilityCode">
-                   communicationCapabilityCode
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   FIXM 4.2.0
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/fixm-4.2.0-to-airm-1.0.0/CommunicationCapabilitiesType.html#otherCommunicationCapabilities" target="_blank" title="fx:CommunicationCapabilitiesType:otherCommunicationCapabilities">
-                   otherCommunicationCapabilities
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="flightCrewApplicationAndApproval" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@flightCrewApplicationAndApproval">
-              flightCrewApplicationAndApproval
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@flightCrewApplicationAndApproval
-             </code>
-             <p>
-              Equipment and procedures for which the air crew is qualified.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="FlightCrewApplicationAndApproval.html">
-                FlightCrewApplicationAndApproval
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="rnpCapability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@rnpCapability">
-              rnpCapability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@rnpCapability
-             </code>
-             <p>
-              Indication about which Required Navigation Performance requirements can be met by the aircraft while operating in the context of a particular airspace when supported by the appropriate navigation infrastructure.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeRNPCapabilityType.html">
-                CodeRNPCapabilityType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="aircraftCapability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@aircraftCapability">
-              aircraftCapability
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Flight:FlightCapability@aircraftCapability
-             </code>
-             <p>
-              The ability of an aircraft or an aircraft equipment to provide a service or perform a function that, either on its own or with other services or functions, can deliver a definable level of performance.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="AircraftCapability.html">
-                AircraftCapability
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -704,15 +319,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -745,11 +360,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../assets/js/bs-init.js">
   </script>
   <script src="../../../assets/js/tooltips.js">
   </script>
