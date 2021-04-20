@@ -225,7 +225,7 @@ def create_connected_index():
   
   df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
   with pd.ExcelWriter('xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
-      df_connected_index_out.to_excel(writer, sheet_name='connceted_index')
+      df_connected_index_out.to_excel(writer, sheet_name='connected_index')
 
 def add_mapping_to_connected_index(connected_index, mapping_file_pathname):
   import mapping

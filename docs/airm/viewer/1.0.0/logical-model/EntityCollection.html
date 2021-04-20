@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -92,7 +93,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -167,11 +168,6 @@
               GeoTemporalEnabledEntity
              </a>
              <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -190,180 +186,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#member">
-                 member
-                </a>
-               </td>
-               <td>
-                An entity that is member of the collection.
-               </td>
-               <td>
-                <a href="Entity.html">
-                 Entity
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#metadata">
-                 metadata
-                </a>
-               </td>
-               <td>
-                Metadata about the EntityCollection.
-               </td>
-               <td>
-                <a href="MD_Metadata.html">
-                 MD_Metadata
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#annotation">
-                 annotation
-                </a>
-               </td>
-               <td>
-                A general text note for the entity collection.
-               </td>
-               <td>
-                <a href="Note.html">
-                 Note
-                </a>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="member" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@member">
-              member
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@member
-             </code>
-             <p>
-              An entity that is member of the collection.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Entity.html">
-                Entity
-               </a>
-              </span>
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#membercollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="membercollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   ADR 23.5.0 Extension (AIXM 5.1.1)
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/ADRMessagePropertyGroup.html#hasMember" target="_blank" title="http://www.eurocontrol.int/cfmu/b2b/ADRMessage:ADRMessagePropertyGroup:hasMember">
-                   hasMember
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   ADR 23.5.0 Extension (AIXM 5.1.1)
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-adr-23.5.0-extension-to-airm-1.0.0/AIXMBasicMessagePropertyGroup.html#hasMember" target="_blank" title="http://www.aixm.aero/schema/5.1.1/message:AIXMBasicMessagePropertyGroup:hasMember">
-                   hasMember
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="metadata" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@metadata">
-              metadata
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@metadata
-             </code>
-             <p>
-              Metadata about the EntityCollection.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="MD_Metadata.html">
-                MD_Metadata
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="annotation" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@annotation">
-              annotation
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Abstract:EntityCollection@annotation
-             </code>
-             <p>
-              A general text note for the entity collection.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Note.html">
-                Note
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -491,15 +319,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -532,11 +360,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../assets/js/bs-init.js">
   </script>
   <script src="../../../assets/js/tooltips.js">
   </script>

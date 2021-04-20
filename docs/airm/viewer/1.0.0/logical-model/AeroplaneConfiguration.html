@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -92,7 +93,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -167,11 +168,6 @@
               AircraftConfiguration
              </a>
              <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -190,217 +186,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#trajectoryPoint">
-                 trajectoryPoint
-                </a>
-               </td>
-               <td>
-                The point at which the configuration applies.
-               </td>
-               <td>
-                <a href="RouteTrajectoryPoint.html">
-                 RouteTrajectoryPoint
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#areAirBrakesDeployed">
-                 areAirBrakesDeployed
-                </a>
-               </td>
-               <td>
-                The specific setting of the airbrakes of an aircraft. TRUE means deployed, FALSE means retracted.
-               </td>
-               <td>
-                <a href="Boolean.html">
-                 Boolean
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#slats">
-                 slats
-                </a>
-               </td>
-               <td>
-                The specific setting of the slats of an aircraft.
-               </td>
-               <td>
-                <a href="CharacterString.html">
-                 CharacterString
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#flaps">
-                 flaps
-                </a>
-               </td>
-               <td>
-                The specific setting of the flaps of an aircraft.
-               </td>
-               <td>
-                <a href="CharacterString.html">
-                 CharacterString
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#isLandingGearDeployed">
-                 isLandingGearDeployed
-                </a>
-               </td>
-               <td>
-                The specific setting of the landingGear of an aircraft. TRUE means deployed, FALSE means retracted.
-               </td>
-               <td>
-                <a href="Boolean.html">
-                 Boolean
-                </a>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="trajectoryPoint" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@trajectoryPoint">
-              trajectoryPoint
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@trajectoryPoint
-             </code>
-             <p>
-              The point at which the configuration applies.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="RouteTrajectoryPoint.html">
-                RouteTrajectoryPoint
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="areAirBrakesDeployed" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@areAirBrakesDeployed">
-              areAirBrakesDeployed
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@areAirBrakesDeployed
-             </code>
-             <p>
-              The specific setting of the airbrakes of an aircraft. TRUE means deployed, FALSE means retracted.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Boolean.html">
-                Boolean
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="slats" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@slats">
-              slats
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@slats
-             </code>
-             <p>
-              The specific setting of the slats of an aircraft.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CharacterString.html">
-                CharacterString
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="flaps" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@flaps">
-              flaps
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@flaps
-             </code>
-             <p>
-              The specific setting of the flaps of an aircraft.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CharacterString.html">
-                CharacterString
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="isLandingGearDeployed" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@isLandingGearDeployed">
-              isLandingGearDeployed
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Aircraft:AeroplaneConfiguration@isLandingGearDeployed
-             </code>
-             <p>
-              The specific setting of the landingGear of an aircraft. TRUE means deployed, FALSE means retracted.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Boolean.html">
-                Boolean
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -528,15 +319,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -569,11 +360,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../assets/js/bs-init.js">
   </script>
   <script src="../../../assets/js/tooltips.js">
   </script>

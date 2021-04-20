@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -92,7 +93,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -160,11 +161,6 @@
               EUROCONTROL-FAA AIXM v.5.1
              </span>
              <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
-             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -183,462 +179,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#NONE">
-                 NONE
-                </a>
-               </td>
-               <td>
-                No operation (used for single conditions).
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#AND_NOT">
-                 AND_NOT
-                </a>
-               </td>
-               <td>
-                1st condition fulfilled AND 2nd condition NOT fulfilled.
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#OR">
-                 OR
-                </a>
-               </td>
-               <td>
-                The result is true if any operand is true.
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#AND">
-                 AND
-                </a>
-               </td>
-               <td>
-                The result is true only when all operands are true.
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#SEQUENCE">
-                 SEQUENCE
-                </a>
-               </td>
-               <td>
-                1st condition is fulfilled BEFORE 2nd condition is fulfilled.
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#NOT">
-                 NOT
-                </a>
-               </td>
-               <td>
-                The result is the opposite of the operands true/false state (it applies to a single operand).
-               </td>
-               <td>
-                <p>
-                 enum value
-                </p>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="NONE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@NONE">
-              NONE
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@NONE
-             </code>
-             <p>
-              No operation (used for single conditions).
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#NONEcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="NONEcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeFlowConditionOperationBaseType.html#NONE" target="_blank" title="CodeFlowConditionOperationBaseType.NONE">
-                   NONE
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeLogicalOperatorBaseType.html#NONE" target="_blank" title="CodeLogicalOperatorBaseType.NONE">
-                   NONE
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="AND_NOT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@AND_NOT">
-              AND_NOT
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@AND_NOT
-             </code>
-             <p>
-              1st condition fulfilled AND 2nd condition NOT fulfilled.
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#AND_NOTcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="AND_NOTcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeFlowConditionOperationBaseType.html#ANDNOT" target="_blank" title="CodeFlowConditionOperationBaseType.ANDNOT">
-                   ANDNOT
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="OR" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@OR">
-              OR
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@OR
-             </code>
-             <p>
-              The result is true if any operand is true.
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ORcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="ORcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeLogicalOperatorBaseType.html#OR" target="_blank" title="CodeLogicalOperatorBaseType.OR">
-                   OR
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeFlowConditionOperationBaseType.html#OR" target="_blank" title="CodeFlowConditionOperationBaseType.OR">
-                   OR
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="AND" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@AND">
-              AND
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@AND
-             </code>
-             <p>
-              The result is true only when all operands are true.
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#ANDcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="ANDcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeFlowConditionOperationBaseType.html#AND" target="_blank" title="CodeFlowConditionOperationBaseType.AND">
-                   AND
-                  </a>
-                 </td>
-                </tr>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeLogicalOperatorBaseType.html#AND" target="_blank" title="CodeLogicalOperatorBaseType.AND">
-                   AND
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="SEQUENCE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@SEQUENCE">
-              SEQUENCE
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@SEQUENCE
-             </code>
-             <p>
-              1st condition is fulfilled BEFORE 2nd condition is fulfilled.
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#SEQUENCEcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="SEQUENCEcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeFlowConditionOperationBaseType.html#SEQ" target="_blank" title="CodeFlowConditionOperationBaseType.SEQ">
-                   SEQ
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="NOT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@NOT">
-              NOT
-             </h3>
-             <code class="text-secondary">
-              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Codelists:CodeLogicalOperatorType@NOT
-             </code>
-             <p>
-              The result is the opposite of the operands true/false state (it applies to a single operand).
-              <br/>
-             </p>
-             <p>
-              type: enum value
-             </p>
-             <p>
-              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#NOTcollapse" data-toggle="collapse" type="button">
-               Show correspondences
-              </button>
-             </p>
-             <div class="table-responsive collapse" id="NOTcollapse">
-              <table class="table">
-               <thead>
-                <tr>
-                 <th>
-                  Model
-                 </th>
-                 <th>
-                  Concept
-                 </th>
-                </tr>
-               </thead>
-               <tbody>
-                <tr>
-                 <td>
-                  <p>
-                   AIXM 5.1.1
-                  </p>
-                 </td>
-                 <td>
-                  <a data-placement="left" data-toggle="tooltip" href="../../../developers/aixm-5.1.1-to-airm-1.0.0/CodeLogicalOperatorBaseType.html#NOT" target="_blank" title="CodeLogicalOperatorBaseType.NOT">
-                   NOT
-                  </a>
-                 </td>
-                </tr>
-               </tbody>
-              </table>
-             </div>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -766,15 +312,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -807,11 +353,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../assets/js/bs-init.js">
   </script>
   <script src="../../../assets/js/tooltips.js">
   </script>

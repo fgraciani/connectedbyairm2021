@@ -731,7 +731,7 @@ def create_logical_model_item_page(record, template, scope):
       soup.find(id="INFO_CONCEPT_OTHER").insert(insert_index,p)
 
       filename = classname_to_filename(str(record['class name']))
-      f= open(scope + filename,"w+")
+      f= open("docs/airm/viewer/1.0.0/logical-model/"+scope + filename,"w+")
       f.write(soup.prettify())
       f.close()
 

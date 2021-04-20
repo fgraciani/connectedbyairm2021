@@ -22,8 +22,9 @@
   <link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" rel="stylesheet"/>
   <link href="../../../../assets/css/scroll.css" rel="stylesheet"/>
+  <link href="../../../../assets/css/sidebar.css" rel="stylesheet"/>
   <link href="../../../../assets/css/smoothproducts.css" rel="stylesheet"/>
-  <link href="../../../../assets/css/untitled.css" rel="stylesheet"/>
+  <link href="../../../../assets/css/targets.css" rel="stylesheet"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-149524587-1">
   </script>
@@ -48,7 +49,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" style="margin-bottom: 21px;">
-     <ul class="nav navbar-nav mx-auto">
+     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
        <ol class="breadcrumb" style="background: rgba(233,236,239,0);height: 20px;padding-top: 7px;">
         <li class="breadcrumb-item">
@@ -99,7 +100,7 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="index.html">
         HOME
@@ -169,16 +170,11 @@
              </span>
              <br/>
              <b>
-              Parent concept:
+              Supplements:
              </b>
-             <a href="TemporalEnabledEntity.html">
+             <a href="../TemporalEnabledEntity.html">
               TemporalEnabledEntity
              </a>
-             <br/>
-             <hr/>
-             <b>
-              Properties:
-             </b>
              <br/>
             </p>
            </div>
@@ -198,340 +194,12 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
-              <tr>
-               <td>
-                <a href="#averageFuelBurn">
-                 averageFuelBurn
-                </a>
-               </td>
-               <td>
-                The average fuel burn per flight for the phase within a specific timeframe. Is derived from the number of movements and amount of fuel burn for the phase within the specific time frame.
-               </td>
-               <td>
-                <a href="ValMassType.html">
-                 ValMassType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#phase">
-                 phase
-                </a>
-               </td>
-               <td>
-                The phase of flight.
-               </td>
-               <td>
-                <a href="CodeFlightPhaseType.html">
-                 CodeFlightPhaseType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#numberOfMovements">
-                 numberOfMovements
-                </a>
-               </td>
-               <td>
-                The number of movements in this phase within a specific timeframe.
-               </td>
-               <td>
-                <a href="Integer.html">
-                 Integer
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#timeframe">
-                 timeframe
-                </a>
-               </td>
-               <td>
-                The timeframe used in establishing the phase fuel efficiency.
-               </td>
-               <td>
-                <a href="TM_Duration.html">
-                 TM_Duration
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#baselineAverageFuelBurn">
-                 baselineAverageFuelBurn
-                </a>
-               </td>
-               <td>
-                The baseline average fuel burn for the phase within the time frame.
-               </td>
-               <td>
-                <a href="ValMassType.html">
-                 ValMassType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#amountOfFuelBurn">
-                 amountOfFuelBurn
-                </a>
-               </td>
-               <td>
-                Amount of fuel burn in phase within specific timeframe.
-               </td>
-               <td>
-                <a href="ValMassType.html">
-                 ValMassType
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#fuelEfficiency">
-                 fuelEfficiency
-                </a>
-               </td>
-               <td>
-                The fuel efficiency calculated based on baseline and current average fuel burn for phase. Expressed in percent.
-               </td>
-               <td>
-                <a href="Decimal.html">
-                 Decimal
-                </a>
-               </td>
-              </tr>
-              <tr>
-               <td>
-                <a href="#airspace">
-                 airspace
-                </a>
-               </td>
-               <td>
-                Relates Airspace with PhaseFuelEfficiency for allocation of fuel efficiency related aspects for airspace.
-               </td>
-               <td>
-                <a href="Airspace.html">
-                 Airspace
-                </a>
-               </td>
-              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="averageFuelBurn" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@averageFuelBurn">
-              averageFuelBurn
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@averageFuelBurn
-             </code>
-             <p>
-              The average fuel burn per flight for the phase within a specific timeframe. Is derived from the number of movements and amount of fuel burn for the phase within the specific time frame.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="ValMassType.html">
-                ValMassType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="phase" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@phase">
-              phase
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@phase
-             </code>
-             <p>
-              The phase of flight.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="CodeFlightPhaseType.html">
-                CodeFlightPhaseType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="numberOfMovements" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@numberOfMovements">
-              numberOfMovements
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@numberOfMovements
-             </code>
-             <p>
-              The number of movements in this phase within a specific timeframe.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Integer.html">
-                Integer
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="timeframe" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@timeframe">
-              timeframe
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@timeframe
-             </code>
-             <p>
-              The timeframe used in establishing the phase fuel efficiency.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="TM_Duration.html">
-                TM_Duration
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="baselineAverageFuelBurn" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@baselineAverageFuelBurn">
-              baselineAverageFuelBurn
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@baselineAverageFuelBurn
-             </code>
-             <p>
-              The baseline average fuel burn for the phase within the time frame.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="ValMassType.html">
-                ValMassType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="amountOfFuelBurn" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@amountOfFuelBurn">
-              amountOfFuelBurn
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@amountOfFuelBurn
-             </code>
-             <p>
-              Amount of fuel burn in phase within specific timeframe.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="ValMassType.html">
-                ValMassType
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="fuelEfficiency" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@fuelEfficiency">
-              fuelEfficiency
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@fuelEfficiency
-             </code>
-             <p>
-              The fuel efficiency calculated based on baseline and current average fuel burn for phase. Expressed in percent.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Decimal.html">
-                Decimal
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
-            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
-             <h3 data-placement="right" data-toggle="tooltip" id="airspace" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@airspace">
-              airspace
-             </h3>
-             <code class="text-secondary">
-              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:Environment:PhaseFuelEfficiency@airspace
-             </code>
-             <p>
-              Relates Airspace with PhaseFuelEfficiency for allocation of fuel efficiency related aspects for airspace.
-              <br/>
-             </p>
-             <p>
-              type:
-              <span>
-               <a href="Airspace.html">
-                Airspace
-               </a>
-              </span>
-             </p>
-             <p class="text-right">
-              <a href="#top">
-               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
-               </i>
-              </a>
-             </p>
-            </div>
            </div>
           </div>
          </div>
@@ -659,15 +327,15 @@
      </span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
-     <ul class="nav navbar-nav ml-auto">
+     <ul class="navbar-nav ml-auto">
       <li class="nav-item item">
        <a class="nav-link" href="../../../../index.html">
         HOME
        </a>
       </li>
       <li class="nav-item">
-       <a class="nav-link" href="../../../../developers/advanced-search.html">
-        AIRM Search
+       <a class="nav-link" href="../../../../viewer.html">
+        AIRM Viewer
        </a>
       </li>
       <li class="nav-item">
@@ -700,11 +368,9 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js">
   </script>
   <script src="../../../../assets/js/smart-forms.min.js">
-  </script>
-  <script src="../../../../assets/js/bs-init.js">
   </script>
   <script src="../../../../assets/js/tooltips.js">
   </script>
