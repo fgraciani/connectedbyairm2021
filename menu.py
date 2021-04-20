@@ -53,7 +53,9 @@ def viewer_menu():
     print('')
     print("11: create_logical_model_with_supplements_index_page")
     print('')
-    print("12: create_logical_model_item_pages")
+    print("12: create_connected_index")
+    print('')
+    print("13: create_logical_model_item_pages")
     print('')
     print("99: Back to main menu")
     print('')
@@ -123,6 +125,18 @@ def viewer_menu():
         print('\n')
         import airm2html
         airm2html.create_logical_model_with_supplements_index_page()
+        print("Done.")
+        viewer_menu()
+    elif choice == "13":
+        print('\n')
+        import airm2html
+        airm2html.create_logical_model_item_pages()
+        print("Done.")
+        viewer_menu()
+    elif choice == "12":
+        print('\n')
+        import airm
+        airm.create_connected_index()
         print("Done.")
         viewer_menu()
     elif choice == "99":

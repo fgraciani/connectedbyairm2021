@@ -7,6 +7,7 @@ class Airm:
   conceptual_supp_concepts = pd.read_excel (r'xlsx/airm/cp_supp.xlsx', sheet_name='test')
   logical_concepts = pd.read_excel (r'xlsx/airm/logical_core.xlsx', sheet_name='test')
   logical_supp_concepts = pd.read_excel (r'xlsx/airm/logical_supp.xlsx', sheet_name='test')
+  df_connected_index = pd.read_excel (r'xlsx/connected_index.xlsx', sheet_name='connected_index')
   
   #df_connected_index = pd.read_excel (r'data/xlsx/connected_index.xlsx', sheet_name='connceted_index')
 
@@ -19,6 +20,7 @@ class Airm:
     self.conceptual_supp_concepts.fillna("missing data", inplace = True)
     self.logical_concepts.fillna("missing data", inplace = True)
     self.logical_supp_concepts.fillna("missing data", inplace = True)
+    self.df_connected_index.fillna("missing data", inplace = True)
     
     #self.df_connected_index.fillna("missing data", inplace = True)
     
@@ -30,6 +32,20 @@ class Airm:
 
     self.logical_concepts.columns =         ["supplement","stereotype","class name","property name", "type","type urn", "definition", "synonyms", "abbreviation", "urn",  "parent", "parent urn", "source"]
     self.logical_supp_concepts.columns =    ["supplement","stereotype","class name","property name", "type","type urn", "definition", "synonyms", "abbreviation", "urn",  "parent", "parent urn", "source"]
+
+  def get_connections_by_urn(self,urn):
+    connections_df = self.df_connected_index.copy()
+    
+    filter = connections_df["airm_urn"]==urn
+    connections_df.sort_values("airm_urn", inplace = True)
+    connections_df.where(filter, inplace = True) 
+    df_results = connections_df.dropna(how='all')      
+
+    if df_results.empty:
+      return None
+    else:
+      results_dict = df_results.to_dict('records')
+      return results_dict
 
   def get_concept(self, urn):
     urn = urn.replace(' ','').replace('\t','').replace('	','')
@@ -137,6 +153,36 @@ class Airm:
       results_dict = df_results03.to_dict('records')
       return results_dict
 
+  def get_logical_properties_by_class(self, class_name, scope):
+    if scope == "european-supplement/":
+      logical_df = self.logical_concepts.copy()
+      scope_filter = "\tEuropean Supplement"
+    elif scope == "":
+      logical_df = self.logical_supp_concepts.copy()
+      scope_filter = "\t"
+
+    filter = logical_df["class name"] == class_name
+    logical_df.sort_values("class name", inplace = True)
+    logical_df.where(filter, inplace = True) 
+    df_results01 = logical_df.copy()    
+    
+    df_results01.fillna("missing data", inplace = True)
+    filter = df_results01["stereotype"]=="missing data"
+    df_results01.sort_values("stereotype", inplace = True)
+    df_results01.where(filter, inplace = True)
+    df_results02 = df_results01.copy()
+
+    filter = df_results02["supplement"]==scope_filter
+    df_results02.sort_values("supplement", inplace = True)
+    df_results02.where(filter, inplace = True) 
+    df_results03 = df_results02.dropna(how='all') 
+
+    if df_results03.empty:
+      return None
+    else:
+      results_dict = df_results03.to_dict('records')
+      return results_dict
+
 def urn_to_url(urn):
   if "urn:" in urn:
     urn_parts = urn.split(':')
@@ -168,69 +214,38 @@ def urn_to_url(urn):
 
 
 def create_connected_index():
-  df_connected_index_cols = ["airm_urn", "model_name", "concept_name", "concept_id", "concept_type"]
+  df_connected_index_cols = ["airm_urn", "model_name", "model_path", "concept_name", "concept_target"]
   df_connected_index_rows = []
 
-  import fixm
-  fixm = fixm.Fixm()
-  fixm_mapping_dict = fixm.fixm_mapping_dataframe.to_dict('records')
-
-  for entry in fixm_mapping_dict:
-    sem_correspondences = str(entry['Semantic Correspondence']).split('\n')
-    for line in sem_correspondences:
-      urn = line
-      df_connected_index_rows.append({"airm_urn": urn, "model_name": "FIXM 4.2.0", "concept_name": entry["Data Concept"], "concept_id": entry["Identifier"], "concept_type": entry["Type"]})
-  
-  import amxm
-  amxm = amxm.Amxm()
-  amxm_mapping_dict = amxm.amxm_mapping_dataframe.to_dict('records')
-
-  for entry in amxm_mapping_dict:
-    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
-    for line in sem_correspondences:
-      urn = line
-      if str(entry["Data Concept"]) == "missing data":
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-      else:
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-
-  amxm_mapping_dict = amxm.amxm_mapping_enum_dataframe.to_dict('records')
-
-  for entry in amxm_mapping_dict:
-    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
-    for line in sem_correspondences:
-      urn = line
-      if str(entry["Data Concept"]) == "missing data":
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-      else:
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AMXM 2.0.0", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-
-  import aixm
-  aixm = aixm.Aixm()
-  aixm_mapping_merged_dict = aixm.aixm_mapping_merged_dataframe.to_dict('records')
-
-  for entry in aixm_mapping_merged_dict:
-    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
-    for line in sem_correspondences:
-      urn = line
-      if str(entry["Data Concept"]) == "missing data":
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-      else:
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "AIXM 5.1.1", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-
-  import aixm_adr
-  aixm_adr = aixm_adr.Aixm_adr()
-  aixm_adr_mapping_dict = aixm_adr.aixm_adr_mapping_dataframe.to_dict('records')
-
-  for entry in aixm_adr_mapping_dict:
-    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
-    for line in sem_correspondences:
-      urn = line
-      if str(entry["Data Concept"]) == "missing data":
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Information Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
-      else:
-        df_connected_index_rows.append({"airm_urn": urn, "model_name": "ADR 23.5.0 Extension (AIXM 5.1.1)", "concept_name": entry["Data Concept"], "concept_id": entry["Concept Identifier"], "concept_type": entry["Basic Type"]})
+  df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/ICAO_WXXM_3.0.0_Semantic_Correspondence_Report.xlsx")
+  df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/AMXM_2.0.0_Semantic_Correspondence_Report.xlsx")
+  df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/ADR_23.5.0_Semantic_Correspondence_Report.xlsx")
+  df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/AIXM_5.1.1_Semantic_Correspondence_Report.xlsx")
+  df_connected_index_rows = add_mapping_to_connected_index(df_connected_index_rows, "xlsx/FIXM_4.2.0_Semantic_Correspondence_Report.xlsx")
   
   df_connected_index_out = pd.DataFrame(df_connected_index_rows, columns = df_connected_index_cols) 
   with pd.ExcelWriter('data/xlsx/'+'connected_index.xlsx', engine='xlsxwriter') as writer:  
       df_connected_index_out.to_excel(writer, sheet_name='connceted_index')
+
+def add_mapping_to_connected_index(connected_index, mapping_file_pathname):
+  import mapping
+  mapping = mapping.Mapping(mapping_file_pathname)
+  mapping_dict = mapping.dataframe.to_dict('records')
+  mapping_metadata = mapping.metadata
+  model_name = str(mapping_metadata["name"]).replace(" to AIRM 1.0.0", "")
+  path = mapping.metadata["url_name"]
+
+  for entry in mapping_dict:
+    sem_correspondences = str(entry['AIRM Concept Identifier']).split('\n')
+    for line in sem_correspondences:
+      urn = line
+      if str(entry["Data Concept"]) == "missing data":
+        concept = str(entry["Information Concept"])
+        target = str(entry["Information Concept"])+".html"
+      else:
+        concept = str(entry["Data Concept"])
+        target = str(entry["Information Concept"])+".html#"+str(entry["Data Concept"])
+      
+      connected_index.append({"airm_urn": urn, "model_name": model_name, "model_path": path ,"concept_name": concept, "concept_target": target})
+  
+  return connected_index

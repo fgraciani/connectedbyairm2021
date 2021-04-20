@@ -436,7 +436,304 @@ def create_logical_model_with_supplements_index_page():
   f.close() 
 
 def create_logical_model_item_pages():
-  pass
+  import airm
+  airm = airm.Airm()
+  airm_logical_concepts = airm.logical_concepts.to_dict('records')
+  airm_logical_concepts_supp = airm.logical_supp_concepts.to_dict('records')
+
+  for record in airm_logical_concepts_supp:
+    template = open("docs/airm/templates/viewer/logical-model/european-supplement/logical-model-concept-template.html").read()
+    scope = "european-supplement/"
+    create_logical_model_item_page(record, template, scope)
+
+  for record in airm_logical_concepts:
+    template = open("docs/airm/templates/viewer/logical-model/logical-model-concept-template.html").read()
+    scope = ""
+    create_logical_model_item_page(record, template, scope)
+
+def create_logical_model_item_page(record, template, scope):
+
+    if record["stereotype"] != "missing data":
+      print(record['class name'])
+      from bs4 import BeautifulSoup
+      soup = BeautifulSoup(template, "lxml") 
+
+      soup.title.string = str(record['class name'])+" - Logical Model | AIRM.aero"
+      
+      soup.find(text="FIXM_CLASS_NAME_BC").replace_with(str(record['class name']))
+
+      h2 = soup.new_tag("h2")
+      h2.string = str(record['class name'])
+      span_supplement = soup.new_tag("spam")
+      if record["supplement"] == "\t\t\tEuropean Supplement":
+        span_supplement['class'] = "badge badge-secondary"
+        span_supplement.string = "European Supplement"
+      h2.insert(1,span_supplement)
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+
+      code = soup.new_tag("code")
+      code.string = record['urn']
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+
+      soup.find(text="FIXM_CLASS_DEFINITION").replace_with(str(record['definition']))
+      
+      p = soup.new_tag("p")
+      insert_index = 1
+      if record["source"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Source: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["source"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["synonyms"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Synonyms: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["synonyms"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["abbreviation"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Abbreviations: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["abbreviation"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      
+      if record["parent"] != "missing data":
+        b = soup.new_tag("b")
+        parent = str(record["parent"])    
+
+        if scope=="european-supplement/":
+          b.string = "Supplements: "
+        else:
+          b.string = "Parent concept: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1        
+        
+        url = create_url_for_supplements(str(record["parent"]), str(record["parent urn"]), scope)
+        text = parent
+        print(text)
+        new_link = soup.new_tag("a")
+        new_link['href'] = url
+        new_link.string = text
+        p.insert(insert_index,new_link)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      
+      # Insert properties
+      import airm
+      airm = airm.Airm()
+      results = airm.get_logical_properties_by_class(str(record['class name']), scope)
+      if results != None:
+        print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
+        print(results)
+        hr = soup.new_tag("hr")
+        p.insert(insert_index,hr)
+        insert_index = insert_index+1
+
+        b = soup.new_tag("b")
+        b.string = "Properties: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+        for result in results:
+          print('\t'+str(result['property name']))
+
+          tr = soup.new_tag("tr")
+
+          if result["property name"] != "":
+            td_dc_name = soup.new_tag("td")
+            url = "#"+str(result["property name"])
+            text = str(result["property name"])
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_name.insert(1,new_link)
+            tr.insert(1,td_dc_name)
+          
+          if result["definition"] != "":
+            td_def = soup.new_tag("td")
+            td_def.string = str(result["definition"])
+            tr.insert(2,td_def)
+          
+          if record["stereotype"] == "CodeList":
+            td_dc_type = soup.new_tag("td")
+            enump = soup.new_tag("p")
+            enump.string = "enum value"
+            td_dc_type.insert(1,enump)
+            tr.insert(3,td_dc_type)
+          elif result["type"] != "":
+            td_dc_type = soup.new_tag("td")
+            url = create_url_for_supplements(str(result['type']), result['type urn'], scope)
+            text = result["type"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            td_dc_type.insert(1,new_link)
+            tr.insert(3,td_dc_type)
+          
+          soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
+        for trace in results:
+          property_div = soup.new_tag("div")
+          property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
+
+          h3 = soup.new_tag("h3")
+          h3.string = str(trace["property name"])
+          h3["id"] = str(trace["property name"])
+          h3["data-toggle"] = "tooltip"
+          h3["data-placement"] = "right"
+          h3["title"] = trace["urn"]
+          h3["style"] = "padding-top: 120px; margin-top: -120px;"
+          property_div.insert(0,h3)
+
+          code = soup.new_tag("code")
+          identifier = trace['urn']
+          code.string = identifier
+          code["class"] = "text-secondary"
+          property_div.insert(1,code)
+          
+          p2 = soup.new_tag("p")
+          p2.string = str(trace["definition"])
+          br = soup.new_tag("br")
+          p2.insert(2,br)
+          property_div.insert(2,p2)
+          
+          if record["stereotype"] == "CodeList":
+            p3 = soup.new_tag("p")
+            p3.string = "type: enum value"
+            property_div.insert(3,p3)
+          else:
+            p3 = soup.new_tag("p")
+            p3.string = "type: "
+            span = soup.new_tag("span")
+            url = create_url_for_supplements(str(trace['type']), trace['type urn'], scope)
+            text = trace["type"]
+            new_link = soup.new_tag("a")
+            new_link['href'] = url
+            new_link.string = text
+            span.insert(1,new_link)
+            p3.insert(2,span)
+            property_div.insert(3,p3)
+
+          connections = airm.get_connections_by_urn(trace['urn'])
+          if connections != None:
+            p4 = soup.new_tag("p")
+            button = soup.new_tag("button")
+            button["class"] = "btn btn-light"
+            button["type"] = "button"
+            button["data-toggle"] = "collapse"
+            button["data-target"] = "#"+str(trace["property name"])+"collapse"
+            button["aria-expanded"] = "false"
+            button["aria-controls"] = "collapseExample"
+            button.string = "Show correspondences"
+            p4.insert(1,button)
+            property_div.insert(4,p4)
+
+            sc_div = soup.new_tag("div")
+            sc_div["class"] = "table-responsive collapse"
+            sc_div["id"] = str(trace["property name"])+"collapse"
+            sc_table = soup.new_tag("table")
+            sc_table["class"] = "table"
+            sc_thead = soup.new_tag("thead")
+            tr = soup.new_tag("tr")
+            th = soup.new_tag("th")
+            th.string = "Model"
+            tr.insert(1,th)
+            th = soup.new_tag("th")
+            th.string = "Concept"
+            tr.insert(2,th)
+            sc_thead.insert(1,tr)
+            sc_table.insert(1,sc_thead)
+            tbody = soup.new_tag("tbody")
+            #for each insert row
+            #print('\t\tPresence in Mappings:')
+          
+            for entry in connections:
+              #print('\t\t\t'+line)
+              tr = soup.new_tag("tr")
+              url_path = ""
+
+              if scope == "european-supplement/":
+                url_path = "../../../../developers/"
+              else:
+                url_path = "../../../developers/"
+
+              if entry["concept_name"] != 'missing data':
+                td = soup.new_tag("td")
+                text = entry["model_name"]
+                pm = soup.new_tag("p")
+                pm.string = text
+                td.insert(1,pm)
+                tr.insert(1,td)
+                td = soup.new_tag("td")
+                url = url_path+entry["model_path"]+"/"+entry["concept_target"]
+                text = entry["concept_name"]
+                a = soup.new_tag("a")
+                a['href'] = url
+                a['target'] = "_blank"
+                a.string = text
+                td.insert(1,a)
+                tr.insert(2,td)
+              tbody.insert(1,tr)
+
+            sc_table.insert(2,tbody)
+            sc_div.insert(1,sc_table)
+            property_div.insert(5,sc_div)
+
+          top_link_p = soup.new_tag("p")
+          new_link = soup.new_tag("a")
+          new_link['href'] = "#top"
+          new_icon = soup.new_tag("i")
+          new_icon['class'] = "fa fa-arrow-circle-up"
+          new_icon["data-toggle"] = "tooltip"
+          new_icon["data-placement"] = "left"
+          new_icon["title"] = "Top of page"
+          new_link.insert(1,new_icon)
+          top_link_p.insert(1,new_link)
+          top_link_p['class'] =   "text-right"
+          property_div.insert(6,top_link_p)
+
+          soup.find(id="DATA_CONCEPTS_DETAIL").insert(1,property_div)
+          
+      soup.find(id="INFO_CONCEPT_OTHER").insert(insert_index,p)
+
+      filename = classname_to_filename(str(record['class name']))
+      f= open(scope + filename,"w+")
+      f.write(soup.prettify())
+      f.close()
 
 def create_url_for_supplements(class_name, class_urn, scope):
   filename = classname_to_filename(class_name)
