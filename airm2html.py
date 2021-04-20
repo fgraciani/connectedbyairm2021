@@ -407,8 +407,7 @@ def create_logical_model_index_page():
   directory = "logical-model/"
 
   for record in airm_logical_concepts:
-    if record["supplement"] == "\t\t\t":     
-      soup.find('tbody').insert(1,create_index_row_logical_model(record,directory))
+    soup.find('tbody').insert(1,create_index_row_logical_model(record,directory))
   
   f= open("docs/airm/viewer/1.0.0/logical-model.html","w+")
   f.write(soup.prettify())
@@ -587,3 +586,4 @@ def create_index_row_logical_model(record, directory):
       return tr
   else:
     return None
+
