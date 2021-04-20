@@ -375,14 +375,19 @@ def create_conceptual_model_item_page(record, template, scope):
           p.insert(insert_index,span)
           insert_index = insert_index+1
 
-          filename = str(result['type'])+".html"
-          filename = filename.replace("/", "-")
-          filename = filename.replace("*", "-")
-          filename = filename.replace(" ", "")
-          filename = filename.replace("\t", "")
-          filename = filename.replace("\n", "")
+          filename = classname_to_filename(str(result['type']))
+          if "ses:eurocontrol" in result['type urn']:#target is in eur supp
+            if scope == "european-supplement/":#current page in eur supp
+              path = ""
+            else:#current page in global
+              path = scope
+          else:#target is in global
+            if scope == "european-supplement/":
+              path = "../"
+            else:
+              path = ""
+          url = path+filename
           
-          url = scope+filename
           text = result["type"]
           print(text)
           new_link = soup.new_tag("a")
