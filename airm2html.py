@@ -260,8 +260,147 @@ def create_conceptual_model_with_supplements_index_page():
   f.close() 
 
 def create_conceptual_model_item_pages():
-  #CONTINUE HERE - 2 sets to cover
-  pass
+  import airm
+  airm = airm.Airm()
+  airm_concepts = airm.conceptual_concepts.to_dict('records')
+  airm_concepts_supp = airm.conceptual_supp_concepts.to_dict('records')
+
+  for record in airm_concepts_supp:
+    template = open("docs/airm/templates/viewer/conceptual-model/european-supplement/conceptual-model-concept-template.html").read()
+    scope = "european-supplement/"
+    create_conceptual_model_item_page(record, template, scope)
+
+  for record in airm_concepts:
+    template = open("docs/airm/templates/viewer/conceptual-model/conceptual-model-concept-template.html").read()
+    scope = ""
+    create_conceptual_model_item_page(record, template, scope)
+
+def create_conceptual_model_item_page(record, template, scope):
+    if record["stereotype"] != "missing data":
+      print(record['class name'])
+      from bs4 import BeautifulSoup
+      soup = BeautifulSoup(template, "lxml") 
+
+      soup.title.string = str(record['class name'])+" - Conceptual Model | AIRM.aero"
+      soup.find(text="CONCEPT_NAME_BC").replace_with(str(record['class name']))
+
+      h2 = soup.new_tag("h2")
+      h2.string = str(record['class name'])
+
+      span_supplement = soup.new_tag("spam")
+      if record["supplement"] == "\t\t\tEuropean Supplement":
+        span_supplement['class'] = "badge badge-secondary"
+        span_supplement.string = "European Supplement"
+      h2.insert(1,span_supplement)
+
+      soup.find(id="INFO_CONCEPT_NAME").insert(0,h2)
+      code = soup.new_tag("code")
+      code.string = record['urn']
+      code["class"] = "text-secondary"
+      soup.find(id="INFO_CONCEPT_NAME").insert(1,code)
+      soup.find(text="CONCEPT_DEFINITION").replace_with(str(record['definition']))
+      
+      p = soup.new_tag("p")
+      insert_index = 1
+      if record["source"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Source: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["source"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["synonyms"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Synonyms: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = record["synonyms"]
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+      if record["abbreviation"] != "missing data":
+        b = soup.new_tag("b")
+        b.string = "Abbreviations: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        span = soup.new_tag("span")
+        span.string = str(record["abbreviation"])
+        p.insert(insert_index,span)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      
+      # Insert related concepts
+      import airm
+      airm = airm.Airm()
+      results = airm.get_concept_properties_by_parent(str(record['class name']), scope)
+      if results != None:
+        print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
+        print(results)
+        hr = soup.new_tag("hr")
+        p.insert(insert_index,hr)
+        insert_index = insert_index+1
+
+        b = soup.new_tag("b")
+        b.string = "Related: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
+        for result in results:
+          print('\t'+result['property name'])
+          
+          span = soup.new_tag("span")
+          span.string = result["property name"]
+          p.insert(insert_index,span)
+          insert_index = insert_index+1
+
+          filename = str(result['type'])+".html"
+          filename = filename.replace("/", "-")
+          filename = filename.replace("*", "-")
+          filename = filename.replace(" ", "")
+          filename = filename.replace("\t", "")
+          filename = filename.replace("\n", "")
+          
+          url = scope+filename
+          text = result["type"]
+          print(text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          p.insert(insert_index,new_link)
+          insert_index = insert_index+1
+
+          br = soup.new_tag("br")
+          p.insert(insert_index,br)
+          insert_index = insert_index+1
+
+      soup.find(id="DATA_CONCEPTS_DETAIL").insert(insert_index,p)
+      
+      filename = classname_to_filename(str(record['class name']))
+      f= open("docs/airm/viewer/1.0.0/conceptual-model/" + scope + filename,"w+")
+      f.write(soup.prettify())
+      f.close()
 
 def create_logical_model_index_page():
   pass

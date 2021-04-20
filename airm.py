@@ -16,6 +16,7 @@ class Airm:
     self.contextual_abbreviations.fillna("missing data", inplace = True)
     self.contextual_terms.fillna("missing data", inplace = True)
     self.conceptual_concepts.fillna("missing data", inplace = True)
+    self.conceptual_supp_concepts.fillna("missing data", inplace = True)
     self.logical_concepts.fillna("missing data", inplace = True)
     self.logical_supp_concepts.fillna("missing data", inplace = True)
     
@@ -105,6 +106,36 @@ class Airm:
         "url"  : "http://airm.aero/viewer/not-found"
       }
     return concept
+
+  def get_concept_properties_by_parent(self, parent, scope):
+    if scope == "european-supplement/":
+      concepts_df = self.conceptual_supp_concepts.copy()
+      scope_filter = "\tEuropean Supplement"
+    elif scope == "":
+      concepts_df = self.conceptual_concepts.copy()
+      scope_filter = "\t"
+    
+    filter = concepts_df["class name"]==parent
+    concepts_df.sort_values("class name", inplace = True)
+    concepts_df.where(filter, inplace = True) 
+    df_results01 = concepts_df.copy()    
+    
+    df_results01.fillna("missing data", inplace = True)
+    filter = df_results01["stereotype"]=="missing data"
+    df_results01.sort_values("stereotype", inplace = True)
+    df_results01.where(filter, inplace = True)
+    df_results02 = df_results01.copy()
+
+    filter = df_results02["supplement"]==scope_filter
+    df_results02.sort_values("supplement", inplace = True)
+    df_results02.where(filter, inplace = True) 
+    df_results03 = df_results02.dropna(how='all') 
+
+    if df_results03.empty:
+      return None
+    else:
+      results_dict = df_results03.to_dict('records')
+      return results_dict
 
 def urn_to_url(urn):
   if "urn:" in urn:
