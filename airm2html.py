@@ -454,7 +454,7 @@ def create_logical_model_item_pages():
     supplements = airm.get_supplements_for_logical_model_class(record["urn"])
     create_logical_model_item_page(record, template, scope, children, supplements)
 
-def create_logical_model_item_page(record, template, scope, children, supplements={}):
+def create_logical_model_item_page(record, template, scope, children, supplements=None):
 
     if record["stereotype"] != "missing data":
       print(record['class name'])
@@ -534,7 +534,9 @@ def create_logical_model_item_page(record, template, scope, children, supplement
         parent = str(record["parent"])    
 
         if scope=="european-supplement/":
-          if "ses:eurocontrol" not in record["parent urn"]:
+          if "ses:eurocontrol" in record["parent urn"]:
+            b.string = "Parent concept: : "
+          else:
             b.string = "Supplements: "
         else:
           b.string = "Parent concept: "
@@ -654,9 +656,6 @@ def create_logical_model_item_page(record, template, scope, children, supplement
           h3 = soup.new_tag("h3")
           h3.string = str(trace["property name"])
           h3["id"] = str(trace["property name"])
-          h3["data-toggle"] = "tooltip"
-          h3["data-placement"] = "right"
-          h3["title"] = trace["urn"]
           h3["style"] = "padding-top: 120px; margin-top: -120px;"
           property_div.insert(0,h3)
 
