@@ -684,7 +684,7 @@ def create_logical_model_item_page(record, template, scope, children, supplement
           elif str(trace["type"]) in ["Integer", "CharacterString", "Boolean", "Number", "Date", "DateTime", "TM_Duration", "GM_Curve", "GM_Point", "GM_Solid", "GM_Surface", "MD_Metadata", "Angle", "Decimal"]:
             td_dc_type = soup.new_tag("td")
             enump = soup.new_tag("p")
-            enump.string = str(result["type"])
+            enump.string = str(trace["type"])
             property_div.insert(3,enump)
           else:
             p3 = soup.new_tag("p")
