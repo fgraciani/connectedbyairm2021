@@ -163,15 +163,16 @@ def create_class_detail_div(info_concept):
   p.insert(2,br)
   class_div.insert(2,p)
 
-  sc_h5 = soup.new_tag("h5")
-  sc_h5.string = "Semantic Correspondence"
-  sc_h5['style'] = "margin-top: 40px;"
-  class_div.insert(3,sc_h5)
+  if info_concept["AIRM Concept Identifier"] != "missing data":
+    sc_h5 = soup.new_tag("h5")
+    sc_h5.string = "Semantic Correspondence"
+    sc_h5['style'] = "margin-top: 40px;"
+    class_div.insert(3,sc_h5)
 
-  sc_div = soup.new_tag("div")
-  sc_div["class"] = "table-responsive"
-  sc_div.insert(1,create_semantic_correspondence_table(info_concept))
-  class_div.insert(4,sc_div)
+    sc_div = soup.new_tag("div")
+    sc_div["class"] = "table-responsive"
+    sc_div.insert(1,create_semantic_correspondence_table(info_concept))
+    class_div.insert(4,sc_div)
 
   if str(info_concept["Rationale"]) != "missing data":
     h5 = soup.new_tag("h5")

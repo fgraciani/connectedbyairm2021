@@ -534,7 +534,8 @@ def create_logical_model_item_page(record, template, scope, children, supplement
         parent = str(record["parent"])    
 
         if scope=="european-supplement/":
-          b.string = "Supplements: "
+          if "ses:eurocontrol" not in record["parent urn"]:
+            b.string = "Supplements: "
         else:
           b.string = "Parent concept: "
         p.insert(insert_index,b)
@@ -560,18 +561,36 @@ def create_logical_model_item_page(record, template, scope, children, supplement
         insert_index = insert_index+1 
         for child in children:
           url = create_url_for_supplements(str(child["class name"]), str(record["urn"]), scope)
-          text = str(child["class name"])
+          text = str(child["class name"])+"; "
           print("-child: "+text)
           new_link = soup.new_tag("a")
           new_link['href'] = url
           new_link.string = text
           p.insert(insert_index,new_link)
           insert_index = insert_index+1
-
         br = soup.new_tag("br")
         p.insert(insert_index,br)
         insert_index = insert_index+1
-      
+
+      #insert children
+      if supplements != None: 
+        b = soup.new_tag("b")
+        b.string = "Supplemented by: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1 
+        for entry in supplements:
+          url = create_url_for_supplements(str(entry["class name"]), str(record["urn"]), scope)
+          text = str(entry["class name"])+"; "
+          print("-supplemented by: "+text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          p.insert(insert_index,new_link)
+          insert_index = insert_index+1
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+
       # Insert properties
       import airm
       airm = airm.Airm()
