@@ -159,23 +159,28 @@ class Airm:
     elif scope == "":
       logical_df = self.logical_concepts.copy()
 
+    filtered_df = logical_df[(logical_df['class name'] == class_name) & (logical_df['stereotype'] == 'missing data')]
+    print(len(filtered_df.index))
+
     filter = logical_df["class name"] == class_name
     logical_df.sort_values("class name", inplace = True)
     logical_df.where(filter, inplace = True) 
-    df_results01 = logical_df.copy()    
+    df_results01 = logical_df.copy()   
+     
     
     df_results01.fillna("missing data", inplace = True)
     filter = df_results01["stereotype"]=="missing data"
     df_results01.sort_values("stereotype", inplace = True)
     df_results01.where(filter, inplace = True)
-    df_results02 = df_results01.dropna(how='all') 
+
+    df_results02 = df_results01.dropna(how='all')
 
 
-    if df_results02.empty:
+    if filtered_df.empty:
       return None
     else:
       results_dict = df_results02.to_dict('records')
-      return results_dict
+      return filtered_df.to_dict('records')
 
 def urn_to_url(urn):
   if "urn:" in urn:

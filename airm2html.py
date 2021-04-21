@@ -538,7 +538,7 @@ def create_logical_model_item_page(record, template, scope):
         
         url = create_url_for_supplements(str(record["parent"]), str(record["parent urn"]), scope)
         text = parent
-        print(text)
+        print("-parent: "+text)
         new_link = soup.new_tag("a")
         new_link['href'] = url
         new_link.string = text
@@ -570,7 +570,7 @@ def create_logical_model_item_page(record, template, scope):
         insert_index = insert_index+1
 
         for result in results:
-          print('\t'+str(result['property name']))
+         # print('\t'+str(result['property name']))
 
           tr = soup.new_tag("tr")
 
