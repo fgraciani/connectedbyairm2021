@@ -168,6 +168,11 @@
               ApproachLeg
              </a>
              <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -186,12 +191,677 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#courseCentrelineDistance">
+                 courseCentrelineDistance
+                </a>
+               </td>
+               <td>
+                The distance from the landing threshold point to the point where the extended runway centreline intersects the final approach course.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#visualDescentPoint">
+                 visualDescentPoint
+                </a>
+               </td>
+               <td>
+                A defined point on the final approach course of a nonprecision straight-in approach procedure from which normal descent from the MDA to the runway touchdown point may be commenced, provided visual reference is established.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#finalPathAlignmentPoint">
+                 finalPathAlignmentPoint
+                </a>
+               </td>
+               <td>
+                A point defined by a latitude, longitude and MSL elevation used in conjunction with the LTP and the geometric center of the WGS-84 ellipsoid to define the vertical plane of a PA RNAV final approach course.
+               </td>
+               <td>
+                <a href="InfrastructurePoint.html">
+                 InfrastructurePoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#condition">
+                 condition
+                </a>
+               </td>
+               <td>
+                A specific condition established for the final segment leg.
+               </td>
+               <td>
+                <a href="ApproachCondition.html">
+                 ApproachCondition
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#finalApproachSegmentDataBlock">
+                 finalApproachSegmentDataBlock
+                </a>
+               </td>
+               <td>
+                Data used in the CRC calculation of the FMS box to insure the final segment of an approach procedure has not been modified.
+               </td>
+               <td>
+                <a href="FinalApproachSegmentDataBlock.html">
+                 FinalApproachSegmentDataBlock
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isRNPDMEAuthorised">
+                 isRNPDMEAuthorised
+                </a>
+               </td>
+               <td>
+                Indication whether DME/DME RNP 0.3 is allowed.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumBarometricVerticalNavigationTemperature">
+                 minimumBarometricVerticalNavigationTemperature
+                </a>
+               </td>
+               <td>
+                The aerodrome temperature below which the use of Baro-VNAV is not authorized to the LNAV/VNAV DA.
+               </td>
+               <td>
+                <a href="ValTemperatureType.html">
+                 ValTemperatureType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#landingSystemCategory">
+                 landingSystemCategory
+                </a>
+               </td>
+               <td>
+                Landing system category.
+               </td>
+               <td>
+                <a href="CodeInstrumentRunwayType.html">
+                 CodeInstrumentRunwayType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#guidanceSystem">
+                 guidanceSystem
+                </a>
+               </td>
+               <td>
+                Guidance system used on the final approach segment of an instrument approach procedure.
+               </td>
+               <td>
+                <a href="CodeFinalGuidanceType.html">
+                 CodeFinalGuidanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseOffsetSide">
+                 courseOffsetSide
+                </a>
+               </td>
+               <td>
+                Indication on which side of the extended runway centreline the final approach course lies, when viewed from the Final Approach Fix.
+               </td>
+               <td>
+                <a href="CodeRelativePositionType.html">
+                 CodeRelativePositionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseOffsetDistance">
+                 courseOffsetDistance
+                </a>
+               </td>
+               <td>
+                The distance between the final approach course and extended runway centreline at a point located 3000 ft from the landing threshold point, measured perpendicular to the extended runway centreline.
+               </td>
+               <td>
+                <a href="ValDistanceType.html">
+                 ValDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseOffsetAngle">
+                 courseOffsetAngle
+                </a>
+               </td>
+               <td>
+                The offset angle between the final approach course and the extended runway centreline.
+               </td>
+               <td>
+                <a href="Angle.html">
+                 Angle
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#courseCentrelineIntersect">
+                 courseCentrelineIntersect
+                </a>
+               </td>
+               <td>
+                Indication whether the intersection of the final approach course with the extended runway centreline is located before or after the landing threshold point.
+               </td>
+               <td>
+                <a href="CodeRelativePositionType.html">
+                 CodeRelativePositionType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="courseCentrelineDistance" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseCentrelineDistance">
+              courseCentrelineDistance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseCentrelineDistance
+             </code>
+             <p>
+              The distance from the landing threshold point to the point where the extended runway centreline intersects the final approach course.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="visualDescentPoint" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@visualDescentPoint">
+              visualDescentPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@visualDescentPoint
+             </code>
+             <p>
+              A defined point on the final approach course of a nonprecision straight-in approach procedure from which normal descent from the MDA to the runway touchdown point may be commenced, provided visual reference is established.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#visualDescentPointcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="visualDescentPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalLeg.html#visualDescentPoint" target="_blank">
+                   visualDescentPoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="finalPathAlignmentPoint" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@finalPathAlignmentPoint">
+              finalPathAlignmentPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@finalPathAlignmentPoint
+             </code>
+             <p>
+              A point defined by a latitude, longitude and MSL elevation used in conjunction with the LTP and the geometric center of the WGS-84 ellipsoid to define the vertical plane of a PA RNAV final approach course.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="InfrastructurePoint.html">
+                InfrastructurePoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#finalPathAlignmentPointcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="finalPathAlignmentPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalLeg.html#finalPathAlignmentPoint" target="_blank">
+                   finalPathAlignmentPoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="condition" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@condition">
+              condition
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@condition
+             </code>
+             <p>
+              A specific condition established for the final segment leg.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ApproachCondition.html">
+                ApproachCondition
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#conditioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="conditioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalLeg.html#condition" target="_blank">
+                   condition
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="finalApproachSegmentDataBlock" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@finalApproachSegmentDataBlock">
+              finalApproachSegmentDataBlock
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@finalApproachSegmentDataBlock
+             </code>
+             <p>
+              Data used in the CRC calculation of the FMS box to insure the final segment of an approach procedure has not been modified.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="FinalApproachSegmentDataBlock.html">
+                FinalApproachSegmentDataBlock
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#finalApproachSegmentDataBlockcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="finalApproachSegmentDataBlockcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/FinalLeg.html#FASData" target="_blank">
+                   FASData
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isRNPDMEAuthorised" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@isRNPDMEAuthorised">
+              isRNPDMEAuthorised
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@isRNPDMEAuthorised
+             </code>
+             <p>
+              Indication whether DME/DME RNP 0.3 is allowed.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minimumBarometricVerticalNavigationTemperature" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@minimumBarometricVerticalNavigationTemperature">
+              minimumBarometricVerticalNavigationTemperature
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@minimumBarometricVerticalNavigationTemperature
+             </code>
+             <p>
+              The aerodrome temperature below which the use of Baro-VNAV is not authorized to the LNAV/VNAV DA.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValTemperatureType.html">
+                ValTemperatureType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="landingSystemCategory" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@landingSystemCategory">
+              landingSystemCategory
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@landingSystemCategory
+             </code>
+             <p>
+              Landing system category.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeInstrumentRunwayType.html">
+                CodeInstrumentRunwayType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="guidanceSystem" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@guidanceSystem">
+              guidanceSystem
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@guidanceSystem
+             </code>
+             <p>
+              Guidance system used on the final approach segment of an instrument approach procedure.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeFinalGuidanceType.html">
+                CodeFinalGuidanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="courseOffsetSide" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetSide">
+              courseOffsetSide
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetSide
+             </code>
+             <p>
+              Indication on which side of the extended runway centreline the final approach course lies, when viewed from the Final Approach Fix.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRelativePositionType.html">
+                CodeRelativePositionType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="courseOffsetDistance" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetDistance">
+              courseOffsetDistance
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetDistance
+             </code>
+             <p>
+              The distance between the final approach course and extended runway centreline at a point located 3000 ft from the landing threshold point, measured perpendicular to the extended runway centreline.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValDistanceType.html">
+                ValDistanceType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="courseOffsetAngle" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetAngle">
+              courseOffsetAngle
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseOffsetAngle
+             </code>
+             <p>
+              The offset angle between the final approach course and the extended runway centreline.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Angle.html">
+                Angle
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="courseCentrelineIntersect" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseCentrelineIntersect">
+              courseCentrelineIntersect
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:AirspaceInfrastructure:RouteAndProcedure:FinalLeg@courseCentrelineIntersect
+             </code>
+             <p>
+              Indication whether the intersection of the final approach course with the extended runway centreline is located before or after the landing threshold point.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRelativePositionType.html">
+                CodeRelativePositionType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

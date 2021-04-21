@@ -465,7 +465,7 @@ def create_logical_model_item_page(record, template, scope):
       h2 = soup.new_tag("h2")
       h2.string = str(record['class name'])
       span_supplement = soup.new_tag("spam")
-      if record["supplement"] == "\t\t\tEuropean Supplement":
+      if scope=="european-supplement/":
         span_supplement['class'] = "badge badge-secondary"
         span_supplement.string = "European Supplement"
       h2.insert(1,span_supplement)
@@ -554,8 +554,7 @@ def create_logical_model_item_page(record, template, scope):
       airm = airm.Airm()
       results = airm.get_logical_properties_by_class(str(record['class name']), scope)
       if results != None:
-        print("RESULTS for " + str(record['class name'])+ "SCOPE: "+scope)
-        #print(results)
+        print("-scope: "+scope)
         hr = soup.new_tag("hr")
         p.insert(insert_index,hr)
         insert_index = insert_index+1
@@ -570,7 +569,6 @@ def create_logical_model_item_page(record, template, scope):
         insert_index = insert_index+1
 
         for result in results:
-         # print('\t'+str(result['property name']))
 
           tr = soup.new_tag("tr")
 
@@ -607,6 +605,7 @@ def create_logical_model_item_page(record, template, scope):
           
           soup.find(id="DATA_CONCEPTS_LIST").insert(1,tr)
         for trace in results:
+          print('\t+'+str(trace['property name']))
           property_div = soup.new_tag("div")
           property_div["style"] = "border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px"
 
@@ -692,6 +691,7 @@ def create_logical_model_item_page(record, template, scope):
                 url_path = "../../../developers/"
 
               if entry["concept_name"] != 'missing data':
+                print('\t\t*'+str(entry["concept_target"]))
                 td = soup.new_tag("td")
                 text = entry["model_name"]
                 pm = soup.new_tag("p")

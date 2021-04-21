@@ -168,6 +168,11 @@
               TemporalEnabledEntity
              </a>
              <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -186,12 +191,628 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#angle">
+                 angle
+                </a>
+               </td>
+               <td>
+                The angle between the bearing and the North reference.
+               </td>
+               <td>
+                <a href="Angle.html">
+                 Angle
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#fix">
+                 fix
+                </a>
+               </td>
+               <td>
+                A selected significant point that may have references (distance and/or angle indications).
+               </td>
+               <td>
+                <a href="SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#usedPoint">
+                 usedPoint
+                </a>
+               </td>
+               <td>
+                A significant point which defines the facility makeup.
+               </td>
+               <td>
+                <a href="SignificantPoint.html">
+                 SignificantPoint
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#northReference">
+                 northReference
+                </a>
+               </td>
+               <td>
+                The type of North reference.
+               </td>
+               <td>
+                <a href="CodeNorthReferenceType.html">
+                 CodeNorthReferenceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#minimumReceptionAltitude">
+                 minimumReceptionAltitude
+                </a>
+               </td>
+               <td>
+                The lowest altitude that an aircraft can receive signal.
+               </td>
+               <td>
+                <a href="ValVerticalDistanceType.html">
+                 ValVerticalDistanceType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#indicationDirection">
+                 indicationDirection
+                </a>
+               </td>
+               <td>
+                A code indicating if the angle is to or from the significant point that is used.
+               </td>
+               <td>
+                <a href="CodeRelativeDirectionType.html">
+                 CodeRelativeDirectionType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#cardinalDirection">
+                 cardinalDirection
+                </a>
+               </td>
+               <td>
+                The angle expressed as compass direction.
+               </td>
+               <td>
+                <a href="CodeCompassPointType.html">
+                 CodeCompassPointType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#angleType">
+                 angleType
+                </a>
+               </td>
+               <td>
+                A code indicating the direction of the zero bearing.
+               </td>
+               <td>
+                <a href="CodeBearingType.html">
+                 CodeBearingType
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="angle" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@angle">
+              angle
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@angle
+             </code>
+             <p>
+              The angle between the bearing and the North reference.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Angle.html">
+                Angle
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#anglecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="anglecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#trueAngle" target="_blank">
+                   trueAngle
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#angle" target="_blank">
+                   angle
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="fix" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@fix">
+              fix
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@fix
+             </code>
+             <p>
+              A selected significant point that may have references (distance and/or angle indications).
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#fixcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="fixcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#fix" target="_blank">
+                   fix
+                  </a>
+                 </td>
+                </tr>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0/RelativePointType.html#referencePoint" target="_blank">
+                   referencePoint
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="usedPoint" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@usedPoint">
+              usedPoint
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@usedPoint
+             </code>
+             <p>
+              A significant point which defines the facility makeup.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="SignificantPoint.html">
+                SignificantPoint
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#usedPointcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="usedPointcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#pointChoice" target="_blank">
+                   pointChoice
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="northReference" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@northReference">
+              northReference
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@northReference
+             </code>
+             <p>
+              The type of North reference.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeNorthReferenceType.html">
+                CodeNorthReferenceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#northReferencecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="northReferencecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   FIXM 4.2.0
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/fixm-4.2.0-to-airm-1.0.0/BearingType.html#zeroBearingType" target="_blank">
+                   zeroBearingType
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="minimumReceptionAltitude" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@minimumReceptionAltitude">
+              minimumReceptionAltitude
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@minimumReceptionAltitude
+             </code>
+             <p>
+              The lowest altitude that an aircraft can receive signal.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ValVerticalDistanceType.html">
+                ValVerticalDistanceType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#minimumReceptionAltitudecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="minimumReceptionAltitudecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#minimumReceptionAltitude" target="_blank">
+                   minimumReceptionAltitude
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="indicationDirection" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@indicationDirection">
+              indicationDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@indicationDirection
+             </code>
+             <p>
+              A code indicating if the angle is to or from the significant point that is used.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeRelativeDirectionType.html">
+                CodeRelativeDirectionType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#indicationDirectioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="indicationDirectioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#indicationDirection" target="_blank">
+                   indicationDirection
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="cardinalDirection" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@cardinalDirection">
+              cardinalDirection
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@cardinalDirection
+             </code>
+             <p>
+              The angle expressed as compass direction.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeCompassPointType.html">
+                CodeCompassPointType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#cardinalDirectioncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="cardinalDirectioncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#cardinalDirection" target="_blank">
+                   cardinalDirection
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="angleType" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@angleType">
+              angleType
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Common:Geometry:AngleIndication@angleType
+             </code>
+             <p>
+              A code indicating the direction of the zero bearing.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeBearingType.html">
+                CodeBearingType
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#angleTypecollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="angleTypecollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/AngleIndication.html#angleType" target="_blank">
+                   angleType
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

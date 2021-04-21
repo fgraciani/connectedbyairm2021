@@ -168,6 +168,11 @@
               GeoTemporalEnabledEntity
              </a>
              <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -186,12 +191,546 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#flightOperations">
+                 flightOperations
+                </a>
+               </td>
+               <td>
+                The destination (arriving, departing, etc.) of the flights for which the information is provided.
+               </td>
+               <td>
+                <a href="CodeFlightServiceAvailabilityType.html">
+                 CodeFlightServiceAvailabilityType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#radioCommunication">
+                 radioCommunication
+                </a>
+               </td>
+               <td>
+                The radio frequency on which the service is provided.
+               </td>
+               <td>
+                <a href="RadioCommunicationChannel.html">
+                 RadioCommunicationChannel
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#groundCommunication">
+                 groundCommunication
+                </a>
+               </td>
+               <td>
+                The point of contact on the ground for the service.
+               </td>
+               <td>
+                <a href="ContactInformation.html">
+                 ContactInformation
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#serviceProvider">
+                 serviceProvider
+                </a>
+               </td>
+               <td>
+                The unit that provides the service.
+               </td>
+               <td>
+                <a href="Unit.html">
+                 Unit
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#availability">
+                 availability
+                </a>
+               </td>
+               <td>
+                The operational status of the service.
+               </td>
+               <td>
+                <a href="ServiceOperationalStatus.html">
+                 ServiceOperationalStatus
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#callSign">
+                 callSign
+                </a>
+               </td>
+               <td>
+                The callsign of the unit providing the service.
+               </td>
+               <td>
+                <a href="ServiceProviderCallsign.html">
+                 ServiceProviderCallsign
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#rank">
+                 rank
+                </a>
+               </td>
+               <td>
+                The order of priority of the service, such as primary" or "alternate". "
+               </td>
+               <td>
+                <a href="CodeFacilityRankingType.html">
+                 CodeFacilityRankingType
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#name">
+                 name
+                </a>
+               </td>
+               <td>
+                A free text name by which the service is identified.
+               </td>
+               <td>
+                <a href="CharacterString.html">
+                 CharacterString
+                </a>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#isCompliantICAO">
+                 isCompliantICAO
+                </a>
+               </td>
+               <td>
+                A code indicating whether the service is compliant with the ICAO standards and recommended practices specified for this type of service.
+               </td>
+               <td>
+                <a href="Boolean.html">
+                 Boolean
+                </a>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="flightOperations" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@flightOperations">
+              flightOperations
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@flightOperations
+             </code>
+             <p>
+              The destination (arriving, departing, etc.) of the flights for which the information is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeFlightServiceAvailabilityType.html">
+                CodeFlightServiceAvailabilityType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="radioCommunication" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@radioCommunication">
+              radioCommunication
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@radioCommunication
+             </code>
+             <p>
+              The radio frequency on which the service is provided.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="RadioCommunicationChannel.html">
+                RadioCommunicationChannel
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#radioCommunicationcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="radioCommunicationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Service.html#radioCommunication" target="_blank">
+                   radioCommunication
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="groundCommunication" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@groundCommunication">
+              groundCommunication
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@groundCommunication
+             </code>
+             <p>
+              The point of contact on the ground for the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ContactInformation.html">
+                ContactInformation
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#groundCommunicationcollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="groundCommunicationcollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Service.html#groundCommunication" target="_blank">
+                   groundCommunication
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="serviceProvider" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@serviceProvider">
+              serviceProvider
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@serviceProvider
+             </code>
+             <p>
+              The unit that provides the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Unit.html">
+                Unit
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#serviceProvidercollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="serviceProvidercollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Service.html#serviceProvider" target="_blank">
+                   serviceProvider
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="availability" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@availability">
+              availability
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@availability
+             </code>
+             <p>
+              The operational status of the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ServiceOperationalStatus.html">
+                ServiceOperationalStatus
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#availabilitycollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="availabilitycollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Service.html#availability" target="_blank">
+                   availability
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="callSign" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@callSign">
+              callSign
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@callSign
+             </code>
+             <p>
+              The callsign of the unit providing the service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="ServiceProviderCallsign.html">
+                ServiceProviderCallsign
+               </a>
+              </span>
+             </p>
+             <p>
+              <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-light" data-target="#callSigncollapse" data-toggle="collapse" type="button">
+               Show correspondences
+              </button>
+             </p>
+             <div class="table-responsive collapse" id="callSigncollapse">
+              <table class="table">
+               <thead>
+                <tr>
+                 <th>
+                  Model
+                 </th>
+                 <th>
+                  Concept
+                 </th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                 <td>
+                  <p>
+                   AIXM 5.1.1
+                  </p>
+                 </td>
+                 <td>
+                  <a href="../../../developers/aixm-5.1.1-to-airm-1.0.0/Service.html#call-sign" target="_blank">
+                   call-sign
+                  </a>
+                 </td>
+                </tr>
+               </tbody>
+              </table>
+             </div>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="rank" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@rank">
+              rank
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@rank
+             </code>
+             <p>
+              The order of priority of the service, such as primary" or "alternate". "
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CodeFacilityRankingType.html">
+                CodeFacilityRankingType
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="name" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@name">
+              name
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@name
+             </code>
+             <p>
+              A free text name by which the service is identified.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="CharacterString.html">
+                CharacterString
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="isCompliantICAO" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@isCompliantICAO">
+              isCompliantICAO
+             </h3>
+             <code class="text-secondary">
+              urn:aero:airm:1.0.0:LogicalModel:Subjects:Stakeholders:BusinessService:Service@isCompliantICAO
+             </code>
+             <p>
+              A code indicating whether the service is compliant with the ICAO standards and recommended practices specified for this type of service.
+              <br/>
+             </p>
+             <p>
+              type:
+              <span>
+               <a href="Boolean.html">
+                Boolean
+               </a>
+              </span>
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>

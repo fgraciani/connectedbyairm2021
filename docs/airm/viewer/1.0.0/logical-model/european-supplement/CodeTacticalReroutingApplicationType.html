@@ -169,6 +169,11 @@
               SESAR
              </span>
              <br/>
+             <hr/>
+             <b>
+              Properties:
+             </b>
+             <br/>
             </p>
            </div>
            <div class="table-responsive">
@@ -187,12 +192,156 @@
               </tr>
              </thead>
              <tbody id="DATA_CONCEPTS_LIST">
+              <tr>
+               <td>
+                <a href="#EXECUTE">
+                 EXECUTE
+                </a>
+               </td>
+               <td>
+                Indicates it concerns an execute rerouting. In this case either the FTFM or RTFM are replaced by the rerouting. No proposal flights are created. This rerouting applies to flights in a simulation or flights in status planned (typically all flights on the pre-tactical dataset).
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT">
+                 FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT
+                </a>
+               </td>
+               <td>
+                Indicates if proposal flights need to be automatically generated for all successfully rerouted flights and if so, what kind (null means no proposals need to be automatically generated).
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FOR_INDICATION_WITH_AUTOMATIC_RRP">
+                 FOR_INDICATION_WITH_AUTOMATIC_RRP
+                </a>
+               </td>
+               <td>
+                Indicates it concerns a rerouting for indication. Optionally proposal flights can be created and the corresponding RRP messages sent.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
+              <tr>
+               <td>
+                <a href="#FOR_INDICATION_WITH_AUTOMATIC_RRN">
+                 FOR_INDICATION_WITH_AUTOMATIC_RRN
+                </a>
+               </td>
+               <td>
+                Indicates it concerns a rerouting for indication. Optionally proposal flights can be created and the corresponding RRN messages sent.
+               </td>
+               <td>
+                <p>
+                 enum value
+                </p>
+               </td>
+              </tr>
              </tbody>
             </table>
            </div>
            <p>
            </p>
            <div id="DATA_CONCEPTS_DETAIL">
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="EXECUTE" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@EXECUTE">
+              EXECUTE
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@EXECUTE
+             </code>
+             <p>
+              Indicates it concerns an execute rerouting. In this case either the FTFM or RTFM are replaced by the rerouting. No proposal flights are created. This rerouting applies to flights in a simulation or flights in status planned (typically all flights on the pre-tactical dataset).
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT">
+              FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITHOUT_AUTOMATIC_PROPOSAL_FLIGHT
+             </code>
+             <p>
+              Indicates if proposal flights need to be automatically generated for all successfully rerouted flights and if so, what kind (null means no proposals need to be automatically generated).
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FOR_INDICATION_WITH_AUTOMATIC_RRP" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITH_AUTOMATIC_RRP">
+              FOR_INDICATION_WITH_AUTOMATIC_RRP
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITH_AUTOMATIC_RRP
+             </code>
+             <p>
+              Indicates it concerns a rerouting for indication. Optionally proposal flights can be created and the corresponding RRP messages sent.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
+            <div style="border: 0.5px solid #b2b2b2;border-radius: 4px;box-shadow: 2px 2px #b2b2b2;padding: 15px;padding-bottom: 0px; margin-bottom: 30px">
+             <h3 data-placement="right" data-toggle="tooltip" id="FOR_INDICATION_WITH_AUTOMATIC_RRN" style="padding-top: 120px; margin-top: -120px;" title="urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITH_AUTOMATIC_RRN">
+              FOR_INDICATION_WITH_AUTOMATIC_RRN
+             </h3>
+             <code class="text-secondary">
+              urn:aero:ses:eurocontrol:airm:1.0.0:LogicalModel:Subjects:AirTrafficOperations:Codelists:CodeTacticalReroutingApplicationType@FOR_INDICATION_WITH_AUTOMATIC_RRN
+             </code>
+             <p>
+              Indicates it concerns a rerouting for indication. Optionally proposal flights can be created and the corresponding RRN messages sent.
+              <br/>
+             </p>
+             <p>
+              type: enum value
+             </p>
+             <p class="text-right">
+              <a href="#top">
+               <i class="fa fa-arrow-circle-up" data-placement="left" data-toggle="tooltip" title="Top of page">
+               </i>
+              </a>
+             </p>
+            </div>
            </div>
           </div>
          </div>
