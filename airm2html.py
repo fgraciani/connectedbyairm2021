@@ -779,7 +779,7 @@ def create_url_for_supplements(class_name, class_urn, scope):
     if scope == "european-supplement/":#current page in eur supp
       path = ""
     else:#current page in global
-      path = scope
+      path = "european-supplement/"
   else:#target is in global
     if scope == "european-supplement/":
       path = "../"
