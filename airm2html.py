@@ -444,14 +444,17 @@ def create_logical_model_item_pages():
   for record in airm_logical_concepts_supp:
     template = open("docs/airm/templates/viewer/logical-model/european-supplement/logical-model-concept-template.html").read()
     scope = "european-supplement/"
-    create_logical_model_item_page(record, template, scope)
+    children = airm.get_children_for_logical_model_class(record["urn"], scope)
+    create_logical_model_item_page(record, template, scope, children)
 
   for record in airm_logical_concepts:
     template = open("docs/airm/templates/viewer/logical-model/logical-model-concept-template.html").read()
     scope = ""
-    create_logical_model_item_page(record, template, scope)
+    children = airm.get_children_for_logical_model_class(record["urn"], scope)
+    supplements = airm.get_supplements_for_logical_model_class(record["urn"])
+    create_logical_model_item_page(record, template, scope, children, supplements)
 
-def create_logical_model_item_page(record, template, scope):
+def create_logical_model_item_page(record, template, scope, children, supplements={}):
 
     if record["stereotype"] != "missing data":
       print(record['class name'])
@@ -525,6 +528,7 @@ def create_logical_model_item_page(record, template, scope):
         p.insert(insert_index,br)
         insert_index = insert_index+1
       
+      #insert parent
       if record["parent"] != "missing data":
         b = soup.new_tag("b")
         parent = str(record["parent"])    
@@ -544,6 +548,25 @@ def create_logical_model_item_page(record, template, scope):
         new_link.string = text
         p.insert(insert_index,new_link)
         insert_index = insert_index+1
+
+        br = soup.new_tag("br")
+        p.insert(insert_index,br)
+        insert_index = insert_index+1
+      #insert children
+      if children != None: 
+        b = soup.new_tag("b")
+        b.string = "Children: "
+        p.insert(insert_index,b)
+        insert_index = insert_index+1 
+        for child in children:
+          url = create_url_for_supplements(str(child["class name"]), str(record["urn"]), scope)
+          text = str(child["class name"])
+          print("-child: "+text)
+          new_link = soup.new_tag("a")
+          new_link['href'] = url
+          new_link.string = text
+          p.insert(insert_index,new_link)
+          insert_index = insert_index+1
 
         br = soup.new_tag("br")
         p.insert(insert_index,br)
@@ -677,11 +700,8 @@ def create_logical_model_item_page(record, template, scope):
             sc_thead.insert(1,tr)
             sc_table.insert(1,sc_thead)
             tbody = soup.new_tag("tbody")
-            #for each insert row
-            #print('\t\tPresence in Mappings:')
           
             for entry in connections:
-              #print('\t\t\t'+line)
               tr = soup.new_tag("tr")
               url_path = ""
 

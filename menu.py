@@ -145,7 +145,6 @@ def viewer_menu():
     """
     create_logical_model_item_pages()"""
 
-
 def semantic_correspondences_menu():
   """Print the Semantic Correspondences menu and wait for a selection."""
   choice ='0'

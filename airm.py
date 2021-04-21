@@ -8,8 +8,6 @@ class Airm:
   logical_concepts = pd.read_excel (r'xlsx/airm/logical_core.xlsx', sheet_name='test')
   logical_supp_concepts = pd.read_excel (r'xlsx/airm/logical_supp.xlsx', sheet_name='test')
   df_connected_index = pd.read_excel (r'xlsx/connected_index.xlsx', sheet_name='connected_index')
-  
-  #df_connected_index = pd.read_excel (r'data/xlsx/connected_index.xlsx', sheet_name='connceted_index')
 
   not_found_counter = 0
   
@@ -21,8 +19,6 @@ class Airm:
     self.logical_concepts.fillna("missing data", inplace = True)
     self.logical_supp_concepts.fillna("missing data", inplace = True)
     self.df_connected_index.fillna("missing data", inplace = True)
-    
-    #self.df_connected_index.fillna("missing data", inplace = True)
     
     self.contextual_abbreviations.columns = ["supplement","stereotype","class name","property name", "type", "definition", "synonyms", "abbreviation", "urn",  "parent", "source"]
     self.contextual_terms.columns =         ["supplement","stereotype","class name","property name", "type", "definition", "synonyms", "abbreviation", "urn",  "parent", "source"]
@@ -167,6 +163,27 @@ class Airm:
     else:
       return filtered_df.to_dict('records')
 
+  def get_children_for_logical_model_class(self, urn, scope):
+    if scope == "european-supplement/":
+      logical_df = self.logical_supp_concepts.copy()
+    elif scope == "":
+      logical_df = self.logical_concepts.copy()
+
+    filtered_df = logical_df[(logical_df['parent urn'] == urn)]
+    if filtered_df.empty:
+      return None
+    else:
+      return filtered_df.to_dict('records')
+
+  def get_supplements_for_logical_model_class(self, urn):
+    logical_df = self.logical_supp_concepts.copy()
+
+    filtered_df = logical_df[(logical_df['parent urn'] == urn)]
+    if filtered_df.empty:
+      return None
+    else:
+      return filtered_df.to_dict('records')
+
 def urn_to_url(urn):
   if "urn:" in urn:
     urn_parts = urn.split(':')
@@ -195,7 +212,6 @@ def urn_to_url(urn):
     return "http://airm.aero/viewer/1.0.0/"+model+'/'+supplement+page+target
   else: 
     return "http://airm.aero/viewer/not-found"
-
 
 def create_connected_index():
   df_connected_index_cols = ["airm_urn", "model_name", "model_path", "concept_name", "concept_target"]
