@@ -574,14 +574,14 @@ def create_logical_model_item_page(record, template, scope, children, supplement
         p.insert(insert_index,br)
         insert_index = insert_index+1
 
-      #insert children
+      #insert supplemented by
       if supplements != None: 
         b = soup.new_tag("b")
         b.string = "Supplemented by: "
         p.insert(insert_index,b)
         insert_index = insert_index+1 
         for entry in supplements:
-          url = create_url_for_supplements(str(entry["class name"]), str(record["urn"]), scope)
+          url = create_url_for_supplements(str(entry["class name"]), str(entry["urn"]), scope)
           text = str(entry["class name"])+"; "
           print("-supplemented by: "+text)
           new_link = soup.new_tag("a")
