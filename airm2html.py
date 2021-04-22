@@ -637,7 +637,7 @@ def create_logical_model_item_page(record, template, scope, children, supplement
             enump.string = "enum value"
             td_dc_type.insert(1,enump)
             tr.insert(3,td_dc_type)
-          elif str(result["type"]) in ["Integer", "CharacterString", "Boolean", "Number", "Date", "DateTime", "TM_Duration", "GM_Curve", "GM_Point", "GM_Solid", "GM_Surface", "MD_Metadata", "Angle"]:
+          elif str(result["type"]) in ["Integer", "CharacterString", "Boolean", "Number", "Date", "DateTime", "TM_Duration", "GM_Curve", "GM_Point", "GM_Solid", "GM_Surface", "MD_Metadata", "Angle", "Decimal", "Real", "Bit", "LanguageCode", "ClockTime"]:
             td_dc_type = soup.new_tag("td")
             enump = soup.new_tag("p")
             enump.string = str(result["type"])
@@ -681,7 +681,7 @@ def create_logical_model_item_page(record, template, scope, children, supplement
             p3 = soup.new_tag("p")
             p3.string = "type: enum value"
             property_div.insert(3,p3)
-          elif str(trace["type"]) in ["Integer", "CharacterString", "Boolean", "Number", "Date", "DateTime", "TM_Duration", "GM_Curve", "GM_Point", "GM_Solid", "GM_Surface", "MD_Metadata", "Angle", "Decimal"]:
+          elif str(trace["type"]) in ["Integer", "CharacterString", "Boolean", "Number", "Date", "DateTime", "TM_Duration", "GM_Curve", "GM_Point", "GM_Solid", "GM_Surface", "MD_Metadata", "Angle", "Decimal", "Real", "Bit", "LanguageCode", "ClockTime"]:
             td_dc_type = soup.new_tag("td")
             enump = soup.new_tag("p")
             enump.string = "type: "+str(trace["type"])
